@@ -23,10 +23,82 @@ import SearchPill from "@/components/ui/SearchPill";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
 import NorthAmericaMap from "./NorthAmericaMap";
 import USStatesMap from "./USStatesMap";
+import CountyMap from "./CountyMap";
 import EuropeMap from "./EuropeMap";
 import AsiaMap from "./AsiaMap";
+import {
+  getMunicipalitiesByState,
+  getMunicipalityByFips,
+} from "@/lib/municipal-data";
+import type {
+  Entity,
+  Legislation,
+  MunicipalAction,
+  MunicipalActionStatus,
+  MunicipalEntity,
+  Stage,
+  StanceType,
+} from "@/types";
 
 type ViewState = ViewTarget;
+
+// ─── MunicipalEntity → Entity adapter ──────────────────────────────
+// Lets the existing SidePanel / LegislationList UI render county actions
+// without any structural changes. A municipal "action" becomes a
+// pseudo-Legislation row; the county's overall stance is derived from
+// the most severe action status.
+
+const ACTION_STATUS_TO_STAGE: Record<MunicipalActionStatus, Stage> = {
+  enacted: "Enacted",
+  "under-review": "Committee",
+  proposed: "Filed",
+  failed: "Dead",
+};
+
+function actionStance(status: MunicipalActionStatus): StanceType {
+  if (status === "enacted") return "restrictive";
+  if (status === "under-review") return "concerning";
+  if (status === "proposed") return "review";
+  return "none";
+}
+
+function countyStance(actions: MunicipalAction[]): StanceType {
+  const order: StanceType[] = ["restrictive", "concerning", "review", "none"];
+  for (const s of order) {
+    if (actions.some((a) => actionStance(a.status) === s)) return s;
+  }
+  return "none";
+}
+
+function actionToLegislation(a: MunicipalAction, idx: number): Legislation {
+  return {
+    id: `county-action-${idx}`,
+    billCode: "Local",
+    title: a.title,
+    summary: a.summary,
+    stage: ACTION_STATUS_TO_STAGE[a.status],
+    stance: actionStance(a.status),
+    impactTags: [],
+    category: "data-center-siting",
+    updatedDate: a.date,
+    sourceUrl: a.sourceUrl,
+  };
+}
+
+function municipalityToEntity(m: MunicipalEntity): Entity {
+  return {
+    id: `muni-${m.id}`,
+    geoId: m.fips,
+    name: `${m.name}, ${m.stateCode}`,
+    region: "na",
+    level: "state",
+    stance: countyStance(m.actions),
+    contextBlurb: m.contextBlurb,
+    legislation: m.actions.map(actionToLegislation),
+    keyFigures: [],
+    news: [],
+  };
+}
 
 const INITIAL_VIEW: ViewState = {
   region: "na",
@@ -60,14 +132,35 @@ export default function MapShell({
 
   const current = history[historyIdx];
   const { region, naView, selectedGeoId } = current;
+  const selectedStateName = current.selectedStateName ?? null;
+  const selectedCountyFips = current.selectedCountyFips ?? null;
 
   const overviewEntity = useMemo(() => getOverviewEntity(region), [region]);
 
-  const selectedEntity = useMemo(() => {
+  const selectedEntity = useMemo((): Entity | null => {
+    // In county view, synthesize an Entity from the MunicipalEntity so the
+    // existing SidePanel UI keeps working without changes.
+    if (region === "na" && naView === "counties" && selectedCountyFips) {
+      const muni = getMunicipalityByFips(selectedCountyFips);
+      if (muni) return municipalityToEntity(muni);
+    }
+    // When looking at a state in counties view without a county selected,
+    // fall back to the overall state entity.
+    if (region === "na" && naView === "counties" && selectedStateName) {
+      const stateEntity = getEntity(selectedStateName, region);
+      if (stateEntity) return stateEntity;
+    }
     if (!selectedGeoId) return overviewEntity;
     const found = getEntity(selectedGeoId, region);
     return found ?? overviewEntity;
-  }, [selectedGeoId, region, overviewEntity]);
+  }, [
+    selectedGeoId,
+    region,
+    naView,
+    selectedStateName,
+    selectedCountyFips,
+    overviewEntity,
+  ]);
 
   const navigateTo = (next: ViewState) => {
     if (viewsEqual(current, next)) return;
@@ -101,8 +194,43 @@ export default function MapShell({
   const handleViewStates = () =>
     navigateTo({ region: "na", naView: "states", selectedGeoId: null });
 
+  const handleViewCounties = (stateName: string) =>
+    navigateTo({
+      region: "na",
+      naView: "counties",
+      selectedGeoId: null,
+      selectedStateName: stateName,
+      selectedCountyFips: null,
+    });
+
+  const handleSelectCounty = (fips: string) => {
+    navigateTo({
+      ...current,
+      naView: "counties",
+      selectedCountyFips: fips,
+    });
+    if (panelSize === "min") {
+      setExplicitPanelSize("md");
+    }
+  };
+
+  const handleResetCounties = () =>
+    navigateTo({
+      ...current,
+      naView: "counties",
+      selectedCountyFips: null,
+    });
+
   const handleDoubleClickEntity = (geoId: string) => {
     if (geoId === "840") handleViewStates();
+    // Double-clicking a US state drills into counties (for states with data)
+    if (
+      region === "na" &&
+      naView === "states" &&
+      getMunicipalitiesByState(geoId).length > 0
+    ) {
+      handleViewCounties(geoId);
+    }
   };
 
   const handleSearchNavigate = (target: ViewTarget) => navigateTo(target);
@@ -132,6 +260,19 @@ export default function MapShell({
       if (selectedGeoId && selectedEntity && !selectedEntity.isOverview) {
         items.push({ label: selectedEntity.name });
       }
+    } else if (region === "na" && naView === "counties" && selectedStateName) {
+      items.push({
+        label: "United States",
+        onClick: handleViewStates,
+      });
+      items.push({
+        label: selectedStateName,
+        onClick: selectedCountyFips ? handleResetCounties : undefined,
+      });
+      if (selectedCountyFips) {
+        const muni = getMunicipalityByFips(selectedCountyFips);
+        if (muni) items.push({ label: muni.name });
+      }
     } else if (
       selectedGeoId &&
       selectedEntity &&
@@ -142,7 +283,16 @@ export default function MapShell({
 
     return items;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [region, naView, selectedGeoId, selectedEntity, history, historyIdx]);
+  }, [
+    region,
+    naView,
+    selectedGeoId,
+    selectedStateName,
+    selectedCountyFips,
+    selectedEntity,
+    history,
+    historyIdx,
+  ]);
 
   const showViewStatesButton =
     region === "na" &&
@@ -276,9 +426,19 @@ export default function MapShell({
             {r === "na" && naView === "states" && (
               <USStatesMap
                 onSelectEntity={handleSelectEntity}
+                onDoubleClickEntity={handleDoubleClickEntity}
                 selectedGeoId={selectedGeoId}
                 setTooltip={setTooltip}
                 dimension={dimension}
+                showDataCenters={showDataCenters}
+              />
+            )}
+            {r === "na" && naView === "counties" && selectedStateName && (
+              <CountyMap
+                stateName={selectedStateName}
+                onSelectCounty={handleSelectCounty}
+                selectedCountyFips={selectedCountyFips}
+                setTooltip={setTooltip}
                 showDataCenters={showDataCenters}
               />
             )}

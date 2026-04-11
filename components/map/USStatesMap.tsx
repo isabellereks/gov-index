@@ -20,6 +20,7 @@ import DataCenterDots from "./DataCenterDots";
 
 interface USStatesMapProps {
   onSelectEntity: (geoId: string) => void;
+  onDoubleClickEntity?: (geoId: string) => void;
   selectedGeoId: string | null;
   setTooltip: SetTooltip;
   dimension?: Dimension;
@@ -41,6 +42,7 @@ const BLOB_STYLE = {
 
 export default function USStatesMap({
   onSelectEntity,
+  onDoubleClickEntity,
   selectedGeoId,
   setTooltip,
   dimension = "overall",
@@ -119,6 +121,7 @@ export default function USStatesMap({
                   }
                   onMouseLeave={() => setTooltip(null)}
                   onClick={() => onSelectEntity(name)}
+                  onDoubleClick={() => onDoubleClickEntity?.(name)}
                   style={{
                     default: base,
                     hover: {
