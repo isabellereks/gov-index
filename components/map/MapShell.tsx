@@ -56,6 +56,7 @@ export default function MapShell({
   const [history, setHistory] = useState<ViewState[]>([INITIAL_VIEW]);
   const [historyIdx, setHistoryIdx] = useState(0);
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
+  const [showDataCenters, setShowDataCenters] = useState(false);
 
   const current = history[historyIdx];
   const { region, naView, selectedGeoId } = current;
@@ -269,6 +270,7 @@ export default function MapShell({
                 selectedGeoId={selectedGeoId}
                 setTooltip={setTooltip}
                 dimension={dimension}
+                showDataCenters={showDataCenters}
               />
             )}
             {r === "na" && naView === "states" && (
@@ -277,6 +279,7 @@ export default function MapShell({
                 selectedGeoId={selectedGeoId}
                 setTooltip={setTooltip}
                 dimension={dimension}
+                showDataCenters={showDataCenters}
               />
             )}
             {r === "eu" && (
@@ -340,6 +343,34 @@ export default function MapShell({
       >
         <SearchPill onNavigate={handleSearchNavigate} />
       </div>
+
+      {/* Data center layer toggle — only in NA where we have facility data */}
+      {region === "na" && (
+        <div
+          className="fixed top-6 right-24 lg:right-28 z-20 flex flex-col items-end gap-1"
+          style={{
+            opacity: chromeOpacity,
+            pointerEvents: chromeOpacity < 0.5 ? "none" : "auto",
+          }}
+        >
+          <button
+            type="button"
+            onClick={() => setShowDataCenters((v) => !v)}
+            className={`rounded-full px-3.5 py-1.5 text-[11px] font-medium tracking-tight backdrop-blur-xl border transition-colors ${
+              showDataCenters
+                ? "bg-ink text-white border-transparent shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
+                : "bg-white/85 text-ink border-black/[.06] hover:border-black/[.15]"
+            }`}
+          >
+            {showDataCenters ? "Hide" : "Show"} data centers
+          </button>
+          {showDataCenters && (
+            <span className="text-[10px] text-muted bg-white/70 backdrop-blur-md px-2 py-0.5 rounded-full">
+              Epoch AI (CC-BY)
+            </span>
+          )}
+        </div>
+      )}
 
       {/* Tooltip rendered OUTSIDE the slide rail so its position:fixed
           is relative to the viewport, not the transformed rail. */}

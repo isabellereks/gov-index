@@ -1,0 +1,106 @@
+[
+  {
+    "id": "shelby-county-tn",
+    "name": "Shelby County (City of Memphis)",
+    "fips": "47157",
+    "state": "Tennessee",
+    "stateCode": "TN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Shelby County Health Department Issues Limited Air Permit for xAI Colossus Gas Turbines",
+        "date": "2024-07-01",
+        "status": "enacted",
+        "summary": "The Shelby County Health Department approved a permit allowing xAI to operate 15 permanent natural gas turbines at its Colossus AI data center, stipulating they be used as backup power and that temporary turbines be removed within one year.",
+        "sourceUrl": "https://us.boell.org/en/2026/01/28/promise-peace-plenty-how-south-memphis-refusing-ais-big-lies"
+      },
+      {
+        "title": "Memphis City Council Enacts xAI Tax-Revenue Reinvestment Ordinance for Boxtown",
+        "date": "2025-08-25",
+        "status": "enacted",
+        "summary": "The Memphis City Council unanimously approved Mayor Paul Young's ordinance directing 25% of xAI's annual property tax revenue to infrastructure improvements within a five-mile radius of the Colossus data center in Southwest Memphis, in direct response to community opposition from Boxtown residents.",
+        "sourceUrl": "https://www.smartcitymemphis.com/2025/08/keeping-boxtown-the-land-of-broken-dreams-the-top-priority-for-the-xai-tax-fund/"
+      },
+      {
+        "title": "Community and Environmental Groups Challenge xAI Unpermitted Turbine Operations",
+        "date": "2025-06-17",
+        "status": "under-review",
+        "summary": "The Southern Environmental Law Center, NAACP, and local groups including Memphis Community Against Pollution and Tigers Against Pollution formally challenged xAI's operation of dozens of unpermitted methane gas turbines at the Colossus facility, urging the Shelby County Health Department to deny permanent permits.",
+        "sourceUrl": "https://www.selc.org/news/resistance-against-elon-musks-xai-facility-in-south-memphis-gets-stronger/"
+      }
+    ],
+    "concerns": [
+      "carbon-emissions",
+      "residential-proximity",
+      "environmental-review",
+      "grid-capacity",
+      "local-control",
+      "property-values"
+    ],
+    "contextBlurb": "Shelby County is ground zero for Tennessee's data-center controversy, hosting xAI's Colossus supercomputer facility in the historically Black Boxtown neighborhood of South Memphis. The facility launched with dozens of unpermitted natural gas turbines that researchers at the University of Tennessee found increased peak nitrogen dioxide levels by 79% near the site, triggering sustained community opposition, environmental-law litigation, and a city council tax-revenue ordinance. Shelby County already holds an 'F' rating for air quality from the American Lung Association, making the air-pollution impacts of the data center a central flashpoint."
+  },
+  {
+    "id": "cheatham-county-tn",
+    "name": "Cheatham County",
+    "fips": "47021",
+    "state": "Tennessee",
+    "stateCode": "TN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Zoning Resolution Amendment: Data Center Definition Added",
+        "date": "2026-01-26",
+        "status": "enacted",
+        "summary": "Cheatham County amended Section 2.010 of its Zoning Resolution to formally define 'Data Center' as a facility housing computer systems and related infrastructure including backup power, cooling systems, battery storage, substations, and security systems.",
+        "sourceUrl": "https://www.cheathamcountytn.gov/assets/pdfs/bldg_codes/land_use/zoning_amendments.pdf"
+      },
+      {
+        "title": "Zoning Resolution Amendment: Data Centers Classified as Extensive Impact Facilities",
+        "date": "2026-01-26",
+        "status": "enacted",
+        "summary": "Cheatham County amended Section 3.060(4) of its Zoning Resolution to add 'Data Center' to the list of Extensive Impact Facilities, subjecting new data center proposals to heightened land-use scrutiny and review requirements.",
+        "sourceUrl": "https://www.cheathamcountytn.gov/assets/pdfs/bldg_codes/land_use/zoning_amendments.pdf"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "local-control",
+      "grid-capacity",
+      "environmental-review",
+      "residential-proximity"
+    ],
+    "contextBlurb": "Cheatham County, a rural county west of Nashville, enacted two zoning amendments in January 2026 that formally define data centers and classify them as Extensive Impact Facilities under its zoning code. These proactive changes reflect the county's effort to gain regulatory footing before large-scale data center development reaches the Nashville suburban fringe. The amendments require any future data center applicant to undergo a more rigorous review process than standard industrial uses."
+  },
+  {
+    "id": "davidson-county-tn",
+    "name": "Davidson County (Metro Nashville)",
+    "fips": "47037",
+    "state": "Tennessee",
+    "stateCode": "TN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Metro Council Considers Two-Year Data Center Construction Moratorium",
+        "date": "2026-04-07",
+        "status": "proposed",
+        "summary": "Nashville's Metro Council is considering a proposed moratorium on new data center permits that would take effect April 20, 2026 and run through April 19, 2028, while staff develops permanent performance standards covering siting, setbacks, noise limits, and utility-capacity requirements.",
+        "sourceUrl": "https://mcobserver.news/news/metro-council-to-consider-data-center-moratorium/"
+      },
+      {
+        "title": "Metro Council Proposed Permanent Data Center Performance Standards (Concurrent Drafting)",
+        "date": "2026-04-07",
+        "status": "proposed",
+        "summary": "Alongside the moratorium proposal, Metro staff have been directed to draft long-term zoning ordinance changes and performance standards—including rules on location, setbacks, noise, and utility capacity—for Planning Commission review and eventual Council adoption.",
+        "sourceUrl": "https://mcobserver.news/news/metro-council-to-consider-data-center-moratorium/"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "noise-vibration",
+      "grid-capacity",
+      "local-control",
+      "residential-proximity"
+    ],
+    "contextBlurb": "Nashville's Metro Council brought forward a proposed two-year moratorium on data center permits in early April 2026, reflecting growing concern about the pace of data center development in the Nashville metro area, which already hosts 20 facilities totaling over 168 megawatts. If adopted, the pause would give the Metro Planning Commission time to hold public workshops and craft permanent zoning performance standards covering setbacks, noise, and utility capacity before any new facilities are permitted. The ordinance includes a severability clause to protect remaining provisions if any section is later challenged in court."
+  }
+]

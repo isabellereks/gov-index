@@ -81,18 +81,24 @@ export default function BillExpanded({ bill, stateCode }: BillExpandedProps) {
       {sponsors.length > 0 && (
         <div>
           <div className="text-[11px] font-medium text-muted tracking-tight mb-2">
-            Sponsors
+            {isFederal ? "Sponsors & donor cross-reference" : "Sponsors"}
           </div>
-          <div className="flex flex-col gap-2">
-            {sponsorProfiles.map(({ name, profile }) => (
-              <SponsorRow
-                key={name}
-                name={name}
-                profile={profile}
-                billCategory={bill.category}
-              />
-            ))}
-          </div>
+          {isFederal ? (
+            <div className="flex flex-col gap-2">
+              {sponsorProfiles.map(({ name, profile }) => (
+                <SponsorRow
+                  key={name}
+                  name={name}
+                  profile={profile}
+                  billCategory={bill.category}
+                />
+              ))}
+            </div>
+          ) : (
+            <p className="text-xs text-muted leading-relaxed">
+              {sponsors.join(", ")}
+            </p>
+          )}
         </div>
       )}
 

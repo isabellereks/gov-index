@@ -10,7 +10,9 @@ import { naProjection } from "@/lib/projections";
 import { getEntity } from "@/lib/placeholder-data";
 import { getEntityColorForDimension } from "@/lib/dimensions";
 import { NEUTRAL_STROKE, type SetTooltip } from "@/lib/map-utils";
+import { ALL_FACILITIES } from "@/lib/datacenters";
 import type { Dimension } from "@/types";
+import DataCenterDots from "./DataCenterDots";
 
 interface NorthAmericaMapProps {
   onSelectEntity: (geoId: string) => void;
@@ -18,6 +20,7 @@ interface NorthAmericaMapProps {
   selectedGeoId: string | null;
   setTooltip: SetTooltip;
   dimension?: Dimension;
+  showDataCenters?: boolean;
 }
 
 const naProj = naProjection as unknown as ProjectionFunction;
@@ -33,6 +36,7 @@ export default function NorthAmericaMap({
   selectedGeoId,
   setTooltip,
   dimension = "overall",
+  showDataCenters = false,
 }: NorthAmericaMapProps) {
   return (
     <div
@@ -109,6 +113,12 @@ export default function NorthAmericaMap({
             });
           }}
         </Geographies>
+        {showDataCenters && (
+          <DataCenterDots
+            facilities={ALL_FACILITIES}
+            setTooltip={setTooltip}
+          />
+        )}
       </ComposableMap>
     </div>
   );

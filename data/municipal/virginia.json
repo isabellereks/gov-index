@@ -1,0 +1,169 @@
+[
+  {
+    "id": "loudoun-county-va",
+    "name": "Loudoun County",
+    "fips": "51107",
+    "state": "Virginia",
+    "stateCode": "VA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Phase 1 Zoning Ordinance Amendment — End of By-Right Data Center Development",
+        "date": "2025-03-18",
+        "status": "enacted",
+        "summary": "The Board of Supervisors eliminated by-right data center development, requiring all new data centers to obtain a Special Exception (SPEX) with public hearings before the Planning Commission and Board of Supervisors.",
+        "sourceUrl": "https://www.loudoun.gov/6221/Phase-1-Project-Plan-for-Data-Center-Sta"
+      },
+      {
+        "title": "Phase 2 Data Center Standards & Locations — Zoning Ordinance and Comprehensive Plan Amendments Under Development",
+        "date": "2025-09-16",
+        "status": "under-review",
+        "summary": "The Board approved a Phase 2 project plan to draft new use-specific zoning standards for data centers and utility substations, covering noise, building height, onsite power generation, energy storage, and parking.",
+        "sourceUrl": "https://www.loudoun.gov/6222/Phase-2-Data-Center-Standards-Locations"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "local-zoning",
+      "local-control",
+      "residential-proximity",
+      "grid-capacity",
+      "carbon-emissions",
+      "water-consumption"
+    ],
+    "contextBlurb": "Loudoun County — home to Ashburn's 'Data Center Alley,' the largest data center market in the world — ended by-right approvals for data centers in March 2025, requiring all projects to go through a legislative Special Exception process with public hearings. Data center tax revenue constitutes over one-third of the county's tax base, yet sustained community pressure has driven both Phase 1 zoning restrictions and an ongoing Phase 2 effort to establish stricter use-specific standards. A grandfathering resolution protects applications accepted before February 12, 2025, for sites more than 500 feet from residential areas."
+  },
+  {
+    "id": "fairfax-county-va",
+    "name": "Fairfax County",
+    "fips": "51059",
+    "state": "Virginia",
+    "stateCode": "VA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Zoning Ordinance Amendment — Comprehensive Data Center Use Standards",
+        "date": "2024-09-10",
+        "status": "enacted",
+        "summary": "The Board of Supervisors enacted new data center rules requiring 200-foot residential setbacks, 300-foot setbacks for ground equipment, a 1-mile buffer from Metro stations, mandatory pre- and post-construction noise studies, full equipment enclosure, and new architectural standards.",
+        "sourceUrl": "https://www.fairfaxcounty.gov/news/board-supervisors-approve-new-data-center-zoning-ordinance-amendment"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "residential-proximity",
+      "local-zoning",
+      "local-control",
+      "carbon-emissions"
+    ],
+    "contextBlurb": "Fairfax County, with roughly 3 million square feet of data centers, enacted sweeping zoning changes in September 2024 after extensive community input including more than four hours of public testimony. The new rules require special exception approval for nearly all new data center projects, enforce strict setbacks from residences and Metro stations, and mandate noise studies — a direct response to community concerns about residential disruption. Applications accepted as complete before July 16, 2024 were grandfathered under the prior rules."
+  },
+  {
+    "id": "prince-william-county-va",
+    "name": "Prince William County",
+    "fips": "51153",
+    "state": "Virginia",
+    "stateCode": "VA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Digital Gateway Rezoning Voided by Virginia Court of Appeals",
+        "date": "2026-03-31",
+        "status": "failed",
+        "summary": "The Virginia Court of Appeals invalidated three rezoning ordinances approving the PW Digital Gateway — a proposed 2,100-acre, 37-data-center corridor near Manassas National Battlefield — after ruling the county failed to meet statutory public advertising requirements.",
+        "sourceUrl": "https://www.insidenova.com/news/prince_william/update-second-ruling-voids-digital-gateway-data-center-project-in-prince-william/article_846b8581-c99e-4f00-bb67-512c78952773.html"
+      },
+      {
+        "title": "Noise Ordinance Amendment — Removal of Commercial HVAC Nighttime Exemption",
+        "date": "2023-02-28",
+        "status": "enacted",
+        "summary": "The Board of Supervisors amended the county's noise ordinance to remove the commercial HVAC exemption from nighttime maximum permissible sound levels, with a one-year sunset clause, and initiated a Data Center Ordinance Advisory Group.",
+        "sourceUrl": "https://www.pwcva.gov/news/prince-william-board-county-supervisors-votes-initiate-amendments-county-code-regarding-data"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "local-zoning",
+      "local-control",
+      "residential-proximity",
+      "environmental-review",
+      "grid-capacity"
+    ],
+    "contextBlurb": "Prince William County is ground zero for one of Virginia's most contentious data center battles: the proposed PW Digital Gateway, a massive corridor that would have created nearly 23 million square feet of data center space near Manassas National Battlefield Park. Community groups led by the Coalition to Protect Prince William County won successive court rulings invalidating the rezoning approvals, with the Virginia Court of Appeals issuing a decisive void-ab-initio ruling in late March 2026. The county's 26 existing data centers already generate $79 million in annual tax revenue, creating political tension between economic interests and community opposition."
+  },
+  {
+    "id": "chesapeake-city-va",
+    "name": "City of Chesapeake",
+    "fips": "51550",
+    "state": "Virginia",
+    "stateCode": "VA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "City Council Rejection of Data Center Rezoning — Emerald Lake Estates / Great Bridge",
+        "date": "2025-06-17",
+        "status": "failed",
+        "summary": "Following a 6-1 Planning Commission denial and a petition of nearly 450 residents opposing the project, the City Council voted 7-0 to reject rezoning of 22.6 agricultural acres to light industrial for a proposed 350,000-square-foot AI data center.",
+        "sourceUrl": "https://earthlyinfrastructure.com/hrcnn/chesapeake-data-center-zoning-decision"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "residential-proximity",
+      "local-zoning",
+      "environmental-review",
+      "grid-capacity",
+      "water-consumption"
+    ],
+    "contextBlurb": "Chesapeake faced its first industrial-scale data center proposal in 2025, when developer Doug Fuller sought to rezone agricultural land near Great Bridge for a 350,000-square-foot AI data center. Hundreds of residents organized in opposition, citing noise, light pollution, proximity to homes and schools, and fears of setting a precedent for further industrial encroachment. The City Council's unanimous 7-0 rejection in June 2025 followed the Planning Commission's own 6-1 denial, making Chesapeake one of the few Virginia localities to fully block a data center at the rezoning stage."
+  },
+  {
+    "id": "york-county-va",
+    "name": "York County",
+    "fips": "51199",
+    "state": "Virginia",
+    "stateCode": "VA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Data Center Zoning Ordinance — Setbacks, Sound Limits, Grid and Water Capacity Requirements",
+        "date": "2025-06-17",
+        "status": "enacted",
+        "summary": "York County enacted a new data center ordinance requiring mandatory setbacks, vegetative buffers, sound studies, grid and water capacity letters from utilities, and a five-year energy-use reporting period — applied retroactively to projects in the pipeline.",
+        "sourceUrl": "https://virginiamercury.com/2025/06/20/virginia-doesnt-have-statewide-data-center-regulations-localities-are-making-their-own-rules-instead/"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "grid-capacity",
+      "water-infrastructure",
+      "residential-proximity",
+      "local-zoning",
+      "local-control"
+    ],
+    "contextBlurb": "York County proactively adopted data center standards in June 2025, requiring developers to submit letters from energy and water utilities confirming sufficient infrastructure capacity before approval can be granted. The ordinance also mandates sound studies, property-line setbacks with vegetative buffers, and obligates operators to revisit and report energy usage to the Board every five years. Notably, the rules apply retroactively to data center projects already under review."
+  },
+  {
+    "id": "virginia-scc-state",
+    "name": "Virginia State Corporation Commission",
+    "fips": "51000",
+    "state": "Virginia",
+    "stateCode": "VA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "SCC Approves New GS-5 Electricity Rate Class for Large-Scale Data Centers",
+        "date": "2025-11-01",
+        "status": "enacted",
+        "summary": "Virginia's State Corporation Commission approved Dominion Energy's request to create a new 'GS-5' rate class for electricity customers using over 25 MW — primarily AI data centers — requiring them to pay minimums of 85% of contracted transmission demand and 60% of generation demand, effective January 2027.",
+        "sourceUrl": "https://www.americanactionforum.org/insight/virginias-new-data-center-electricity-rate-class/"
+      }
+    ],
+    "concerns": [
+      "grid-capacity",
+      "carbon-emissions",
+      "local-control"
+    ],
+    "contextBlurb": "The Virginia SCC approved a new electricity rate class in November 2025 specifically targeting large-scale AI data centers, requiring them to pay guaranteed minimums for contracted transmission and generation capacity. The action was driven by concerns that AI data center demand had contributed to an 833% spike in PJM capacity auction prices and that ordinary ratepayers were being forced to subsidize massive grid expansion costs. The new rate class takes effect in January 2027, and the SCC also approved a partial base-rate increase for Dominion Energy."
+  }
+]

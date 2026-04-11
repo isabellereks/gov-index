@@ -14,13 +14,16 @@ import {
   NEUTRAL_STROKE,
   type SetTooltip,
 } from "@/lib/map-utils";
+import { US_FACILITIES } from "@/lib/datacenters";
 import type { Dimension } from "@/types";
+import DataCenterDots from "./DataCenterDots";
 
 interface USStatesMapProps {
   onSelectEntity: (geoId: string) => void;
   selectedGeoId: string | null;
   setTooltip: SetTooltip;
   dimension?: Dimension;
+  showDataCenters?: boolean;
 }
 
 const usProj = usProjection as unknown as ProjectionFunction;
@@ -41,6 +44,7 @@ export default function USStatesMap({
   selectedGeoId,
   setTooltip,
   dimension = "overall",
+  showDataCenters = false,
 }: USStatesMapProps) {
   return (
     <div
@@ -129,6 +133,12 @@ export default function USStatesMap({
               );
             })}
         </Geographies>
+        {showDataCenters && (
+          <DataCenterDots
+            facilities={US_FACILITIES}
+            setTooltip={setTooltip}
+          />
+        )}
       </ComposableMap>
     </div>
   );

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "st-louis-county-mn",
+    "name": "St. Louis County / City of Hermantown",
+    "fips": "27137",
+    "state": "Minnesota",
+    "stateCode": "MN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Mortenson (Google) Data Center Permit Withdrawal After Community Opposition",
+        "date": "2025-11-18",
+        "status": "enacted",
+        "summary": "Following a lawsuit by MCEA and the grassroots Stop the Hermantown Data Center group, developer Mortenson voluntarily pulled its permit applications from the Hermantown Planning & Zoning Commission agenda and announced it would seek additional public input before proceeding.",
+        "sourceUrl": "https://www.datacenterdynamics.com/en/news/mortenson-temporarily-pulls-plans-for-hermantown-data-center-after-lawsuit-and-local-opposition/"
+      },
+      {
+        "title": "Updated Alternative Urban Areawide Review (AUAR) Public Comment Period Opened",
+        "date": "2026-03-31",
+        "status": "under-review",
+        "summary": "Hermantown opened a public comment period on a revised, reduced-footprint AUAR (278 acres across 26 parcels) for the proposed Google data center campus after the original environmental review was challenged in court.",
+        "sourceUrl": "https://www.kaxe.org/local-news/2026-03-31/public-comments-updated-review-proposed-hermantown-data-center"
+      },
+      {
+        "title": "St. Louis County Commissioner Proposes NDA Ban",
+        "date": "2025-10-01",
+        "status": "proposed",
+        "summary": "Commissioner Ashley Grimm, shocked that colleagues had known about the Hermantown data center proposal six months before the public, proposed a ban on commissioners signing nondisclosure agreements with data center developers.",
+        "sourceUrl": "https://minnesotareformer.com/2025/10/29/want-an-ai-data-center-in-your-city-sure-but-first-sign-this-non-disclosure-agreement/"
+      }
+    ],
+    "concerns": [
+      "local-control",
+      "environmental-review",
+      "residential-proximity",
+      "noise-vibration",
+      "water-consumption",
+      "grid-capacity"
+    ],
+    "contextBlurb": "Hermantown, a suburb of Duluth in St. Louis County, became a flashpoint when residents discovered a 1.8-million-square-foot Google data center (code-named 'Project Loon') had been negotiated behind NDAs for nearly a year before public disclosure. Community opposition led to lawsuits, the developer temporarily withdrawing permits, and a revised environmental review process launched in March 2026. A St. Louis County commissioner also proposed banning NDAs for commissioners, reflecting the breakdown in public trust."
+  },
+  {
+    "id": "goodhue-county-mn",
+    "name": "Goodhue County / City of Pine Island",
+    "fips": "27049",
+    "state": "Minnesota",
+    "stateCode": "MN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "MCEA Lawsuit Challenging Environmental Review of Google 'Project Skyway'",
+        "date": "2025-10-16",
+        "status": "under-review",
+        "summary": "The Minnesota Center for Environmental Advocacy filed suit in Goodhue County District Court arguing that Pine Island's AUAR was invalid because city officials and the developer knew the 482-acre technology park was being developed specifically for Google, and sought a full environmental impact statement.",
+        "sourceUrl": "https://www.postbulletin.com/news/local/flurry-of-filings-come-as-court-dates-draw-near-for-pine-island-data-center"
+      },
+      {
+        "title": "Pine Island City Council Approves $36 Million Tax Abatement for Google Data Center",
+        "date": "2026-02-04",
+        "status": "enacted",
+        "summary": "The Pine Island City Council voted to approve a $36 million tax abatement for the Google/Ryan Companies 'Project Skyway' data center despite vocal community opposition from the 'Stop the Pine Island Data Center' residents' group.",
+        "sourceUrl": "https://www.cnbc.com/2026/02/24/google-to-build-data-center-in-minnesota-with-solar-wind-and-battery-storage.html"
+      },
+      {
+        "title": "Community Group 'Stop the Pine Island Data Center' Demands Environmental Impact Statement",
+        "date": "2025-09-16",
+        "status": "under-review",
+        "summary": "Residents organized 'Stop the Pine Island Data Center' and, together with MCEA, appealed the city's September 2025 AUAR approval, alleging the review was conducted under a concealing NDA and demanding a more rigorous environmental impact statement before any construction proceeds.",
+        "sourceUrl": "https://www.postbulletin.com/business/what-happens-next-with-googles-pine-island-data-center"
+      }
+    ],
+    "concerns": [
+      "environmental-review",
+      "water-consumption",
+      "local-control",
+      "noise-vibration",
+      "residential-proximity",
+      "property-values",
+      "grid-capacity"
+    ],
+    "contextBlurb": "Pine Island (pop. ~4,000), 70 miles southeast of Minneapolis, is the site of a 250,000-square-foot Google AI data center on a 482-acre technology park developed by Ryan Companies. The project was negotiated under NDAs and only publicly disclosed in February 2026, triggering a lawsuit by the Minnesota Center for Environmental Advocacy and the formation of the 'Stop the Pine Island Data Center' group. As of April 2026, summary judgment hearings are ongoing in Goodhue County District Court over the adequacy of the environmental review."
+  },
+  {
+    "id": "wright-county-mn",
+    "name": "Wright County / City of Monticello",
+    "fips": "27171",
+    "state": "Minnesota",
+    "stateCode": "MN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Comprehensive Plan Amended to Restrict Data Centers to Light Industrial Park Zones",
+        "date": "2025-07-01",
+        "status": "enacted",
+        "summary": "Monticello amended its 2040 Vision + Plan to allow data centers only in Light Industrial Park (LIP) designated areas, with mandatory review of site impacts, utility and electric service demands, and fiscal requirements.",
+        "sourceUrl": "https://monticellomn.gov/728/Data-Centers"
+      },
+      {
+        "title": "Data Center Planned Unit Development (DCPUD) Zoning Ordinance Drafted",
+        "date": "2025-08-19",
+        "status": "under-review",
+        "summary": "Monticello's Planning Commission opened public hearings on a new Data Center Planned Unit Development ordinance establishing setbacks of 200–500 feet from residential properties, noise compliance per MPCA standards, mandatory fiscal benefit statements, and environmental review triggers.",
+        "sourceUrl": "https://www.hometownsource.com/monticello_times/a-guide-to-monticello-s-proposed-data-center-ordinance/article_6c253088-cf5f-47cc-b952-35e49601cf1e.html"
+      },
+      {
+        "title": "Alternative Urban Areawide Review (AUAR) Required for Monticello Tech LLC Proposal",
+        "date": "2025-10-13",
+        "status": "under-review",
+        "summary": "The Monticello City Council acknowledged a new annexation petition tied to the Monticello Tech LLC data center proposal and confirmed that a full AUAR environmental review is required under Minnesota Rules 4410 before the project can advance.",
+        "sourceUrl": "https://monticellomn.gov/728/Data-Centers"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "noise-vibration",
+      "residential-proximity",
+      "water-consumption",
+      "grid-capacity",
+      "environmental-review",
+      "property-values"
+    ],
+    "contextBlurb": "Monticello, in Wright County, is attractive to data center developers because of its nuclear power plant and robust transmission infrastructure near the Twin Cities. Through 2025–2026, the city undertook a detailed zoning overhaul to regulate data centers before any project could be approved, amending its comprehensive plan to confine them to light industrial zones and drafting a DCPUD ordinance with strict setbacks, noise limits, and fiscal-impact requirements. Community residents raised concerns about power demand, water use, noise, and quality of life throughout multiple public hearings."
+  },
+  {
+    "id": "nobles-county-mn",
+    "name": "Nobles County",
+    "fips": "27105",
+    "state": "Minnesota",
+    "stateCode": "MN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Zoning Ordinance Change for Geronimo Power Data Center Denied at Public Hearing",
+        "date": "2026-04-08",
+        "status": "under-review",
+        "summary": "The Nobles County Planning Commission declined to approve a zoning ordinance change needed for Geronimo Power's proposed data center north of Worthington, with commissioners set to vote the following week after heavy public opposition.",
+        "sourceUrl": "https://www.dakotanewsnow.com/2026/04/09/nobles-county-residents-pushing-back-proposed-data-center/"
+      },
+      {
+        "title": "Residents Call for 12-Month Township Moratorium",
+        "date": "2026-04-08",
+        "status": "proposed",
+        "summary": "Residents publicly urged every township in Nobles County to adopt a 12-month moratorium on data center development to allow more time to study impacts, while the county attorney noted the existing ag-preservation zoning already blocks the project without a separate moratorium.",
+        "sourceUrl": "https://www.dglobe.com/news/local/nobles-county-commissioners-discuss-moratorium-approve-drafts-for-data-center"
+      },
+      {
+        "title": "Environmental Review Comment Period Open for Geronimo Power Proposal",
+        "date": "2026-04-01",
+        "status": "under-review",
+        "summary": "Nobles County opened an environmental review public comment period (closing April 16, 2026) on the Geronimo Power data center proposal, with a concurrent water feasibility study examining Lincoln Pipestone Rural Water as a supply source.",
+        "sourceUrl": "https://www.dakotanewsnow.com/2026/04/09/nobles-county-residents-pushing-back-proposed-data-center/"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "local-control",
+      "environmental-review",
+      "water-infrastructure",
+      "water-consumption",
+      "residential-proximity"
+    ],
+    "contextBlurb": "Nobles County in southwestern Minnesota became the latest rural flashpoint in April 2026 when Geronimo Power sought a zoning change to build a data center north of Worthington on agricultural preservation land. The county attorney confirmed the existing ag-preservation district already prohibits the project, making a moratorium technically redundant, but residents demanded one anyway and packed a public hearing. An environmental review comment period and water feasibility study are simultaneously underway."
+  },
+  {
+    "id": "dakota-county-mn",
+    "name": "Dakota County / City of Eagan",
+    "fips": "27037",
+    "state": "Minnesota",
+    "stateCode": "MN",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Eagan City Council Enacts One-Year Data Center Development Moratorium",
+        "date": "2026-02-18",
+        "status": "enacted",
+        "summary": "The Eagan City Council passed a one-year moratorium on new data center development within city limits to allow time to evaluate the economic and environmental impacts of large-scale facilities.",
+        "sourceUrl": "https://mndaily.com/city/data-center-developers-face-scrutiny-from-minnesota-residents/03/06/2026/shill/"
+      },
+      {
+        "title": "Meta Rosemount Data Center Under Construction (No Local Restriction Enacted)",
+        "date": "2025-05-29",
+        "status": "enacted",
+        "summary": "Construction continued on Meta's large-scale Rosemount data center campus near Dakota County Technical College, which proceeded under a code name ('Project Bigfoot') negotiated with local officials under NDAs before public disclosure.",
+        "sourceUrl": "https://minnesotareformer.com/2025/10/29/want-an-ai-data-center-in-your-city-sure-but-first-sign-this-non-disclosure-agreement/"
+      }
+    ],
+    "concerns": [
+      "local-control",
+      "grid-capacity",
+      "water-consumption",
+      "environmental-review",
+      "local-zoning"
+    ],
+    "contextBlurb": "Dakota County hosts two distinct data center dynamics: the Meta Rosemount campus proceeding under NDA-shrouded approvals, and the neighboring City of Eagan, which enacted a one-year moratorium on new data center development in February 2026. The Eagan moratorium reflects growing municipal concern about the pace of development outstripping regulatory capacity, making it one of the first Minnesota cities to formally pause such projects."
+  }
+]

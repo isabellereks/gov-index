@@ -1,0 +1,229 @@
+[
+  {
+    "id": "dekalb-county-ga",
+    "name": "DeKalb County",
+    "fips": "13089",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Data Center Moratorium — Extended to June 23, 2026",
+        "date": "2025-12-16",
+        "status": "enacted",
+        "summary": "The DeKalb County Commission extended its moratorium on new data center permits and applications through June 23, 2026, barring all new licenses, special land-use permits, rezonings, and building permits for data centers in unincorporated DeKalb.",
+        "sourceUrl": "https://www.wabe.org/dekalb-extends-data-center-moratorium-defers-regulations/"
+      },
+      {
+        "title": "Data Center Text Amendment — Zoning Ordinance with Size Categories, Setbacks, Noise, and Transit Buffers",
+        "date": "2026-01-20",
+        "status": "under-review",
+        "summary": "DeKalb's proposed ordinance creates five data-center size tiers, requires a 500-foot setback from residential zones in industrial districts, prohibits siting within a half-mile of high-capacity transit stops, and sets noise and water-use standards; a public hearing before the Board of Commissioners is scheduled for May 12, 2026.",
+        "sourceUrl": "https://engagedekalb.dekalbcountyga.gov/data-center-text-amendment"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "residential-proximity",
+      "grid-capacity",
+      "water-consumption",
+      "environmental-review",
+      "local-zoning"
+    ],
+    "contextBlurb": "DeKalb County enacted a moratorium in late 2025 after roughly 100 residents attended each commission meeting opposing data center development, citing noise, pollution, water use, and equity concerns. The county's draft ordinance—first of its kind in Georgia—classifies data centers into five tiers by square footage and power demand. The moratorium was extended to June 23, 2026, while commissioners finalize regulations and a $250,000 study of health, safety, and welfare impacts."
+  },
+  {
+    "id": "athens-clarke-county-ga",
+    "name": "Athens-Clarke County",
+    "fips": "13059",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Temporary Emergency Moratorium on New Data Centers",
+        "date": "2025-12-02",
+        "status": "enacted",
+        "summary": "The Athens-Clarke County Mayor and Commission adopted a temporary emergency moratorium blocking all new data center construction through March 6, 2026, while planning staff drafted zoning language specific to data centers.",
+        "sourceUrl": "https://www.accgov.com/DocumentCenter/View/113020/27-Data-Center-Moratorium-Ordinance"
+      },
+      {
+        "title": "Data Center Text Amendment — Special Use Permit and Industrial Classification",
+        "date": "2026-02-20",
+        "status": "under-review",
+        "summary": "ACC's proposed text amendment would classify all data centers as Level 3 industrial uses requiring a special use permit, while community members and some commissioners pushed to extend the moratorium rather than adopt the amendment immediately.",
+        "sourceUrl": "https://www.redandblack.com/athensnews/athens-mayor-and-commission-extends-moratorium-on-data-center-zoning-ordinances/article_f1578f0c-3754-42e8-b55d-88dd6ae106a3.html"
+      }
+    ],
+    "concerns": [
+      "water-consumption",
+      "grid-capacity",
+      "noise-vibration",
+      "local-zoning",
+      "environmental-review",
+      "local-control"
+    ],
+    "contextBlurb": "Athens-Clarke County, the smallest geographical county in Georgia at 122 square miles, imposed an emergency moratorium in December 2025 to pause data center development while officials drafted zoning rules for facilities that can require 40 or more acres. Community members and at least one commissioner urged the commission to extend the moratorium rather than rush a text amendment, citing concerns about water, electricity, noise, and air pollution. Georgia Power's low industrial electricity costs have made the state, including ACC, an attractive target for data center developers."
+  },
+  {
+    "id": "clayton-county-ga",
+    "name": "Clayton County",
+    "fips": "13063",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "120-Day Moratorium on New Data Centers",
+        "date": "2025-09-03",
+        "status": "enacted",
+        "summary": "The Clayton County Board of Commissioners unanimously approved Resolution 2025-193, imposing a 120-day moratorium on data center approvals in unincorporated Clayton County through December 31, 2025, to study health, safety, and welfare impacts and allow strategic siting review.",
+        "sourceUrl": "https://www.claytoncountyga.gov/news/clayton-county-board-of-commissioners-approves-moratorium-on-new-data-centers-in-clayton-county/"
+      }
+    ],
+    "concerns": [
+      "grid-capacity",
+      "water-consumption",
+      "local-zoning",
+      "residential-proximity",
+      "local-control"
+    ],
+    "contextBlurb": "Clayton County's Vice Chair Alaina Reaves sponsored the September 2025 moratorium after residents raised concerns about electromagnetic fields and water supplies near a planned data center in the Ellenwood area. The county noted that an existing facility uses a closed-loop cooling process that recycles water, but commissioners still sought time to develop strategic siting standards for future projects. Clayton County joins a wave of metro-Atlanta counties that imposed temporary construction pauses in 2025."
+  },
+  {
+    "id": "bartow-county-ga",
+    "name": "Bartow County",
+    "fips": "13015",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Data Center Zoning Ordinance — Noise Limits and 200-Foot Buffer",
+        "date": "2025-01-01",
+        "status": "enacted",
+        "summary": "Bartow County finalized a data center ordinance in January 2025 allowing data centers while requiring a 200-foot buffer from property boundaries and capping noise at 65 dB daytime and 55 dB nighttime to protect neighboring properties.",
+        "sourceUrl": "https://www.gpb.org/news/2025/10/22/wave-of-data-center-ordinances-sweep-through-ga-counties-how-strict-are-they"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "residential-proximity",
+      "water-consumption",
+      "property-values"
+    ],
+    "contextBlurb": "Bartow County has positioned itself as openly pro-data center, hosting large Switch facilities near Cartersville and approving massive campuses including the proposed 8.6-million-square-foot 'Project Bunkhouse' valued at approximately $19 billion. The county's January 2025 ordinance nonetheless established a 200-foot development buffer and strict decibel limits to protect neighbors while still welcoming investment. Some residents and planning commission members have raised concerns near sensitive areas such as Barnsley Resort, leading to split recommendations on individual projects."
+  },
+  {
+    "id": "city-of-atlanta-ga",
+    "name": "City of Atlanta",
+    "fips": "13121",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Beltline and Transit-Proximity Ban on Data Centers",
+        "date": "2024-09-03",
+        "status": "enacted",
+        "summary": "The Atlanta City Council unanimously enacted ordinances defining data centers and prohibiting them within the Beltline Overlay District and within 2,640 feet of any high-capacity transit stop.",
+        "sourceUrl": "https://citycouncil.atlantaga.gov/Home/Components/News/News/3928/"
+      },
+      {
+        "title": "Citywide Special-Use Permit Requirement for All New Data Centers",
+        "date": "2025-06-02",
+        "status": "enacted",
+        "summary": "The Atlanta City Council unanimously approved an ordinance requiring all new data center proposals citywide to obtain a special-use permit, adding disclosure requirements for water and energy consumption and imposing design and fencing standards.",
+        "sourceUrl": "https://www.ajc.com/news/2025/06/atlanta-expands-restrictions-on-where-developers-can-build-data-centers/"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "water-consumption",
+      "grid-capacity",
+      "residential-proximity",
+      "environmental-review",
+      "carbon-emissions"
+    ],
+    "contextBlurb": "Atlanta has been among the most aggressive Georgia municipalities in restricting data centers, first banning them along the Beltline and near transit in September 2024, then adding a citywide special-use permit requirement in June 2025. The 2025 ordinance requires developers to disclose estimated water and energy consumption and potential tree removals, and bans certain fencing and exterior materials facing public rights-of-way. Councilmember Jason Dozier stated that Atlanta was 'leading the country in pushing back against data centers popping up in our cities.'"
+  },
+  {
+    "id": "georgia-psc-statewide",
+    "name": "Georgia Public Service Commission (Statewide Utility Authority)",
+    "fips": "13000",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "PSC 100 MW Large-Load Billing Rule for Data Centers",
+        "date": "2025-01-23",
+        "status": "enacted",
+        "summary": "The Georgia PSC unanimously approved a rule requiring new Georgia Power customers consuming over 100 MW — primarily data centers — to pay all upstream generation, transmission, and distribution infrastructure costs, and mandating PSC review of all such new contracts.",
+        "sourceUrl": "https://psc.ga.gov/site/assets/files/8617/media_advisory_data_centers_rule_1-23-2025.pdf"
+      },
+      {
+        "title": "Georgia Power Base-Rate Freeze Through 2028",
+        "date": "2025-07-01",
+        "status": "enacted",
+        "summary": "The PSC unanimously ordered a freeze of Georgia Power base rates through 2028 to prevent data centers from shifting grid-expansion costs to residential customers during a period of surging data-center demand.",
+        "sourceUrl": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf"
+      }
+    ],
+    "concerns": [
+      "grid-capacity",
+      "carbon-emissions",
+      "water-infrastructure",
+      "local-control"
+    ],
+    "contextBlurb": "The Georgia PSC took two landmark utility actions in 2025 to insulate residential ratepayers from data center growth costs: a January rule requiring hyperscale customers over 100 MW to bear full upstream infrastructure expenses, and a July order freezing Georgia Power base rates through 2028. The PSC also approved Georgia Power's plan in December 2025 to acquire nearly 10 gigawatts of new capacity, most of it destined to serve data centers. These decisions set statewide precedents for how utility costs tied to AI and data center expansion are allocated."
+  },
+  {
+    "id": "pike-county-ga",
+    "name": "Pike County",
+    "fips": "13231",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Data Center Moratorium",
+        "date": "2025-09-01",
+        "status": "enacted",
+        "summary": "Pike County commissioners approved a data center moratorium in September 2025 to pause development while the county develops a better understanding of how to accommodate and regulate data centers in local code.",
+        "sourceUrl": "https://www.gpb.org/news/2025/10/22/wave-of-data-center-ordinances-sweep-through-ga-counties-how-strict-are-they"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "local-control",
+      "water-consumption",
+      "grid-capacity"
+    ],
+    "contextBlurb": "Pike County Commissioner James Jenkins sponsored the September 2025 moratorium, noting that local officials simply did not yet understand data centers well enough to regulate them responsibly. The rural county was one of four Georgia counties — alongside Lamar, Troup, and Clayton — to pass moratoriums in the same month, reflecting a statewide wave of caution about rapid data center expansion. Pike County's action illustrates how the moratorium trend spread from metro Atlanta suburbs into less-populated Georgia communities."
+  },
+  {
+    "id": "lamar-county-ga",
+    "name": "Lamar County",
+    "fips": "13171",
+    "state": "Georgia",
+    "stateCode": "GA",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Data Center Moratorium",
+        "date": "2025-09-01",
+        "status": "enacted",
+        "summary": "Lamar County commissioners enacted a moratorium on new data centers in September 2025, with planning and zoning staff noting the pause was intended as a general code review rather than a targeted response to a specific pending project.",
+        "sourceUrl": "https://www.gpb.org/news/2025/10/22/wave-of-data-center-ordinances-sweep-through-ga-counties-how-strict-are-they"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "local-control",
+      "water-consumption",
+      "grid-capacity"
+    ],
+    "contextBlurb": "Lamar County joined Pike, Troup, and Clayton counties in passing a data center moratorium in September 2025, part of a coordinated wave of local action across Georgia as construction activity accelerated within 60 miles of Atlanta. Planning and zoning director Anita Buice indicated the moratorium was a proactive code-review measure rather than a response to a specific application. The county is part of a broader rural Georgia trend of governments pausing development to craft rules before data center proposals arrive."
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "id": "new-london-county-ct",
+    "name": "New London County",
+    "fips": "09011",
+    "state": "Connecticut",
+    "stateCode": "CT",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Town of Waterford: Millstone Hyperscale Data Center Project Terminated",
+        "date": "2026-03-17",
+        "status": "enacted",
+        "summary": "Waterford First Selectman announced the 1.5-million-sq-ft NE Edge hyperscale data center project at Millstone Nuclear Power Station was terminated after the developer defaulted on the Host Municipality Fee Agreement.",
+        "sourceUrl": "https://sites.google.com/view/ccwel-resources/home"
+      },
+      {
+        "title": "Town of Groton: Hyperscale Data Center Ban Enacted",
+        "date": "2024-01-01",
+        "status": "enacted",
+        "summary": "After an NE Edge data center effort in Groton fell through amid community opposition, the town enacted a ban prohibiting hyperscale data center developments within its boundaries.",
+        "sourceUrl": "https://ctmirror.org/2024/01/19/millstone-power-plant-ct-data-center-nuclear/"
+      },
+      {
+        "title": "Concerned Citizens of Waterford and East Lyme (CCWEL): Community Opposition to Millstone Data Center",
+        "date": "2024-01-18",
+        "status": "enacted",
+        "summary": "A grassroots coalition of over 50 residents organized sustained opposition to the proposed 300-MW nuclear-powered hyperscale data center at Millstone Point, citing grid-cost shifting, noise, property values, and environmental risks; opposition contributed to the project's eventual termination.",
+        "sourceUrl": "https://sites.google.com/view/ccwel-resources/home"
+      }
+    ],
+    "concerns": [
+      "noise-vibration",
+      "grid-capacity",
+      "property-values",
+      "residential-proximity",
+      "carbon-emissions",
+      "water-consumption",
+      "environmental-review",
+      "local-control"
+    ],
+    "contextBlurb": "New London County became the focal point of Connecticut's data center debate when developer NE Edge proposed a 1.5-million-square-foot hyperscale facility at the Millstone Nuclear Power Station in Waterford, which would have drawn 300 MW directly from the plant's reactors. After sustained community opposition from the Concerned Citizens of Waterford and East Lyme and a separate ban on hyperscale data centers enacted by the Town of Groton, the Waterford project was officially terminated in March 2026 after the developer defaulted on the Host Municipality Fee Agreement."
+  },
+  {
+    "id": "connecticut-state-ct",
+    "name": "Connecticut (State-Level Legislative Actions)",
+    "fips": "09000",
+    "state": "Connecticut",
+    "stateCode": "CT",
+    "type": "county",
+    "actions": [
+      {
+        "title": "SB 245: Elimination of Data Center Tax Incentives",
+        "date": "2026-02-27",
+        "status": "under-review",
+        "summary": "Connecticut's Energy and Technology Committee held a public hearing on SB 245, which would revoke the 2021 tax incentive program that waived property and sales taxes for qualifying data centers investing $200M or more in the state.",
+        "sourceUrl": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB00245&which_year=2026"
+      },
+      {
+        "title": "Governor Lamont 2026 State of the State: Informal Moratorium Signal on New Hyperscale Data Centers",
+        "date": "2026-01-08",
+        "status": "enacted",
+        "summary": "Governor Lamont publicly declared Connecticut's policy of slowing down new data centers unless they add their own generation, citing the scrapped Millstone hyperscale project as a cautionary example of energy-grid risk.",
+        "sourceUrl": "https://www.governing.com/finance/connecticuts-data-center-tax-break-bet-isnt-paying-off"
+      },
+      {
+        "title": "GRID Act Support: Federal Bill to Require Data Centers to Source Own Power",
+        "date": "2026-02-27",
+        "status": "proposed",
+        "summary": "Connecticut's U.S. Senator Richard Blumenthal introduced the GRID Act, which would require any new data center with a power demand of 20 MW or more to source electricity outside the shared electric grid, directly responding to ratepayer protection concerns raised by Connecticut's Office of Consumer Counsel.",
+        "sourceUrl": "https://www.wshu.org/connecticut-news/2026-02-27/ct-ai-data-centers-regulations"
+      },
+      {
+        "title": "Connecticut Energy & Technology Committee: Ratepayer Protection Hearing on Data Centers",
+        "date": "2026-02-27",
+        "status": "under-review",
+        "summary": "The state Energy and Technology Committee convened a public hearing where the Office of Consumer Counsel raised concerns about data centers' financial risks to ratepayers and the need for protections before new construction approvals are granted.",
+        "sourceUrl": "https://www.wshu.org/connecticut-news/2026-02-27/ct-ai-data-centers-regulations"
+      }
+    ],
+    "concerns": [
+      "grid-capacity",
+      "local-control",
+      "carbon-emissions",
+      "water-consumption",
+      "environmental-review",
+      "local-zoning"
+    ],
+    "contextBlurb": "Connecticut has no hyperscale data centers and an estimated 50-plus small-to-mid-size facilities statewide, with high wholesale electricity costs cited as the primary deterrent to large-scale development. In 2026 the state legislature is debating SB 245 to repeal the 2021 data center tax incentive law, while Governor Lamont has signaled a go-slow posture on new hyperscale projects unless developers provide their own power generation. The collapse of the Millstone nuclear-powered data center project in Waterford and Groton's outright ban on hyperscale facilities reflect a broader municipal-level skepticism about large AI data center development in the state."
+  }
+]

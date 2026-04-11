@@ -1,0 +1,110 @@
+[
+  {
+    "id": "colleton-county-sc",
+    "name": "Colleton County",
+    "fips": "45029",
+    "state": "South Carolina",
+    "stateCode": "SC",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Ordinance 25-O-10: Data Center Special Exception Added to Rural Zoning Districts",
+        "date": "2025-11-10",
+        "status": "enacted",
+        "summary": "Colleton County amended its code of ordinances to allow data centers by special exception in Rural Development-1 and Rural Development-2 zoning districts, including areas within the ACE Basin watershed.",
+        "sourceUrl": "https://www.live5news.com/2026/02/05/colleton-county-lawmakers-oppose-proposed-data-center-ace-basin/"
+      },
+      {
+        "title": "SELC Lawsuit Challenging Ordinance 25-O-10",
+        "date": "2026-01-09",
+        "status": "under-review",
+        "summary": "The Southern Environmental Law Center filed suit in Colleton County state court on behalf of two landowners, arguing that the special-exception ordinance violates state law, the county's comprehensive plan, and its zoning code.",
+        "sourceUrl": "https://www.selc.org/press-release/landowners-sue-colleton-county-over-data-center-ordinance/"
+      },
+      {
+        "title": "Zoning Board of Appeals Requires Eagle Rock Partners to Reapply for Special Exception",
+        "date": "2025-12-18",
+        "status": "under-review",
+        "summary": "Following a packed public hearing where hundreds of residents opposed the proposed 859-acre, 1,000-megawatt data center campus, the Colleton County Zoning Board of Appeals ruled that Eagle Rock Partners must reapply for its special exception.",
+        "sourceUrl": "https://www.selc.org/news/were-suing-to-protect-one-of-the-most-important-conservation-areas-in-the-south-from-data-centers/"
+      },
+      {
+        "title": "Colleton County Legislative Delegation Resolution Opposing ACE Basin Data Center",
+        "date": "2026-02-05",
+        "status": "enacted",
+        "summary": "Seven state lawmakers representing Colleton County—four Republicans and three Democrats—issued a bipartisan resolution declaring data center development inappropriate in the ACE Basin watershed.",
+        "sourceUrl": "https://scdailygazette.com/2026/02/05/sc-legislators-denounce-lowcountry-data-center-while-mulling-regulations-for-the-industry/"
+      }
+    ],
+    "concerns": [
+      "local-zoning",
+      "residential-proximity",
+      "water-consumption",
+      "water-infrastructure",
+      "environmental-review",
+      "noise-vibration",
+      "grid-capacity",
+      "carbon-emissions"
+    ],
+    "contextBlurb": "Colleton County passed Ordinance 25-O-10 in November 2025 adding data centers as a special exception in rural zoning districts, which promptly drew an application from Eagle Rock Partners to build an 859-acre, 1,000-megawatt campus near the ecologically sensitive ACE Basin. Hundreds of residents packed a December 2025 public hearing in opposition, and the Southern Environmental Law Center filed suit in January 2026 arguing the ordinance violated state law and the county's own comprehensive plan. Seven county legislators issued a bipartisan resolution in February 2026 opposing the project, while the Zoning Board of Appeals required the developer to reapply for its special exception."
+  },
+  {
+    "id": "marion-county-sc",
+    "name": "Marion County",
+    "fips": "45067",
+    "state": "South Carolina",
+    "stateCode": "SC",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Ordinance 2026-01: Approval of $2.4 Billion 'Project Liberty' Data Center",
+        "date": "2026-01-22",
+        "status": "enacted",
+        "summary": "Marion County Council voted to approve a $2.4 billion data center project (listed only as 'Project Liberty' on the agenda) during a winter storm when most residents were unaware, having been bound by an NDA with the developer.",
+        "sourceUrl": "https://capitalbnews.org/secret-data-center-deal-marion-county-south-carolina/"
+      },
+      {
+        "title": "Community Opposition and Public Hearing Pressure Over Lack of Transparency",
+        "date": "2026-02-11",
+        "status": "proposed",
+        "summary": "Roughly 100 Marion County residents attended a subsequent council meeting to voice opposition to the data center, citing lack of public transparency, the NDA process, and concerns about water and power impacts on the rural community.",
+        "sourceUrl": "https://scnow.com/news/local/government-politics/article_bf009e55-d9e4-4084-9910-24459896aa37.html"
+      }
+    ],
+    "concerns": [
+      "local-control",
+      "water-consumption",
+      "water-infrastructure",
+      "grid-capacity",
+      "environmental-review",
+      "residential-proximity",
+      "property-values"
+    ],
+    "contextBlurb": "Marion County Council approved a $2.4 billion data center project on January 22, 2026, during a historic winter storm, with the agenda item listed only as 'Project Liberty' and council members bound by an NDA that prevented them from disclosing details to the public. Approximately 100 residents showed up at a subsequent council meeting in February 2026 to protest, citing the lack of transparency and concerns about the project's impact on a county already burdened by high poverty and unemployment. The controversy helped fuel the statewide push for House Bill H-5286, a proposed moratorium on data center approvals through 2028."
+  },
+  {
+    "id": "spartanburg-county-sc",
+    "name": "Spartanburg County",
+    "fips": "45083",
+    "state": "South Carolina",
+    "stateCode": "SC",
+    "type": "county",
+    "actions": [
+      {
+        "title": "TigerDC Data Center Proposal Draws NDA Controversy and Local Opposition",
+        "date": "2025-11-01",
+        "status": "under-review",
+        "summary": "A data center project by developer TigerDC was negotiated under a non-disclosure agreement with OneSpartanburg (the local chamber of commerce), preventing public disclosure until community opposition exploded and drew regional media scrutiny.",
+        "sourceUrl": "https://www.postandcourier.com/rising-waters/data-center-secrecy-water-power-electric-colleton-county/article_5434700a-6506-4115-980f-51cf7440b5fb.html"
+      }
+    ],
+    "concerns": [
+      "local-control",
+      "local-zoning",
+      "grid-capacity",
+      "water-consumption",
+      "residential-proximity"
+    ],
+    "contextBlurb": "Spartanburg County became part of a statewide pattern in which data center developers used NDAs with local economic development entities to keep project details secret until late in the approval process. The TigerDC proposal in Spartanburg drew fierce local opposition once it became public, mirroring similar controversies in Colleton and Marion counties. The Post and Courier reported that an NDA between TigerDC and OneSpartanburg, the local chamber, had prevented the chamber from releasing project information before public backlash erupted."
+  }
+]

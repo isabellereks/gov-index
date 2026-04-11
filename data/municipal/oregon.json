@@ -1,0 +1,121 @@
+[
+  {
+    "id": "washington-county-or",
+    "name": "Washington County / City of Hillsboro",
+    "fips": "41067",
+    "state": "Oregon",
+    "stateCode": "OR",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Hillsboro City Councilor Petition for Data Center Moratorium",
+        "date": "2026-04-05",
+        "status": "proposed",
+        "summary": "Sitting Hillsboro City Councilor Kipperlyn Sinclair launched a public petition calling for a temporary moratorium on all new data center development in Washington County and Hillsboro, citing rising electricity rates, farmland loss, and water consumption.",
+        "sourceUrl": "https://katu.com/news/local/hillsboro-petition-seeks-pause-data-centers-amid-energy-and-farmland-concerns-washington-county-oregon-city-councilor-kipperlyn-sinclair-jacob-roloff-tammy-carpenter-illsboro-herald-editor-dirk-knudsen-tualatin-riverkeepers-pge"
+      },
+      {
+        "title": "Senate Bill 1586 Defeat — Urban Growth Boundary Expansion Blocked",
+        "date": "2026-03-04",
+        "status": "failed",
+        "summary": "Senator Janeen Sollman withdrew SB 1586, which would have brought 373 acres of rural land near Hillsboro into the urban growth boundary for advanced technology and data center industries, after ardent opposition from residents, farmers, and land-policy watchdogs.",
+        "sourceUrl": "https://www.opb.org/article/2026/03/03/hillsboro-will-not-get-more-industrial-land-for-high-tech-data-centers/"
+      },
+      {
+        "title": "Community Opposition to Discounted Data Center Power Rates (PGE)",
+        "date": "2026-04-05",
+        "status": "under-review",
+        "summary": "Hillsboro residents and the moratorium petition publicly challenged the arrangement by which data centers pay less than half the per-kilowatt-hour rate charged to residential customers, with petitioners calling on local leaders to require rate parity.",
+        "sourceUrl": "https://sign.moveon.org/petitions/data-center-moratorium-petition"
+      }
+    ],
+    "concerns": [
+      "grid-capacity",
+      "local-zoning",
+      "local-control",
+      "water-consumption",
+      "carbon-emissions",
+      "environmental-review",
+      "property-values"
+    ],
+    "contextBlurb": "Washington County, anchored by Hillsboro, has become Oregon's primary data center hub, hosting upwards of 30 facilities with hundreds of megawatts of demand that critics say has maxed out PGE's local grid. Residential electricity rates have risen nearly 50% while data centers pay less than half that rate per kilowatt-hour, and the Hillsboro School District reportedly lost $128 million in 2024 alone to data center tax abatements. A sitting city councilor launched a moratorium petition in April 2026, and a state bill to expand industrial land near Hillsboro for data centers was defeated in March 2026 following community opposition."
+  },
+  {
+    "id": "morrow-county-or",
+    "name": "Morrow County",
+    "fips": "41049",
+    "state": "Oregon",
+    "stateCode": "OR",
+    "type": "county",
+    "actions": [
+      {
+        "title": "Water Advisory Committee Established for Data Center Water Impact Review",
+        "date": "2024-01-01",
+        "status": "enacted",
+        "summary": "Morrow County established a Water Advisory Committee to address ongoing water quantity and quality issues in the Umatilla Basin, a crisis substantially worsened by data center water consumption from Amazon's seven hyperscale facilities in Boardman.",
+        "sourceUrl": "https://www.morrowcountyor.gov/planning/page/water-advisory-committee"
+      },
+      {
+        "title": "Morrow County Approves Land Re-Zoning for Percheron (Rowan) Data Center",
+        "date": "2023-09-11",
+        "status": "enacted",
+        "summary": "Morrow County's Planning Commission approved a land re-zoning application for Rowan Green Data's Percheron hyperscale data center campus, expected to join Amazon's existing seven facilities in the county.",
+        "sourceUrl": "https://www.datacenterdynamics.com/en/news/oregons-morrow-county-approves-land-re-zoning-for-percheron-data-center/"
+      },
+      {
+        "title": "Governor Grants Port of Morrow Wastewater Penalty Waiver Linked to Data Center Load",
+        "date": "2025-01-01",
+        "status": "enacted",
+        "summary": "Governor Kotek granted the Port of Morrow a six-week waiver from DEQ fines for spraying contaminated wastewater, a problem exacerbated by massive data center water use that has strained the county's wastewater treatment infrastructure.",
+        "sourceUrl": "https://www.rollingstone.com/culture/culture-features/data-center-water-pollution-amazon-oregon-1235466613/"
+      }
+    ],
+    "concerns": [
+      "water-consumption",
+      "water-infrastructure",
+      "environmental-review",
+      "grid-capacity",
+      "local-control"
+    ],
+    "contextBlurb": "Morrow County hosts at least seven Amazon hyperscale data centers near Boardman and has agreements for five more, making it one of the most data center-dense rural counties in the U.S. The county's sole underground aquifer — serving up to 45,000 residents — faces nitrate contamination, a problem compounded by the enormous wastewater volumes generated by data center cooling operations. Amazon avoided an estimated $83.9 million in local taxes over 15 years under enterprise zone abatements, and the Port of Morrow required a gubernatorial waiver in early 2025 to avoid DEQ fines for contaminated wastewater discharge linked to the industrial load."
+  },
+  {
+    "id": "oregon-state-hb4084",
+    "name": "Oregon (Statewide — HB 4084 / Enterprise Zone Moratorium)",
+    "fips": "41000",
+    "state": "Oregon",
+    "stateCode": "OR",
+    "type": "county",
+    "actions": [
+      {
+        "title": "HB 4084 Amended: One-Year Moratorium on New Data Center Enterprise Zone Tax Breaks",
+        "date": "2026-03-02",
+        "status": "enacted",
+        "summary": "Oregon's 2026 short legislative session amended HB 4084 to impose a one-year moratorium barring new or expanded data centers from claiming Standard Enterprise Zone property tax breaks, after community opposition blocked the governor's original plan to expand those incentives.",
+        "sourceUrl": "https://www.opb.org/article/2026/03/02/data-centers-cut-bill-expanding-oregon-tax-breaks/"
+      },
+      {
+        "title": "Oregon POWER Act (HB 3546) — Large Energy User Grid Cost Allocation",
+        "date": "2025-06-27",
+        "status": "enacted",
+        "summary": "Oregon enacted the POWER Act requiring large energy users consuming 20 MW or more (primarily data centers) to purchase power from state-regulated utilities under 10-year contracts and to fund any additional grid infrastructure their operations require, protecting residential ratepayers from cost-shifting.",
+        "sourceUrl": "https://www.cleanenergytransition.org/post/oregons-power-act-addresses-ratepayer-impact-of-large-energy-users"
+      },
+      {
+        "title": "Governor Kotek Creates Data Center Advisory Committee",
+        "date": "2026-01-20",
+        "status": "enacted",
+        "summary": "Governor Tina Kotek announced a seven-member Data Center Advisory Committee tasked with developing statewide policy recommendations on data center expansion, ratepayer affordability, and protection of farmlands and forests.",
+        "sourceUrl": "https://www.opb.org/article/2026/01/20/oregon-data-center-advisory-committee/"
+      }
+    ],
+    "concerns": [
+      "grid-capacity",
+      "local-control",
+      "water-consumption",
+      "carbon-emissions",
+      "environmental-review"
+    ],
+    "contextBlurb": "Oregon ranks 9th nationally in data center concentration and has seen residential electricity rates rise an average of 50% over five years, with data centers driving most of the state's 20%-plus electricity consumption growth since 2013. The 2025 POWER Act shifted grid infrastructure costs onto large data center users rather than ratepayers, and the 2026 legislative session imposed a one-year pause on new enterprise zone tax breaks for data centers after public backlash against further subsidies. Governor Kotek's Data Center Advisory Committee began meeting in early 2026 to shape longer-term statewide policy."
+  }
+]
