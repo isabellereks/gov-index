@@ -13,22 +13,24 @@ const LABELS: Record<StanceType, string> = {
   none: "No Activity",
 };
 
-const COLOR_CLASSES: Record<StanceType, string> = {
-  restrictive: "bg-stance-restrictive/15 text-stance-restrictive",
-  review: "bg-stance-review/15 text-stance-review",
-  favorable: "bg-stance-favorable/15 text-stance-favorable",
-  concerning: "bg-stance-concerning/15 text-stance-concerning",
-  none: "bg-stance-none/30 text-muted",
+const DOT_COLOR: Record<StanceType, string> = {
+  restrictive: "var(--color-stance-restrictive)",
+  review: "var(--color-stance-review)",
+  favorable: "var(--color-stance-favorable)",
+  concerning: "var(--color-stance-concerning)",
+  none: "var(--color-stance-none)",
 };
 
 export default function StanceBadge({ stance, size = "md" }: StanceBadgeProps) {
-  const sizeClasses =
-    size === "md"
-      ? "px-2.5 py-1 text-xs rounded-full font-medium"
-      : "px-2 py-0.5 text-xs rounded-full";
+  const text = size === "md" ? "text-xs" : "text-[11px]";
+  const dot = size === "md" ? "w-1.5 h-1.5" : "w-1 h-1";
   return (
-    <span className={`${sizeClasses} ${COLOR_CLASSES[stance]} inline-block`}>
-      {LABELS[stance]}
+    <span className={`inline-flex items-center gap-1.5 ${text} text-ink`}>
+      <span
+        className={`${dot} rounded-full`}
+        style={{ backgroundColor: DOT_COLOR[stance] }}
+      />
+      <span>{LABELS[stance]}</span>
     </span>
   );
 }

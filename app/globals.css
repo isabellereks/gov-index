@@ -3,19 +3,26 @@
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
-  --color-bg: #F5F0E8;
+  /* Off-white warm neutral — beige stripped ~90% */
+  --color-bg: #FAFAF8;
   --color-card: #FFFFFF;
-  --color-border-soft: #E8E2D9;
-  --color-muted: #A89F91;
-  --color-ink: #2C2825;
-  --color-neutral-region: #E0DBD3;
-  --color-neutral-stroke: #C9C3BB;
 
-  --color-stance-restrictive: #E07D3C;
-  --color-stance-review: #D4A843;
-  --color-stance-favorable: #4A9B6F;
-  --color-stance-concerning: #C0443A;
-  --color-stance-none: #D9D4CC;
+  /* Apple-style neutrals */
+  --color-ink: #1D1D1F;
+  --color-muted: #86868B;
+  --color-hairline: rgba(0, 0, 0, 0.06);
+
+  /* Map base */
+  --color-map-neutral: #ECECEC;
+  --color-map-stroke: #D2D2D2;
+
+  /* Stance — pastel palette (Light Gold / Icy Blue / Soft Periwinkle
+     / Bubblegum Fizz / Light Green). */
+  --color-stance-restrictive: #FF5CC9;
+  --color-stance-review: #FEF19A;
+  --color-stance-favorable: #C1FF9B;
+  --color-stance-concerning: #AB87FF;
+  --color-stance-none: #B4E1FF;
 }
 
 html,

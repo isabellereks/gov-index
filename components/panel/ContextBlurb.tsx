@@ -3,5 +3,5 @@ interface ContextBlurbProps {
 }
 
 export default function ContextBlurb({ text }: ContextBlurbProps) {
-  return <p className="text-sm text-stone-600 leading-relaxed">{text}</p>;
+  return <p className="text-sm text-ink/80 leading-relaxed">{text}</p>;
 }

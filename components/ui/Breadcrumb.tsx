@@ -1,38 +1,41 @@
 "use client";
 
 import { Fragment } from "react";
-import type { Layer } from "@/types";
 
 export interface BreadcrumbItem {
   label: string;
-  layer: Layer;
-  entityName?: string;
+  /** When present, clicking this item triggers the click handler. */
+  onClick?: () => void;
 }
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[];
-  onNavigate: (layer: Layer) => void;
 }
 
-export default function Breadcrumb({ items, onNavigate }: BreadcrumbProps) {
+export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
-    <nav className="flex items-center" aria-label="Breadcrumb">
+    <nav
+      className="flex items-center text-xs tracking-tight"
+      aria-label="Breadcrumb"
+    >
       {items.map((item, idx) => {
         const isLast = idx === items.length - 1;
         return (
-          <Fragment key={`${item.layer}-${idx}`}>
-            {isLast ? (
-              <span className="text-ink font-medium text-sm">{item.label}</span>
-            ) : (
+          <Fragment key={`${item.label}-${idx}`}>
+            {item.onClick && !isLast ? (
               <button
                 type="button"
-                onClick={() => onNavigate(item.layer)}
-                className="text-muted hover:text-ink cursor-pointer text-sm transition-colors"
+                onClick={item.onClick}
+                className="text-muted hover:text-ink cursor-pointer transition-colors"
               >
                 {item.label}
               </button>
+            ) : (
+              <span className={isLast ? "text-ink" : "text-muted"}>
+                {item.label}
+              </span>
             )}
-            {!isLast && <span className="text-muted mx-2">›</span>}
+            {!isLast && <span className="text-muted mx-1.5">›</span>}
           </Fragment>
         );
       })}

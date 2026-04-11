@@ -1,4 +1,13 @@
-export type Layer = "world" | "na" | "us";
+export type Region = "na" | "eu" | "asia";
+
+/** Sub-view inside the NA region: country-level vs US-states drill-down. */
+export type NaView = "countries" | "states";
+
+export interface ViewTarget {
+  region: Region;
+  naView: NaView;
+  selectedGeoId: string | null;
+}
 
 export type Stage =
   | "Filed"
@@ -48,12 +57,23 @@ export interface Entity {
   id: string;
   geoId: string;
   name: string;
+  region: Region;
   level: GovLevel;
-  layer: Layer;
+  /** True for the regional overview entity (one per region). */
+  isOverview?: boolean;
+  /** True if this entity has a state-level drill-down (currently only US). */
+  canDrillDown?: boolean;
   stance: StanceType;
   contextBlurb: string;
   legislation: Legislation[];
   keyFigures: Legislator[];
   news: NewsItem[];
-  canDrillDown?: boolean;
 }
+
+export const REGION_LABEL: Record<Region, string> = {
+  na: "North America",
+  eu: "European Union",
+  asia: "Asia",
+};
+
+export const REGION_ORDER: Region[] = ["na", "eu", "asia"];

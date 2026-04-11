@@ -1,62 +1,53 @@
 "use client";
 
-import { useState } from "react";
 import {
   ComposableMap,
   Geographies,
   Geography,
   type ProjectionFunction,
 } from "react-simple-maps";
-import type { StanceType } from "@/types";
 import { usProjection } from "@/lib/projections";
-
-const usProj = usProjection as unknown as ProjectionFunction;
 import { getEntity } from "@/lib/placeholder-data";
+import {
+  NEUTRAL_FILL,
+  NEUTRAL_STROKE,
+  STANCE_HEX,
+  type SetTooltip,
+} from "@/lib/map-utils";
 
 interface USStatesMapProps {
   onSelectEntity: (geoId: string) => void;
   selectedGeoId: string | null;
+  setTooltip: SetTooltip;
 }
+
+const usProj = usProjection as unknown as ProjectionFunction;
 
 const STATES_URL =
   "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
-function stanceColor(stance: StanceType): string {
-  switch (stance) {
-    case "restrictive":
-      return "#E07D3C";
-    case "review":
-      return "#D4A843";
-    case "favorable":
-      return "#4A9B6F";
-    case "concerning":
-      return "#C0443A";
-    default:
-      return "#D9D4CC";
-  }
-}
+const BLOB_STYLE = {
+  fill: NEUTRAL_FILL,
+  stroke: NEUTRAL_FILL,
+  strokeWidth: 0,
+  outline: "none",
+  pointerEvents: "none" as const,
+};
 
 export default function USStatesMap({
   onSelectEntity,
   selectedGeoId,
+  setTooltip,
 }: USStatesMapProps) {
-  const [tooltip, setTooltip] = useState<{
-    x: number;
-    y: number;
-    label: string;
-  } | null>(null);
-  const [hoveredName, setHoveredName] = useState<string | null>(null);
-
   return (
     <div
       className="relative w-full h-full"
-      onMouseMove={(e) => {
-        if (tooltip) setTooltip({ ...tooltip, x: e.clientX, y: e.clientY });
-      }}
-      onMouseLeave={() => {
-        setTooltip(null);
-        setHoveredName(null);
-      }}
+      onMouseMove={(e) =>
+        setTooltip((current) =>
+          current ? { ...current, x: e.clientX, y: e.clientY } : current,
+        )
+      }
+      onMouseLeave={() => setTooltip(null)}
     >
       <ComposableMap
         width={960}
@@ -66,55 +57,76 @@ export default function USStatesMap({
       >
         <Geographies geography={STATES_URL}>
           {({ geographies }) =>
-            geographies.map((geo) => {
+            // Render selected last so its stroke sits on top of neighbours.
+            geographies
+              .slice()
+              .sort((a, b) => {
+                const aSel = (a.properties.name as string) === selectedGeoId;
+                const bSel = (b.properties.name as string) === selectedGeoId;
+                return aSel === bSel ? 0 : aSel ? 1 : -1;
+              })
+              .map((geo) => {
               const name = geo.properties.name as string;
-              const ent = getEntity(name, "us");
-              const fill = ent ? stanceColor(ent.stance) : "#E0DBD3";
+              const ent = getEntity(name, "na");
+              const interactive = ent !== null;
               const isSelected = selectedGeoId === name;
-              const isHovered = hoveredName === name;
 
-              const commonStyle = {
+              if (!interactive) {
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    style={{
+                      default: BLOB_STYLE,
+                      hover: BLOB_STYLE,
+                      pressed: BLOB_STYLE,
+                    }}
+                  />
+                );
+              }
+
+              const fill = STANCE_HEX[ent.stance];
+              const stroke = isSelected ? "#FFFFFF" : NEUTRAL_STROKE;
+              const strokeWidth = isSelected ? 4 : 1.5;
+
+              const base = {
                 fill,
-                stroke: isSelected ? "#2C2825" : "#C9C3BB",
-                strokeWidth: isSelected ? 1.5 : 0.5,
+                stroke,
+                strokeWidth,
+                strokeLinejoin: "round" as const,
+                strokeLinecap: "round" as const,
                 outline: "none",
                 cursor: "pointer",
-                filter: isHovered ? "brightness(0.92)" : undefined,
+                transition: "stroke 200ms, stroke-width 200ms, filter 200ms",
+                filter: isSelected
+                  ? "drop-shadow(0 4px 12px rgba(0,0,0,0.15))"
+                  : undefined,
               };
 
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  onMouseEnter={(e) => {
-                    setHoveredName(name);
-                    setTooltip({ x: e.clientX, y: e.clientY, label: name });
-                  }}
-                  onMouseLeave={() => {
-                    setHoveredName(null);
-                    setTooltip(null);
-                  }}
+                  onMouseEnter={(e) =>
+                    setTooltip({ x: e.clientX, y: e.clientY, label: name })
+                  }
+                  onMouseLeave={() => setTooltip(null)}
                   onClick={() => onSelectEntity(name)}
                   style={{
-                    default: commonStyle,
-                    hover: { ...commonStyle, filter: "brightness(0.92)" },
-                    pressed: commonStyle,
+                    default: base,
+                    hover: {
+                      ...base,
+                      filter: isSelected
+                        ? "drop-shadow(0 4px 12px rgba(0,0,0,0.18)) brightness(0.94)"
+                        : "brightness(0.94)",
+                    },
+                    pressed: base,
                   }}
                 />
               );
-            })
-          }
+            })}
         </Geographies>
       </ComposableMap>
-
-      {tooltip && (
-        <div
-          className="fixed bg-ink text-white text-xs px-2 py-1 rounded pointer-events-none z-50"
-          style={{ left: tooltip.x + 12, top: tooltip.y + 12 }}
-        >
-          {tooltip.label}
-        </div>
-      )}
     </div>
   );
 }

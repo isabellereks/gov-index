@@ -1,8 +1,10 @@
 export default function Header() {
   return (
-    <header className="h-14 bg-bg border-b border-border-soft px-6 flex items-center justify-between">
-      <div className="text-base font-semibold text-ink">AI Policy Tracker</div>
-      <nav className="flex items-center gap-6 text-sm text-muted">
+    <header className="h-12 bg-white/70 backdrop-blur-xl border-b border-black/[.06] px-6 flex items-center justify-between fixed top-0 left-0 right-0 z-40">
+      <div className="text-sm font-semibold text-ink">
+        TRACK POLICY
+      </div>
+      <nav className="flex items-center gap-6 text-xs text-muted">
         <span>Map</span>
         <span>Legislators</span>
         <span>About</span>

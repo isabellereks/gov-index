@@ -7,21 +7,19 @@ interface NewsSectionProps {
 export default function NewsSection({ news }: NewsSectionProps) {
   return (
     <div className="flex flex-col">
-      {news.map((item) => (
-        <div
+      {news.map((item, idx) => (
+        <a
           key={item.id}
-          className="py-2 border-b last:border-0 border-border-soft"
+          href={item.url}
+          className={`block py-3 ${idx !== news.length - 1 ? "border-b border-black/[.06]" : ""}`}
         >
-          <a
-            href={item.url}
-            className="text-sm text-ink hover:underline cursor-pointer block"
-          >
+          <div className="text-sm text-ink hover:underline tracking-tight">
             {item.headline}
-          </a>
-          <div className="text-xs text-muted mt-0.5">
+          </div>
+          <div className="text-xs text-muted mt-1">
             {item.source} · {item.date}
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );

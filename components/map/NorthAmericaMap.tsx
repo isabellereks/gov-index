@@ -1,66 +1,48 @@
 "use client";
 
-import { useState } from "react";
 import {
   ComposableMap,
   Geographies,
   Geography,
   type ProjectionFunction,
 } from "react-simple-maps";
-import type { Layer, StanceType } from "@/types";
-import { naProjection, usPath } from "@/lib/projections";
-
-const naProj = naProjection as unknown as ProjectionFunction;
+import { naProjection } from "@/lib/projections";
 import { getEntity } from "@/lib/placeholder-data";
+import {
+  NEUTRAL_STROKE,
+  STANCE_HEX,
+  type SetTooltip,
+} from "@/lib/map-utils";
 
 interface NorthAmericaMapProps {
   onSelectEntity: (geoId: string) => void;
-  onDrillDown: (layer: Layer) => void;
+  onDoubleClickEntity?: (geoId: string) => void;
   selectedGeoId: string | null;
+  setTooltip: SetTooltip;
 }
+
+const naProj = naProjection as unknown as ProjectionFunction;
 
 const WORLD_URL =
   "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-const NA_IDS = new Set(["840", "124", "484"]);
-
-function stanceColor(stance: StanceType): string {
-  switch (stance) {
-    case "restrictive":
-      return "#E07D3C";
-    case "review":
-      return "#D4A843";
-    case "favorable":
-      return "#4A9B6F";
-    case "concerning":
-      return "#C0443A";
-    default:
-      return "#D9D4CC";
-  }
-}
+const NA_IDS = new Set(["840", "124"]);
 
 export default function NorthAmericaMap({
   onSelectEntity,
-  onDrillDown,
+  onDoubleClickEntity,
   selectedGeoId,
+  setTooltip,
 }: NorthAmericaMapProps) {
-  const [tooltip, setTooltip] = useState<{
-    x: number;
-    y: number;
-    label: string;
-  } | null>(null);
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
-
   return (
     <div
       className="relative w-full h-full"
-      onMouseMove={(e) => {
-        if (tooltip) setTooltip({ ...tooltip, x: e.clientX, y: e.clientY });
-      }}
-      onMouseLeave={() => {
-        setTooltip(null);
-        setHoveredId(null);
-      }}
+      onMouseMove={(e) =>
+        setTooltip((current) =>
+          current ? { ...current, x: e.clientX, y: e.clientY } : current,
+        )
+      }
+      onMouseLeave={() => setTooltip(null)}
     >
       <ComposableMap
         width={960}
@@ -70,70 +52,57 @@ export default function NorthAmericaMap({
       >
         <Geographies geography={WORLD_URL}>
           {({ geographies }) => {
-            const naFeatures = geographies.filter((g) => NA_IDS.has(g.id));
+            const naFeatures = geographies
+              .filter((g) => NA_IDS.has(g.id))
+              // Render selected last so its stroke sits on top of neighbours.
+              .sort((a, b) => {
+                const aSel = (a.id as string) === selectedGeoId;
+                const bSel = (b.id as string) === selectedGeoId;
+                return aSel === bSel ? 0 : aSel ? 1 : -1;
+              });
             return naFeatures.map((geo) => {
               const id = geo.id as string;
               const ent = getEntity(id, "na");
-              const fill = ent ? stanceColor(ent.stance) : "#E0DBD3";
+              if (!ent) return null;
               const isSelected = selectedGeoId === id;
-              const isHovered = hoveredId === id;
+              const name = id === "840" ? "United States" : "Canada";
 
-              const commonStyle = {
+              const fill = STANCE_HEX[ent.stance];
+              const stroke = isSelected ? "#FFFFFF" : NEUTRAL_STROKE;
+              const strokeWidth = isSelected ? 4 : 1.5;
+
+              const base = {
                 fill,
-                stroke: isSelected ? "#2C2825" : "#C9C3BB",
-                strokeWidth: isSelected ? 1.5 : 0.5,
+                stroke,
+                strokeWidth,
+                strokeLinejoin: "round" as const,
+                strokeLinecap: "round" as const,
                 outline: "none",
                 cursor: "pointer",
-                filter: isHovered ? "brightness(0.92)" : undefined,
+                transition: "stroke 200ms, stroke-width 200ms, filter 200ms",
+                filter: isSelected
+                  ? "drop-shadow(0 4px 12px rgba(0,0,0,0.15))"
+                  : undefined,
               };
 
-              if (id === "840") {
-                // Render US with usProjection so it aligns with USStatesMap.
-                const d = usPath(geo) ?? undefined;
-                return (
-                  <path
-                    key={geo.rsmKey ?? id}
-                    d={d}
-                    style={commonStyle}
-                    onMouseEnter={(e) => {
-                      setHoveredId(id);
-                      setTooltip({
-                        x: e.clientX,
-                        y: e.clientY,
-                        label: "United States",
-                      });
-                    }}
-                    onMouseLeave={() => {
-                      setHoveredId(null);
-                      setTooltip(null);
-                    }}
-                    onClick={() => {
-                      onSelectEntity("840");
-                      onDrillDown("us");
-                    }}
-                  />
-                );
-              }
+              const hoverFilter = isSelected
+                ? "drop-shadow(0 4px 12px rgba(0,0,0,0.18)) brightness(0.94)"
+                : "brightness(0.94)";
 
-              const label =
-                id === "124" ? "Canada" : id === "484" ? "Mexico" : geo.properties.name;
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  onMouseEnter={(e) => {
-                    setHoveredId(id);
-                    setTooltip({ x: e.clientX, y: e.clientY, label });
-                  }}
-                  onMouseLeave={() => {
-                    setHoveredId(null);
-                    setTooltip(null);
-                  }}
+                  onMouseEnter={(e) =>
+                    setTooltip({ x: e.clientX, y: e.clientY, label: name })
+                  }
+                  onMouseLeave={() => setTooltip(null)}
                   onClick={() => onSelectEntity(id)}
+                  onDoubleClick={() => onDoubleClickEntity?.(id)}
                   style={{
-                    default: commonStyle,
-                    hover: { ...commonStyle, filter: "brightness(0.92)" },
-                    pressed: commonStyle,
+                    default: base,
+                    hover: { ...base, filter: hoverFilter },
+                    pressed: base,
                   }}
                 />
               );
@@ -141,15 +110,6 @@ export default function NorthAmericaMap({
           }}
         </Geographies>
       </ComposableMap>
-
-      {tooltip && (
-        <div
-          className="fixed bg-ink text-white text-xs px-2 py-1 rounded pointer-events-none z-50"
-          style={{ left: tooltip.x + 12, top: tooltip.y + 12 }}
-        >
-          {tooltip.label}
-        </div>
-      )}
     </div>
   );
 }
