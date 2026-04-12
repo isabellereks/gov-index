@@ -1,0 +1,120 @@
+{
+  "id": "poland",
+  "geoId": "616",
+  "name": "Poland",
+  "region": "eu",
+  "level": "federal",
+  "stance": "review",
+  "contextBlurb": "Poland is implementing the EU AI Act via a draft national law that would create an entirely new dedicated regulator — one of the few EU states to spin up a purpose-built AI oversight body. Warsaw has become Central Europe's leading data center hub, absorbing over $6 billion in hyperscaler commitments in 2025 alone. The catch: the country's 53%-coal grid draws sustainability concerns and has triggered EU legal action, even as the Tusk government pushes a 1 billion złoty national AI plan and a sovereign Polish LLM.",
+  "legislation": [
+    {
+      "id": "poland-ustawa-si",
+      "billCode": "UC71",
+      "title": "Ustawa o systemach sztucznej inteligencji (Act on AI Systems)",
+      "summary": "Poland's national implementing law for the EU AI Act, establishing the Commission for AI Development and Security (KRiBSI) as the country's sole AI market surveillance authority housed within the Ministry of Digital Affairs. The law provides for regulatory sandboxes, binding individual compliance opinions for businesses, public lists of penalized AI systems, and a civic advisory council on AI.",
+      "stage": "Floor",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance",
+        "enforcement",
+        "KRiBSI",
+        "regulatory-sandbox",
+        "EU-AI-Act"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-03-25",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.bsg.ox.ac.uk/blog/ai-acts-enforcement-gap-what-polands-new-regulator-reveals-about-europes-challenge"
+    },
+    {
+      "id": "poland-pse-grid-plan",
+      "billCode": "PSE 2025-2034",
+      "title": "Polish Power Grid Development Plan 2025–2034 (Plan Rozwoju Systemu Przesyłowego)",
+      "summary": "Poland's national grid operator (PSE) released a ten-year transmission plan that explicitly reserves approximately 1,200 MW of grid capacity for data center development by 2034 and commits to expanding renewable connection capacity to remove grid bottlenecks. The plan acknowledges that Warsaw's grid is already congested, encouraging data center investment in secondary cities such as Kraków, Wrocław, and Poznań.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "grid-capacity",
+        "data-center-energy",
+        "renewables",
+        "decarbonization"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2025-06-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.lexology.com/library/detail.aspx?g=15365a2a-e932-47e8-84e7-9931c6cc8455"
+    },
+    {
+      "id": "poland-ai-investment-plan",
+      "title": "National AI Investment Programme (Plan Inwestycji w Sztuczną Inteligencję)",
+      "summary": "In November 2024, the Polish government announced a 1 billion złoty (approximately $240 million) national investment plan targeting AI development to boost economic competitiveness and the defence sector, updated in 2024 as part of the revised AI Development Policy in Poland. The programme funds AI R&D through the National Centre for Research and Development (NCBR) and supports GovTech Polska initiatives deploying AI in public administration.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "AI-investment",
+        "public-sector-AI",
+        "R&D",
+        "defence",
+        "GovTech"
+      ],
+      "category": "ai-government",
+      "updatedDate": "2024-11-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.globallegalinsights.com/practice-areas/ai-machine-learning-and-big-data-laws-and-regulations/poland/"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "poland-gawkowski",
+      "name": "Krzysztof Gawkowski",
+      "role": "Deputy Prime Minister and Minister of Digital Affairs",
+      "party": "Lewica",
+      "stance": "review",
+      "quote": "We are giving entrepreneurs stable and favourable conditions for innovation. Citizens gain real influence over how AI systems work, and the state will guarantee their safety when technology gets out of control."
+    },
+    {
+      "id": "poland-standerski",
+      "name": "Dariusz Standerski",
+      "role": "Secretary of State, Ministry of Digital Affairs",
+      "party": "KO",
+      "stance": "favorable"
+    },
+    {
+      "id": "poland-tusk",
+      "name": "Donald Tusk",
+      "role": "Prime Minister of Poland",
+      "party": "KO",
+      "stance": "favorable"
+    }
+  ],
+  "news": [
+    {
+      "id": "poland-news-1",
+      "headline": "The AI Act's enforcement gap: what Poland's new regulator reveals about Europe's challenge",
+      "source": "Blavatnik School of Government, University of Oxford",
+      "date": "2026-03-20",
+      "url": "https://www.bsg.ox.ac.uk/blog/ai-acts-enforcement-gap-what-polands-new-regulator-reveals-about-europes-challenge"
+    },
+    {
+      "id": "poland-news-2",
+      "headline": "Poland's Emerging AI Infrastructure: Central Europe's $6B Tech Hub",
+      "source": "Introl Blog",
+      "date": "2026-03-11",
+      "url": "https://introl.com/blog/poland-ai-infrastructure-central-europe-tech-hub-2025"
+    },
+    {
+      "id": "poland-news-3",
+      "headline": "Poland Slams X's Grok AI for Antisemitic Outbursts, Urges EU Probe",
+      "source": "The Hollywood Reporter",
+      "date": "2025-07-10",
+      "url": "https://www.hollywoodreporter.com/news/politics-news/grok-ai-poland-eu-probe-antisemitic-outbursts-1236311137/"
+    },
+    {
+      "id": "poland-news-4",
+      "headline": "Data4 launches second Polish data center outside Warsaw",
+      "source": "Data Center Dynamics",
+      "date": "2025-11-10",
+      "url": "https://www.datacenterdynamics.com/en/news/data4-launches-second-polish-data-center-outside-warsaw/"
+    }
+  ]
+}

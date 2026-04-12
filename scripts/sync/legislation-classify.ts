@@ -221,10 +221,14 @@ function stateStance(bills: Legislation[]): StanceType {
     favorable: 0,
     none: 0,
   };
-  // Prefer the per-bill stance (Claude-derived when available) over the
-  // old keyword heuristic. Bills whose Claude stance is "none" are
-  // genuinely irrelevant (e.g. a buoy-outage resolution that matched on
-  // "AI" keyword) and we exclude them from the tally.
+  // Track ENACTED restrictive bills separately. A single filed moratorium
+  // bill (e.g. Sanders/AOC at the federal level, or a long-shot state
+  // proposal) shouldn't be enough to flip the whole jurisdiction to
+  // "restrictive" — only bills that actually became law should lock
+  // that bucket. This was the federal-level bug: one filed moratorium
+  // overrode the prevailing innovation-friendly federal posture.
+  let enactedRestrictive = 0;
+
   for (const b of bills) {
     const s: StanceType =
       b.stance ??
@@ -236,18 +240,30 @@ function stateStance(bills: Legislation[]): StanceType {
             ? "favorable"
             : "review");
     tally[s] += 1;
+    if (s === "restrictive" && b.stage === "Enacted") enactedRestrictive++;
   }
-  // Any enacted restrictive bill dominates
-  if (tally.restrictive >= 1) return "restrictive";
-  // Multiple concerning bills → concerning
-  if (tally.concerning >= 2) return "concerning";
-  // More incentives than anything else → favorable
-  if (
-    tally.favorable > tally.concerning &&
-    tally.favorable >= tally.review
-  )
-    return "favorable";
-  if (tally.concerning >= 1 || tally.review >= 1) return "review";
+
+  // Only an enacted restrictive bill (real moratorium that became law)
+  // can lock the jurisdiction as restrictive.
+  if (enactedRestrictive >= 1) return "restrictive";
+
+  // Filed/committee restrictive bills count toward the concerning bucket
+  // for tally purposes, since they signal regulatory pressure without
+  // having become law yet.
+  const opposition = tally.concerning + tally.restrictive;
+
+  // Multiple opposition bills (concerning + filed restrictions) → concerning
+  if (opposition >= 3) return "concerning";
+
+  // More incentive bills than opposition AND at least 2 → favorable
+  if (tally.favorable >= 2 && tally.favorable >= opposition) return "favorable";
+
+  // Single incentive vs no opposition → still favorable
+  if (tally.favorable >= 1 && opposition === 0) return "favorable";
+
+  // Some opposition but not enough to dominate, plus discussion → review
+  if (opposition >= 1 || tally.review >= 1) return "review";
+
   return "none";
 }
 

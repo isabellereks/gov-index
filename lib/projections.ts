@@ -15,11 +15,13 @@ export const euProjection = geoMercator()
   .scale(620)
   .translate([480, 300]);
 
-// Asia centered, captures East/Southeast/South Asia in 960x600.
+// Asia + Oceania centered. Pulled south and zoomed out a touch from the
+// original framing so Australia, New Zealand, and PNG fit in the viewport
+// alongside East/Southeast/South Asia.
 export const asiaProjection = geoMercator()
-  .center([100, 30])
-  .scale(380)
-  .translate([480, 300]);
+  .center([110, 12])
+  .scale(310)
+  .translate([480, 320]);
 
 export const usPath = geoPath(usProjection);
 export const naPath = geoPath(naProjection);

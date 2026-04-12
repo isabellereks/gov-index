@@ -1,0 +1,120 @@
+{
+  "id": "ontario",
+  "geoId": "ontario",
+  "name": "Ontario",
+  "region": "na",
+  "level": "state",
+  "stance": "favorable",
+  "contextBlurb": "Ontario is positioning itself as Canada's leading AI and data center hub. Bill 40 (December 2025) lets the Energy Minister prioritize data center grid connections by economic benefit, replacing first-come-first-served. The province's Trustworthy AI Framework sets risk-based transparency rules for public-sector AI, and Bill 149 brought AI-in-hiring disclosure into effect in January 2026 — while the grid operator projects commercial data center demand to grow over 400% by 2050.",
+  "legislation": [
+    {
+      "id": "ontario-bill-40",
+      "billCode": "Bill 40",
+      "title": "Protect Ontario by Securing Affordable Energy for Generations Act, 2025",
+      "summary": "Enacted December 11, 2025, this law amends the Electricity Act and Ontario Energy Board Act to embed economic growth as a formal regulatory objective and grants the Minister of Energy and Mines new authority to approve and prioritize large data centre grid connections based on economic, strategic, and community benefit criteria. It ends the prior first-come, first-served connection regime for high-demand facilities and restricts foreign participation in Ontario's energy sector.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "data-center-siting",
+        "grid-access",
+        "ministerial-approval",
+        "foreign-investment-restrictions"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2025-12-11",
+      "partyOrigin": "PC",
+      "sourceUrl": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-40"
+    },
+    {
+      "id": "ontario-bill-149",
+      "billCode": "Bill 149",
+      "title": "Working for Workers Four Act, 2024",
+      "summary": "Received Royal Assent March 21, 2024, with AI-disclosure provisions taking effect January 1, 2026. Ontario employers with 25 or more employees must now disclose in all publicly advertised job postings whether artificial intelligence is used to screen, assess, or select applicants.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "ai-hiring-disclosure",
+        "employment-standards",
+        "transparency"
+      ],
+      "category": "ai-workforce",
+      "updatedDate": "2026-01-01",
+      "partyOrigin": "PC",
+      "sourceUrl": "https://www.ontario.ca/laws/statute/s24002"
+    },
+    {
+      "id": "ontario-bill-61",
+      "billCode": "Bill 61",
+      "title": "Ontario Artificial Intelligence, Talent and Innovation Strategy Act, 2025",
+      "summary": "A private member's bill introduced November 2025 by NDP MPP Rob Cerjanec that would require the provincial government to design and maintain a comprehensive AI talent and innovation strategy with the goal of making Ontario a global AI leader within ten years. It would establish an AI Advisory Committee to publish annual progress reports and recommend legislative changes.",
+      "stage": "Filed",
+      "stance": "favorable",
+      "impactTags": [
+        "ai-strategy",
+        "advisory-committee",
+        "talent-pipeline",
+        "compute-infrastructure"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-11-19",
+      "partyOrigin": "NDP",
+      "sourceUrl": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-61"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "ontario-lecce",
+      "name": "Stephen Lecce",
+      "role": "Minister of Energy and Mines",
+      "party": "PC",
+      "stance": "favorable",
+      "quote": "Ontario is attracting the right data centers to the province that maximize economic value, with Microsoft accepting full cost recovery on any required infrastructure upgrade."
+    },
+    {
+      "id": "ontario-fedeli",
+      "name": "Vic Fedeli",
+      "role": "Minister of Economic Development, Job Creation and Trade",
+      "party": "PC",
+      "stance": "favorable",
+      "quote": "As demand for AI, cloud computing and data processing continues to grow, Microsoft's investment will ensure companies looking to invest in the province have the infrastructure they need to stay competitive and meet the moment."
+    },
+    {
+      "id": "ontario-cerjanec",
+      "name": "Rob Cerjanec",
+      "role": "MPP for Ajax, Ontario NDP",
+      "party": "NDP",
+      "stance": "favorable",
+      "quote": "If Ontario wants to be a major player in this century defining technology, well we can't wait for someone else to lead."
+    }
+  ],
+  "news": [
+    {
+      "id": "ontario-news-1",
+      "headline": "One data centre or one million homes? Mapping Ontario's proposed hyperscaler boom",
+      "source": "Canada's National Observer",
+      "date": "2026-03-02",
+      "url": "https://www.nationalobserver.com/2026/03/02/news/ontario-towns-cities-data-centres-mapped"
+    },
+    {
+      "id": "ontario-news-2",
+      "headline": "Toronto council seeks answers on AI data centre approvals",
+      "source": "Canada's National Observer",
+      "date": "2026-03-25",
+      "url": "https://www.nationalobserver.com/2026/03/25/news/toronto-council-ai-data-centres"
+    },
+    {
+      "id": "ontario-news-3",
+      "headline": "Bill 40 - Protect Ontario by Securing Affordable Energy for Generations Act, 2025 Receives Royal Assent – Major Changes to Ontario Energy Policy Now in Effect",
+      "source": "McCarthy Tétrault (Canadian Energy Perspectives)",
+      "date": "2025-12-22",
+      "url": "https://www.mccarthy.ca/en/insights/blogs/canadian-energy-perspectives/bill-40-protect-ontario-by-securing-affordable-energy-for-generations-act-2025-receives-royal-assent-major-changes-to-ontario-energy-policy-now-in-effect"
+    },
+    {
+      "id": "ontario-news-4",
+      "headline": "Ontario is getting a major AI boost thanks to Microsoft's $19-billion investment",
+      "source": "NOW Toronto",
+      "date": "2026-04-08",
+      "url": "https://nowtoronto.com/news/ontario-is-getting-a-major-ai-boost-thanks-to-microsofts-19-billion-investment"
+    }
+  ]
+}

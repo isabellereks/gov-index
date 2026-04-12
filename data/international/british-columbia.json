@@ -1,0 +1,121 @@
+{
+  "id": "british-columbia",
+  "geoId": "british-columbia",
+  "name": "British Columbia",
+  "region": "na",
+  "level": "state",
+  "stance": "concerning",
+  "contextBlurb": "British Columbia is playing the brakes on data center growth. Bill 31 (Energy Statutes Amendment Act, 2025) caps AI and data center grid connections at a combined 400 MW every two years and replaces first-come-first-served with a competitive bid — while crypto mining is permanently banned from the BC Hydro grid. AI governance itself runs on a public-sector code of practice, not binding legislation.",
+  "legislation": [
+    {
+      "id": "british-columbia-bill31-energy-statutes-amendment",
+      "billCode": "Bill 31 (2025)",
+      "title": "Energy Statutes Amendment Act, 2025",
+      "summary": "Passed in November 2025, this law replaced BC's first-come, first-served electricity connection policy with a competitive selection process for AI, data centers, and hydrogen-for-export sectors, capping their combined access at 400 MW of new power every two years. It also permanently bans new BC Hydro grid connections for cryptocurrency mining and enables First Nations co-ownership of the North Coast Transmission Line.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "grid-access-cap",
+        "competitive-bidding",
+        "crypto-ban",
+        "data-sovereignty"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2025-11-19",
+      "partyOrigin": "B",
+      "sourceUrl": "https://news.gov.bc.ca/releases/2025ECS0044-001032"
+    },
+    {
+      "id": "british-columbia-generative-ai-policy",
+      "billCode": "BC Reg 199/2025",
+      "title": "Minister of State for Artificial Intelligence and New Technologies Expected Results for the 2025/2026 Fiscal Year Regulation",
+      "summary": "This regulation formalizes the mandate and expected outcomes for BC's Minister of State for AI and New Technologies for the 2025/26 fiscal year, operating alongside the province's existing Policy on the Use of Generative AI and Digital Code of Practice for public servants. The policy permits BC Public Service employees to use generative AI tools responsibly under defined guidelines, including use of Microsoft Copilot Chat for confidential information, while prohibiting inputs into publicly available tools like ChatGPT.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "public-sector-ai-use",
+        "generative-ai",
+        "privacy",
+        "responsible-use"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-07-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://digital.gov.bc.ca/policies-standards/generative-ai-policy/"
+    },
+    {
+      "id": "british-columbia-industrial-electricity-allocation-framework",
+      "billCode": "BC Industrial Electricity Allocation Framework (2026)",
+      "title": "Industrial Electricity Allocation Framework — Emerging Industries",
+      "summary": "Implemented by BC Hydro under Bill 31 authority, this framework launched a formal competitive call for demand on January 30, 2026, requiring AI and data center projects of 10 MW or larger to apply and be evaluated on economic benefits, job creation, data sovereignty, and environmental criteria. Successful applicants are expected to be notified in September 2026, with a total target of 400 MW over two years (300 MW for AI, 100 MW for conventional data centers).",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "competitive-selection",
+        "power-cap",
+        "data-center-siting",
+        "bc-hydro"
+      ],
+      "category": "data-center-siting",
+      "updatedDate": "2026-01-30",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy/electricity/industrial-electricity-allocation-framework"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "british-columbia-dix",
+      "name": "Adrian Dix",
+      "role": "Minister of Energy and Climate Solutions",
+      "party": "NDP",
+      "stance": "concerning",
+      "quote": "The allocation framework allows for the paced growth of these sectors and avoids mistakes we've seen in other jurisdictions where growth has outpaced infrastructure, resulting in higher costs for everyday residential customers."
+    },
+    {
+      "id": "british-columbia-kahlon",
+      "name": "Ravi Kahlon",
+      "role": "Minister of Jobs and Economic Growth",
+      "party": "NDP",
+      "stance": "review",
+      "quote": "As demand for technology infrastructure grows, British Columbia needs a strategic approach to ensure our clean electricity supports the right projects."
+    },
+    {
+      "id": "british-columbia-glumac",
+      "name": "Rick Glumac",
+      "role": "Minister of State for Artificial Intelligence and New Technologies",
+      "party": "NDP",
+      "stance": "favorable",
+      "quote": "We can help ensure the next chapter of innovation is built here, powered by clean energy, and open to everyone who wants to be part of it."
+    }
+  ],
+  "news": [
+    {
+      "id": "british-columbia-news-1",
+      "headline": "British Columbia, BC Hydro launch competitive power process for AI and data centers",
+      "source": "Data Center Dynamics",
+      "date": "2026-02-11",
+      "url": "https://www.datacenterdynamics.com/en/news/british-columbia-bc-hydro-launch-competitive-power-process-for-ai-and-data-centers/"
+    },
+    {
+      "id": "british-columbia-news-2",
+      "headline": "B.C. gov't proposes new power rules for AI, data centres, prioritizes jobs",
+      "source": "CBC News",
+      "date": "2025-10-21",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/bc-ai-power-centres-9.6946054"
+    },
+    {
+      "id": "british-columbia-news-3",
+      "headline": "BC Government Is Using AI to Redact Personal Information",
+      "source": "The Tyee",
+      "date": "2026-04-03",
+      "url": "https://thetyee.ca/News/2026/04/03/BC-Government-AI-Redact-Personal-Information/"
+    },
+    {
+      "id": "british-columbia-news-4",
+      "headline": "Province Targets AI Data Centres with New Energy Management Measure",
+      "source": "Techcouver",
+      "date": "2026-02-04",
+      "url": "https://techcouver.com/2026/02/04/province-ai-data-centres-energy-management/"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "spain",
+  "geoId": "724",
+  "name": "Spain",
+  "region": "eu",
+  "level": "federal",
+  "stance": "review",
+  "contextBlurb": "Spain is the EU's most proactive member on AI governance, having stood up AESIA — Europe's first dedicated national AI supervisory agency — in 2023. A draft national AI law is working through parliament to fully transpose the EU AI Act. On infrastructure, Madrid and Aragón are absorbing a hyperscale data center boom backed by tens of billions from Amazon, Microsoft, and Blackstone — but water scarcity and grid congestion in Aragón are raising serious environmental flags.",
+  "legislation": [
+    {
+      "id": "spain-anteproyecto-ia",
+      "billCode": "Anteproyecto de Ley para el Buen Uso y la Gobernanza de la IA",
+      "title": "Draft Law for the Good Use and Governance of Artificial Intelligence",
+      "summary": "Approved in first reading by Spain's Council of Ministers on March 11, 2025, this draft bill transposes the EU AI Act into national law, establishing prohibited AI practices, obligations for high-risk systems, mandatory labeling of AI-generated content to combat deepfakes, and a domestic sanctions regime. It designates AESIA as the lead market surveillance authority while distributing enforcement responsibilities across sectoral regulators including the Spanish Data Protection Agency and Bank of Spain.",
+      "stage": "Committee",
+      "stance": "concerning",
+      "impactTags": [
+        "ai-governance",
+        "synthetic-media",
+        "data-privacy"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-03-11",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-spain"
+    },
+    {
+      "id": "spain-rd-729-2023-aesia",
+      "billCode": "Royal Decree 729/2023",
+      "title": "Statute of the Spanish Agency for the Supervision of Artificial Intelligence (AESIA)",
+      "summary": "Approved on August 22, 2023 and operational since June 2024, this royal decree established AESIA as Europe's first dedicated national AI supervisory authority, headquartered in A Coruña. AESIA manages Spain's national AI regulatory sandbox, monitors the market for prohibited AI systems, and will assume full inspection and sanctioning powers once the national AI law enters into force.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2024-06-19",
+      "partyOrigin": "B",
+      "sourceUrl": "https://aesia.digital.gob.es/en/es"
+    },
+    {
+      "id": "spain-grid-development-plan-datacenters",
+      "billCode": "Plan de Desarrollo de la Red Eléctrica 2025–2030",
+      "title": "2025–2030 Electricity Grid Development Plan (Data Center Capacity Allocation)",
+      "summary": "Spain's Ministry for the Ecological Transition is finalizing a 2025–2030 grid development plan that will allocate an additional 3.8 GW of capacity specifically for data centers, addressing the severe grid congestion that has become a bottleneck for Madrid and Aragón hyperscale expansion. The plan is expected to introduce new transmission-node auction rules, though critics warn that Madrid's data center pipeline already exceeds guaranteed grid capacity by more than four times.",
+      "stage": "Committee",
+      "stance": "favorable",
+      "impactTags": [
+        "data-center-energy",
+        "data-center-siting"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2026-01-13",
+      "partyOrigin": "B",
+      "sourceUrl": "https://strategicenergy.eu/spanish-energy-companies-gear-up-to-power-data-centres-12-gw-at-stake-and-over-e30-billion-in-investment/"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "spain-lopez",
+      "name": "Óscar López Águeda",
+      "role": "Minister for Digital Transformation and Civil Service",
+      "party": "PSOE",
+      "stance": "favorable"
+    },
+    {
+      "id": "spain-gonzalez-veracruz",
+      "name": "María González Veracruz",
+      "role": "Secretary of State for Digitalization and Artificial Intelligence (SEDIA)",
+      "party": "PSOE",
+      "stance": "favorable"
+    },
+    {
+      "id": "spain-valero",
+      "name": "Mateo Valero",
+      "role": "Director, Barcelona Supercomputing Center (BSC-CNS)",
+      "party": "N/A",
+      "stance": "favorable",
+      "quote": "The AI Factory located at BSC will be a key pole for the promotion of the innovation ecosystem in artificial intelligence in Europe."
+    }
+  ],
+  "news": [
+    {
+      "id": "spain-news-1",
+      "headline": "Contract Signed to Boost MareNostrum 5's AI Capabilities",
+      "source": "EuroHPC Joint Undertaking",
+      "date": "2026-01-26",
+      "url": "https://www.eurohpc-ju.europa.eu/contract-signed-boost-marenostrum-5s-ai-capabilities-2026-01-26_en"
+    },
+    {
+      "id": "spain-news-2",
+      "headline": "AESIA's AI Guidelines: Spain steps into the AI spotlight",
+      "source": "IAPP",
+      "date": "2026-03-04",
+      "url": "https://iapp.org/news/a/aesia-s-ai-guidelines-spain-steps-into-the-ai-spotlight"
+    },
+    {
+      "id": "spain-news-3",
+      "headline": "Water: AI mega projects raise alarm in some of Europe's driest regions",
+      "source": "CNBC",
+      "date": "2025-10-16",
+      "url": "https://www.cnbc.com/2025/10/16/water-ai-mega-projects-raise-alarm-in-some-of-europes-driest-regions.html"
+    },
+    {
+      "id": "spain-news-4",
+      "headline": "Amazon to invest €33.7bn in data centers in Aragon, Spain",
+      "source": "Data Center Dynamics",
+      "date": "2026-03-11",
+      "url": "https://www.datacenterdynamics.com/en/news/amazon-invests-337-million-in-data-centers-in-aragon-for-ai/"
+    }
+  ]
+}

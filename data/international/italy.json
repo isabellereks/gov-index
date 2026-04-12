@@ -1,0 +1,118 @@
+{
+  "id": "italy",
+  "geoId": "380",
+  "name": "Italy",
+  "region": "eu",
+  "level": "federal",
+  "stance": "concerning",
+  "contextBlurb": "Italy became the first EU member state to enact a comprehensive national AI law (October 2025), with the data protection authority Garante one of Europe's most aggressive AI enforcers — it banned DeepSeek outright in January 2025 and previously fined OpenAI €15M. Milan and Rome are meanwhile absorbing up to €10 billion in data center investment through 2026. Italy's 2024 G7 presidency also positioned it as a shaper of international AI governance norms.",
+  "legislation": [
+    {
+      "id": "italy-law-132-2025",
+      "billCode": "Law No. 132/2025",
+      "title": "Provisions and Delegations to the Government on Artificial Intelligence",
+      "summary": "Italy's first comprehensive national AI law, in force from October 10, 2025, establishes governance structures assigning AgID (notifying authority) and ACN (market surveillance) as national competent authorities, with sector-specific rules for healthcare, employment, justice, and minors. It mandates the government to issue implementing decrees by October 2026 defining sanctioning powers, an organic framework for AI training data, and alignment with the EU AI Act, while committing €1 billion to support AI startups and SMEs.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "ai-governance",
+        "data-privacy",
+        "ai-workforce",
+        "ai-healthcare"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-10-10",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.hoganlovells.com/en/publications/italys-ai-law-the-good-the-badand-the-actual-substance"
+    },
+    {
+      "id": "italy-polo-strategico-nazionale",
+      "billCode": "PSN / PNRR",
+      "title": "Polo Strategico Nazionale – Sovereign Cloud and Data Center Initiative",
+      "summary": "Funded under Italy's National Recovery and Resilience Plan (PNRR), the Polo Strategico Nazionale awarded €520 million in contracts in 2024 to migrate ministerial workloads to certified sovereign clouds, requiring data to remain on domestic Italian soil in Tier 4 facilities. The Italian AI Law reinforces this by requiring public administrations using e-procurement to prefer AI suppliers that guarantee strategic data localization in Italian data centers, with a PNRR mandate to shift 75% of public workloads to certified domestic clouds by 2026.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "data-center-siting",
+        "ai-government"
+      ],
+      "category": "data-center-siting",
+      "updatedDate": "2025-01-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.mordorintelligence.com/industry-reports/italy-data-center-market"
+    },
+    {
+      "id": "italy-ai-act-implementing-decrees",
+      "billCode": "Law 132/2025 Art. 16 & 24",
+      "title": "Implementing Decrees for AI Training Data Framework and Sanctioning Powers",
+      "summary": "Under Articles 16 and 24 of Italy's AI Law, the government must issue one or more legislative decrees by October 10, 2026, defining a comprehensive 'organic framework' for data, algorithms, and AI training methodologies including rights, civil remedies, and sanctions, as well as specifying enforcement and market-surveillance powers for ACN and AgID. These decrees will also introduce new criminal offenses related to AI misuse and update civil procedure rules for AI-related disputes, but must remain strictly within the boundaries of the EU AI Act.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance",
+        "data-privacy",
+        "ai-criminal-justice"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-04-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-italy"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "italy-butti",
+      "name": "Alessio Butti",
+      "role": "Undersecretary to the Presidency of the Council of Ministers for Digital Innovation",
+      "party": "FdI",
+      "stance": "favorable",
+      "quote": "Italy is the first European country with a national framework fully aligned with the AI Act. This decision brings innovation back into the public interest, orienting AI toward growth, rights, and the full protection of citizens."
+    },
+    {
+      "id": "italy-meloni",
+      "name": "Giorgia Meloni",
+      "role": "Prime Minister of Italy",
+      "party": "FdI",
+      "stance": "review",
+      "quote": "There can and must be an Italian way when it comes to artificial intelligence, an Italian way to develop artificial intelligence and an Italian way to govern artificial intelligence."
+    },
+    {
+      "id": "italy-stanzione",
+      "name": "Pasquale Stanzione",
+      "role": "President, Garante per la Protezione dei Dati Personali (Italian Data Protection Authority)",
+      "party": "B",
+      "stance": "restrictive",
+      "quote": "The Garante per la protezione dei dati personali possesses the competence and independence requirements necessary to implement the European regulation on artificial intelligence consistently with the objective of a high level of protection of fundamental rights."
+    }
+  ],
+  "news": [
+    {
+      "id": "italy-news-1",
+      "headline": "Italy Bans Chinese DeepSeek AI Over Data Privacy and Ethical Concerns",
+      "source": "The Hacker News",
+      "date": "2025-02-01",
+      "url": "https://thehackernews.com/2025/01/italy-bans-chinese-deepseek-ai-over.html"
+    },
+    {
+      "id": "italy-news-2",
+      "headline": "Italy passes its own law on artificial intelligence: new rules effective October 2025",
+      "source": "Technology's Legal Edge",
+      "date": "2025-10-01",
+      "url": "https://www.technologyslegaledge.com/2025/10/italy-passes-its-own-law-on-artificial-intelligence-new-rules-effective-october-2025/"
+    },
+    {
+      "id": "italy-news-3",
+      "headline": "Apto to invest $3.4bn to build Italy's largest data center campus",
+      "source": "Data Center Dynamics",
+      "date": "2026-03-06",
+      "url": "https://www.datacenterdynamics.com/en/news/apto-to-invest-34bn-to-build-italys-largest-data-center-campus/"
+    },
+    {
+      "id": "italy-news-4",
+      "headline": "Digital Realty plans Milan data center development",
+      "source": "Data Center Dynamics",
+      "date": "2026-03-24",
+      "url": "https://www.datacenterdynamics.com/en/news/digital-realty-plans-milan-data-center-development/"
+    }
+  ]
+}

@@ -182,10 +182,10 @@ function buildCanadaEntity() {
     level: "federal",
     stance: "review",
     contextBlurb:
-      "Canada's AIDA (Artificial Intelligence and Data Act) framework is under federal review, with provinces running their own studies on data center siting.",
+      "Canada's AIDA (Artificial Intelligence and Data Act) died on the order paper in early 2025. The federal government is now pursuing AI regulation through privacy-law amendments and policy guidance rather than dedicated AI-specific legislation.",
     legislation: [],
     keyFigures: [],
-    news: [],
+    news: loadEntityNews("Canada"),
   };
 }
 

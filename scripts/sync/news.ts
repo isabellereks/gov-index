@@ -141,7 +141,7 @@ Return ONLY a JSON object matching this shape (no prose, no markdown):
   "summary": "3-4 sentence editorial overview of what happened",
   "keyDevelopments": [
     {
-      "headline": "specific factual headline",
+      "headline": "short, simple headline (5-10 words, max 12)",
       "source": "publication name",
       "date": "YYYY-MM-DD",
       "url": "full URL",
@@ -150,7 +150,15 @@ Return ONLY a JSON object matching this shape (no prose, no markdown):
   ]
 }
 
-Include 4-6 key developments. Focus on: bills that passed or died, moratoriums enacted, major regulatory actions, notable political developments. Be specific with bill codes where relevant.`;
+Include 4-6 key developments. Focus on: bills that passed or died, moratoriums enacted, major regulatory actions, notable political developments.
+
+Headline rules:
+- 5-10 words ideal, 12 max
+- Subject + verb + object only
+- No subordinate clauses, no dates, no dollar amounts (those go in metadata)
+- Keep proper names and bill codes when essential
+- No "Source: Title" colon prefixes
+- Examples of good headlines: "Sanders, AOC Introduce AI Data Center Moratorium", "Trump WH Releases National AI Framework", "Maine Passes First Statewide DC Moratorium"`;
 
   const text = await askClaude(anthropic, prompt);
   try {
@@ -171,10 +179,18 @@ async function fetchEntityNews(
 Return ONLY a JSON array of 3-5 news items with this exact shape (no prose):
 
 [
-  { "headline": "specific factual headline", "source": "publication", "date": "YYYY-MM-DD", "url": "full URL" }
+  { "headline": "short, simple headline (5-10 words, max 12)", "source": "publication", "date": "YYYY-MM-DD", "url": "full URL" }
 ]
 
-Focus on legislation, moratoriums, enforcement actions, and political developments. Be specific with bill codes where relevant.`;
+Focus on legislation, moratoriums, enforcement actions, and political developments.
+
+Headline rules:
+- 5-10 words ideal, 12 max
+- Subject + verb + object only
+- No subordinate clauses, no dates, no dollar amounts (those go in metadata)
+- Keep proper names and bill codes when essential
+- No "Source: Title" colon prefixes
+- Examples: "Texas SB 1308 Extends Data Center Tax Exemption", "Virginia HB 1515 Moratorium Killed in Committee", "Sanders Introduces Federal DC Moratorium"`;
 
   const text = await askClaude(anthropic, prompt);
   try {

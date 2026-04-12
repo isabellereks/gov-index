@@ -1,0 +1,121 @@
+{
+  "id": "australia",
+  "geoId": "36",
+  "name": "Australia",
+  "region": "asia",
+  "level": "federal",
+  "stance": "review",
+  "contextBlurb": "Australia is betting on voluntary standards over AI legislation, relying on its October 2025 Guidance for AI Adoption and a forthcoming AI Safety Institute. In March 2026 the federal government issued its first national expectations for data center developers, tying regulatory priority to clean energy and water sustainability. Privacy reform is rolling out in tranches, and the eSafety Commissioner runs one of the world's most active online-safety enforcement regimes.",
+  "legislation": [
+    {
+      "id": "australia-privacy-amendment-act-2024",
+      "billCode": "Privacy and Other Legislation Amendment Act 2024",
+      "title": "Privacy and Other Legislation Amendment Act 2024",
+      "summary": "Australia's first substantive overhaul of the Privacy Act 1988 since 2012, introducing a statutory tort for serious invasions of privacy (effective June 2025), mandatory disclosure of substantially automated decision-making in privacy policies (effective December 2026), a Children's Online Privacy Code, enhanced OAIC enforcement powers, and new anti-doxxing criminal offences. A second, more comprehensive tranche of reforms — covering expanded definitions of personal information, a fair-and-reasonable test, and removal of the small-business exemption — is under active government consultation as of early 2026.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "data-privacy",
+        "automated-decision-making",
+        "children-online-safety",
+        "enforcement"
+      ],
+      "category": "data-privacy",
+      "updatedDate": "2026-02-10",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.minterellison.com/articles/privacy-and-other-legislation-amendment-act-2024-now-in-effect"
+    },
+    {
+      "id": "australia-guidance-for-ai-adoption-2025",
+      "billCode": "GfAA 2025",
+      "title": "Guidance for AI Adoption (National AI Centre, October 2025)",
+      "summary": "Released on 21 October 2025, this non-binding framework replaced the Voluntary AI Safety Standard, condensing ten guardrails into six responsible AI practices covering governance, impact assessment, risk management, transparency, testing and monitoring, and human oversight — and is aligned with Australia's eight AI Ethics Principles. It signals a pivot away from imminent mandatory AI legislation toward a multi-regulator, standards-led model, with the government concurrently reviewing whether existing laws adequately address AI risks before committing to a standalone AI Act.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance",
+        "voluntary-standards",
+        "responsible-ai",
+        "transparency"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-10-21",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.industry.gov.au/publications/voluntary-ai-safety-standard"
+    },
+    {
+      "id": "australia-data-centre-expectations-2026",
+      "billCode": "DC-AI Expectations 2026",
+      "title": "Expectations of Data Centres and AI Infrastructure Developers (March 2026)",
+      "summary": "Released on 23 March 2026 as part of the National AI Plan, these federal expectations set out five core requirements for new or expanded hyperscale and large-scale AI compute developments: alignment with national interest, support for the clean energy transition, responsible water use, investment in local jobs, and strengthening Australian innovation capacity. While not amending existing law, data centre proposals that do not align with the expectations will be deprioritised in Commonwealth regulatory assessments, giving the framework significant practical weight.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "data-center-siting",
+        "energy-transition",
+        "water-sustainability",
+        "sovereign-infrastructure"
+      ],
+      "category": "data-center-siting",
+      "updatedDate": "2026-03-23",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "australia-ayres",
+      "name": "Tim Ayres",
+      "role": "Minister for Industry and Innovation, Minister for Science",
+      "party": "ALP",
+      "stance": "favorable",
+      "quote": "Australia is open for business – but the kind of business that puts Australia's national interest first."
+    },
+    {
+      "id": "australia-inman-grant",
+      "name": "Julie Inman Grant",
+      "role": "eSafety Commissioner",
+      "party": "N/A",
+      "stance": "restrictive",
+      "quote": "I do not want Australian children and young people serving as casualties of powerful technologies thrust onto the market without guardrails and without regard for their safety and wellbeing."
+    },
+    {
+      "id": "australia-rowland",
+      "name": "Michelle Rowland",
+      "role": "Attorney-General",
+      "party": "ALP",
+      "stance": "concerning",
+      "quote": "We will not have our privacy reforms dictated by multinational tech giants who are trying to assert that you can either have innovation or you can have privacy protection, but not both."
+    }
+  ],
+  "news": [
+    {
+      "id": "australia-news-1",
+      "headline": "NSW moves 15 data centres worth AUD 51.9bn into IDA pipeline",
+      "source": "w.media",
+      "date": "2026-03-27",
+      "url": "https://w.media/nsw-moves-15-data-centres-worth-aud-51-9bn-into-ida-pipeline/"
+    },
+    {
+      "id": "australia-news-2",
+      "headline": "Australian Government has signed a memorandum of understanding (MOU) with global AI innovator Anthropic",
+      "source": "Department of Industry Science and Resources",
+      "date": "2026-04-01",
+      "url": "https://www.industry.gov.au/news/australian-government-has-signed-memorandum-understanding-mou-global-ai-innovator-anthropic"
+    },
+    {
+      "id": "australia-news-3",
+      "headline": "Australia Abandons Proposed Mandatory AI Rules in New Plan",
+      "source": "Bank Info Security",
+      "date": "2025-12-02",
+      "url": "https://www.bankinfosecurity.asia/blogs/australia-abandons-proposed-mandatory-ai-rules-in-new-plan-p-3986"
+    },
+    {
+      "id": "australia-news-4",
+      "headline": "New industry codes seek to take on AI chatbots that encourage suicide and engage in sexually explicit conversations with Aussie kids",
+      "source": "eSafety Commissioner",
+      "date": "2026-01-08",
+      "url": "https://www.esafety.gov.au/newsroom/media-releases/new-industry-codes-seek-to-take-on-ai-chatbots-that-encourage-suicide-and-engage-in-sexually-explicit-conversations-with-aussie-kids"
+    }
+  ]
+}

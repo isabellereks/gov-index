@@ -1,0 +1,118 @@
+{
+  "id": "quebec",
+  "geoId": "quebec",
+  "name": "Québec",
+  "region": "na",
+  "level": "state",
+  "stance": "review",
+  "contextBlurb": "Québec sits in an unusual split: an AI innovation champion and a grid-constrained energy regulator at the same time. Clean hydropower and heavy Mila institute subsidies attracted Google, AWS, and OVHcloud to the Beauharnois corridor, while Bill 69 (2025) now restricts new 5+ MW industrial power connections and effectively pauses new data center buildouts. Law 25 — Canada's strictest provincial privacy regime — imposes GDPR-like automated decision-making rules backed by fines up to $25M or 4% of global revenue.",
+  "legislation": [
+    {
+      "id": "quebec-bill-69",
+      "billCode": "Bill 69",
+      "title": "An Act to ensure the responsible governance of energy resources and to amend various legislative provisions",
+      "summary": "Enacted June 7, 2025, this law requires any new electricity load of 5 MW or more — including data centers — to obtain ministerial authorization from the Minister of Economy, Innovation and Energy, with approval conditioned on technical feasibility, economic benefit, and environmental impact. It effectively gates all large-scale data center power connections through direct government discretion, continuing and codifying restrictions that began with Bill 2 in 2023.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "data-center-siting",
+        "data-center-energy",
+        "grid-access"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2025-06-07",
+      "partyOrigin": "CAQ",
+      "sourceUrl": "https://www.assnat.qc.ca/en/travaux-parlementaires/projets-loi/projet-loi-69-43-1.html"
+    },
+    {
+      "id": "quebec-law-25",
+      "billCode": "Law 25 (Bill 64)",
+      "title": "Act to modernize legislative provisions as regards the protection of personal information (Loi modernisant des dispositions législatives en matière de protection des renseignements personnels)",
+      "summary": "Fully in effect since September 2024, Law 25 imposes GDPR-style obligations on all organizations processing personal data of Québec residents, including mandatory Privacy Impact Assessments for AI systems, explicit disclosure when decisions are made exclusively through automated processing (Section 12.1), and penalties up to $25 million CAD or 4% of worldwide turnover. The Commission d'accès à l'information (CAI) is ramping up enforcement audits in 2026, making it Canada's strictest provincial AI privacy framework.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "automated-decision-making",
+        "privacy-impact-assessments",
+        "ai-transparency",
+        "cross-border-data"
+      ],
+      "category": "data-privacy",
+      "updatedDate": "2024-09-22",
+      "partyOrigin": "CAQ",
+      "sourceUrl": "https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1"
+    },
+    {
+      "id": "quebec-mila-36m-grant",
+      "billCode": "N/A",
+      "title": "Québec Government $36M AI Research and Talent Investment (Mila)",
+      "summary": "Announced February 27, 2026, the Québec government committed $36 million CAD to Mila – Quebec Artificial Intelligence Institute to strengthen its university excellence network, accelerate AI adoption in business, and attract global AI talent to the province. This investment reflects the provincial government's strategy to position Québec as an ethical and responsible AI leader globally, complementing Mila's concurrent $100M USD venture fund with Inovia Capital.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "ai-research-funding",
+        "talent-attraction",
+        "responsible-ai"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-02-27",
+      "partyOrigin": "CAQ",
+      "sourceUrl": "https://mila.quebec/en/news/the-quebec-government-grants-36m-to-mila-to-strengthen-artificial-intelligence-research-and"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "quebec-boulet",
+      "name": "Jean Boulet",
+      "role": "Minister of Economy, Innovation and Energy; Minister of Labour",
+      "party": "CAQ",
+      "stance": "favorable",
+      "quote": "In Quebec, we want to stimulate university research, the training of talent and the use of a skilled workforce in AI. This is essential to create wealth and maintain our global competitiveness in this highly competitive sector."
+    },
+    {
+      "id": "quebec-haytayan",
+      "name": "Céline Haytayan",
+      "role": "MNA for Laval-des-Rapides; Parliamentary Assistant to the Minister for Artificial Intelligence, Quantum Sector, Science and Innovation",
+      "party": "CAQ",
+      "stance": "favorable"
+    },
+    {
+      "id": "quebec-pisano",
+      "name": "Valérie Pisano",
+      "role": "President and CEO, Mila – Quebec Artificial Intelligence Institute",
+      "party": "N/A",
+      "stance": "favorable",
+      "quote": "By placing people and ethics at the heart of our priorities, we make responsible AI a unique competitive advantage, capable of driving our economy while ensuring a technological development that distinguishes itself globally."
+    }
+  ],
+  "news": [
+    {
+      "id": "quebec-news-1",
+      "headline": "Québec government invests $36 million to sustain Mila's AI research",
+      "source": "BetaKit",
+      "date": "2026-03-02",
+      "url": "https://betakit.com/quebec-government-invests-36-million-to-sustain-milas-ai-research/"
+    },
+    {
+      "id": "quebec-news-2",
+      "headline": "Quebec provides $36 million for the Mila AI research institute",
+      "source": "CTV News",
+      "date": "2026-02-27",
+      "url": "https://www.ctvnews.ca/montreal/article/quebec-provides-36-million-for-the-mila-ai-research-institute/"
+    },
+    {
+      "id": "quebec-news-3",
+      "headline": "Mila, 5C and Hypertec Announce $250 Million LaSalle Campus and Sovereign AI Research Hub to Strengthen Canada's Role as a Global Leader in AI Innovation",
+      "source": "Mila / PR Newswire",
+      "date": "2025-09-25",
+      "url": "https://www.prnewswire.com/news-releases/mila-5c-and-hypertec-announce-250-million-lasalle-campus-and-sovereign-ai-research-hub-to-strengthen-canadas-role-as-a-global-leader-in-ai-innovation-302567559.html"
+    },
+    {
+      "id": "quebec-news-4",
+      "headline": "Québec Government Adopts Bill 69 to Modernize Energy Legislation",
+      "source": "Stikeman Elliott",
+      "date": "2025-06-20",
+      "url": "https://stikeman.com/en-ca/kh/canadian-energy-law/quebec-government-adopts-bill-69-to-modernize-energy-legislation"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "taiwan",
+  "geoId": "158",
+  "name": "Taiwan",
+  "region": "asia",
+  "level": "federal",
+  "stance": "review",
+  "contextBlurb": "Taiwan enacted its AI Basic Act in January 2026 — a principles-based framework closer to the US/Japan model than the EU's. The grid is under acute strain from surging AI demand: Taipower's January 2026 tariffs penalize inefficient operators and gigawatt-scale northern campuses are being discouraged outright. On semiconductors, Taiwan tightened national-security export controls through 2025, blacklisting Huawei and SMIC and securing its first criminal indictment for TSMC trade-secret theft.",
+  "legislation": [
+    {
+      "id": "taiwan-ai-basic-act",
+      "billCode": "人工智慧基本法",
+      "title": "Artificial Intelligence Basic Act (AI Basic Act)",
+      "summary": "Enacted December 23, 2025 and promulgated January 14, 2026, this 20-clause principles-based law designates the National Science and Technology Council as the central AI authority and mandates the Ministry of Digital Affairs to develop a risk-classification framework aligned with international standards. It enshrines seven core principles — sustainability, human autonomy, privacy and data governance, cybersecurity, transparency, fairness, and accountability — and requires public-sector AI risk assessments and labor-displacement safeguards, while imposing no direct obligations on the private sector.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "ai-governance",
+        "data-privacy",
+        "ai-workforce"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-01-14",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.bakermckenzie.com/en/insight/publications/2026/01/taiwan-ai-basic-act"
+    },
+    {
+      "id": "taiwan-pdpa-amendment-2025",
+      "billCode": "個人資料保護法 (2025修正)",
+      "title": "Personal Data Protection Act — 2025 Amendment",
+      "summary": "Passed by the Legislative Yuan on October 17, 2025 and promulgated on November 11, 2025 (effective date to be set by the Executive Yuan in 2026), this amendment establishes the Personal Data Protection Commission as an independent supervisory authority and aligns Taiwan's regime with GDPR standards, including mandatory breach notification to both data subjects and regulators, and a new Data Protection Officer requirement for government agencies. The amendment directly intersects with AI data-pipeline obligations under the AI Basic Act.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "data-privacy",
+        "ai-governance"
+      ],
+      "category": "data-privacy",
+      "updatedDate": "2025-11-11",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.jonesday.com/en/insights/2025/12/taiwan-passes-major-amendments-to-the-personal-data-protection-act"
+    },
+    {
+      "id": "taiwan-taipower-data-center-tariffs",
+      "billCode": "Taipower Grid Resilience & Tiered Tariff Policy (2026)",
+      "title": "Taipower AI Data Center Grid Resilience Principles and Tiered Electricity Tariff Rules",
+      "summary": "Effective January 2026, Taiwan Power Company implemented tiered electricity tariffs that reward data centers achieving a Power Usage Effectiveness (PUE) below 1.3 and impose surcharges above 20% on inefficient operators, while discouraging large-scale northern campuses due to transformer shortages and urging operators to relocate to central and southern Taiwan. The utility is simultaneously drafting broader guidelines on grid stability safeguards as AI data center electricity demand is projected to grow 50% or more, and a 2025 moratorium on new connections over 5 MW north of Taoyuan is extending commissioning schedules by 6–12 months.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "data-center-energy",
+        "data-center-siting"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2026-01-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://reccessary.com/en/news/taiwan-data-centers-carbon-free"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "taiwan-lai",
+      "name": "Lai Ching-te",
+      "role": "President of the Republic of China (Taiwan)",
+      "party": "DPP",
+      "stance": "favorable"
+    },
+    {
+      "id": "taiwan-wu",
+      "name": "Wu Cheng-wen",
+      "role": "Minister, National Science and Technology Council (NSTC)",
+      "party": "DPP",
+      "stance": "favorable"
+    },
+    {
+      "id": "taiwan-tseng",
+      "name": "Tseng Wen-sheng",
+      "role": "Chairman, Taiwan Power Company (Taipower)",
+      "party": "B",
+      "stance": "review"
+    }
+  ],
+  "news": [
+    {
+      "id": "taiwan-news-1",
+      "headline": "Taiwan passes AI Basic Act",
+      "source": "Taiwan News",
+      "date": "2025-12-23",
+      "url": "https://www.taiwannews.com.tw/news/6270744"
+    },
+    {
+      "id": "taiwan-news-2",
+      "headline": "Taiwan's AI Basic Act Can Be a Model for Asia",
+      "source": "Tech Policy Press",
+      "date": "2026-02-25",
+      "url": "https://www.techpolicy.press/taiwans-ai-basic-act-can-be-a-model-for-asia/"
+    },
+    {
+      "id": "taiwan-news-3",
+      "headline": "Taiwan eyes carbon-free energy, storage to support gigawatt-scale AI data centers",
+      "source": "Reccessary / DIGITIMES",
+      "date": "2025-12-04",
+      "url": "https://reccessary.com/en/news/taiwan-data-centers-carbon-free"
+    },
+    {
+      "id": "taiwan-news-4",
+      "headline": "Taiwan's Energy Challenges Amid Shifting Geopolitical Realities: National Security, Energy Transition, and Technological Ambitions of an Insular Democracy Under Pressure",
+      "source": "Taiwan Insight",
+      "date": "2026-04-10",
+      "url": "https://taiwaninsight.org/2026/04/10/taiwans-energy-challenges-amid-shifting-geopolitical-realities-national-security-energy-transition-and-technological-ambitions-of-an-insular-democracy-under-pressure/"
+    }
+  ]
+}

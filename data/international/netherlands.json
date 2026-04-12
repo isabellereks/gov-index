@@ -1,0 +1,119 @@
+{
+  "id": "netherlands",
+  "geoId": "528",
+  "name": "Netherlands",
+  "region": "eu",
+  "level": "federal",
+  "stance": "restrictive",
+  "contextBlurb": "The Netherlands has been tightening data center rules since 2019, culminating in a 2022 national ban on new hyperscale facilities across most of the country and an Amsterdam moratorium that now runs through 2030. Grid congestion is severe — data centers consume roughly 4.6% of national electricity. Despite the siting restrictions, the government still pursues AI ambition via a National AI Delta Plan and a 2025 Nvidia deal to build a national AI supercomputer.",
+  "legislation": [
+    {
+      "id": "netherlands-hyperscale-ban-blk",
+      "billCode": "Besluit kwaliteit leefomgeving (BKL) amendment",
+      "title": "Amendment to the Decree on Environmental Quality — Hyperscale Data Center Prohibition",
+      "summary": "Effective 1 January 2024, this amendment to the BKL formally banned new hyperscale data centers (>10 hectares and >70 MW) across most of the Netherlands, restricting new large-scale builds to designated municipalities such as Eemshaven (Het Hogeland) and Agriport A7 (Hollands Kroon). It codified the 2022 interim moratorium into permanent spatial planning law and does not apply to projects already permitted before its entry into force.",
+      "stage": "Enacted",
+      "stance": "restrictive",
+      "impactTags": [
+        "hyperscale-ban",
+        "spatial-planning",
+        "grid-congestion",
+        "energy-capacity"
+      ],
+      "category": "data-center-siting",
+      "updatedDate": "2024-01-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.gtlaw.com/en/insights/2024/3/challenges-in-the-dutch-data-center-market"
+    },
+    {
+      "id": "netherlands-amsterdam-dc-moratorium-2030",
+      "billCode": "Amsterdam Municipal Establishment Decision (Vestigingsbesluit) 2025",
+      "title": "Amsterdam Municipality Data Center Moratorium — No New Permits Until 2030",
+      "summary": "In April 2025, the Municipality of Amsterdam formally decided to allow no new data centers or expansions within city limits until at least 2030, citing scarce grid capacity and land constraints. The decision follows an earlier December 2023 round of municipal restrictions and compounds the national hyperscale ban, effectively freezing most large-scale digital infrastructure growth in Amsterdam's core market.",
+      "stage": "Enacted",
+      "stance": "restrictive",
+      "impactTags": [
+        "moratorium",
+        "energy-grid",
+        "amsterdam",
+        "land-use"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2025-04-18",
+      "partyOrigin": "B",
+      "sourceUrl": "https://nltimes.nl/2025/04/18/amsterdam-allowing-data-centers-municipality"
+    },
+    {
+      "id": "netherlands-ai-act-uitvoeringswet",
+      "billCode": "EU AI Act Uitvoeringswet (Implementation Act, draft)",
+      "title": "Dutch EU AI Act Implementation Act — National Supervisory Authority Designation",
+      "summary": "This pending national implementation law will formally designate the Dutch supervisory authorities for the EU AI Act, including the Autoriteit Persoonsgegevens (AP) and the Rijksinspectie Digitale Infrastructuur (RDI) as lead market surveillance bodies, alongside sector-specific authorities ACM, AFM, and DNB. As of early 2026 the Minister of Economic Affairs indicated the bill is expected to be laid before the Tweede Kamer in Q4 2026, meaning the Netherlands will miss the August 2025 EU designation deadline; in the interim, a regulatory sandbox proposal was published in March 2025.",
+      "stage": "Filed",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance",
+        "supervisory-authority",
+        "EU-AI-Act",
+        "regulatory-sandbox"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-01-15",
+      "partyOrigin": "B",
+      "sourceUrl": "https://cms.law/en/int/expert-guides/ai-regulation-scanner/the-netherlands"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "netherlands-beljaarts",
+      "name": "Dirk Beljaarts",
+      "role": "Minister of Economic Affairs",
+      "party": "PVV",
+      "stance": "favorable",
+      "quote": "Competition is fierce, the whole world is after this technology [...] This deal brings building a Dutch AI facility a lot closer."
+    },
+    {
+      "id": "netherlands-boekholt-osullivan",
+      "name": "Elanor Boekholt-O'Sullivan",
+      "role": "Minister of Digital Affairs (successor to outgoing cabinet member on data center policy)",
+      "party": "B",
+      "stance": "review"
+    },
+    {
+      "id": "netherlands-grove",
+      "name": "Stijn Grove",
+      "role": "Managing Director, Dutch Data Center Association (DDA)",
+      "party": "N/A",
+      "stance": "concerning"
+    }
+  ],
+  "news": [
+    {
+      "id": "netherlands-news-1",
+      "headline": "Permitted large data centers in Amsterdam and Lelystad move ahead despite opposition",
+      "source": "NL Times",
+      "date": "2026-03-29",
+      "url": "https://nltimes.nl/2026/03/29/permitted-large-data-centers-amsterdam-lelystad-move-ahead-despite-opposition"
+    },
+    {
+      "id": "netherlands-news-2",
+      "headline": "Minister says she can't stop massive Microsoft data center in Amsterdam",
+      "source": "NL Times",
+      "date": "2026-01-28",
+      "url": "https://nltimes.nl/2026/01/28/minister-says-cant-stop-massive-microsoft-data-center-amsterdam"
+    },
+    {
+      "id": "netherlands-news-3",
+      "headline": "Microsoft and Google withhold Dutch data center energy data despite EU rules - report",
+      "source": "Data Center Dynamics",
+      "date": "2026-03-11",
+      "url": "https://www.datacenterdynamics.com/en/news/microsoft-and-google-withhold-dutch-data-center-energy-data-despite-eu-rules-report/"
+    },
+    {
+      "id": "netherlands-news-4",
+      "headline": "Data centers in Netherlands use as much power as 2 million homes",
+      "source": "NL Times",
+      "date": "2025-12-15",
+      "url": "https://nltimes.nl/2025/12/15/data-centers-netherlands-use-much-power-2-million-homes"
+    }
+  ]
+}

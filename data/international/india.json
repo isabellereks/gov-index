@@ -1,0 +1,121 @@
+{
+  "id": "india",
+  "geoId": "356",
+  "name": "India",
+  "region": "asia",
+  "level": "federal",
+  "stance": "favorable",
+  "contextBlurb": "India is taking a deliberately innovation-first stance, anchored by the ₹10,371 crore IndiaAI Mission and non-binding AI guidelines instead of standalone legislation. February 2026 rules did add binding requirements for labeling synthetic media and taking down deepfakes within three hours. A tax holiday through 2047 and $67+ billion in cloud investment commitments are driving a hyperscale buildout across Mumbai, Chennai, and Hyderabad.",
+  "legislation": [
+    {
+      "id": "india-it-rules-2026-amendment",
+      "billCode": "G.S.R. 120(E)",
+      "title": "Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules, 2026",
+      "summary": "Notified on February 10, 2026 and effective February 20, 2026, these rules bring AI-generated 'synthetically generated information' (SGI) — including deepfakes, cloned audio, and fabricated documents — under formal intermediary due diligence obligations. Platforms must deploy automated detection tools, label all SGI with provenance metadata, and act within three hours of a government takedown order or face loss of safe-harbor protections under Section 79 of the IT Act.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "synthetic-media",
+        "platform-liability",
+        "deepfakes",
+        "safe-harbor"
+      ],
+      "category": "synthetic-media",
+      "updatedDate": "2026-02-20",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.legaleraonline.com/ai/meitys-new-ai-rulebook-signals-a-regulatory-shift-indias-tech-industry-cannot-ignore-982456"
+    },
+    {
+      "id": "india-dpdpa-rules-2025",
+      "billCode": "DPDPA Rules 2025",
+      "title": "Digital Personal Data Protection Rules, 2025",
+      "summary": "Finalized by MeitY on November 13, 2025, these rules operationalize the Digital Personal Data Protection Act, 2023, establishing consent-centric data fiduciary obligations, breach notification requirements, and the Data Protection Board of India as an enforcement authority. AI systems processing personal data face phased compliance obligations — including data minimization, impact assessments for Significant Data Fiduciaries, and explicit consent requirements — rolling out fully by May 2027.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "data-privacy",
+        "AI-training-data",
+        "consent",
+        "data-localization",
+        "breach-notification"
+      ],
+      "category": "data-privacy",
+      "updatedDate": "2025-11-13",
+      "partyOrigin": "B",
+      "sourceUrl": "https://iapp.org/news/a/with-rules-finalized-india-s-dpdpa-takes-force"
+    },
+    {
+      "id": "india-digital-india-act",
+      "billCode": "DIA (Draft)",
+      "title": "Digital India Act (Draft)",
+      "summary": "A long-anticipated comprehensive overhaul of the Information Technology Act, 2000, the Digital India Act remains in pre-legislative consultation as of April 2026, with no draft tabled in Parliament. It is expected to introduce risk-based platform classifications, enhanced intermediary obligations, algorithmic transparency requirements, and specific provisions for AI-generated content and deepfakes, but MeitY has signaled it will leverage existing frameworks rather than rush a standalone AI law.",
+      "stage": "Filed",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance",
+        "platform-liability",
+        "intermediary-rules",
+        "algorithmic-transparency"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-04-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.medianama.com/2025/12/223-india-ai-law-digital-india-act-stalled/"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "india-vaishnaw",
+      "name": "Ashwini Vaishnaw",
+      "role": "Union Minister for Electronics and Information Technology (MeitY)",
+      "party": "BJP",
+      "stance": "favorable",
+      "quote": "We are creating a framework where ethical AI is not a mandate but a culture. Innovation must go hand in hand with responsibility — but through trust, not fear."
+    },
+    {
+      "id": "india-krishnan",
+      "name": "S. Krishnan",
+      "role": "Secretary, Ministry of Electronics and Information Technology (MeitY)",
+      "party": "B",
+      "stance": "favorable",
+      "quote": "India will follow a light-touch governance model that promotes responsible AI innovation without stifling it through excessive compliance burdens."
+    },
+    {
+      "id": "india-sitharaman",
+      "name": "Nirmala Sitharaman",
+      "role": "Union Finance Minister",
+      "party": "BJP",
+      "stance": "favorable"
+    }
+  ],
+  "news": [
+    {
+      "id": "india-news-1",
+      "headline": "Tech giants commit billions to Indian AI as New Delhi pushes for superpower status",
+      "source": "CNBC",
+      "date": "2026-02-21",
+      "url": "https://www.cnbc.com/2026/02/21/india-ai-summit-tech-giants-billion-dollar-investments.html"
+    },
+    {
+      "id": "india-news-2",
+      "headline": "MeitY's new AI rulebook signals a regulatory shift India's tech industry cannot ignore",
+      "source": "Legal Era Online",
+      "date": "2026-03-20",
+      "url": "https://www.legaleraonline.com/ai/meitys-new-ai-rulebook-signals-a-regulatory-shift-indias-tech-industry-cannot-ignore-982456"
+    },
+    {
+      "id": "india-news-3",
+      "headline": "IndiaAI Mission: Only Rs 400 crore released in two years",
+      "source": "MediaNama",
+      "date": "2026-04-03",
+      "url": "https://www.medianama.com/2026/04/223-indiaai-mission-400-crore-over-rs-10000-crore-5-year-outlay-released/"
+    },
+    {
+      "id": "india-news-4",
+      "headline": "The AI spending frenzy reaches India, sparking enthusiasm and concern",
+      "source": "The Washington Post",
+      "date": "2025-12-26",
+      "url": "https://www.washingtonpost.com/world/2025/12/26/india-ai-google-microsoft-amazon/"
+    }
+  ]
+}

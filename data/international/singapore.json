@@ -1,0 +1,122 @@
+{
+  "id": "singapore",
+  "geoId": "702",
+  "name": "Singapore",
+  "region": "asia",
+  "level": "federal",
+  "stance": "favorable",
+  "contextBlurb": "Singapore takes a pro-innovation, framework-driven approach — its Model AI Governance Framework and AI Verify testing toolkit set voluntary but widely adopted standards without binding AI law. A 2019 data center moratorium was lifted in 2022 under strict green conditions, and the December 2025 DC-CFA2 opened at least 200 MW of new capacity contingent on 50%+ green energy and a PUE of 1.25 at full load. Combined with a S$1 billion National AI Strategy, Singapore couples growth with sustainability.",
+  "legislation": [
+    {
+      "id": "singapore-green-dc-roadmap",
+      "billCode": "GDCR-2024",
+      "title": "Green Data Centre Roadmap",
+      "summary": "Launched by IMDA on 30 May 2024, this policy roadmap charts Singapore's sustainable data center growth by targeting PUE ≤ 1.3 at 100% IT load for all facilities within ten years and unlocking at least 300 MW of new capacity tied to green energy use. It also refreshed the BCA-IMDA Green Mark for Data Centres certification (October 2024) and introduced the Singapore Standard on Energy Efficiency of Data Centre IT Equipment (SS 715:2025).",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "energy-efficiency",
+        "green-energy",
+        "PUE-mandate",
+        "capacity-expansion"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2025-12-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.imda.gov.sg/how-we-can-help/green-dc-roadmap"
+    },
+    {
+      "id": "singapore-model-ai-governance-genai",
+      "billCode": "MAI-GOV-GENAI-2024",
+      "title": "Model AI Governance Framework for Generative AI",
+      "summary": "Finalised in May 2024 by IMDA and the AI Verify Foundation, this framework extends Singapore's original 2019 Model AI Governance Framework to address generative AI risks—including hallucination, bias, intellectual property, and systemic risk—across nine governance dimensions. In January 2026 IMDA further extended the suite with a world-first Model AI Governance Framework for Agentic AI, covering autonomous AI systems capable of independent reasoning and action.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "generative-ai",
+        "agentic-ai",
+        "voluntary-framework",
+        "AI-Verify",
+        "nine-dimensions"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-01-22",
+      "partyOrigin": "B",
+      "sourceUrl": "https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf"
+    },
+    {
+      "id": "singapore-dc-cfa2",
+      "billCode": "DC-CFA2-2025",
+      "title": "Data Centre – Call for Application 2 (DC-CFA2)",
+      "summary": "Launched on 1 December 2025 by EDB and IMDA, DC-CFA2 allocates at least 200 MW of new data center capacity to operators demonstrating world-class sustainability—requiring a PUE of 1.25 at full IT load and at least 50% of power from approved green energy sources such as biomethane, low-carbon hydrogen, or on-site solar. The application window closed 31 March 2026, following the first DC-CFA pilot that awarded 80 MW to Equinix, Microsoft, GDS, and AirTrunk-ByteDance in 2023.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "capacity-allocation",
+        "green-energy-mandate",
+        "PUE-1.25",
+        "sustainability",
+        "AI-infrastructure"
+      ],
+      "category": "data-center-siting",
+      "updatedDate": "2025-12-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2025/launch-of-second-data-centre"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "singapore-teo",
+      "name": "Josephine Teo",
+      "role": "Minister for Digital Development and Information; Minister-in-Charge of Smart Nation and Cybersecurity",
+      "party": "PAP",
+      "stance": "favorable",
+      "quote": "What we thought was meaningful for us to do as a nation was to consider how AI could be used for the public good."
+    },
+    {
+      "id": "singapore-puthucheary",
+      "name": "Janil Puthucheary",
+      "role": "Senior Minister of State for Communications and Information",
+      "party": "PAP",
+      "stance": "favorable",
+      "quote": "We are determined to turn these constraints into opportunities to innovate and capture value from the growth of sustainable data centres."
+    },
+    {
+      "id": "singapore-wong",
+      "name": "Lawrence Wong",
+      "role": "Prime Minister and Minister for Finance",
+      "party": "PAP",
+      "stance": "favorable"
+    }
+  ],
+  "news": [
+    {
+      "id": "singapore-news-1",
+      "headline": "Singapore Announces Data Center Capacity Allocation Call",
+      "source": "Morgan Lewis",
+      "date": "2026-03-03",
+      "url": "https://www.morganlewis.com/pubs/2026/03/singapore-announces-data-center-capacity-allocation-call"
+    },
+    {
+      "id": "singapore-news-2",
+      "headline": "Singapore's New Model AI Governance Framework for Agentic AI (2026)",
+      "source": "K&L Gates HUB",
+      "date": "2026-02-09",
+      "url": "https://www.klgates.com/Singapores-New-Model-AI-Governance-Framework-for-Agentic-AI-2026-Client-Alert-2-9-2026"
+    },
+    {
+      "id": "singapore-news-3",
+      "headline": "Singapore's Digital & AI Governance: A Pro-Innovation, Framework-Driven Model",
+      "source": "Duane Morris & Selvam Blog",
+      "date": "2026-03-03",
+      "url": "https://blogs.duanemorrisandselvam.com/duanemorrisandselvam/2026/03/03/singapores-digital-ai-governance-a-pro-innovation-framework-driven-model/"
+    },
+    {
+      "id": "singapore-news-4",
+      "headline": "Singapore opens call to develop 200MW of data center capacity",
+      "source": "Data Center Dynamics",
+      "date": "2025-12-01",
+      "url": "https://www.datacenterdynamics.com/en/news/singapore-opens-call-to-develop-200mw-of-data-center-capacity/"
+    }
+  ]
+}

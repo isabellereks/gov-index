@@ -1,0 +1,118 @@
+{
+  "id": "indonesia",
+  "geoId": "360",
+  "name": "Indonesia",
+  "region": "asia",
+  "level": "federal",
+  "stance": "review",
+  "contextBlurb": "Indonesia is still building its AI and data center framework. The 2022 Personal Data Protection Law is now enforceable but its dedicated agency isn't operational until 2026, and binding AI rules remain at the draft stage. Meanwhile, Jakarta and Batam are booming as data center hubs — backed by tax incentives and 100% foreign ownership — but water and energy sustainability concerns are drawing regulators in.",
+  "legislation": [
+    {
+      "id": "indonesia-pdp-law",
+      "billCode": "UU No. 27/2022",
+      "title": "Law on Personal Data Protection (Undang-Undang Perlindungan Data Pribadi)",
+      "summary": "Indonesia's comprehensive data protection law, modeled in part on the GDPR, which became fully enforceable on October 17, 2024 after a two-year transition period. It covers all personal data processing within and outside Indonesia that has legal effect on Indonesian citizens, with administrative fines up to 2% of annual revenue and criminal penalties up to six years imprisonment for violations; however, implementing regulations and the dedicated PDP Agency remain under development as of April 2026.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "data-privacy",
+        "cross-border-data-transfer",
+        "enforcement"
+      ],
+      "category": "data-privacy",
+      "updatedDate": "2025-10-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://iclg.com/practice-areas/data-protection-laws-and-regulations/indonesia"
+    },
+    {
+      "id": "indonesia-moci-cl9-ai-ethics",
+      "billCode": "MOCI CL 9/2023",
+      "title": "Ministry of Communication and Information Circular Letter No. 9 of 2023 on Artificial Intelligence Ethics",
+      "summary": "A non-binding ministerial circular issued in December 2023 that establishes an ethical code of conduct for all public and private electronic system operators engaging in AI-based activities in Indonesia, covering principles such as inclusivity, data protection, IP rights, and safety. It serves as the interim regulatory framework for AI pending the enactment of a binding Presidential Regulation on AI, which was still being finalized as of early 2026.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "ai-ethics",
+        "non-binding",
+        "electronic-system-operators"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2023-12-19",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.mondaq.com/new-technology/1652492/artificial-intelligence-in-indonesia-legal-and-regulatory-insights"
+    },
+    {
+      "id": "indonesia-presidential-reg-ai-draft",
+      "billCode": "Draft Perpres AI",
+      "title": "Draft Presidential Regulation on Artificial Intelligence (Peraturan Presiden tentang Kecerdasan Artifisial)",
+      "summary": "A binding Presidential Regulation on AI under development by Komdigi, intended to formalize Indonesia's National AI Roadmap and ethics guidelines into law; the draft covered AI safety, ethical use, sector-specific applications, and a Sovereign AI Fund framework. As of early 2026, the regulation had been submitted to the State Secretariat for harmonization but had not yet been enacted.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance",
+        "sovereign-ai",
+        "ethics",
+        "presidential-regulation"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-02-05",
+      "partyOrigin": "B",
+      "sourceUrl": "https://rri.co.id/en/national/2105710/indonesia-moves-toward-national-ai-regulation"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "indonesia-hafid",
+      "name": "Meutya Hafid",
+      "role": "Minister of Communication and Digital Affairs (Komdigi)",
+      "party": "Golkar",
+      "stance": "review",
+      "quote": "Wars have gone beyond actual arms, but they now revolve around digital technology. This shows how every country, including Indonesia, needs to develop AI and digital economy."
+    },
+    {
+      "id": "indonesia-patria",
+      "name": "Nezar Patria",
+      "role": "Deputy Minister of Communication and Digital Affairs",
+      "party": "Independent",
+      "stance": "favorable",
+      "quote": "The principle is to maximize the benefits of AI and minimize the risks. These ethical guidelines will serve as a reference for developers, ensuring their AI products align with the established ethical values."
+    },
+    {
+      "id": "indonesia-prabowo",
+      "name": "Prabowo Subianto",
+      "role": "President of Indonesia",
+      "party": "Gerindra",
+      "stance": "favorable"
+    }
+  ],
+  "news": [
+    {
+      "id": "indonesia-news-1",
+      "headline": "Indonesia's data center boom raises alarm over water use",
+      "source": "The Jakarta Post",
+      "date": "2026-04-07",
+      "url": "https://www.thejakartapost.com/business/2026/04/07/indonesias-data-center-boom-raises-alarm-over-water-use.html"
+    },
+    {
+      "id": "indonesia-news-2",
+      "headline": "Indonesia Moves Toward National AI Regulation",
+      "source": "Radio Republik Indonesia (RRI)",
+      "date": "2026-02-05",
+      "url": "https://rri.co.id/en/national/2105710/indonesia-moves-toward-national-ai-regulation"
+    },
+    {
+      "id": "indonesia-news-3",
+      "headline": "From OpenAI to DeepSeek: Indonesia Drafts Regulation on AI",
+      "source": "Jakarta Globe",
+      "date": "2025-01-31",
+      "url": "https://jakartaglobe.id/tech/from-openai-to-deepseek-indonesia-drafts-regulation-on-ai"
+    },
+    {
+      "id": "indonesia-news-4",
+      "headline": "Indonesia Expected to Complete AI Regulations Draft This Month",
+      "source": "Tempo.co",
+      "date": "2025-09-19",
+      "url": "https://en.tempo.co/amp/2050472/indonesia-expected-to-complete-ai-regulations-draft-this-month"
+    }
+  ]
+}

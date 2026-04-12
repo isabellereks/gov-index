@@ -1,0 +1,122 @@
+{
+  "id": "sweden",
+  "geoId": "752",
+  "name": "Sweden",
+  "region": "eu",
+  "level": "federal",
+  "stance": "favorable",
+  "contextBlurb": "Sweden wants a top-ten spot in global AI — adopting its first national AI Strategy in February 2026 and implementing the EU AI Act via complementary legislation targeted for August 2026. Cold-climate free-air cooling and Norrbotten hydropower have made it one of Europe's premier green data center destinations, anchored by Meta's Luleå hyperscale campus. A concurrent push to authorize AI facial recognition for police (Proposition 2025/26:150) is drawing civil-liberties scrutiny.",
+  "legislation": [
+    {
+      "id": "sweden-sou-2025-101",
+      "billCode": "SOU 2025:101",
+      "title": "Complementary Swedish Legislation to Implement the EU AI Act",
+      "summary": "Published in October 2025, this Government Official Report proposes a new national Swedish AI law and ordinance designating the Post and Telecom Authority (PTS) as the primary market surveillance authority, with 11 sectoral co-authorities, enforceable administrative fines, and at least one regulatory sandbox to be established by August 2, 2026. It bridges EU AI Act mandates with Swedish administrative procedures on secrecy, documentation, and enforcement powers.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "market-surveillance",
+        "enforcement",
+        "regulatory-sandbox",
+        "EU-AI-Act-compliance"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-10-06",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.twobirds.com/en/capabilities/artificial-intelligence/ai-legal-services/ai-regulatory-horizon-tracker/sweden"
+    },
+    {
+      "id": "sweden-bill-2024-25-131",
+      "billCode": "Bill 2024/25:131 / Act 2025:570",
+      "title": "Act on the Disclosure of Information on the Energy Performance of Data Centres",
+      "summary": "Enacted and in force from July 1, 2025, this law requires owners or operators of data centers with an installed IT power demand of at least 500 kW to publicly report annual energy performance data to the EU-wide database, implementing the EU Energy Efficiency Directive (EED). Facilities used for security-sensitive or defense purposes under the Protective Security Act are exempt.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "energy-reporting",
+        "PUE",
+        "EED-compliance",
+        "sustainability",
+        "transparency"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2025-07-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.energimyndigheten.se/en/climate/climate/data-centre-energy-performance-reporting/"
+    },
+    {
+      "id": "sweden-prop-2025-26-150",
+      "billCode": "Prop. 2025/26:150",
+      "title": "Proposition on Police Use of AI-Powered Real-Time Facial Recognition",
+      "summary": "Submitted to the Riksdag in March 2026, this proposition proposes authorizing Swedish police to deploy AI-driven real-time biometric identification in public spaces for serious crimes such as human trafficking and murder, making Sweden one of the first EU member states to explicitly legislate live biometric surveillance by law enforcement. The bill, referred to the Committee on Justice, is designed to operationalize the narrow EU AI Act exceptions for law enforcement while including legal safeguards for personal privacy.",
+      "stage": "Committee",
+      "stance": "concerning",
+      "impactTags": [
+        "biometric-surveillance",
+        "facial-recognition",
+        "law-enforcement",
+        "civil-liberties",
+        "EU-AI-Act-exceptions"
+      ],
+      "category": "ai-criminal-justice",
+      "updatedDate": "2026-03-03",
+      "partyOrigin": "B",
+      "sourceUrl": "https://riksdagsmonitor.com/news/2026-03-03-ai-facial-recognition-police-en.html"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "sweden-slottner",
+      "name": "Erik Slottner",
+      "role": "Minister for Public Administration, Ministry of Finance",
+      "party": "KD",
+      "stance": "favorable",
+      "quote": "Sweden aims to be a leader in AI, which is why it's important that we take a comprehensive approach to AI issues."
+    },
+    {
+      "id": "sweden-stromme",
+      "name": "Gunnar Strömmer",
+      "role": "Minister for Justice",
+      "party": "M",
+      "stance": "favorable",
+      "quote": "To push back gang crime and restore security in society, the police must have access to effective tools."
+    },
+    {
+      "id": "sweden-kristersson",
+      "name": "Ulf Kristersson",
+      "role": "Prime Minister of Sweden",
+      "party": "M",
+      "stance": "favorable"
+    }
+  ],
+  "news": [
+    {
+      "id": "sweden-news-1",
+      "headline": "Sweden's first comprehensive AI strategy aims for top-10 ranking",
+      "source": "Government of Sweden (Government.se)",
+      "date": "2026-02-25",
+      "url": "https://www.government.se/press-releases/2026/02/swedens-first-comprehensive-ai-strategy-aims-for-top-10-ranking/"
+    },
+    {
+      "id": "sweden-news-2",
+      "headline": "Sweden Proposes Real-Time AI Facial Recognition for Police",
+      "source": "Riksdag Monitor",
+      "date": "2026-03-03",
+      "url": "https://riksdagsmonitor.com/news/2026-03-03-ai-facial-recognition-police-en.html"
+    },
+    {
+      "id": "sweden-news-3",
+      "headline": "What Sweden's New Data Centre Rules Tell Us About the Future of Infrastructure",
+      "source": "Nordnest",
+      "date": "2025-08-19",
+      "url": "https://nordnest.se/en/what-swedens-new-data-centre-rules-tell-us-about-the-future-of-infrastructure/"
+    },
+    {
+      "id": "sweden-news-4",
+      "headline": "A brief update on Sweden's adaptations to the AI Act – SOU 2025:101",
+      "source": "Setterwalls",
+      "date": "2025-11-24",
+      "url": "https://setterwalls.se/en/article/a-brief-update-on-swedens-adaptations-to-the-ai-act-sou-2025101-2/"
+    }
+  ]
+}

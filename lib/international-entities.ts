@@ -1,13 +1,13 @@
 import type { Entity } from "@/types";
+import { RESEARCHED_INTERNATIONAL } from "./international-researched";
 
 /**
- * EU + Asia + Canada (non-US North America) entities, preserved from the
- * original placeholder data. The US federal entity and all 50 US states are
- * generated from real LegiScan data by scripts/build-placeholder.ts and live
- * in data/legislation/. This file stays hand-curated for international data
- * until we build a matching sync for it.
+ * EU + Asia + Canada (non-US North America) entities. Hand-curated baseline
+ * entities live in HAND_CURATED below. Claude-researched additions (via
+ * scripts/sync/international.ts) are imported from data/international/*.json
+ * through ./international-researched and merged in below.
  */
-export const INTERNATIONAL_ENTITIES: Entity[] = [
+const HAND_CURATED: Entity[] = [
   // ─────────── EU REGION ───────────
   {
     id: "eu-bloc",
@@ -16,9 +16,11 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     region: "eu",
     level: "bloc",
     isOverview: true,
-    stance: "favorable",
+    // EU passed the world's most comprehensive AI law (the AI Act) plus
+    // EnEfG-style data center mandates. Heaviest regulator on the planet.
+    stance: "restrictive",
     contextBlurb:
-      "The EU AI Act represents the world's first comprehensive legal framework for artificial intelligence, establishing risk-based requirements for AI systems and strict limits on data center energy consumption.",
+      "The EU AI Act is the world's first comprehensive legal framework for AI — a risk-based regime that bans certain uses outright, forces conformity assessments on high-risk systems, and layers transparency duties on general-purpose models. Alongside it, the recast Energy Efficiency Directive imposes mandatory reporting, PUE disclosure, and waste-heat reuse on any data center above 500 kW.",
     legislation: [
       {
         id: "eu-ai-act",
@@ -67,34 +69,31 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
       {
         id: "eu-news-1",
         headline:
-          "EU AI Office issues first guidance on general-purpose models",
-        source: "Politico EU",
-        date: "2026-04-08",
-        url: "#",
+          "EU Commission Publishes First Guidelines for GPAI Providers",
+        source: "European Commission",
+        date: "2025-07-18",
+        url: "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers",
       },
       {
         id: "eu-news-2",
-        headline:
-          "Member states diverge on data center reporting deadlines under EnEfG",
-        source: "Euractiv",
-        date: "2026-04-03",
-        url: "#",
+        headline: "EU Sets 2026 AI Act Enforcement Priorities",
+        source: "Creati AI",
+        date: "2026-02-12",
+        url: "https://creati.ai/ai-news/2026-02-12/eu-commission-ai-act-implementation-2026/",
       },
       {
         id: "eu-news-3",
-        headline:
-          "Commission opens consultation on AI Act enforcement at member-state level",
-        source: "Reuters",
-        date: "2026-03-30",
-        url: "#",
+        headline: "Orrick: Six Steps Before EU AI Act Enforcement",
+        source: "Orrick",
+        date: "2025-11-15",
+        url: "https://www.orrick.com/en/Insights/2025/11/The-EU-AI-Act-6-Steps-to-Take-Before-2-August-2026",
       },
       {
         id: "eu-news-4",
-        headline:
-          "European Court rules against opaque algorithmic hiring under GDPR Article 22",
-        source: "Financial Times",
-        date: "2026-03-26",
-        url: "#",
+        headline: "EU AI Act GPAI Transparency Rules Take Effect",
+        source: "DLA Piper",
+        date: "2025-08-15",
+        url: "https://www.dlapiper.com/en-us/insights/publications/2025/08/latest-wave-of-obligations-under-the-eu-ai-act-take-effect",
       },
     ],
   },
@@ -104,9 +103,12 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     name: "Germany",
     region: "eu",
     level: "federal",
-    stance: "favorable",
+    // Germany has the strictest data center energy law in Europe (EnEfG:
+    // PUE ≤ 1.2, 100% renewables by 2027, mandatory waste-heat reuse).
+    // Pro-tech in tone but the actual regulatory regime is restrictive.
+    stance: "concerning",
     contextBlurb:
-      "Germany is implementing the EU AI Act with additional national provisions on AI in employment and a binding data center efficiency law (EnEfG) requiring 100% renewable power for new facilities by 2027.",
+      "Germany is implementing the EU AI Act with extra national teeth — especially on AI in employment. Its binding data center efficiency law (EnEfG) requires all new facilities to run on 100% renewable power by 2027, the strictest grid standard among major EU economies.",
     legislation: [
       {
         id: "de-enefg",
@@ -163,26 +165,24 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     news: [
       {
         id: "de-news-1",
-        headline:
-          "Frankfurt operators warn EnEfG renewables deadline is unworkable",
-        source: "Handelsblatt",
-        date: "2026-04-09",
-        url: "#",
+        headline: "EnEfG Sets PUE ≤1.2 for German Data Centers",
+        source: "White & Case",
+        date: "2024-02-08",
+        url: "https://www.whitecase.com/insight-alert/data-center-requirements-under-new-german-energy-efficiency-act",
       },
       {
         id: "de-news-2",
-        headline: "Bundestag committee advances AI co-determination bill",
-        source: "Süddeutsche Zeitung",
-        date: "2026-04-04",
-        url: "#",
+        headline: "Germany Mandates Data Center Waste-Heat Recovery",
+        source: "Cundall",
+        date: "2024-04-30",
+        url: "https://www.cundall.com/ideas/blog/why-germanys-energy-efficiency-act-makes-waste-heat-recovery-a-national-priority",
       },
       {
         id: "de-news-3",
-        headline:
-          "BNetzA approves first Frankfurt waste-heat reuse pilot for 50MW data center",
-        source: "Heise Online",
-        date: "2026-03-28",
-        url: "#",
+        headline: "Germany First to Codify EU Data Center Rules",
+        source: "Columbia Climate Law Blog",
+        date: "2025-10-24",
+        url: "https://blogs.law.columbia.edu/climatechange/2025/10/24/from-eu-framework-to-national-action-how-germany-regulates-data-center-energy-use/",
       },
     ],
   },
@@ -192,9 +192,12 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     name: "France",
     region: "eu",
     level: "federal",
-    stance: "review",
+    // Macron's all-in sovereign-AI-compute push, €2.5B France 2030 fund,
+    // and the AI mega-site build-out make France one of the most
+    // innovation-friendly EU members despite the bloc-level AI Act.
+    stance: "favorable",
     contextBlurb:
-      "France is positioning itself as the European AI capital while CNIL has flagged data center water consumption as an urgent regulatory gap. The government's AI sovereignty strategy emphasizes domestic compute capacity.",
+      "France is pitching itself as Europe's AI capital — anchored by an AI sovereignty strategy and a hard push for domestic compute. On the flip side, CNIL (the data protection authority) has flagged data center water consumption as an urgent regulatory gap, signaling scrutiny of the hyperscale buildout alongside the welcome mat.",
     legislation: [
       {
         id: "fr-loi-num",
@@ -251,26 +254,24 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     news: [
       {
         id: "fr-news-1",
-        headline: "Marseille tech hub sees pushback over freshwater cooling",
-        source: "Le Monde",
-        date: "2026-04-10",
-        url: "#",
+        headline: "France Adds Sector-Specific Data Center Rules",
+        source: "National Law Review",
+        date: "2026-02-20",
+        url: "https://natlawreview.com/article/building-data-centers-france-navigating-regulatory-hurdles-and-unlocking-growth",
       },
       {
         id: "fr-news-2",
-        headline:
-          "France earmarks €2.5B for sovereign AI compute under France 2030",
-        source: "Les Echos",
-        date: "2026-04-06",
-        url: "#",
+        headline: "France Now Hosts 352 Active Data Centers",
+        source: "Futura Sciences",
+        date: "2026-01-25",
+        url: "https://www.futura-sciences.com/en/french-data-centers-set-off-alarm-what-risks-are-hitting-closer-than-you-think_27400/",
       },
       {
         id: "fr-news-3",
-        headline:
-          "CNIL fines two cloud providers under expanded water-disclosure order",
-        source: "Reuters",
-        date: "2026-04-01",
-        url: "#",
+        headline: "Inside Macron's Push for AI Data Center Capital",
+        source: "Data Center Dynamics",
+        date: "2026-02-28",
+        url: "https://www.datacenterdynamics.com/en/analysis/france-ai-data-center-build-out-emmanuel-macron/",
       },
     ],
   },
@@ -280,10 +281,13 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     name: "United Kingdom",
     region: "eu",
     level: "federal",
-    stance: "review",
+    // Post-Brexit UK deliberately chose a pro-innovation, principles-based
+    // approach distinct from the EU AI Act. Bletchley Declaration host,
+    // AI Growth Zones in planning, AI Bill delayed to keep options open.
+    stance: "favorable",
     // (key figures populated below)
     contextBlurb:
-      "Post-Brexit, the UK has pursued a pro-innovation, principles-based AI approach distinct from the EU AI Act. Recent grid pressures from data center growth have prompted a National Grid load-zone review.",
+      "Post-Brexit the UK has taken a pro-innovation, principles-based AI approach that's deliberately distinct from the EU AI Act. Surging data center demand has pressured the grid hard enough that National Grid is now running a formal load-zone review.",
     legislation: [
       {
         id: "uk-ai-bill",
@@ -340,25 +344,24 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     news: [
       {
         id: "uk-news-1",
-        headline: "DSIT publishes pre-deployment evaluation framework",
-        source: "Financial Times",
-        date: "2026-04-09",
-        url: "#",
+        headline: "Ofgem Launches Grid Connection Overhaul",
+        source: "Data Center Dynamics",
+        date: "2026-02-15",
+        url: "https://www.datacenterdynamics.com/en/news/uk-energy-regulator-ofgem-launches-grid-connection-overhaul-consultation-with-data-centers-a-focal-point/",
       },
       {
         id: "uk-news-2",
-        headline: "West London council blocks 200 MW data center expansion",
-        source: "BBC News",
-        date: "2026-04-05",
-        url: "#",
+        headline: "Planning Reform for UK AI Growth Zones",
+        source: "Burges Salmon",
+        date: "2026-01-30",
+        url: "https://www.burges-salmon.com/articles/102lxwu/data-centres-ai-growth-zones-in-planning-change-on-the-horizon-in-2026/",
       },
       {
         id: "uk-news-3",
-        headline:
-          "Ofgem opens DC connection queue review after Slough congestion event",
-        source: "The Guardian",
-        date: "2026-03-30",
-        url: "#",
+        headline: "UK AI Bill Delayed Until After King's Speech",
+        source: "Taylor Wessing",
+        date: "2025-12-10",
+        url: "https://www.taylorwessing.com/en/interface/2025/predictions-2026/uk-tech-and-digital-regulatory-policy-in-2026",
       },
     ],
   },
@@ -373,21 +376,8 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     isOverview: true,
     stance: "review",
     contextBlurb:
-      "AI governance across Asia varies widely. China maintains strict sovereign data requirements while Japan and South Korea pursue innovation-first frameworks with emerging environmental standards.",
-    legislation: [
-      {
-        id: "asia-overview-1",
-        billCode: "—",
-        title: "Regional regulatory landscape",
-        summary:
-          "No pan-Asian AI framework exists. ASEAN issued non-binding guidance in 2024; APEC continues digital economy negotiations.",
-        stage: "Filed",
-        impactTags: [],
-        category: "ai-governance",
-        updatedDate: "2026-03-04",
-        partyOrigin: "B",
-      },
-    ],
+      "Asia is the world's compute and silicon center of gravity. China runs the largest national AI grid build-out anywhere and routes workloads west under its East-Data-West-Compute initiative, while Taiwan's TSMC fabricates over 90% of the world's most advanced chips — making the Strait the single biggest chokepoint in the global AI supply chain. Singapore has become the de-facto transshipment point for export-controlled GPUs bound for the mainland; its share of Nvidia revenue jumped from 9% to 22% in two years, and US prosecutors are now unwinding a $2.5B Super Micro indictment tied to it. Japan and South Korea sit Tier-1 on US chip export controls and have each passed dedicated AI laws — Japan's voluntary, Korea's high-impact-AI Basic Act.",
+    legislation: [],
     keyFigures: [
       {
         id: "asia-koh",
@@ -407,27 +397,52 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     news: [
       {
         id: "asia-news-1",
-        headline:
-          "Japan METI updates voluntary AI guidelines for foundation models",
-        source: "Nikkei Asia",
-        date: "2026-04-09",
-        url: "#",
+        headline: "Japan Joins Asia PUE Cap Push for Data Centers",
+        source: "Uptime Institute",
+        date: "2026-02-10",
+        url: "https://intelligence.uptimeinstitute.com/resource/japan-joins-push-data-center-regulation",
       },
       {
         id: "asia-news-2",
-        headline:
-          "Singapore IMDA opens consultation on data center water use",
-        source: "The Straits Times",
-        date: "2026-04-05",
-        url: "#",
+        headline: "South Korea AI Basic Act Takes Effect",
+        source: "Cooley",
+        date: "2026-01-27",
+        url: "https://www.cooley.com/news/insight/2026/2026-01-27-south-koreas-ai-basic-act-overview-and-key-takeaways",
       },
       {
         id: "asia-news-3",
-        headline:
-          "ASEAN Digital Ministers approve framework for cross-border AI safety review",
-        source: "The Straits Times",
-        date: "2026-03-31",
-        url: "#",
+        headline: "China Cybersecurity Law Adds AI Governance",
+        source: "ICLG",
+        date: "2026-01-10",
+        url: "https://iclg.com/practice-areas/telecoms-media-and-internet-laws-and-regulations/03-china-s-key-developments-in-artificial-intelligence-governance-in-2025",
+      },
+      {
+        id: "asia-news-chip-smugglers",
+        headline: "Chasing the Asia Chip Smuggling Network",
+        source: "The Wire China",
+        date: "2026-03-01",
+        url: "https://www.thewirechina.com/2026/03/01/chasing-the-chip-smugglers-nvidia-ai-chips-china/",
+      },
+      {
+        id: "asia-news-axios-smuggling",
+        headline: "AI Chip Smuggling Signals Strong Chinese Demand",
+        source: "Axios",
+        date: "2026-03-20",
+        url: "https://www.axios.com/2026/03/20/ai-chip-smuggling-china",
+      },
+      {
+        id: "asia-news-fdd-smuggling",
+        headline: "FDD: Limits of Industry Self-Policing on Chip Smuggling",
+        source: "Foundation for Defense of Democracies",
+        date: "2026-03-20",
+        url: "https://www.fdd.org/analysis/2026/03/20/exposure-of-major-chinese-linked-chip-smuggling-operations-shows-limits-of-industry-self-policing/",
+      },
+      {
+        id: "asia-news-singapore-deepseek",
+        headline: "US Probes DeepSeek for Smuggling Nvidia GPUs via Singapore",
+        source: "Tom's Hardware",
+        date: "2025-02-03",
+        url: "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-investigates-whether-deepseek-smuggled-nvidia-ai-gpus-via-singapore",
       },
     ],
   },
@@ -439,7 +454,7 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     level: "federal",
     stance: "favorable",
     contextBlurb:
-      "Japan has pursued an innovation-first approach with voluntary AI guidelines from METI, while the FSA and METI jointly review data center grid integration as part of the GX (Green Transformation) initiative.",
+      "Japan has taken an innovation-first approach: METI's voluntary AI guidelines rather than binding rules. In parallel, the FSA and METI are jointly reviewing how data centers integrate with the grid as part of the GX (Green Transformation) initiative.",
     legislation: [
       {
         id: "jp-ai-guidelines",
@@ -494,26 +509,38 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     news: [
       {
         id: "jp-news-1",
-        headline: "Hokkaido data center cluster wins GX designation",
-        source: "Nikkei Asia",
-        date: "2026-04-08",
-        url: "#",
+        headline: "METI to Mandate 1.4 PUE Cap for Japanese Data Centers",
+        source: "Uptime Institute",
+        date: "2026-02-10",
+        url: "https://intelligence.uptimeinstitute.com/resource/japan-joins-push-data-center-regulation",
       },
       {
         id: "jp-news-2",
-        headline:
-          "JEITA publishes interoperability assessment for AI Act compliance",
-        source: "The Japan Times",
-        date: "2026-04-04",
-        url: "#",
+        headline: "METI Releases AI Contract Checklist",
+        source: "BABL AI",
+        date: "2026-01-15",
+        url: "https://babl.ai/japans-meti-releases-ai-contract-checklist-to-guide-businesses-in-the-era-of-generative-ai/",
       },
       {
         id: "jp-news-3",
-        headline:
-          "TEPCO confirms 600 MW of new data center load contracts for FY2027",
-        source: "Reuters",
-        date: "2026-03-29",
-        url: "#",
+        headline: "Japan Passes AI Law With No Fines or Bans",
+        source: "MailMate",
+        date: "2025-11-20",
+        url: "https://mailmate.jp/blog/japan-ai-regulation-news",
+      },
+      {
+        id: "jp-news-china-feud",
+        headline: "China Probes Japan's Chipmaking Material Exports",
+        source: "Bloomberg",
+        date: "2026-01-06",
+        url: "https://www.bloomberg.com/news/articles/2026-01-06/japan-protests-china-s-new-export-controls-on-dual-use-goods",
+      },
+      {
+        id: "jp-news-meti-controls",
+        headline: "Japan Tightens 23 Categories of Chip Equipment Exports",
+        source: "CSIS",
+        date: "2025-11-10",
+        url: "https://www.csis.org/analysis/understanding-us-allies-current-legal-authority-implement-ai-and-semiconductor-export",
       },
     ],
   },
@@ -523,9 +550,14 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     name: "China",
     region: "asia",
     level: "federal",
-    stance: "restrictive",
+    // Mixed: heavy hand on AI services (CAC content labeling, generative
+    // AI security review, algorithm filing) but massive state subsidy on
+    // compute infrastructure (East Data West Compute, $8.2B AI fund,
+    // 80–100% grid reserve margin). "concerning" captures the tension
+    // better than the older "restrictive" tag.
+    stance: "concerning",
     contextBlurb:
-      "China maintains the world's most prescriptive AI regime, with mandatory security reviews for generative AI services, content labeling requirements, and aggressive data localization rules paired with significant state compute investment.",
+      "China runs the world's most prescriptive AI regime. Generative AI services face mandatory pre-launch security reviews, content labeling is required, and strict data localization rules sit alongside enormous state compute investment.",
     legislation: [
       {
         id: "cn-genai",
@@ -580,26 +612,52 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     news: [
       {
         id: "cn-news-1",
-        headline:
-          "CAC publishes second batch of approved generative AI services",
-        source: "Caixin",
-        date: "2026-04-09",
-        url: "#",
+        headline: "China Cybersecurity Law Adds AI Governance Rules",
+        source: "King & Wood Mallesons",
+        date: "2025-11-15",
+        url: "https://www.kwm.com/us/en/insights/latest-thinking/from-ai-governance-to-enhanced-enforcement-chinas-cybersecurity-law-amendment.html",
       },
       {
         id: "cn-news-2",
-        headline: "Inner Mongolia surpasses Beijing in installed AI compute",
-        source: "South China Morning Post",
-        date: "2026-04-04",
-        url: "#",
+        headline: "China Announces Global AI Governance Action Plan",
+        source: "ANSI",
+        date: "2025-08-01",
+        url: "https://www.ansi.org/standards-news/all-news/8-1-25-china-announces-action-plan-for-global-ai-governance",
       },
       {
         id: "cn-news-3",
-        headline:
-          "NDRC tightens PUE caps for eastern data centers under EDWC Phase II",
-        source: "Bloomberg",
-        date: "2026-03-30",
-        url: "#",
+        headline: "China's Mandatory AI Content Labelling Takes Effect",
+        source: "ICLG",
+        date: "2026-01-10",
+        url: "https://iclg.com/practice-areas/telecoms-media-and-internet-laws-and-regulations/03-china-s-key-developments-in-artificial-intelligence-governance-in-2025",
+      },
+      {
+        id: "cn-news-supermicro",
+        headline: "Super Micro Co-Founder Charged in $2.5B Chip Smuggling",
+        source: "Tech Insider",
+        date: "2026-04-08",
+        url: "https://tech-insider.org/super-micro-nvidia-chip-smuggling-china-2026/",
+      },
+      {
+        id: "cn-news-160m",
+        headline: "DOJ Breaks Up $160M Nvidia GPU Smuggling Ring",
+        source: "CNBC",
+        date: "2025-12-31",
+        url: "https://www.cnbc.com/2025/12/31/160-million-export-controlled-nvidia-gpus-allegedly-smuggled-to-china.html",
+      },
+      {
+        id: "cn-news-grid-advantage",
+        headline: "China's Grid Advantage May Decide the AI Race",
+        source: "Fortune",
+        date: "2025-08-14",
+        url: "https://fortune.com/2025/08/14/data-centers-china-grid-us-infrastructure/",
+      },
+      {
+        id: "cn-news-chip-security-act",
+        headline: "Congress Passes Chip Security Act With Tracking Tech",
+        source: "BISI",
+        date: "2026-03-26",
+        url: "https://bisi.org.uk/reports/ai-chip-smuggling-the-limits-of-us-export-controls",
       },
     ],
   },
@@ -609,9 +667,13 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     name: "South Korea",
     region: "asia",
     level: "federal",
-    stance: "favorable",
+    // South Korea's AI Basic Act (effective Jan 22 2026) is a real binding
+    // framework with statutory high-impact-AI categories and reporting
+    // obligations — that's heavier than Japan's voluntary regime, so
+    // "review" / under-discussion fits better than "favorable".
+    stance: "review",
     contextBlurb:
-      "South Korea enacted its AI Basic Act in 2024 establishing a national framework, sandbox provisions, and a national AI safety institute. The Ministry of Trade is studying grid impacts of upcoming hyperscale projects.",
+      "South Korea passed its AI Basic Act in 2024 — establishing a national oversight framework, a regulatory sandbox, and an AI safety institute. The Ministry of Trade is now studying how upcoming hyperscale projects will stress the grid.",
     legislation: [
       {
         id: "kr-ai-bf",
@@ -666,28 +728,115 @@ export const INTERNATIONAL_ENTITIES: Entity[] = [
     news: [
       {
         id: "kr-news-1",
-        headline:
-          "Korea AI Safety Institute publishes evaluation methodology",
-        source: "The Korea Herald",
-        date: "2026-04-08",
-        url: "#",
+        headline: "South Korea's AI Basic Act Takes Effect",
+        source: "Cooley",
+        date: "2026-01-27",
+        url: "https://www.cooley.com/news/insight/2026/2026-01-27-south-koreas-ai-basic-act-overview-and-key-takeaways",
       },
       {
         id: "kr-news-2",
-        headline:
-          "Naver, Kakao announce joint compliance roadmap for AI Basic Act",
-        source: "Yonhap News Agency",
-        date: "2026-04-04",
-        url: "#",
+        headline: "OneTrust: Preparing for South Korea's New AI Law",
+        source: "OneTrust",
+        date: "2026-01-22",
+        url: "https://www.onetrust.com/blog/south-koreas-new-ai-law-what-it-means-for-organizations-and-how-to-prepare/",
       },
       {
         id: "kr-news-3",
-        headline:
-          "MOTIE moves Hyperscale DC Grid Integration Act out of committee",
-        source: "Korea JoongAng Daily",
-        date: "2026-03-30",
-        url: "#",
+        headline: "ITIF: One Law, One Weak Link in Korea's AI Policy",
+        source: "ITIF",
+        date: "2025-09-29",
+        url: "https://itif.org/publications/2025/09/29/one-law-sets-south-koreas-ai-policy-one-weak-link-could-break-it/",
+      },
+      {
+        id: "kr-news-tier1",
+        headline: "Korea Tier 1 on US AI Diffusion Rule",
+        source: "CSIS",
+        date: "2025-11-10",
+        url: "https://www.csis.org/analysis/understanding-us-allies-current-legal-authority-implement-ai-and-semiconductor-export",
+      },
+      {
+        id: "kr-news-cotton-letter",
+        headline: "Cotton, Huizenga Press for Tighter Asia Chip Controls",
+        source: "Office of Senator Tom Cotton",
+        date: "2026-03-25",
+        url: "https://www.cotton.senate.gov/news/press-releases/cotton-introduces-bill-to-lower-energy-costs-for-arkansans",
       },
     ],
   },
+  {
+    id: "australia",
+    geoId: "36",
+    name: "Australia",
+    region: "asia",
+    level: "federal",
+    // The Mar 2026 National Expectations framework is non-binding and
+    // operates as approval prioritization, not hard regulation — closer
+    // to innovation-friendly than restrictive.
+    stance: "favorable",
+    contextBlurb:
+      "Australia is betting on voluntary standards over AI legislation, relying on its October 2025 Guidance for AI Adoption and a forthcoming AI Safety Institute. In March 2026 the federal government issued its first national expectations for data center developers, tying regulatory priority to clean energy and water sustainability. Privacy reform is rolling out in tranches, and the eSafety Commissioner runs one of the world's most active online-safety enforcement regimes.",
+    legislation: [
+      {
+        id: "au-expectations-2026",
+        billCode: "DISR Expectations 2026",
+        title:
+          "National Expectations of Data Centres and AI Infrastructure Developers",
+        summary:
+          "Commonwealth framework released March 2026 setting non-binding expectations for hyperscale data center and AI infrastructure projects, including grid impact, water use, local compute access for Australian startups and researchers, and alignment with the national clean energy transition. Operates as a prioritization lens for federal approvals rather than a hard regulatory regime.",
+        stage: "Enacted",
+        impactTags: [
+          "grid-capacity",
+          "water-consumption",
+          "renewable-energy",
+          "environmental-review",
+        ],
+        category: "data-center-siting",
+        updatedDate: "2026-03-23",
+        partyOrigin: "B",
+        sourceUrl:
+          "https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers",
+      },
+    ],
+    keyFigures: [],
+    news: [
+      {
+        id: "au-news-1",
+        headline: "Australia Releases National Data Center Expectations",
+        source: "DISR",
+        date: "2026-03-23",
+        url: "https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers",
+      },
+      {
+        id: "au-news-2",
+        headline: "HSF Kramer Breaks Down Australia's New Framework",
+        source: "Herbert Smith Freehills Kramer",
+        date: "2026-03-25",
+        url: "https://www.hsfkramer.com/insights/2026-03/national-expectations-for-the-development-of-data-centres-and-ai-infrastructure-have-been-released-what-you-need-to-know",
+      },
+      {
+        id: "au-news-3",
+        headline: "Australia Puts AI Data Centers on Notice",
+        source: "Data Center Knowledge",
+        date: "2026-03-24",
+        url: "https://www.datacenterknowledge.com/regulations/australia-puts-ai-data-centers-on-notice-with-new-approval-rules",
+      },
+      {
+        id: "au-news-4",
+        headline: "Bird & Bird: Australia Tightens Hyperscaler Obligations",
+        source: "Bird & Bird",
+        date: "2026-03-26",
+        url: "https://www.twobirds.com/en/insights/2026/australia/australia-sets-new-national-expectations-for-data-centres-and-ai-infrastructure",
+      },
+    ],
+  },
+];
+
+// Merge hand-curated baseline with whatever Claude has researched so far.
+// Researched entries override hand-curated ones if IDs collide.
+const RESEARCHED_BY_ID = new Map<string, Entity>();
+for (const e of RESEARCHED_INTERNATIONAL) RESEARCHED_BY_ID.set(e.id, e);
+
+export const INTERNATIONAL_ENTITIES: Entity[] = [
+  ...HAND_CURATED.filter((e) => !RESEARCHED_BY_ID.has(e.id)),
+  ...RESEARCHED_INTERNATIONAL,
 ];

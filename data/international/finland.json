@@ -1,0 +1,119 @@
+{
+  "id": "finland",
+  "geoId": "246",
+  "name": "Finland",
+  "region": "eu",
+  "level": "federal",
+  "stance": "favorable",
+  "contextBlurb": "Finland is implementing the EU AI Act with a deliberately light touch — minimal extra national rules on top. It hosts Google's Hamina and Microsoft's Helsinki-area hyperscale campuses, both pioneering waste-heat recovery into municipal district heating. Starting July 2026, data centers lose their preferential electricity tax rate, replaced by a new value-added incentive scheme.",
+  "legislation": [
+    {
+      "id": "finland-he46-2025",
+      "billCode": "HE 46/2025 vp",
+      "title": "Act on the Supervision of Certain AI Systems (Laki eräiden tekoälyjärjestelmien valvonnasta)",
+      "summary": "This act implements Phase 1 of Finland's national obligations under the EU AI Act, designating Traficom as the central contact point and establishing a multi-member National Sanctions Board with powers to impose administrative fines up to EU AI Act maximums. It entered into force on January 1, 2026 following presidential approval, with Phase 2 provisions on regulatory sandboxes and a high-risk AI systems register expected by August 2, 2026.",
+      "stage": "Enacted",
+      "stance": "review",
+      "impactTags": [
+        "ai-governance",
+        "enforcement",
+        "supervisory-authority",
+        "EU-AI-Act"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-01-07",
+      "partyOrigin": "B",
+      "sourceUrl": "https://valtioneuvosto.fi/en/-/1410877/national-supervision-of-eu-artificial-intelligence-act-to-begin-laws-on-powers-of-authorities-to-take-effect-at-start-of-the-year"
+    },
+    {
+      "id": "finland-he156-2025",
+      "billCode": "HE 156/2025 vp",
+      "title": "Amendment to the Act on Excise Duty on Electricity and Certain Fuels — Data Centre Electricity Tax Reclassification",
+      "summary": "This government proposal moves data centers from the lower electricity tax Category II (0.05 cents/kWh) to the general Category I (2.24 cents/kWh), effective July 1, 2026, raising operating costs roughly 40-fold and generating ~€47 million annually in new revenue. To offset the impact, the government is developing a replacement incentive scheme targeting 'value-added' data centers, expected to enter force in autumn 2026, though its final form remains undecided.",
+      "stage": "Enacted",
+      "stance": "concerning",
+      "impactTags": [
+        "electricity-tax",
+        "data-center-energy",
+        "investment-incentives",
+        "operating-costs"
+      ],
+      "category": "data-center-energy",
+      "updatedDate": "2026-03-11",
+      "partyOrigin": "B",
+      "sourceUrl": "https://valtioneuvosto.fi/en/-/government-safeguards-finland-s-competitiveness-in-attracting-data-centre-investments"
+    },
+    {
+      "id": "finland-ai-sandbox-proposal-2025",
+      "billCode": "Draft Government Proposal (AI Sandboxes, April 2025)",
+      "title": "Draft Government Proposal on AI Regulatory Sandboxes in Finland",
+      "summary": "Published April 25, 2025 by the Ministry of Economic Affairs and Employment, this proposal establishes national regulatory test environments (sandboxes) allowing organizations to develop and test AI systems under supervisory oversight, fulfilling Finland's EU AI Act obligation to operate at least one sandbox by August 2, 2026. Rules on AI sandboxes are expected to enter into force by February 1, 2026, and may be established in cooperation with other EU member states.",
+      "stage": "Enacted",
+      "stance": "favorable",
+      "impactTags": [
+        "ai-governance",
+        "regulatory-sandbox",
+        "innovation",
+        "EU-AI-Act-Phase2"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-02-01",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.hannessnellman.com/news-and-views/blog/eu-ai-act-latest-regulatory-developments-in-finland/"
+    }
+  ],
+  "keyFigures": [
+    {
+      "id": "finland-orpo",
+      "name": "Petteri Orpo",
+      "role": "Prime Minister of Finland",
+      "party": "NCP",
+      "stance": "favorable",
+      "quote": "Public and private sector investments are coming together to take AI research and application in Finland to the next level."
+    },
+    {
+      "id": "finland-purra",
+      "name": "Riikka Purra",
+      "role": "Minister of Finance",
+      "party": "PS",
+      "stance": "review"
+    },
+    {
+      "id": "finland-saarimaki",
+      "name": "Jarkko Saarimäki",
+      "role": "Director-General, Finnish Transport and Communications Agency (Traficom)",
+      "party": "",
+      "stance": "review"
+    }
+  ],
+  "news": [
+    {
+      "id": "finland-news-1",
+      "headline": "Plans on hold for Google data center in Finland following potential electricity tax rise",
+      "source": "Data Center Dynamics",
+      "date": "2026-03-11",
+      "url": "https://www.datacenterdynamics.com/en/news/plans-on-hold-for-google-data-center-in-finland-following-potential-electricity-tax-raise/"
+    },
+    {
+      "id": "finland-news-2",
+      "headline": "National supervision of EU Artificial Intelligence Act to begin – laws on powers of authorities to take effect at start of the year",
+      "source": "Finnish Government (Valtioneuvosto)",
+      "date": "2026-01-07",
+      "url": "https://valtioneuvosto.fi/en/-/1410877/national-supervision-of-eu-artificial-intelligence-act-to-begin-laws-on-powers-of-authorities-to-take-effect-at-start-of-the-year"
+    },
+    {
+      "id": "finland-news-3",
+      "headline": "Finland, Sweden Warm Up to Data Centre District Heat Amid Lingering Sustainability Concerns",
+      "source": "The Energy Mix",
+      "date": "2025-12-12",
+      "url": "https://www.theenergymix.com/finland-sweden-warm-up-to-data-centre-district-heat-amid-lingering-sovereignty-concerns/"
+    },
+    {
+      "id": "finland-news-4",
+      "headline": "Finland aims to host a European AI gigafactory",
+      "source": "Finnish Government (Valtioneuvosto)",
+      "date": "2025-06-24",
+      "url": "https://valtioneuvosto.fi/en/-/finland-aims-to-host-a-european-ai-gigafactory-"
+    }
+  ]
+}
