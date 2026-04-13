@@ -47,6 +47,43 @@ function matchesTopic(item: NewsItem, t: TopicFilter): boolean {
   return TOPIC_KEYWORDS[t].test(text);
 }
 
+type SortKey = "latest" | "relevance";
+
+const SORT_OPTIONS: { key: SortKey; label: string }[] = [
+  { key: "latest", label: "Latest" },
+  { key: "relevance", label: "Most relevant" },
+];
+
+// Signal-weighted terms for the relevance score. High-signal words
+// (lawsuit, moratorium, executive order) outweigh generic ones so a
+// story about a court ruling beats a generic "AI policy" explainer.
+const HIGH_SIGNAL = /\b(lawsuit|moratorium|executive order|injunction|ruling|court|passed|enacted|vetoed|signed|blocked|voided|halted|rejected|anthropic|openai|stargate|gigawatt|\d+\s?gw\b|referendum)\b/gi;
+const MED_SIGNAL = /\b(policy|regulat|legislat|data\s?cent(?:er|re)|hyperscale|grid|bill\b|framework|protest|rally|opposition)\b/gi;
+
+function countMatches(re: RegExp, text: string): number {
+  return text.match(re)?.length ?? 0;
+}
+
+// Exponential recency decay with a 7-day half-life. A 1-day-old story
+// keeps ~91% of its score; a 14-day-old story keeps ~25%. Beyond that
+// the story has to be truly high-signal to rise.
+function recencyMultiplier(dateIso: string): number {
+  if (!dateIso) return 0.5;
+  const d = new Date(dateIso);
+  if (Number.isNaN(d.getTime())) return 0.5;
+  const ageDays = Math.max(0, (Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
+  return Math.pow(0.5, ageDays / 7);
+}
+
+function relevanceScore(row: NewsRow): number {
+  const text = `${row.item.headline} ${row.item.summary ?? ""}`;
+  const base =
+    countMatches(HIGH_SIGNAL, text) * 3 +
+    countMatches(MED_SIGNAL, text) * 1 +
+    (row.item.summarySource === "article" ? 2 : 0);
+  return (base + 1) * recencyMultiplier(row.item.date);
+}
+
 function matchesScope(entity: Entity, s: ScopeFilter): boolean {
   if (s === "all") return true;
   if (s === "us-federal") {
@@ -84,10 +121,22 @@ const LAST_UPDATED_FMT = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
+// "today" / "yesterday" keep the feed feeling fresh when it actually is —
+// the full date is only used once a story is a few days old. Based on the
+// latest news item we have, not on a pipeline-writer timestamp, so it
+// reflects real content freshness.
 function formatLastUpdated(iso: string | undefined): string | null {
   if (!iso) return null;
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return null;
+  const now = new Date();
+  const startOf = (x: Date) => new Date(x.getFullYear(), x.getMonth(), x.getDate());
+  const diffDays = Math.round(
+    (startOf(now).getTime() - startOf(d).getTime()) / (1000 * 60 * 60 * 24),
+  );
+  if (diffDays <= 0) return "today";
+  if (diffDays === 1) return "yesterday";
+  if (diffDays < 7) return `${diffDays} days ago`;
   return LAST_UPDATED_FMT.format(d);
 }
 
@@ -119,7 +168,7 @@ function LiveNewsCard({
   const hasSummary = Boolean(item.summary);
 
   return (
-    <article className="break-inside-avoid mb-3 bg-white border border-black/[.06] rounded-2xl p-5 transition-colors hover:border-black/[.12]">
+    <article className="break-inside-avoid mb-3 bg-white border border-black/[.06] rounded-2xl p-5 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] hover:border-black/[.12] hover:shadow-[0_10px_28px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.03)] hover:-translate-y-0.5">
       {/* Headline goes straight to the source article — no click-to-expand
           indirection. The card is a display surface, not a toggle. */}
       <a
@@ -185,6 +234,7 @@ export default function LiveNews({ showAll = false }: LiveNewsProps = {}) {
   const [query, setQuery] = useState("");
   const [activeScope, setActiveScope] = useState<ScopeFilter>("all");
   const [activeTopic, setActiveTopic] = useState<TopicFilter>("all");
+  const [sortKey, setSortKey] = useState<SortKey>("relevance");
 
   const allRows = useMemo(() => buildNewsRows(), []);
   const lastUpdated = useMemo(
@@ -243,8 +293,12 @@ export default function LiveNews({ showAll = false }: LiveNewsProps = {}) {
     if (q) {
       rows = rows.filter((r) => rowMatchesQuery(r, q));
     }
+    if (sortKey === "relevance") {
+      rows = [...rows].sort((a, b) => relevanceScore(b) - relevanceScore(a));
+    }
+    // Default (latest): allRows is already date-desc from buildNewsRows.
     return rows;
-  }, [allRows, activeScope, activeTopic, query]);
+  }, [allRows, activeScope, activeTopic, query, sortKey]);
 
   const hasMore = !showAll && filtered.length > PREVIEW_COUNT;
   const visible = showAll ? filtered : filtered.slice(0, PREVIEW_COUNT);
@@ -371,6 +425,41 @@ export default function LiveNews({ showAll = false }: LiveNewsProps = {}) {
               </button>
             );
           })}
+        </div>
+      </div>
+
+      {/* Sort — same chip-dropdown pattern used in the other sections. */}
+      <div className="flex items-center gap-2 mb-6">
+        <span className="text-[13px] font-medium text-muted tracking-tight">
+          Sort
+        </span>
+        <div className="relative">
+          <select
+            value={sortKey}
+            onChange={(e) => setSortKey(e.target.value as SortKey)}
+            className="appearance-none rounded-full bg-black/[.04] text-ink text-xs font-medium pl-3 pr-7 py-1.5 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/20"
+          >
+            {SORT_OPTIONS.map((opt) => (
+              <option key={opt.key} value={opt.key}>
+                {opt.label}
+              </option>
+            ))}
+          </select>
+          <svg
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            className="absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-muted"
+          >
+            <path
+              d="M2.5 3.75L5 6.25L7.5 3.75"
+              stroke="currentColor"
+              strokeWidth="1.25"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </div>
       </div>
 

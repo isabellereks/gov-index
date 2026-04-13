@@ -351,8 +351,16 @@ export default function SidePanel({
         className={`flex items-center justify-center px-3 pt-2 pb-1 flex-shrink-0 select-none touch-none ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
+        aria-label="Drag to move panel, tap to collapse"
       >
-        <div className="w-9 h-1 rounded-full bg-black/15" />
+        {/* Tiny dynamic feedback on the grab bar — CSS-only so pointer
+            capture is never interrupted by a motion component recomputing
+            transforms mid-drag. Widens and darkens while actively held. */}
+        <div
+          className={`h-1 rounded-full transition-all duration-200 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+            isDragging ? "bg-black/30 w-12" : "bg-black/15 w-9"
+          }`}
+        />
       </div>
 
       {facilityMode && facility ? (
@@ -419,9 +427,11 @@ export default function SidePanel({
                 }}
               >
                 <div
-                  className="relative inline-flex items-center gap-1 p-1 rounded-full bg-black/[.04] self-start"
+                  className="sticky top-0 z-10 -mx-6 -mt-2 px-6 pt-2 pb-2 bg-white/90 backdrop-blur-md flex"
                   role="tablist"
+                  aria-label="Sidebar sections"
                 >
+                  <div className="relative inline-flex items-center gap-1 p-1 rounded-full bg-black/[.04]">
                   {availableLayers.map((layer) => {
                     const active = layer === activeLayer;
                     const label =
@@ -439,7 +449,7 @@ export default function SidePanel({
                         role="tab"
                         aria-selected={active}
                         onClick={() => setPreferredLayer(layer)}
-                        className={`relative text-xs font-medium px-3 py-1.5 rounded-full transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.97] ${
+                        className={`relative text-xs font-medium px-3.5 py-1.5 rounded-full transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.97] ${
                           active ? "text-ink" : "text-muted hover:text-ink"
                         }`}
                         style={{ transitionProperty: "color, transform" }}
@@ -467,6 +477,7 @@ export default function SidePanel({
                       </button>
                     );
                   })}
+                  </div>
                 </div>
 
                 {activeLayer === "legislation" && hasLegislation && (
@@ -474,6 +485,7 @@ export default function SidePanel({
                     <LegislationList
                       legislation={entity.legislation.slice(0, LEGISLATION_PREVIEW)}
                       stateCode={entity.level === "federal" ? "US" : undefined}
+                      onSelectFacility={onSelectFacility}
                     />
                     <SeeAllLink
                       total={entity.legislation.length}
@@ -541,6 +553,12 @@ export default function SidePanel({
 
   const isMin = size === "min";
 
+  // NOTE: the shell is a plain <aside>, not motion.aside. framer-motion's
+  // `animate` prop commandeers the element's `transform`, which collides
+  // with the inline `transform: translate(...)` we use for positioning
+  // and drag offsets — wrapping the aside in motion broke both the pill's
+  // stability and the drag gesture. The existing CSS spring on the shell
+  // already carries the min↔md morph, so we don't need motion here.
   return (
     <aside
       style={{

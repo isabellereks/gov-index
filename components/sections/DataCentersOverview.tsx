@@ -1,11 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import Link from "next/link";
 import {
+  IMPACT_TAG_LABEL,
   STATE_FIPS,
   type DataCenter,
   type DataCenterStatus,
+  type ImpactTag,
   type ViewTarget,
 } from "@/types";
 import { ALL_FACILITIES } from "@/lib/datacenters";
@@ -86,6 +88,18 @@ function stripConfidence(s: string | undefined): string | undefined {
   return s.replace(/\s*#\w+/g, "").trim();
 }
 
+// Concerns are stored as kebab-case impact tags (or bespoke strings).
+// Prefer the canonical IMPACT_TAG_LABEL, fall back to title-casing.
+function prettyConcern(tag: string): string {
+  return (
+    IMPACT_TAG_LABEL[tag as ImpactTag] ??
+    tag
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ")
+  );
+}
+
 interface Stat {
   label: string;
   value: string;
@@ -138,6 +152,10 @@ export default function DataCentersOverview({
   const [sortKey, setSortKey] = useState<SortKey>("relevance");
   const [powerUnit, setPowerUnit] = useState<PowerUnit>("MW");
   const [query, setQuery] = useState("");
+  // Click a row to tint it (single-select). Click again to clear.
+  // Navigation to the row's region is its own affordance — the operator
+  // name is now a link so selecting and navigating are decoupled.
+  const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const disclosedCostCount = useMemo(
     () => ALL_FACILITIES.filter((f) => !!f.costUSD).length,
@@ -355,7 +373,10 @@ export default function DataCentersOverview({
       {/* Table — clean rows, no card chrome. Row click takes you to the
           relevant region/state on the map. */}
       <div className="overflow-x-auto -mx-2">
-        <table className="w-full min-w-[720px] text-sm border-collapse">
+        {/* border-separate lets individual row cells round + own their own
+            background. border-spacing-0 keeps rows flush; the hairline
+            between rows lives on the cells themselves. */}
+        <table className="w-full min-w-[720px] text-sm border-separate border-spacing-0">
           <thead>
             <tr className="text-[11px] text-muted tracking-tight text-left">
               <th className="font-medium py-3 px-2">Project</th>
@@ -403,48 +424,138 @@ export default function DataCentersOverview({
               const target = targetForFacility(f);
               const location = f.state ?? f.country ?? "—";
 
+              const isExpanded = selectedId === f.id;
+              const concerns = f.concerns ?? [];
+              const notes = stripConfidence(f.notes);
+              const hasExpandedContent = concerns.length > 0 || !!notes;
+
+              // Hover AND expanded states both wash the row grey + round
+              // its outer corners into a pill. Expanded stays put so the
+              // user can see what they opened even after the cursor
+              // leaves; hover is the transient version.
+              //
+              // Border-top on every cell acts as the row separator under
+              // border-separate. We clear it on the active row AND the
+              // row right after it (via group-hover on next-sibling) so
+              // the pill's rounded corners aren't cut by a hairline.
+              const cellBase =
+                "py-3.5 px-2 border-t border-black/[.05] transition-colors duration-200 ease-[cubic-bezier(0.32,0.72,0,1)]";
+              const rowBg = isExpanded
+                ? "bg-black/[.05]"
+                : "group-hover:bg-black/[.05]";
+              // When the expansion below is going to render, round only
+              // the TOP corners of the header row so the two rows fuse
+              // into one continuous pill. Without this the row looks like
+              // its own card and the expansion looks like a second one
+              // floating underneath.
+              const roundLeft = isExpanded
+                ? hasExpandedContent
+                  ? "rounded-tl-xl"
+                  : "rounded-l-xl"
+                : "group-hover:rounded-l-xl";
+              const roundRight = isExpanded
+                ? hasExpandedContent
+                  ? "rounded-tr-xl"
+                  : "rounded-r-xl"
+                : "group-hover:rounded-r-xl";
+              const clearTopBorder = isExpanded
+                ? "border-transparent"
+                : "group-hover:border-transparent";
+
               return (
-                <tr
-                  key={f.id}
-                  onClick={() => target && onNavigateToEntity(target)}
-                  className="border-t border-black/[.05] hover:bg-bg/60 transition-colors cursor-pointer"
-                >
-                  <td className="py-3.5 px-2">
-                    <div className="font-medium text-ink tracking-tight truncate max-w-[18rem]">
-                      {operator}
-                    </div>
-                    <div className="text-[11px] text-muted truncate max-w-[18rem] mt-0.5">
-                      {stripConfidence(f.location) ?? location}
-                    </div>
-                  </td>
-                  <td className="py-3.5 px-2 text-muted hidden md:table-cell truncate max-w-[10rem]">
-                    {showUser ? user : "—"}
-                  </td>
-                  <td className="py-3.5 px-2 text-ink tabular-nums">
-                    {formatPowerNumber(f.capacityMW, powerUnit)}
-                  </td>
-                  <td className="py-3.5 px-2 text-ink tabular-nums hidden lg:table-cell">
-                    {formatCost(f.costUSD)}
-                  </td>
-                  <td className="py-3.5 px-2 text-ink tabular-nums hidden lg:table-cell">
-                    {formatH100e(f.computeH100e)}
-                  </td>
-                  <td className="py-3.5 px-2 text-muted whitespace-nowrap">
-                    {location}
-                  </td>
-                  <td className="py-3.5 px-2">
-                    <span className="inline-flex items-center gap-1.5 text-[12px] text-ink">
-                      <span
-                        className="inline-block w-1.5 h-1.5 rounded-full flex-shrink-0"
-                        style={{
-                          backgroundColor: isProposed ? "transparent" : color,
-                          border: isProposed ? `1.25px solid ${color}` : "none",
-                        }}
-                      />
-                      {STATUS_LABEL[f.status]}
-                    </span>
-                  </td>
-                </tr>
+                <Fragment key={f.id}>
+                  <tr
+                    onClick={() =>
+                      setSelectedId((prev) => (prev === f.id ? null : f.id))
+                    }
+                    aria-expanded={isExpanded && hasExpandedContent}
+                    className="group cursor-pointer"
+                  >
+                    <td className={`${cellBase} ${clearTopBorder} ${rowBg} ${roundLeft}`}>
+                      {target ? (
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onNavigateToEntity(target);
+                          }}
+                          className="text-left font-medium text-ink tracking-tight truncate max-w-[18rem] hover:underline decoration-muted/40 decoration-[0.5px] underline-offset-4 hover:decoration-ink"
+                        >
+                          {operator}
+                        </button>
+                      ) : (
+                        <div className="font-medium text-ink tracking-tight truncate max-w-[18rem]">
+                          {operator}
+                        </div>
+                      )}
+                      <div className="text-[11px] text-muted truncate max-w-[18rem] mt-0.5">
+                        {stripConfidence(f.location) ?? location}
+                      </div>
+                    </td>
+                    <td className={`${cellBase} ${clearTopBorder} ${rowBg} text-muted hidden md:table-cell truncate max-w-[10rem]`}>
+                      {showUser ? user : "—"}
+                    </td>
+                    <td className={`${cellBase} ${clearTopBorder} ${rowBg} text-ink tabular-nums`}>
+                      {formatPowerNumber(f.capacityMW, powerUnit)}
+                    </td>
+                    <td className={`${cellBase} ${clearTopBorder} ${rowBg} text-ink tabular-nums hidden lg:table-cell`}>
+                      {formatCost(f.costUSD)}
+                    </td>
+                    <td className={`${cellBase} ${clearTopBorder} ${rowBg} text-ink tabular-nums hidden lg:table-cell`}>
+                      {formatH100e(f.computeH100e)}
+                    </td>
+                    <td className={`${cellBase} ${clearTopBorder} ${rowBg} text-muted whitespace-nowrap`}>
+                      {location}
+                    </td>
+                    <td className={`${cellBase} ${clearTopBorder} ${rowBg} ${roundRight}`}>
+                      <span className="inline-flex items-center gap-1.5 text-[12px] text-ink">
+                        <span
+                          className="inline-block w-1.5 h-1.5 rounded-full flex-shrink-0"
+                          style={{
+                            backgroundColor: isProposed ? "transparent" : color,
+                            border: isProposed ? `1.25px solid ${color}` : "none",
+                          }}
+                        />
+                        {STATUS_LABEL[f.status]}
+                      </span>
+                    </td>
+                  </tr>
+
+                  {/* Expanded detail — same grey wash, rounded-b so it
+                      feels like one continuous pill. Typography mirrors
+                      FacilityDetail: notes first as a plain body blurb,
+                      concerns as the same muted pill chips. No label
+                      headers — the visual separation from the row header
+                      carries enough context. */}
+                  {isExpanded && hasExpandedContent && (
+                    <tr>
+                      <td
+                        colSpan={7}
+                        className="bg-black/[.05] rounded-b-xl px-4 pt-1 pb-4"
+                      >
+                        <div className="flex flex-col gap-3 max-w-prose">
+                          {notes && (
+                            <p className="text-[13px] text-muted leading-relaxed">
+                              {notes}
+                            </p>
+                          )}
+                          {concerns.length > 0 && (
+                            <ul className="flex flex-wrap gap-1.5">
+                              {concerns.map((c) => (
+                                <li
+                                  key={c}
+                                  className="text-[11.5px] px-2 py-1 rounded-full bg-white/60 text-ink/80 tracking-tight"
+                                >
+                                  {prettyConcern(c)}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                </Fragment>
               );
             })}
           </tbody>
