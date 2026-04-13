@@ -90,17 +90,19 @@ body {
 .highlight-sweep {
   background-image: linear-gradient(
     120deg,
-    var(--sweep-color, rgba(245, 197, 24, 0.28)) 0%,
-    var(--sweep-color, rgba(245, 197, 24, 0.22)) 100%
+    var(--sweep-color, rgba(245, 197, 24, 0.18)) 0%,
+    var(--sweep-color, rgba(245, 197, 24, 0.18)) 100%
   );
   background-repeat: no-repeat;
-  background-position: 0 88%;
-  background-size: 0% 38%;
-  animation: highlight-sweep 720ms cubic-bezier(0.32, 0.72, 0, 1) both;
+  background-position: 0 0;
+  background-size: 0% 100%;
+  animation: highlight-sweep 600ms cubic-bezier(0.32, 0.72, 0, 1) both;
   animation-delay: var(--sweep-delay, 0ms);
-  padding: 0 2px;
-  margin: 0 -2px;
-  border-radius: 2px;
+  padding: 1px 3px;
+  margin: 0 -3px;
+  border-radius: 3px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 /* Soft cross-fade between region summaries */
@@ -116,4 +118,73 @@ body {
 }
 .animate-fade-rise {
   animation: fade-rise 380ms cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+/* Popup entrance with subtle overshoot — ported from agentation's
+   annotation popup. Scale + translateY feel physical without being
+   cartoonish; the cubic-bezier ends at 1.56 for a gentle settle. */
+@keyframes popup-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-popup-enter {
+  animation: popup-enter 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transform-origin: var(--popup-origin, top center);
+  will-change: transform, opacity;
+}
+
+/* Horizontal shake — for invalid input / rejected action feedback. */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+}
+.animate-shake {
+  animation: shake 0.25s ease-out;
+}
+
+/* Grid-rows accordion: set grid-template-rows to 0fr→1fr for smooth
+   auto-height collapse without measuring content. Child must have
+   overflow:hidden. Works where max-height hacks fail. */
+.accordion {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.accordion[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+.accordion > .accordion-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* Chevron rotate on expand — pair with [data-open]. */
+.chevron {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.chevron[data-open="true"] {
+  transform: rotate(90deg);
+}
+
+/* Respect OS-level reduced-motion. Strips decorative transitions/animations
+   globally; functional feedback (opacity, color) still reads fine without
+   movement. Keep this last so it overrides utility classes. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

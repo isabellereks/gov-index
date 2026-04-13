@@ -56,6 +56,47 @@ export default function AboutPage() {
             This is placeholder content while we build out the full site.
           </p>
         </div>
+
+        <div className="mt-16 pt-10 border-t border-black/[.06]">
+          <div className="text-[13px] font-medium text-muted tracking-tight mb-4">
+            Credits
+          </div>
+          <ul className="text-sm text-ink/80 leading-relaxed space-y-2">
+            <li>
+              Inspired by{" "}
+              <a
+                href="https://datacenterbans.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+              >
+                datacenterbans.com
+              </a>
+            </li>
+            <li>
+              Icons by{" "}
+              <a
+                href="https://streamlinehq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+              >
+                Streamline
+              </a>
+            </li>
+            <li>
+              Built by{" "}
+              <a
+                href="https://x.com/isareksopuro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+              >
+                @isareksopuro
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
   );

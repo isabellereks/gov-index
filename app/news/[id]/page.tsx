@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ENTITIES } from "@/lib/placeholder-data";
-import LegislationList from "@/components/panel/LegislationList";
+import NewsSection from "@/components/panel/NewsSection";
 import StanceBadge from "@/components/ui/StanceBadge";
 
-export default async function LegislationPage({
+export default async function NewsPage({
   params,
 }: {
   params: Promise<{ id: string }>;
@@ -14,13 +14,13 @@ export default async function LegislationPage({
   const entity = ENTITIES.find((e) => e.id === decodedId);
   if (!entity) notFound();
 
-  const total = entity.legislation.length;
+  const total = entity.news.length;
 
   return (
     <main className="min-h-screen bg-bg">
       <div className="max-w-3xl mx-auto px-8 py-14">
         <Link
-          href="/#legislation"
+          href="/#news"
           className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-ink transition-colors mb-10"
         >
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -47,25 +47,20 @@ export default async function LegislationPage({
               <StanceBadge stance={entity.stanceDatacenter} size="md" />
             </div>
             <div className="flex items-center gap-1.5">
-              <span className="text-[11px] text-muted tracking-tight">
-                AI
-              </span>
+              <span className="text-[11px] text-muted tracking-tight">AI</span>
               <StanceBadge stance={entity.stanceAI} size="md" />
             </div>
             <span className="text-sm text-muted">
-              {total} {total === 1 ? "bill" : "bills"}
+              {total} {total === 1 ? "article" : "articles"}
             </span>
           </div>
         </div>
 
         {total > 0 ? (
-          <LegislationList
-            legislation={entity.legislation}
-            stateCode={entity.level === "federal" ? "US" : undefined}
-          />
+          <NewsSection news={entity.news} />
         ) : (
           <p className="text-sm text-muted">
-            No legislation on file for {entity.name}.
+            No news on file for {entity.name}.
           </p>
         )}
       </div>
@@ -74,7 +69,5 @@ export default async function LegislationPage({
 }
 
 export function generateStaticParams() {
-  return ENTITIES.filter((e) => e.legislation.length > 0).map((e) => ({
-    id: e.id,
-  }));
+  return ENTITIES.filter((e) => e.news.length > 0).map((e) => ({ id: e.id }));
 }

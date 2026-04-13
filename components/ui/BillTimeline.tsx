@@ -2,6 +2,15 @@ import type { Stage } from "@/types";
 
 const PIPELINE: Stage[] = ["Filed", "Committee", "Floor", "Enacted"];
 
+const STAGE_SHORT: Record<Stage, string> = {
+  Filed: "Filed",
+  Committee: "In committee",
+  Floor: "Floor vote",
+  Enacted: "Enacted",
+  "Carried Over": "Carried over",
+  Dead: "Dead",
+};
+
 function progressFor(stage: Stage): number {
   switch (stage) {
     case "Filed":
@@ -49,14 +58,14 @@ export default function BillTimeline({ stage }: { stage: Stage }) {
                 isCurrent ? "text-ink font-medium" : "text-muted"
               }`}
             >
-              {s}
+              {STAGE_SHORT[s]}
             </span>
           );
         })}
       </div>
       {isTerminal && (
         <div className={`text-[11px] mt-1.5 ${overlayColor}`}>
-          Stage: {stage}
+          {STAGE_SHORT[stage]}
         </div>
       )}
     </div>

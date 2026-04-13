@@ -8,6 +8,7 @@ import SummaryBar from "@/components/sections/SummaryBar";
 import DimensionToggle from "@/components/sections/DimensionToggle";
 import AIOverview from "@/components/sections/AIOverview";
 import LegislationTable from "@/components/sections/LegislationTable";
+import DataCentersOverview from "@/components/sections/DataCentersOverview";
 import LiveNews from "@/components/sections/LiveNews";
 import { useScrollProgress } from "@/lib/use-scroll-progress";
 import type {
@@ -85,9 +86,9 @@ export default function Page() {
             01 · At a glance
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-[1.1] mb-10">
-            State of global AI policy
+            State of US policy
           </h2>
-          <SummaryBar />
+          <SummaryBar lens={lens} />
           <div className="mt-12">
             <DimensionToggle
               dimension={dimension}
@@ -113,7 +114,10 @@ export default function Page() {
       </section>
 
       {/* Section 3 — Full legislation table */}
-      <section className="relative z-10 bg-white border-t border-black/[.06]">
+      <section
+        id="legislation"
+        className="relative z-10 bg-white border-t border-black/[.06] scroll-mt-20"
+      >
         <div className="max-w-5xl mx-auto px-8 pt-20 pb-24">
           <div className="text-[13px] font-medium text-muted tracking-tight mb-2">
             03 · The full record
@@ -128,11 +132,30 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Section 4 — Live news feed */}
-      <section className="relative z-10 bg-bg border-t border-black/[.06]">
+      {/* Section 4 — Where the compute lives: data center inventory */}
+      <section
+        id="datacenters"
+        className="relative z-10 bg-bg border-t border-black/[.06] scroll-mt-20"
+      >
         <div className="max-w-5xl mx-auto px-8 pt-20 pb-24">
           <div className="text-[13px] font-medium text-muted tracking-tight mb-2">
-            04 · From the wire
+            04 · Where the compute lives
+          </div>
+          <h2 className="text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-[1.1] mb-10">
+            Data centers we&rsquo;re tracking
+          </h2>
+          <DataCentersOverview onNavigateToEntity={handleNavigateToEntity} />
+        </div>
+      </section>
+
+      {/* Section 5 — Live news feed */}
+      <section
+        id="news"
+        className="relative z-10 bg-white border-t border-black/[.06] scroll-mt-20"
+      >
+        <div className="max-w-5xl mx-auto px-8 pt-20 pb-24">
+          <div className="text-[13px] font-medium text-muted tracking-tight mb-2">
+            05 · From the wire
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-[1.1] mb-10">
             Live news
@@ -160,24 +183,14 @@ export default function Page() {
             </Link>
           </div>
           <span>
-            Inspired by{" "}
+            Built by{" "}
             <a
-              href="https://datacenterbans.com"
+              href="https://x.com/isareksopuro"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-ink transition-colors"
             >
-              datacenterbans.com
-            </a>
-            <span aria-hidden> · </span>
-            Icons by{" "}
-            <a
-              href="https://streamlinehq.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-ink transition-colors"
-            >
-              Streamline
+              @isareksopuro
             </a>
           </span>
         </div>

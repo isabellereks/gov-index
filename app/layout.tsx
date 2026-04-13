@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="font-sans bg-white text-ink antialiased">
-        <Script id="scroll-restoration" strategy="beforeInteractive">
-          {`if ('scrollRestoration' in history) history.scrollRestoration = 'manual';`}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if ('scrollRestoration' in history) history.scrollRestoration = 'manual';`,
+          }}
+        />
         {process.env.NODE_ENV === "development" && (
           <Script
             src="//unpkg.com/react-grab/dist/index.global.js"

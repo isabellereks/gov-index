@@ -4,7 +4,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { ViewTarget } from "@/types";
 import { search, type SearchItem, type SearchKind } from "@/lib/search";
 
+/**
+ * Spotlight-style command palette. Always renders as a modal — the
+ * caller controls when it's visible. Triggered from the top toolbar
+ * (chip click) or from the global ⌘K shortcut bound there.
+ */
 interface SearchPillProps {
+  open: boolean;
+  onClose: () => void;
   onNavigate: (target: ViewTarget) => void;
 }
 
@@ -62,41 +69,45 @@ function ClearButton({ onClick }: { onClick: () => void }) {
   );
 }
 
-export default function SearchPill({ onNavigate }: SearchPillProps) {
+export default function SearchPill({ open, onClose, onNavigate }: SearchPillProps) {
   const [query, setQuery] = useState("");
-  const [open, setOpen] = useState(false);
   const [activeIdx, setActiveIdx] = useState(0);
-  const lgContainerRef = useRef<HTMLDivElement>(null);
-  const smallModalRef = useRef<HTMLDivElement>(null);
-  const smallInputRef = useRef<HTMLInputElement>(null);
-  const lgInputRef = useRef<HTMLInputElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const results = useMemo(() => (query.trim() ? search(query, 8) : []), [query]);
 
+  // Reset query when the modal is dismissed so re-opening doesn't show a
+  // stale result list under the new query.
   useEffect(() => {
+    if (!open) {
+      setQuery("");
+      setActiveIdx(0);
+      return;
+    }
+    requestAnimationFrame(() => inputRef.current?.focus());
+  }, [open]);
+
+  // Click-outside dismiss. Bound only while open so it doesn't run idle
+  // listeners when the chrome is hidden.
+  useEffect(() => {
+    if (!open) return;
     function onMouseDown(e: MouseEvent) {
       const target = e.target as Node;
-      if (
-        !lgContainerRef.current?.contains(target) &&
-        !smallModalRef.current?.contains(target)
-      ) {
-        setOpen(false);
-      }
+      if (!modalRef.current?.contains(target)) onClose();
     }
     document.addEventListener("mousedown", onMouseDown);
     return () => document.removeEventListener("mousedown", onMouseDown);
-  }, []);
+  }, [open, onClose]);
 
   function pick(item: SearchItem) {
     onNavigate(item.target);
-    setQuery("");
-    setOpen(false);
+    onClose();
   }
 
   function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Escape") {
-      setOpen(false);
-      (e.currentTarget as HTMLInputElement).blur();
+      onClose();
       return;
     }
     if (results.length === 0) return;
@@ -112,116 +123,33 @@ export default function SearchPill({ onNavigate }: SearchPillProps) {
     }
   }
 
-  const openSmall = () => {
-    setOpen(true);
-    requestAnimationFrame(() => smallInputRef.current?.focus());
-  };
-
-  const resultList = (
-    <div className="bg-white/90 backdrop-blur-2xl rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.1),0_2px_8px_rgba(0,0,0,0.04)] border border-black/[.04] max-h-[60vh] overflow-y-auto p-1">
-      {results.map((r, idx) => {
-        const active = idx === activeIdx;
-        return (
-          <button
-            key={r.id}
-            type="button"
-            onMouseEnter={() => setActiveIdx(idx)}
-            onClick={() => pick(r)}
-            className={`w-full text-left px-3 py-2.5 rounded-2xl flex items-start gap-3 transition-colors ${
-              active ? "bg-bg/80" : "hover:bg-bg/60"
-            }`}
-          >
-            <span
-              className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${KIND_DOT[r.kind]}`}
-            />
-            <div className="flex-1 min-w-0">
-              <div className="text-sm text-ink font-medium tracking-tight truncate">
-                {r.label}
-              </div>
-              {r.sublabel && (
-                <div className="text-xs text-muted truncate">{r.sublabel}</div>
-              )}
-            </div>
-            <span className="text-[11px] font-medium text-muted/70 tracking-tight mt-1 flex-shrink-0">
-              {KIND_TAG[r.kind]}
-            </span>
-          </button>
-        );
-      })}
-    </div>
-  );
-
   return (
-    <>
-      {/* Small screens: icon-only trigger at top-left */}
-      <button
-        type="button"
-        onClick={openSmall}
-        aria-label="Search"
-        className="lg:hidden fixed top-6 left-6 z-30 w-11 h-11 flex items-center justify-center rounded-full bg-white/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.1),0_2px_8px_rgba(0,0,0,0.04)] border border-black/[.04]"
-      >
-        <SearchIcon />
-      </button>
-
-      {/* Small screens: centered modal (Apple Spotlight-style) */}
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Search"
+      className={`fixed inset-0 z-40 flex items-start justify-center pt-[14vh] px-4 bg-white/55 backdrop-blur-2xl transition-[opacity,backdrop-filter] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+        open ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
       <div
-        className={`lg:hidden fixed inset-0 z-40 flex items-start justify-center pt-[14vh] px-4 bg-white/55 backdrop-blur-2xl transition-[opacity,backdrop-filter] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] ${
-          open ? "opacity-100" : "opacity-0 pointer-events-none"
+        ref={modalRef}
+        className={`w-full max-w-[28rem] flex flex-col gap-2 transition-[transform,opacity] duration-[350ms] ease-[cubic-bezier(0.32,0.72,0,1)] will-change-transform ${
+          open
+            ? "opacity-100 scale-100 translate-y-0"
+            : "opacity-0 scale-95 -translate-y-3"
         }`}
       >
-        <div
-          ref={smallModalRef}
-          className={`w-full max-w-[26rem] flex flex-col gap-2 transition-[transform,opacity] duration-[350ms] ease-[cubic-bezier(0.32,0.72,0,1)] ${
-            open
-              ? "opacity-100 scale-100 translate-y-0"
-              : "opacity-0 scale-95 -translate-y-3"
-          }`}
-        >
-            <div className="flex items-center gap-2.5 px-4 py-3 rounded-full bg-white/95 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.15),0_2px_8px_rgba(0,0,0,0.06)] border border-black/[.04]">
-              <SearchIcon />
-              <input
-                ref={smallInputRef}
-                type="text"
-                value={query}
-                onChange={(e) => {
-                  setQuery(e.target.value);
-                  setActiveIdx(0);
-                }}
-                onKeyDown={onKeyDown}
-                placeholder="Search countries, states, bills…"
-                className="flex-1 bg-transparent text-sm text-ink placeholder:text-muted focus:outline-none min-w-0"
-              />
-              {query && (
-                <ClearButton
-                  onClick={() => {
-                    setQuery("");
-                    smallInputRef.current?.focus();
-                  }}
-                />
-              )}
-            </div>
-            {results.length > 0 && resultList}
-          </div>
-        </div>
-
-      {/* Large screens: inline pill at bottom-right */}
-      <div
-        ref={lgContainerRef}
-        className="hidden lg:flex fixed bottom-6 right-6 z-30 w-[22rem] max-w-[calc(100vw-3rem)] flex-col gap-2"
-      >
-        {open && results.length > 0 && resultList}
-        <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.1),0_2px_8px_rgba(0,0,0,0.04)] border border-black/[.04]">
+        <div className="flex items-center gap-2.5 px-4 py-3 rounded-full bg-white/95 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.15),0_2px_8px_rgba(0,0,0,0.06)] border border-black/[.04]">
           <SearchIcon />
           <input
-            ref={lgInputRef}
+            ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
               setActiveIdx(0);
-              setOpen(true);
             }}
-            onFocus={() => setOpen(true)}
             onKeyDown={onKeyDown}
             placeholder="Search countries, states, bills…"
             className="flex-1 bg-transparent text-sm text-ink placeholder:text-muted focus:outline-none min-w-0"
@@ -230,12 +158,45 @@ export default function SearchPill({ onNavigate }: SearchPillProps) {
             <ClearButton
               onClick={() => {
                 setQuery("");
-                lgInputRef.current?.focus();
+                inputRef.current?.focus();
               }}
             />
           )}
         </div>
+        {results.length > 0 && (
+          <div className="bg-white/95 backdrop-blur-2xl rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.1),0_2px_8px_rgba(0,0,0,0.04)] border border-black/[.04] max-h-[60vh] overflow-y-auto p-1">
+            {results.map((r, idx) => {
+              const active = idx === activeIdx;
+              return (
+                <button
+                  key={r.id}
+                  type="button"
+                  onMouseEnter={() => setActiveIdx(idx)}
+                  onClick={() => pick(r)}
+                  className={`w-full text-left px-3 py-2.5 rounded-2xl flex items-start gap-3 transition-colors ${
+                    active ? "bg-bg/80" : "hover:bg-bg/60"
+                  }`}
+                >
+                  <span
+                    className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${KIND_DOT[r.kind]}`}
+                  />
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm text-ink font-medium tracking-tight truncate">
+                      {r.label}
+                    </div>
+                    {r.sublabel && (
+                      <div className="text-xs text-muted truncate">{r.sublabel}</div>
+                    )}
+                  </div>
+                  <span className="text-[11px] font-medium text-muted/70 tracking-tight mt-1 flex-shrink-0">
+                    {KIND_TAG[r.kind]}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 }
