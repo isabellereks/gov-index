@@ -2,9 +2,10 @@
   "state": "South Carolina",
   "stateCode": "SC",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "South Carolina has 10 relevant bills tracked in 2025–2026 — 6 on data-center policy and 4 on AI regulation. 1 has been enacted into law. 1 imposes active bans or moratoriums.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "South Carolina is advancing regulation across both data centers and AI. On data centers: H5484 (in committee) — This South Carolina bill sets new rules for commercial data centers, including requirements to report water usage, file decommissioning plans, and meet specific electric service terms, while also r… On AI: H3431 (enacted) — This South Carolina bill requires social media platforms to use reasonable care with minors' personal data, limits how much personal information can be collected from children, and mandates parenta…",
   "legislation": [
     {
       "id": "sc-s0867",
@@ -13,6 +14,12 @@
       "summary": "This bill creates a comprehensive permitting and oversight system for data centers in South Carolina, requiring siting permits, environmental impact assessments, water and energy efficiency standards, and noise/vibration controls before a data center can be built or operated. It also establishes a new government office and advisory committee to oversee data center development and sets rules for how utility costs are allocated.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "environmental-review",
         "water-consumption",
@@ -40,6 +47,10 @@
       "summary": "This South Carolina bill would create consumer protection rules around high-risk AI systems, specifically banning algorithmic discrimination that harms people based on protected characteristics. It establishes a comprehensive framework requiring businesses to prevent biased or unfair outcomes when using AI to make important decisions affecting consumers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -80,6 +91,12 @@
       "summary": "This bill requires data centers in South Carolina to obtain a certificate from the Public Service Commission before operating, with reviews covering energy efficiency, water use, environmental impact, infrastructure adequacy, and grid cost allocation. It establishes ongoing compliance standards and reporting requirements, creating a comprehensive regulatory framework for data center development in the state.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "grid-capacity",
@@ -105,6 +122,10 @@
       "summary": "This bill regulates commercial data centers in South Carolina by requiring water usage reporting, mandating public comment periods for energy infrastructure permits, and limiting existing sales tax exemptions for data center equipment to companies that acted before May 30, 2025. It also adds new rules around electric service terms for data centers and strengthens landowner notice requirements when utilities plan construction that could involve eminent domain.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -132,6 +153,10 @@
       "summary": "This bill requires large commercial data centers in South Carolina that use 3 million or more gallons of water per month to report their water usage annually to the state Department of Environmental Services. Data centers that fail to comply with the reporting requirement would face penalties.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "review"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure"
@@ -154,6 +179,10 @@
       "summary": "This South Carolina bill sets new rules for commercial data centers, including requirements to report water usage, file decommissioning plans, and meet specific electric service terms, while also restricting certain sales tax exemptions for data centers after May 2026. It also strengthens public oversight of energy infrastructure projects, including mandatory public comment periods and landowner notification when eminent domain may be used.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -199,6 +228,10 @@
       "summary": "This bill requires online services to protect children's personal data, limit data collection on minors, and give parents tools to monitor and report harms. It also mandates that platforms publicly report their practices related to minors and provide kids with tools to control their time and data on the service.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "child-safety",
         "data-privacy",
@@ -223,6 +256,10 @@
       "summary": "This bill establishes rules requiring data centers in South Carolina to operate responsibly and sustainably, likely including environmental and energy standards. It aims to prevent data centers from shifting their costs or burdens onto taxpayers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -250,6 +287,10 @@
       "summary": "This South Carolina bill requires social media platforms to use reasonable care with minors' personal data, limits how much personal information can be collected from children, and mandates parental controls. It also requires annual reporting and sets up enforcement mechanisms to ensure compliance.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "child-safety",
@@ -275,6 +316,10 @@
       "summary": "This bill regulates who can use automatic license plate reader systems in South Carolina and sets rules for how law enforcement can use the data collected. It also allows the state Department of Transportation to permit certain government cameras on non-interstate highways.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"

@@ -2,9 +2,10 @@
   "state": "Massachusetts",
   "stateCode": "MA",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Massachusetts has 7 relevant bills tracked in 2025–2026 — 1 on data-center policy and 6 on AI regulation. 7 advance stricter regulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Massachusetts is under discussion on data centers and advancing regulation on AI. On data centers: H495 (in committee) — Aims to reduce the greenhouse gas emissions produced by artificial intelligence systems and data centers in Massachusetts. On AI: H4640 (in committee) — Puts into law the recommendations made by a special commission studying facial recognition technology, likely establishing rules and restrictions on how it can be used.",
   "legislation": [
     {
       "id": "ma-s50",
@@ -33,6 +34,10 @@
       "summary": "This bill establishes consumer protections for people interacting with AI systems, likely requiring transparency and safeguards around how AI engages with users. It aims to ensure consumers are informed and protected when dealing with automated AI-driven interactions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -56,6 +61,10 @@
       "summary": "This bill puts into law the recommendations made by a special commission studying facial recognition technology, likely establishing rules and restrictions on how it can be used. It aims to regulate the deployment of facial recognition, particularly by law enforcement and government agencies.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -153,6 +162,11 @@
       "summary": "This bill aims to reduce the greenhouse gas emissions produced by artificial intelligence systems and data centers in Massachusetts. It would likely impose reporting requirements or efficiency standards on AI operations to address their environmental impact.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "ai-governance-dim": "review"
+      },
       "impactTags": [
         "carbon-emissions",
         "energy-rates",
@@ -176,6 +190,10 @@
       "summary": "This bill proposes rules governing how artificial intelligence and software tools can be used when making healthcare decisions. It aims to ensure oversight and likely transparency requirements for AI-driven medical decision-making processes.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency"
@@ -197,6 +215,10 @@
       "summary": "This bill proposes rules governing how artificial intelligence and software tools can be used to make or assist in healthcare decisions in Massachusetts. It likely requires transparency, oversight, or restrictions on AI-driven medical decision-making to protect patients.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",
@@ -218,6 +240,10 @@
       "summary": "This bill would require disclosures when artificial intelligence is used, so people know when they are interacting with or being affected by AI systems. It aims to increase transparency around how AI is being used in Massachusetts.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"

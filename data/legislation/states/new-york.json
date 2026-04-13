@@ -2,9 +2,10 @@
   "state": "New York",
   "stateCode": "NY",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "New York has 11 relevant bills tracked in 2025–2026 — 5 on data-center policy and 6 on AI regulation. 3 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "New York is advancing regulation across both data centers and AI. On data centers: A10141 (in committee) — Would halt all new data center construction permits in New York while requiring regulators to take action to protect residents, businesses, and industries from higher electricity and gas… On AI: S01962 (in committee) — Would prohibit businesses from using AI algorithms to discriminate against people based on protected characteristics like race, gender, or religion.",
   "legislation": [
     {
       "id": "ny-a09086",
@@ -13,6 +14,11 @@
       "summary": "This bill requires data centers in New York to report their annual energy use and bans them from receiving incentives tied to fossil fuel energy contracts. It also directs state regulators to create a special surcharge and discount system to manage the grid costs that data centers impose on other utility customers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "ai-governance-dim": "none"
+      },
       "impactTags": [
         "carbon-emissions",
         "energy-rates",
@@ -63,6 +69,11 @@
       "summary": "This New York bill would require data centers to report their annual energy use and ban them from receiving incentives tied to fossil fuel energy contracts. It also directs state regulators to create a special surcharge and discount system for data center electricity rates.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "ai-governance-dim": "none"
+      },
       "impactTags": [
         "carbon-emissions",
         "energy-rates",
@@ -88,6 +99,11 @@
       "summary": "This bill would halt all new data center construction permits in New York while requiring regulators to take action to protect residents, businesses, and industries from higher electricity and gas bills caused by data centers. It aims to pause data center growth until the impact on utility rates can be addressed.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -113,6 +129,11 @@
       "summary": "This bill would halt all new data center construction permits in New York while requiring state regulators to take action to protect residents, businesses, and industries from rising electricity and gas costs caused by data centers. It directly targets the rapid growth of data centers and their strain on the energy grid.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -138,6 +159,10 @@
       "summary": "This bill allows New York's Office of Renewable Energy Siting to issue permits for battery energy storage systems used by data centers, even when not paired with renewable energy. It also requires data centers to submit plans showing how they will reduce their carbon emissions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "favorable"
+      },
       "impactTags": [
         "carbon-emissions",
         "renewable-energy",
@@ -180,6 +205,10 @@
       "summary": "This New York bill would require companies that build generative AI systems to publicly disclose information about the data used to train those systems on their websites. Developers would need to provide at least a high-level summary of the datasets used, increasing transparency around how AI models are built.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -204,6 +233,10 @@
       "summary": "This bill would prohibit businesses from using AI algorithms to discriminate against people based on protected characteristics like race, gender, or religion. It establishes consumer protections against discriminatory AI decision-making in New York.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -226,6 +259,10 @@
       "summary": "This bill would prohibit businesses from using AI algorithms to discriminate against people based on protected characteristics like race, gender, or religion. It establishes consumer protections against biased AI decision-making in New York.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -248,6 +285,10 @@
       "summary": "This New York bill would require companies that build generative AI models to publicly disclose information about the data used to train those models on their websites. Developers would need to provide a high-level summary of their training datasets, increasing transparency around how AI systems are built.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"

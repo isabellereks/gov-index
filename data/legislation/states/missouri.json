@@ -2,9 +2,10 @@
   "state": "Missouri",
   "stateCode": "MO",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Missouri has 7 relevant bills tracked in 2025–2026 — 2 on data-center policy and 5 on AI regulation. 3 impose active bans or moratoriums.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Missouri is under discussion on data centers and advancing regulation on AI. On data centers: HB3390 (filed) — Establishes new rules governing where and how data centers can be built in the state. On AI: HB2032 (in committee) — Requires age verification for companion chatbot services to prevent minors from accessing them.",
   "legislation": [
     {
       "id": "mo-hb1810",
@@ -31,6 +32,10 @@
       "summary": "This bill establishes rules for AI chatbots, likely requiring disclosures and safety measures around their use. It appears to set standards for transparency and potentially protections for vulnerable users such as children.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -107,6 +112,11 @@
       "summary": "This Missouri bill establishes new rules governing where and how data centers can be built in the state. It likely sets siting requirements, zoning standards, or review processes that developers must follow before constructing new facilities.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "none",
+        "community": "none",
+        "land-use": "none"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",
@@ -147,6 +157,10 @@
       "summary": "This bill establishes environmental accountability requirements for AI data centers in Missouri, likely including reporting and compliance standards around energy use, water consumption, and environmental impact. It aims to hold data center operators responsible for their environmental footprint as these facilities expand.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -171,6 +185,10 @@
       "summary": "This bill establishes new rules for how warehouse distribution centers can manage and monitor their workers, likely targeting automated or algorithm-driven work quota and tracking systems. It aims to protect employees from unfair treatment driven by automated performance monitoring in warehouse settings.",
       "stage": "Filed",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-workforce": "concerning"
+      },
       "impactTags": [
         "ai-in-employment",
         "algorithmic-transparency"
@@ -192,6 +210,11 @@
       "summary": "This bill requires age verification for companion chatbot services to prevent minors from accessing them. It establishes rules to ensure these AI-powered conversational tools are not used by children without appropriate safeguards.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "none"
+      },
       "impactTags": [
         "child-safety",
         "ai-in-healthcare",
@@ -236,6 +259,10 @@
       "summary": "This Missouri bill lets people sue if someone publishes AI-generated or AI-modified content without disclosing that AI was used to create or alter it. It creates a legal remedy for individuals harmed by undisclosed AI-generated content.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"

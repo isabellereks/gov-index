@@ -2,9 +2,10 @@
   "state": "South Dakota",
   "stateCode": "SD",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "South Dakota has 12 relevant bills tracked in 2025–2026 — 7 on data-center policy and 5 on AI regulation. 2 have been enacted into law. 5 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "South Dakota is advancing regulation across both data centers and AI. On data centers: SB135 (enacted) — Aims to protect South Dakota residents from higher utility bills and power shortages that could result from data center electricity demand. On AI: SB168 (in committee) — Sets rules on how chatbots can be used by minors in South Dakota.",
   "legislation": [
     {
       "id": "sd-sb135",
@@ -13,6 +14,10 @@
       "summary": "This bill aims to protect South Dakota residents from higher utility bills and power shortages that could result from data center electricity demand. It also clarifies which government authorities have the power to regulate data centers and their utility usage.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -39,6 +44,10 @@
       "summary": "This bill requires health insurance companies in South Dakota to follow specific rules when using AI systems to make decisions about covering or providing health care services. It aims to ensure AI-driven coverage determinations are fair, transparent, and accountable.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",
@@ -61,6 +70,12 @@
       "summary": "This bill places a temporary ban on new data center construction in South Dakota while addressing the financial and grid strain that large data centers place on electricity systems. It aims to protect other electricity users from higher costs and reliability risks caused by the heavy power demands of data centers.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "environmental": "none",
+        "energy": "restrictive",
+        "community": "concerning",
+        "land-use": "none"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -86,6 +101,10 @@
       "summary": "This South Dakota bill aims to shield residents from higher utility bills and power shortages caused by data centers by giving regulators clearer authority to oversee them. It also updates rules around what goods and services data centers are allowed to purchase.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -172,6 +191,10 @@
       "summary": "This bill bans the use of artificial intelligence in providing therapy and psychotherapy services in South Dakota. Violations would result in a penalty, effectively preventing AI systems from delivering mental health counseling to patients.",
       "stage": "Filed",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "ai-safety"
@@ -193,6 +216,10 @@
       "summary": "This bill sets rules on how chatbots can be used by minors in South Dakota. It likely requires safeguards or restrictions to protect children interacting with AI-powered chat tools.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "child-safety",
         "algorithmic-transparency"
@@ -214,6 +241,10 @@
       "summary": "This bill places limits on nuisances created by data centers, such as noise and other disturbances that can affect nearby residents. It aims to regulate how data centers operate to reduce their negative impact on surrounding communities.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "noise-vibration",
         "residential-proximity",
@@ -239,6 +270,11 @@
       "summary": "This bill places a one-year ban on building or expanding large-scale data centers in South Dakota. During the pause, the state would have time to evaluate the impacts of hyperscale facilities before allowing new construction to proceed.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",

@@ -2,9 +2,10 @@
   "state": "Virginia",
   "stateCode": "VA",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Virginia has 3 relevant bills tracked in 2025–2026 — 1 on data-center policy and 2 on AI regulation. 1 has been enacted into law. 2 advance stricter regulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Virginia is under discussion across both data centers and AI. On data centers: HB897 (in committee) — Ties Virginia's existing data center sales tax exemption to new clean energy requirements, including phased bans on carbon-emitting generators and mandates to source energy from clean res… On AI: HB797 (enacted) — Directs a Virginia legislative commission to study whether the state should create a framework for independent organizations that verify AI systems meet safety standards.",
   "legislation": [
     {
       "id": "va-sb85",
@@ -13,6 +14,10 @@
       "summary": "This Virginia bill requires social media platforms and AI system operators to build open interfaces so users can move their personal connection data and AI-related data to other services. It places significant technical and compliance obligations on covered platforms, taking effect in 2027.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "favorable"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"

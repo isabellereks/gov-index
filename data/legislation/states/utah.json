@@ -2,9 +2,10 @@
   "state": "Utah",
   "stateCode": "UT",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Utah has 6 relevant bills tracked in 2025–2026 — 2 on data-center policy and 4 on AI regulation. 5 have been enacted into law. 6 advance stricter regulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Utah is under discussion on data centers and advancing regulation on AI. On data centers: HB0076 (enacted) — Requires data centers in Utah to report on their water usage, increasing transparency around how much water these facilities consume. On AI: HB0273 (enacted) — Proposes changes to how technology is used in Utah classrooms, likely setting rules or restrictions around student use of devices and digital tools.",
   "legislation": [
     {
       "id": "ut-hb0076",
@@ -13,6 +14,10 @@
       "summary": "This bill requires data centers in Utah to report on their water usage, increasing transparency around how much water these facilities consume. It aims to give the public and regulators better insight into the environmental impact of data center operations on local water resources.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "review"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -38,6 +43,10 @@
       "summary": "This bill proposes changes to how technology is used in Utah classrooms, likely setting rules or restrictions around student use of devices and digital tools. It may address concerns about protecting children from harmful content or inappropriate technology use in schools.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-education",
         "child-safety"
@@ -106,6 +115,10 @@
       "summary": "This bill amends Utah's privacy and cybersecurity laws, likely adding new requirements for how organizations collect, store, or protect personal data. It may include provisions related to consumer data rights and transparency about how data is used.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -147,6 +160,11 @@
       "summary": "This bill makes changes to rules governing critical infrastructure, which likely includes data centers and related facilities in Utah. It may affect where and how such infrastructure can be built or operated.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "review",
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",

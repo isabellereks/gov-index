@@ -2,9 +2,10 @@
   "state": "West Virginia",
   "stateCode": "WV",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "West Virginia has 8 relevant bills tracked in 2025–2026 — 5 on data-center policy and 3 on AI regulation. 5 impose active bans or moratoriums.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "West Virginia is advancing regulation across both data centers and AI. On data centers: HB4948 (in committee) — Requires data centers in West Virginia to be built at least 500 feet away from any home, school, or house of worship. On AI: HB5034 (in committee) — Creates a West Virginia law protecting genetic and biometric data by requiring companies to tell consumers how their genetic information is collected and used, and banning the sale or tra…",
   "legislation": [
     {
       "id": "wv-hb4832",
@@ -13,6 +14,11 @@
       "summary": "This bill requires large data centers in West Virginia to report their water usage to the state environmental agency, which can then restrict or ban their water withdrawals if harm to water resources is detected. It also directs the agency to analyze the impact of high-impact data centers on the state's public waterways.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "review",
+        "community": "none"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -39,6 +45,10 @@
       "summary": "This bill limits how artificial intelligence can be used to deliver mental health care in West Virginia, allowing AI only for administrative tasks rather than direct patient care. It sets rules to ensure that mental health treatment decisions remain in the hands of licensed human professionals rather than AI systems.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",
@@ -129,6 +139,10 @@
       "summary": "This bill requires data centers in West Virginia to be built at least 500 feet away from any home, school, or house of worship. It creates a mandatory setback rule that would restrict where new data centers can be located.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "local-zoning",
         "residential-proximity",
@@ -155,6 +169,10 @@
       "summary": "This bill creates a West Virginia law protecting genetic and biometric data by requiring companies to tell consumers how their genetic information is collected and used, and banning the sale or transfer of that data to foreign adversaries. It also gives individuals the right to sue if their genetic privacy rights are violated.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -240,6 +258,12 @@
       "summary": "This bill sets rules for how data centers can be built or managed in West Virginia counties where the ground is mostly made of karst geology — a porous limestone terrain that is especially vulnerable to groundwater contamination and sinkholes. It appears to impose specific oversight or restrictions on data center siting in these environmentally sensitive areas.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "favorable",
+        "community": "review",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "environmental-review",
@@ -264,6 +288,10 @@
       "summary": "This bill gives counties and municipalities in West Virginia more say over where and how data centers and microgrid projects are built in their communities. It shifts oversight authority away from the state level and back to local governments.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "favorable",
+        "land-use": "favorable"
+      },
       "impactTags": [
         "local-zoning",
         "local-control"

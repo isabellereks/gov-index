@@ -2,9 +2,10 @@
   "state": "Delaware",
   "stateCode": "DE",
   "region": "na",
-  "stance": "review",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Delaware has 2 relevant bills tracked in 2025–2026 on AI regulation. 1 has been enacted into law. 1 advances stricter regulation.",
+  "stanceDatacenter": "none",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Delaware is under discussion on AI, with no data-center legislation currently tracked. On AI: HJR7 (enacted) — This resolution directs Delaware's AI Commission to work with the Secretary of State to design a regulatory sandbox — a controlled testing environment — for new technologies that use agentic AI, wh…",
   "legislation": [
     {
       "id": "de-hb231",

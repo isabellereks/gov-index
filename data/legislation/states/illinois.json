@@ -2,9 +2,10 @@
   "state": "Illinois",
   "stateCode": "IL",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Illinois has 12 relevant bills tracked in 2025–2026 on AI regulation. 2 impose active bans or moratoriums.",
+  "stanceDatacenter": "none",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Illinois is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB3303 (in committee) — Bans distributing deceptive AI-generated or manipulated media about candidates within 90 days of an election if it's intended to damage their reputation or mislead voters.",
   "legislation": [
     {
       "id": "il-hb3312",
@@ -36,6 +37,10 @@
       "summary": "This Illinois bill requires AI companies to embed provenance labels in all AI-generated images, video, and audio content, and to provide free tools for people to read those labels. It also places compliance obligations on online platforms, device manufacturers, and hosting services, with civil penalties for violations.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "deepfake-regulation"
@@ -78,6 +83,10 @@
       "summary": "This Illinois bill bans distributing deceptive AI-generated or manipulated media about candidates within 90 days of an election if it's intended to damage their reputation or mislead voters. Violators face penalties, with exceptions for satire and clearly labeled content.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"
@@ -99,6 +108,10 @@
       "summary": "This Illinois bill sets rules for how police can use facial recognition technology, banning its use for real-time surveillance, politically motivated monitoring, or profiling based on race or protected characteristics. It also requires compliance audits, state reporting on accuracy, and standardized training for law enforcement agencies.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -121,6 +134,10 @@
       "summary": "This bill requires Illinois utilities to store customer energy usage data for extended periods and share it securely with account holders or their designated third parties upon request. It establishes rules for how and when this data must be delivered, and includes protections for utilities against liability when data is misused after proper sharing.",
       "stage": "Committee",
       "stance": "review",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "none"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -142,6 +159,10 @@
       "summary": "This bill would require companies that handle large amounts of Illinois residents' personal data to give consumers rights to access, correct, and delete their information, and to know who their data has been shared with. It also requires data brokers to register with the state and creates a portal for consumers to request deletion of their data across all registered brokers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -163,6 +184,10 @@
       "summary": "This bill would create a comprehensive Illinois data privacy law requiring businesses to limit how they collect and use personal data, give individuals rights over their information, and apply special protections for children. Companies would need clear policies and face enforcement for violations.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "child-safety",
@@ -185,6 +210,10 @@
       "summary": "This bill would create a comprehensive data privacy law in Illinois, giving consumers rights to access, correct, and understand how their personal data is used by businesses. It applies to companies handling data of 100,000 or more Illinois residents or those that earn significant revenue from selling personal data, with enforcement by the Attorney General.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -206,6 +235,10 @@
       "summary": "This Illinois bill requires companies that handle personal health data to clearly disclose their privacy practices, get explicit consent before collecting or selling health data, and give individuals the right to delete their data or withdraw consent. It also bans discriminatory treatment of people who refuse to share their health data and restricts location-based targeting near health facilities.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "none"
+      },
       "impactTags": [
         "data-privacy",
         "ai-in-healthcare"
@@ -230,6 +263,10 @@
       "summary": "This Illinois bill requires companies that handle personal health data to disclose their privacy practices, get explicit consent before collecting or selling health information, and give individuals the right to delete their data. It also bans discriminatory practices against people who refuse to share their health data and places strict rules on geofencing near health facilities.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "ai-in-healthcare"
@@ -251,6 +288,10 @@
       "summary": "This Illinois bill creates a comprehensive consumer data privacy law giving residents the right to opt out of targeted advertising, data sales, and automated profiling that affects their lives. It establishes rules for businesses handling personal data and imposes civil penalties for violations, taking effect in 2027.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"

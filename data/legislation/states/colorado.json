@@ -2,9 +2,10 @@
   "state": "Colorado",
   "stateCode": "CO",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Colorado has 7 relevant bills tracked in 2025–2026 — 2 on data-center policy and 5 on AI regulation. 3 impose active bans or moratoriums.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Colorado is under discussion on data centers and advancing regulation on AI. On data centers: SB102 (in committee) — Establishes accountability measures for large-scale data centers in Colorado, likely including requirements around energy use, grid impact, and reporting. On AI: HB1113 (in committee) — Modifies Colorado election laws, likely including rules around the use of AI-generated or synthetic media in political campaigns.",
   "legislation": [
     {
       "id": "co-sb102",
@@ -13,6 +14,11 @@
       "summary": "This bill establishes accountability measures for large-scale data centers in Colorado, likely including requirements around energy use, grid impact, and reporting. It aims to ensure that data centers consuming significant amounts of power are subject to oversight and transparency obligations.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "ai-governance-dim": "none"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -38,6 +44,10 @@
       "summary": "This bill bans the use of someone's personal identifying features — such as their face, voice, or likeness — without their permission. It aims to protect individuals from unauthorized digital reproduction or impersonation of their identity.",
       "stage": "Dead",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "data-privacy",
@@ -61,6 +71,10 @@
       "summary": "This bill regulates how law enforcement agencies in Colorado can use surveillance technologies, with the goal of protecting citizens' rights. It likely requires oversight, transparency, or restrictions on tools like facial recognition or other monitoring systems used by police.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -82,6 +96,10 @@
       "summary": "This bill sets up a framework to guide how data centers are built and powered in Colorado, requiring them to support clean energy, grid modernization, and environmental protections. It aims to balance the rapid growth of data centers with the needs of utility customers and the environment.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "renewable-energy",
@@ -108,6 +126,10 @@
       "summary": "This bill sets rules for companies that operate AI chatbot or conversational AI services, requiring them to meet certain transparency and safety standards. It likely includes protections for users, particularly around disclosure that they are interacting with an AI and safeguards for vulnerable users such as children.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -134,6 +156,10 @@
       "summary": "This bill places restrictions on how artificial intelligence can be used in psychotherapy services in Colorado. It aims to protect patients by limiting or regulating AI's role in mental health treatment.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",

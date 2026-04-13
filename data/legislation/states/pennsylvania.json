@@ -2,9 +2,10 @@
   "state": "Pennsylvania",
   "stateCode": "PA",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Pennsylvania has 11 relevant bills tracked in 2025–2026 — 7 on data-center policy and 4 on AI regulation. 2 impose active bans or moratoriums. 2 offer incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Pennsylvania is advancing regulation across both data centers and AI. On data centers: HB1834 (in committee) — Requires commercial data centers to meet clean energy standards, file contracts with state regulators, and follow rules on backup generation and grid management. On AI: HB1942 (in committee) — Bans 'surveillance pricing,' where businesses use personal data and algorithms to charge individual customers different prices based on their behavior or characteristics.",
   "legislation": [
     {
       "id": "pa-hb2198",
@@ -37,6 +38,10 @@
       "summary": "This bill bans 'surveillance pricing,' where businesses use personal data and algorithms to charge individual customers different prices based on their behavior or characteristics. It establishes penalties for companies that engage in this practice.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -61,6 +66,12 @@
       "summary": "This Pennsylvania bill creates a new state office and a regulatory sandbox program to fast-track permits and reduce red tape for large data centers that generate their own power. It takes a pro-industry approach designed to attract AI and emerging technology investment to the state.",
       "stage": "Committee",
       "stance": "favorable",
+      "dimensionStances": {
+        "energy": "favorable",
+        "community": "review",
+        "land-use": "favorable",
+        "ai-governance-dim": "favorable"
+      },
       "impactTags": [
         "grid-capacity",
         "local-zoning",
@@ -87,6 +98,10 @@
       "summary": "This bill helps Pennsylvania municipalities develop local ordinances for regulating data centers by providing guidance and assistance. It aims to make it easier for local governments to establish rules around data center construction and operation in their communities.",
       "stage": "Committee",
       "stance": "favorable",
+      "dimensionStances": {
+        "community": "favorable",
+        "land-use": "favorable"
+      },
       "impactTags": [
         "local-zoning",
         "local-control"
@@ -132,6 +147,11 @@
       "summary": "This Pennsylvania bill requires commercial data centers to meet clean energy standards, file contracts with state regulators, and follow rules on backup generation and grid management. It also creates special accounts to help low-income households with energy costs and funds energy independence efforts, with penalties for non-compliance.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "ai-governance-dim": "none"
+      },
       "impactTags": [
         "grid-capacity",
         "renewable-energy",
@@ -159,6 +179,10 @@
       "summary": "This bill requires data centers in Pennsylvania to submit annual reports on how much energy and water they use, with penalties for non-compliance. It increases transparency around data center resource consumption but does not impose caps or bans on usage.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -185,6 +209,12 @@
       "summary": "This bill adds data center water use regulations to Pennsylvania's state water planning framework, requiring covered data centers to comply with water resource rules. It establishes new oversight and likely reporting or permitting requirements for how data centers consume water.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "community": "review",
+        "land-use": "review"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -211,6 +241,11 @@
       "summary": "This Pennsylvania bill creates a formal permitting process that data centers must go through before being built, with the state's environmental agency overseeing approvals. It adds regulatory hurdles to data center construction by requiring environmental review and compliance before siting can proceed.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "community": "review",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "environmental-review",
         "local-zoning",
@@ -261,6 +296,11 @@
       "summary": "This Pennsylvania bill sets rules for how artificial intelligence can be used in mental health therapy services. It establishes enforcement mechanisms to ensure AI-based therapy tools are used appropriately and safely.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "ai-safety",

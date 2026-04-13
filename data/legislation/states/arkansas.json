@@ -2,9 +2,10 @@
   "state": "Arkansas",
   "stateCode": "AR",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Arkansas has 4 relevant bills tracked in 2025–2026 on data-center policy. 2 advance stricter regulation. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "none",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Arkansas is under discussion on data centers, with no AI legislation currently tracked. On data centers: HR1013 (in committee) — Would change the rules governing where and how cryptocurrency mining businesses can operate, including adjusting what local governments can and cannot regulate about these operat…",
   "legislation": [
     {
       "id": "ar-sr7",
@@ -13,6 +14,10 @@
       "summary": "This Arkansas bill would change the rules for cryptocurrency mining businesses and adjust how much authority local governments have to regulate them. It could expand or restrict local oversight of these energy-intensive facilities, which often share infrastructure concerns with data centers.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-control",
         "local-zoning",
@@ -35,6 +40,10 @@
       "summary": "This Arkansas bill would change the rules governing where and how cryptocurrency mining businesses can operate, including adjusting what local governments can and cannot regulate about these operations. It affects siting requirements and local authority over digital asset mining facilities, which often resemble data centers in their energy and land use impacts.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-control",
         "local-zoning",

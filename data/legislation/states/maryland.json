@@ -2,9 +2,10 @@
   "state": "Maryland",
   "stateCode": "MD",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Maryland has 11 relevant bills tracked in 2025–2026 — 7 on data-center policy and 4 on AI regulation. 2 impose active bans or moratoriums. 3 offer incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Maryland is advancing regulation across both data centers and AI. On data centers: HB120 (in committee) — Places a statewide ban on new data center construction, preventing both private builders and government bodies from proceeding with new projects. On AI: HB293 (on the floor) — Allows Maryland's student and workforce data system to share data with third-party data centers for multistate reporting, subject to written agreements and compliance requirements.",
   "legislation": [
     {
       "id": "md-hb293",
@@ -13,6 +14,10 @@
       "summary": "This bill allows Maryland's student and workforce data system to share data with third-party data centers for multistate reporting, subject to written agreements and compliance requirements. It establishes oversight by requiring reports to legislative committees whenever such data-sharing agreements are entered into.",
       "stage": "Floor",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "review"
+      },
       "impactTags": [
         "data-privacy",
         "ai-in-education"
@@ -59,6 +64,10 @@
       "summary": "This bill allows police in Maryland to use facial recognition technology when investigating certain crimes, specifically when the image analyzed was taken inside a home. It expands law enforcement's ability to use this surveillance tool in residential settings, raising privacy concerns.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -80,6 +89,10 @@
       "summary": "This bill allows Maryland's student and workforce data system to share data with third-party data centers for multistate reporting, subject to written agreements and compliance requirements. It raises data privacy considerations by enabling sensitive student and workforce information to flow to external organizations under regulated but permissive conditions.",
       "stage": "Floor",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -100,6 +113,12 @@
       "summary": "This Maryland bill requires large data center operators to file detailed disclosure reports with state and local agencies, and mandates that larger localities create formal data center planning rules by 2027. It increases oversight and transparency around where and how large data centers are built and operated.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",
@@ -148,6 +167,11 @@
       "summary": "This bill sets operational and siting standards for data centers in Maryland, including noise and vibration limits, backup power generation rules, and a ban on building data centers on certain agricultural land. It also requires applicants to submit reports to local authorities under specific conditions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "community": "concerning",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "noise-vibration",
         "local-zoning",
@@ -172,6 +196,11 @@
       "summary": "This bill requires large electricity users, including data centers, to register with Maryland's Public Service Commission before connecting to the grid and participate in a demand response program that can curtail their power use. Data centers must meet certain conditions to qualify for a tax exemption, and the Commission gains new authority to manage grid impacts from these large power consumers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "review",
+        "land-use": "none"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -261,6 +290,12 @@
       "summary": "This bill places a statewide ban on new data center construction, preventing both private builders and government bodies from proceeding with new projects. The moratorium would automatically end if Maryland passes separate legislation specifically addressing data centers built alongside natural gas, nuclear, or small modular reactor power facilities.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "environmental": "restrictive",
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",

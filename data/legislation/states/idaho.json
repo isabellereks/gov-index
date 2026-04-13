@@ -2,9 +2,10 @@
   "state": "Idaho",
   "stateCode": "ID",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Idaho has 9 relevant bills tracked in 2025–2026 — 4 on data-center policy and 5 on AI regulation. 3 have been enacted into law. 1 imposes active bans or moratoriums. 4 offer incentives or deregulation.",
+  "stanceDatacenter": "restrictive",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Idaho is leaning restrictive on data centers and advancing regulation on AI. On data centers: H0895 (enacted) — Sets limits on how much water data centers in Idaho can use for cooling purposes. On AI: S1297 (enacted) — Establishes safety requirements for conversational AI systems, likely including disclosure and protective standards for users.",
   "legislation": [
     {
       "id": "id-h0609",
@@ -73,6 +74,10 @@
       "summary": "This bill sets limits on how much water data centers in Idaho can use for cooling purposes. It places enforceable restrictions on water consumption to reduce the impact data centers have on local water supplies.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "environmental": "restrictive",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure"
@@ -93,6 +98,10 @@
       "summary": "This bill sets rules for how generative AI tools can be used in Idaho's public schools. It establishes specific guidelines and requirements governing AI in educational settings.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-education",
         "algorithmic-transparency"
@@ -133,6 +142,10 @@
       "summary": "This bill establishes safety requirements for conversational AI systems, likely including disclosure and protective standards for users. It sets rules that AI chatbot and virtual assistant providers must follow to ensure safe interactions, potentially with special protections for vulnerable users like children.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "ai-safety",
         "algorithmic-transparency",
@@ -156,6 +169,10 @@
       "summary": "This bill creates new rules in Idaho law governing how biometric identifiers — such as fingerprints, facial scans, or iris patterns — can be collected and used. It establishes legal protections and likely requires consent or disclosure before capturing someone's biometric data.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"

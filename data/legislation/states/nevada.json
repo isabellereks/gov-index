@@ -2,9 +2,10 @@
   "state": "Nevada",
   "stateCode": "NV",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Nevada has 6 relevant bills tracked in 2025–2026 — 2 on data-center policy and 4 on AI regulation. 3 have been enacted into law. 2 impose active bans or moratoriums. 2 offer incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Nevada is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: AB406 (enacted) — Bans certain uses of AI in public schools, restricts how AI can be used in mental and behavioral health care, and prohibits AI systems from falsely presenting themselves as qualifi…",
   "legislation": [
     {
       "id": "nv-ab226",
@@ -115,6 +116,10 @@
       "summary": "This Nevada bill creates a Security Operations Center within the state's chief information office to oversee government cybersecurity, establishes a talent pipeline program for cybersecurity workers, and requires annual effectiveness reports. It also allows school districts to use state cybersecurity services and makes other updates to how government entities manage digital security.",
       "stage": "Dead",
       "stance": "review",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "none"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -206,6 +211,11 @@
       "summary": "This Nevada bill bans certain uses of AI in public schools, restricts how AI can be used in mental and behavioral health care, and prohibits AI systems from falsely presenting themselves as qualified mental health providers. It also requires the state Education Department to create a policy on AI use and establishes civil penalties for violations.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "ai-in-education",

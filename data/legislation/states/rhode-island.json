@@ -2,9 +2,10 @@
   "state": "Rhode Island",
   "stateCode": "RI",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Rhode Island has 12 relevant bills tracked in 2025–2026 — 4 on data-center policy and 8 on AI regulation. 9 advance stricter regulation. 2 offer incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Rhode Island is under discussion on data centers and advancing regulation on AI. On data centers: S2776 (in committee) — Requires large data centers in Rhode Island to pay for the electrical infrastructure upgrades needed to support their high power demands. On AI: H7364 (in committee) — Requires warehouse employers in Rhode Island to give workers written notice of any performance quotas and the consequences of not meeting them when they are hired.",
   "legislation": [
     {
       "id": "ri-s2776",
@@ -137,6 +138,10 @@
       "summary": "This bill requires warehouse employers in Rhode Island to give workers written notice of any performance quotas and the consequences of not meeting them when they are hired. It aims to protect warehouse workers from being penalized by productivity tracking systems without clear, upfront disclosure.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-workforce": "concerning"
+      },
       "impactTags": [
         "ai-in-employment",
         "algorithmic-transparency"
@@ -161,6 +166,11 @@
       "summary": "This bill requires health insurance companies to be open about how they use AI when deciding on coverage and handling claims. It sets rules to ensure AI-driven decisions are transparent and that insurers can be held accountable for how those systems affect patients.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-in-healthcare",
@@ -186,6 +196,11 @@
       "summary": "This bill requires health insurers in Rhode Island to be transparent and accountable when using AI systems to make decisions about coverage and claims. It aims to ensure patients and regulators can understand and challenge AI-driven insurance decisions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-in-healthcare",
@@ -211,6 +226,10 @@
       "summary": "This bill creates rules governing how artificial intelligence can be used in mental health care treatments in Rhode Island. It establishes oversight requirements to ensure AI tools used in mental health settings are subject to regulatory standards.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",
@@ -236,6 +255,10 @@
       "summary": "This Rhode Island bill establishes regulations governing how artificial intelligence can be used in mental health care treatments. It sets oversight requirements intended to ensure AI tools used in behavioral health settings meet safety and transparency standards.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",
@@ -261,6 +284,11 @@
       "summary": "This bill requires AI companion apps to have safety features that detect and respond to users expressing suicidal thoughts, potential harm to others, or financial harm. It also mandates that these apps disclose to users that the AI does not have real human emotions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "none"
+      },
       "impactTags": [
         "ai-safety",
         "child-safety",
@@ -287,6 +315,10 @@
       "summary": "This bill requires AI companion apps to include safety features that detect and respond to users expressing suicidal thoughts, potential harm to themselves or others, or financial harm. It also mandates that these apps clearly disclose to users that the AI does not have real human emotions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "ai-safety",
         "child-safety",

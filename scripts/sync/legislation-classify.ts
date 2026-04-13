@@ -30,6 +30,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import type {
+  Dimension,
   ImpactTag,
   Legislation,
   LegislationCategory,
@@ -41,6 +42,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "../..");
 const RAW_BILLS_DIR = join(ROOT, "data/raw/legiscan/bills");
 const CLAUDE_CACHE_PATH = join(ROOT, "data/raw/claude/classifications.json");
+const DIM_STANCE_CACHE_PATH = join(
+  ROOT,
+  "data/raw/claude/dimension-stances.json",
+);
 const OUT_DIR = join(ROOT, "data/legislation");
 const OUT_STATES_DIR = join(OUT_DIR, "states");
 
@@ -56,6 +61,14 @@ const claudeCache: Record<string, ClaudeClassification> = existsSync(
   CLAUDE_CACHE_PATH,
 )
   ? JSON.parse(readFileSync(CLAUDE_CACHE_PATH, "utf8"))
+  : {};
+
+type DimKey = Exclude<Dimension, "overall">;
+const dimStanceCache: Record<
+  string,
+  Partial<Record<DimKey, StanceType>>
+> = existsSync(DIM_STANCE_CACHE_PATH)
+  ? JSON.parse(readFileSync(DIM_STANCE_CACHE_PATH, "utf8"))
   : {};
 
 interface RawBill {
@@ -83,7 +96,8 @@ interface OutFile {
   state: string;
   stateCode: string;
   region: "na";
-  stance: StanceType;
+  stanceDatacenter: StanceType;
+  stanceAI: StanceType;
   lastUpdated: string;
   contextBlurb: string;
   legislation: Legislation[];
@@ -267,6 +281,75 @@ function stateStance(bills: Legislation[]): StanceType {
   return "none";
 }
 
+const DC_DIMENSION_TAGS: ImpactTag[] = [
+  "water-consumption",
+  "carbon-emissions",
+  "protected-land",
+  "environmental-review",
+  "renewable-energy",
+  "grid-capacity",
+  "energy-rates",
+  "water-infrastructure",
+  "noise-vibration",
+  "local-zoning",
+  "local-control",
+  "residential-proximity",
+  "property-values",
+];
+
+const AI_DIMENSION_TAGS: ImpactTag[] = [
+  "algorithmic-transparency",
+  "ai-safety",
+  "data-privacy",
+  "child-safety",
+  "ai-in-employment",
+  "ai-in-healthcare",
+  "ai-in-education",
+  "deepfake-regulation",
+];
+
+const DC_DIMS: DimKey[] = ["environmental", "energy", "community", "land-use"];
+const AI_DIMS: DimKey[] = [
+  "ai-governance-dim",
+  "ai-consumer",
+  "ai-workforce",
+  "ai-public",
+  "ai-synthetic",
+];
+
+function lensStance(bills: Legislation[], lens: "datacenter" | "ai"): StanceType {
+  const lensTags = lens === "ai" ? AI_DIMENSION_TAGS : DC_DIMENSION_TAGS;
+  const lensDims = lens === "ai" ? AI_DIMS : DC_DIMS;
+  const tagSet = new Set(lensTags);
+
+  // Build a synthetic bill list whose `stance` is the lens-scoped stance:
+  // if dimensionStances has entries for any lens dim, aggregate those;
+  // else, if tags match the lens, use bill-level stance; else skip.
+  const lensBills: Legislation[] = [];
+  for (const b of bills) {
+    const dimVotes = lensDims
+      .map((d) => b.dimensionStances?.[d])
+      .filter((s): s is StanceType => !!s);
+    const tagMatch = (b.impactTags ?? []).some((t) => tagSet.has(t));
+    if (dimVotes.length > 0) {
+      // Pick the most severe stance across the lens's dimensions for this bill
+      const severity: Record<StanceType, number> = {
+        restrictive: 4,
+        concerning: 3,
+        review: 2,
+        favorable: 1,
+        none: 0,
+      };
+      let pick: StanceType = dimVotes[0];
+      for (const v of dimVotes) if (severity[v] > severity[pick]) pick = v;
+      lensBills.push({ ...b, stance: pick });
+    } else if (tagMatch) {
+      lensBills.push(b);
+    }
+  }
+  return stateStance(lensBills);
+}
+
 function derivePartyOrigin(bill: RawBill): "R" | "D" | "B" | undefined {
   const parties = new Set<string>();
   for (const s of bill.sponsors ?? []) {
@@ -313,6 +396,8 @@ function toLegislation(bill: RawBill): Legislation {
   const stance: StanceType =
     claude?.stance ?? deriveStance(bill, stage, category, tags);
 
+  const dimensionStances = dimStanceCache[String(bill.bill_id)];
+
   return {
     id: `${bill.state}-${bill.bill_number}`
       .toLowerCase()
@@ -322,6 +407,9 @@ function toLegislation(bill: RawBill): Legislation {
     summary,
     stage,
     stance,
+    ...(dimensionStances && Object.keys(dimensionStances).length > 0
+      ? { dimensionStances }
+      : {}),
     impactTags: tags,
     category,
     updatedDate: lastActionDate(bill),
@@ -333,54 +421,152 @@ function toLegislation(bill: RawBill): Legislation {
   };
 }
 
+const STANCE_PHRASE: Record<StanceType, string> = {
+  restrictive: "leaning restrictive",
+  concerning: "advancing regulation",
+  review: "under discussion",
+  favorable: "leaning innovation-friendly",
+  none: "no action",
+};
+
+function lensSlice(
+  bills: Legislation[],
+  lens: "datacenter" | "ai",
+): Legislation[] {
+  const tagSet = new Set<ImpactTag>(
+    lens === "ai" ? AI_DIMENSION_TAGS : DC_DIMENSION_TAGS,
+  );
+  const dims = lens === "ai" ? AI_DIMS : DC_DIMS;
+  return bills.filter((b) => {
+    if (b.stance === "none") return false;
+    if (dims.some((d) => b.dimensionStances?.[d])) return true;
+    return (b.impactTags ?? []).some((t) => tagSet.has(t));
+  });
+}
+
+const STAGE_RANK: Record<string, number> = {
+  Enacted: 5,
+  Floor: 4,
+  Committee: 3,
+  Filed: 2,
+  "Carried Over": 1,
+  Dead: 0,
+};
+
+const STANCE_WEIGHT: Record<StanceType, number> = {
+  restrictive: 4,
+  concerning: 3,
+  favorable: 3,
+  review: 1,
+  none: 0,
+};
+
+/**
+ * Rank bills by a combination of stage (enacted outranks filed) and stance
+ * intensity (restrictive/concerning/favorable all beat review), breaking
+ * ties on recency. The top bill is what we highlight in the blurb.
+ */
+function rankBills(bills: Legislation[]): Legislation[] {
+  return [...bills].sort((a, b) => {
+    const as = STAGE_RANK[a.stage] ?? 0;
+    const bs = STAGE_RANK[b.stage] ?? 0;
+    if (as !== bs) return bs - as;
+    const aw = STANCE_WEIGHT[a.stance ?? "review"];
+    const bw = STANCE_WEIGHT[b.stance ?? "review"];
+    if (aw !== bw) return bw - aw;
+    return (b.updatedDate ?? "").localeCompare(a.updatedDate ?? "");
+  });
+}
+
+const STAGE_VERB: Record<string, string> = {
+  Enacted: "enacted",
+  Floor: "on the floor",
+  Committee: "in committee",
+  Filed: "filed",
+  "Carried Over": "carried over",
+  Dead: "dead",
+};
+
+/**
+ * First clean sentence of a bill summary, trimmed to ~140 chars. Summaries
+ * from Claude are already plain language, so we just need to clip them.
+ */
+function highlight(bill: Legislation): string {
+  let raw = (bill.summary ?? bill.title).trim();
+  // Bills whose summary is still the raw legalese "To <verb>..." haven't
+  // been re-summarized by Claude. Fall back to the title — often cleaner.
+  if (/^to\s+\w/i.test(raw) && bill.title) {
+    raw = bill.title.trim();
+  }
+  // Prefer the first sentence; truncate only if it runs long.
+  const firstSentence = raw.match(/^[^.!?]+[.!?]/)?.[0] ?? raw;
+  const trimmed =
+    firstSentence.length > 200
+      ? firstSentence.slice(0, 197).replace(/[.…\s]+$/, "") + "…"
+      : firstSentence.replace(/[.…\s]+$/, "");
+  // Strip redundant "This bill" / "This <qualifier> bill" leads — the
+  // framing is already clear from the "On data centers: / On AI:" prefix.
+  const cleaned = trimmed
+    .replace(/^This\s+(?:\w+\s+)?bill\s+/i, "")
+    .replace(/^The\s+bill\s+/i, "");
+  const body = cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+  const terminal = body.endsWith("…") ? "" : ".";
+  return `${bill.billCode} (${STAGE_VERB[bill.stage] ?? bill.stage.toLowerCase()}) — ${body}${terminal}`;
+}
+
 function writeContextBlurb(
   state: string,
   stateFull: string,
   bills: Legislation[],
+  stanceDatacenter: StanceType,
+  stanceAI: StanceType,
 ): string {
   const name = state === "US" ? "The US federal government" : stateFull;
-  // Exclude bills Claude flagged as unrelated (stance === "none")
   const relevant = bills.filter((b) => b.stance !== "none");
-  const count = relevant.length;
-  if (count === 0) {
-    return `${name} has no AI or data-center legislation currently tracked in 2025–2026.`;
+  if (relevant.length === 0) {
+    return `${name} has no AI or data-center legislation currently tracked.`;
   }
-  const enacted = relevant.filter((b) => b.stage === "Enacted").length;
-  const restrictive = relevant.filter((b) => b.stance === "restrictive").length;
-  const concerning = relevant.filter((b) => b.stance === "concerning").length;
-  const favorable = relevant.filter((b) => b.stance === "favorable").length;
-  const dataCenter = relevant.filter(
-    (b) => b.category === "data-center-siting" || b.category === "data-center-energy",
-  ).length;
-  const ai = relevant.length - dataCenter;
+
+  // Dead bills are noise for a highlight — they're neither shaping policy
+  // nor advancing. Rank only from the live set.
+  const liveDC = lensSlice(bills, "datacenter").filter((b) => b.stage !== "Dead");
+  const liveAI = lensSlice(bills, "ai").filter((b) => b.stage !== "Dead");
+  const dcBills = rankBills(liveDC);
+  const aiBills = rankBills(liveAI);
 
   const parts: string[] = [];
-  parts.push(
-    `${name} has ${count} relevant bill${count === 1 ? "" : "s"} tracked in 2025–2026` +
-      (dataCenter > 0 && ai > 0
-        ? ` — ${dataCenter} on data-center policy and ${ai} on AI regulation.`
-        : dataCenter > 0
-          ? ` on data-center policy.`
-          : ai > 0
-            ? ` on AI regulation.`
-            : `.`),
-  );
-  if (enacted)
+
+  // Lead — per-lens posture in one sentence. Collapse matching stances so
+  // we don't read "advancing regulation on data centers and advancing
+  // regulation on AI" — unify into "across both data centers and AI".
+  if (dcBills.length > 0 && aiBills.length > 0) {
+    if (stanceDatacenter === stanceAI) {
+      parts.push(
+        `${name} is ${STANCE_PHRASE[stanceDatacenter]} across both data centers and AI.`,
+      );
+    } else {
+      parts.push(
+        `${name} is ${STANCE_PHRASE[stanceDatacenter]} on data centers and ${STANCE_PHRASE[stanceAI]} on AI.`,
+      );
+    }
+  } else if (dcBills.length > 0) {
     parts.push(
-      `${enacted} ${enacted === 1 ? "has" : "have"} been enacted into law.`,
+      `${name} is ${STANCE_PHRASE[stanceDatacenter]} on data centers, with no AI legislation currently tracked.`,
     );
-  if (restrictive)
+  } else if (aiBills.length > 0) {
     parts.push(
-      `${restrictive} ${restrictive === 1 ? "imposes" : "impose"} active bans or moratoriums.`,
+      `${name} is ${STANCE_PHRASE[stanceAI]} on AI, with no data-center legislation currently tracked.`,
     );
-  if (concerning && !restrictive)
-    parts.push(
-      `${concerning} ${concerning === 1 ? "advances" : "advance"} stricter regulation.`,
-    );
-  if (favorable)
-    parts.push(
-      `${favorable} ${favorable === 1 ? "offers" : "offer"} incentives or deregulation.`,
-    );
+  }
+
+  // Highlight the most consequential bill per lens.
+  if (dcBills.length > 0) {
+    parts.push(`On data centers: ${highlight(dcBills[0])}`);
+  }
+  if (aiBills.length > 0) {
+    parts.push(`On AI: ${highlight(aiBills[0])}`);
+  }
+
   return parts.join(" ");
 }
 
@@ -397,13 +583,22 @@ function main() {
     const raw = JSON.parse(readFileSync(join(RAW_BILLS_DIR, file), "utf8")) as RawBill[];
     const legislation = raw.map(toLegislation);
     const stateFull = state === "US" ? "United States" : STATE_NAMES[state] ?? state;
+    const stanceDatacenter = lensStance(legislation, "datacenter");
+    const stanceAI = lensStance(legislation, "ai");
     const out: OutFile = {
       state: stateFull,
       stateCode: state,
       region: "na",
-      stance: stateStance(legislation),
+      stanceDatacenter,
+      stanceAI,
       lastUpdated: new Date().toISOString().slice(0, 10),
-      contextBlurb: writeContextBlurb(state, stateFull, legislation),
+      contextBlurb: writeContextBlurb(
+        state,
+        stateFull,
+        legislation,
+        stanceDatacenter,
+        stanceAI,
+      ),
       legislation,
     };
 

@@ -2,9 +2,10 @@
   "state": "North Dakota",
   "stateCode": "ND",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "North Dakota has 7 relevant bills tracked in 2025–2026 — 2 on data-center policy and 5 on AI regulation. 5 have been enacted into law. 3 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "North Dakota is under discussion on data centers and leaning restrictive on AI. On data centers: HB1579 (enacted) — Directs a legislative study to examine how large energy consumers — such as data centers and AI facilities — affect North Dakota's electrical grid. On AI: SB2354 (enacted) — Regulates how students in North Dakota's K-12 and pre-K schools can use personal electronic devices like smartphones during the school day.",
   "legislation": [
     {
       "id": "nd-hb1427",
@@ -13,6 +14,11 @@
       "summary": "This North Dakota bill gives the state Public Service Commission authority to regulate where data centers can be built, including compatibility with surrounding land uses. It also establishes penalties for violations of these siting rules.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",
@@ -38,6 +44,10 @@
       "summary": "This bill requires disclosure statements when artificial intelligence is used to create or alter content, particularly in the context of elections. It aims to ensure voters know when political materials have been generated or modified by AI.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "none"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "deepfake-regulation"
@@ -129,6 +139,10 @@
       "summary": "This bill regulates how students in North Dakota's K-12 and pre-K schools can use personal electronic devices like smartphones during the school day. It amends existing rules to set limits on student device use in educational settings.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-education",
         "child-safety"

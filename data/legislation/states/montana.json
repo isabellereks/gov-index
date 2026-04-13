@@ -2,9 +2,10 @@
   "state": "Montana",
   "stateCode": "MT",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Montana has 8 relevant bills tracked in 2025–2026 — 3 on data-center policy and 5 on AI regulation. 5 have been enacted into law. 2 impose active bans or moratoriums. 2 offer incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Montana is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: HB178 (enacted) — Places limits on how Montana state government agencies can use artificial intelligence systems.",
   "legislation": [
     {
       "id": "mt-hb388",
@@ -94,6 +95,11 @@
       "summary": "This resolution directs a formal study of data centers in Montana, examining issues like their siting, energy use, and economic impact. No restrictions or incentives are enacted yet — it's an exploratory effort to inform future policy.",
       "stage": "Dead",
       "stance": "review",
+      "dimensionStances": {
+        "energy": "review",
+        "community": "review",
+        "land-use": "review"
+      },
       "impactTags": [
         "local-zoning",
         "grid-capacity",
@@ -158,6 +164,10 @@
       "summary": "This bill updates the rules for how health insurance companies in Montana can use artificial intelligence when making decisions about coverage or claims. It imposes requirements and restrictions to ensure AI is used fairly and transparently in health insurance processes.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency"
@@ -179,6 +189,10 @@
       "summary": "This bill updates Montana election laws to require disclosure when artificial intelligence is used to create or alter political content. Candidates and campaigns would need to inform voters when AI-generated material appears in election-related communications.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "concerning"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"

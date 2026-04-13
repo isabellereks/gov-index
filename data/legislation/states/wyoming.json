@@ -2,9 +2,10 @@
   "state": "Wyoming",
   "stateCode": "WY",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Wyoming has 4 relevant bills tracked in 2025–2026 — 1 on data-center policy and 3 on AI regulation. 1 has been enacted into law. 3 impose active bans or moratoriums.",
+  "stanceDatacenter": "review",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Wyoming is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: HB0102 (enacted) — Makes it a crime to use AI or synthetic media to create sexual content involving children, promote self-harm, or censor political speech.",
   "legislation": [
     {
       "id": "wy-hb0185",
@@ -31,6 +32,11 @@
       "summary": "This Wyoming bill makes it a crime to use AI or synthetic media to create sexual content involving children, promote self-harm, or censor political speech. It also clarifies that using AI to commit a crime is not a legal defense, while providing some immunity for AI developers.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "child-safety",
@@ -56,6 +62,10 @@
       "summary": "This Wyoming bill bans government agencies from using biometric data (like facial recognition), geolocation tracking, and automatic license plate readers to identify people or vehicles. It also prohibits governments from hiring outside vendors to perform these functions and gives citizens the right to sue if the rules are violated.",
       "stage": "Dead",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -118,6 +128,10 @@
       "summary": "This bill bans Wyoming government agencies from using AI to assign social scores to individuals or to identify people through biometric data and image collection. It places hard prohibitions on these government AI uses, with some defined exceptions.",
       "stage": "Dead",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -142,6 +156,10 @@
       "summary": "This bill requires Wyoming's state engineer to study consumptive water use and submit a report on findings. It is likely aimed at understanding water demands from large water users, potentially including data centers, but takes no restrictive or regulatory action.",
       "stage": "Dead",
       "stance": "review",
+      "dimensionStances": {
+        "environmental": "review",
+        "energy": "review"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure"

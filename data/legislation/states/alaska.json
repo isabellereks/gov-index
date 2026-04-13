@@ -2,9 +2,10 @@
   "state": "Alaska",
   "stateCode": "AK",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Alaska has 5 relevant bills tracked in 2025–2026 — 1 on data-center policy and 4 on AI regulation. 1 has been enacted into law. 2 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "favorable",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Alaska is leaning innovation-friendly on data centers and leaning restrictive on AI. On data centers: SB250 (in committee) — Establishes rules for how data centers connect to and receive utility services, likely streamlining the process for data centers to obtain power. On AI: HB57 (enacted) — Addresses multiple education topics including restricting wireless devices (like smartphones) in public schools.",
   "legislation": [
     {
       "id": "ak-sb250",
@@ -53,6 +54,12 @@
       "summary": "This Alaska bill requires disclosure when AI-generated deepfakes are used in election-related content and sets rules for how state agencies can use AI and share personal data. It aims to increase transparency and accountability in both political media and government AI use.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "concerning",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency",
@@ -119,6 +126,10 @@
       "summary": "This Alaska bill addresses multiple education topics including restricting wireless devices (like smartphones) in public schools. It also touches on school funding, class sizes, charter schools, and vocational training.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "restrictive",
+        "ai-public": "none"
+      },
       "impactTags": [
         "ai-in-education",
         "child-safety"
@@ -143,6 +154,10 @@
       "summary": "This Alaska bill creates legal liability for defamation when synthetic media (AI-generated or manipulated content) is used to harm someone's reputation, and restricts the use of synthetic media in political campaign communications. It establishes enforceable rules around AI-generated content in elections and public discourse.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"

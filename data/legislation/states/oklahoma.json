@@ -2,9 +2,10 @@
   "state": "Oklahoma",
   "stateCode": "OK",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Oklahoma has 6 relevant bills tracked in 2025–2026 — 4 on data-center policy and 2 on AI regulation. 2 advance stricter regulation. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Oklahoma is under discussion across both data centers and AI. On data centers: HB2992 (in committee) — Creates consumer protection rules for data centers under Oklahoma's Corporation Commission, likely addressing how data centers interact with the energy grid and utility customers. On AI: SB1734 (in committee) — Requires the development of guidance for how artificial intelligence and other emerging technologies should be used in schools.",
   "legislation": [
     {
       "id": "ok-hb4194",
@@ -13,6 +14,11 @@
       "summary": "This bill creates rules requiring data centers in Oklahoma to be properly decommissioned when they shut down, overseen by the Oklahoma Corporation Commission. It also requires data center operators to provide financial assurance, meaning they must set aside funds to cover the costs of proper closure.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "community": "concerning",
+        "land-use": "review"
+      },
       "impactTags": [
         "environmental-review",
         "local-zoning",
@@ -35,6 +41,10 @@
       "summary": "This Oklahoma bill requires the development of guidance for how artificial intelligence and other emerging technologies should be used in schools. It establishes a framework for responsible AI use in educational settings without imposing strict bans or mandates.",
       "stage": "Committee",
       "stance": "review",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-public": "review"
+      },
       "impactTags": [
         "ai-in-education",
         "algorithmic-transparency"
@@ -159,6 +169,10 @@
       "summary": "This bill creates consumer protection rules for data centers under Oklahoma's Corporation Commission, likely addressing how data centers interact with the energy grid and utility customers. It aims to protect regular electricity customers from costs or impacts associated with large data center energy demands.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "review"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",

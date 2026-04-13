@@ -2,9 +2,10 @@
   "state": "California",
   "stateCode": "CA",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "California has 8 relevant bills tracked in 2025–2026 — 3 on data-center policy and 5 on AI regulation. 3 have been enacted into law. 2 impose active bans or moratoriums.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "California is advancing regulation on data centers and leaning restrictive on AI. On data centers: AB2619 (in committee) — Requires data centers in California to report their water usage and incorporates data center water consumption into local water supply planning processes. On AI: AB621 (enacted) — Updates California's law on deepfake pornography, which prohibits creating or sharing sexually explicit fake images of real people without their consent.",
   "legislation": [
     {
       "id": "ca-sb361",
@@ -54,6 +55,10 @@
       "summary": "This bill updates California's law on deepfake pornography, which prohibits creating or sharing sexually explicit fake images of real people without their consent. It strengthens civil legal protections for victims of non-consensual AI-generated intimate imagery.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "child-safety",
@@ -79,6 +84,11 @@
       "summary": "This California bill would regulate how employers can use surveillance tools to monitor workers, including AI-driven monitoring systems. It adds new rules to the Labor Code aimed at protecting employees from invasive workplace surveillance.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "none",
+        "ai-workforce": "restrictive"
+      },
       "impactTags": [
         "ai-in-employment",
         "algorithmic-transparency",
@@ -122,6 +132,10 @@
       "summary": "This bill requires data centers in California to report on and manage their water usage. It sets rules around water consumption by data centers, likely including reporting requirements or efficiency standards.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure"
@@ -164,6 +178,10 @@
       "summary": "This bill requires data centers in California to report their water usage and incorporates data center water consumption into local water supply planning processes. It aims to ensure that water agencies account for the significant water demands of data centers when planning future water resources.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure"
@@ -225,6 +243,10 @@
       "summary": "This bill requires data centers to meet power usage effectiveness (PUE) standards and addresses how data centers' energy costs are allocated among utility ratepayers. It aims to prevent data center energy consumption from shifting costs onto other electricity customers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "review",
+        "energy": "concerning"
+      },
       "impactTags": [
         "energy-rates",
         "grid-capacity",

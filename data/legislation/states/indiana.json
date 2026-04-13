@@ -2,9 +2,10 @@
   "state": "Indiana",
   "stateCode": "IN",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Indiana has 7 relevant bills tracked in 2025–2026 — 4 on data-center policy and 3 on AI regulation. 1 has been enacted into law. 3 impose active bans or moratoriums.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Indiana is advancing regulation on data centers and leaning restrictive on AI. On data centers: HB1333 (in committee) — Sets new rules for data centers in Indiana, requiring them to contribute at least 1% of their tax savings to local governments before receiving sales tax exemptions on equipment purchases. On AI: HB1271 (enacted) — Regulates how hospitals and insurers handle health insurance claims, including a ban on using automated systems to submit claims without human review by the provider.",
   "legislation": [
     {
       "id": "in-sb0083",
@@ -81,6 +82,12 @@
       "summary": "This bill sets new rules for data centers in Indiana, requiring them to contribute at least 1% of their tax savings to local governments before receiving sales tax exemptions on equipment purchases. It also addresses land use on agricultural soils, battery energy storage systems, and requires emergency response documentation for large energy storage facilities.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "review",
+        "energy": "favorable",
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "tax-incentives",
@@ -129,6 +136,12 @@
       "summary": "This bill requires data centers in Indiana to obtain a water consumption permit from the state's Department of Natural Resources before operating. It establishes an application and approval process to regulate how much water data centers can use.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "none",
+        "community": "review",
+        "land-use": "none"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -153,6 +166,11 @@
       "summary": "This Indiana bill requires data centers to regularly report their electricity usage to state regulators and disclose projected power and water needs before receiving construction permits. It also creates a working group to study and forecast the future electricity demands of Indiana's data center industry.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "review",
+        "community": "review",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "water-infrastructure",
@@ -259,6 +277,10 @@
       "summary": "This Indiana bill bans the use of AI systems to impersonate or replace licensed mental health professionals, while also setting rules around insurance reimbursement and network adequacy for mental health services. The AI-specific provision is an outright prohibition, making it restrictive in that regard.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency"

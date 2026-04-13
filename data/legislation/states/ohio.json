@@ -2,9 +2,10 @@
   "state": "Ohio",
   "stateCode": "OH",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Ohio has 10 relevant bills tracked in 2025–2026 — 6 on data-center policy and 4 on AI regulation. 4 impose active bans or moratoriums.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Ohio is advancing regulation across both data centers and AI. On data centers: HB646 (on the floor) — Creates a commission to study data centers in Ohio and their impacts. On AI: HB807 (filed) — Bans government agencies and private companies from selling sensitive personal data to data brokers or other private entities for profit.",
   "legislation": [
     {
       "id": "oh-sb374",
@@ -61,6 +62,10 @@
       "summary": "This Ohio bill updates existing persona protection laws and creates new prohibitions against making or distributing unauthorized deepfake recordings of real people. It establishes legal consequences for using AI-generated or manipulated media to impersonate individuals without their consent.",
       "stage": "Filed",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "data-privacy"
@@ -106,6 +111,12 @@
       "summary": "This bill creates a commission to study data centers in Ohio and their impacts. No restrictions or incentives are imposed — the commission will gather information and likely make future policy recommendations.",
       "stage": "Floor",
       "stance": "review",
+      "dimensionStances": {
+        "environmental": "review",
+        "energy": "review",
+        "community": "review",
+        "land-use": "review"
+      },
       "impactTags": [
         "local-zoning",
         "grid-capacity",
@@ -173,6 +184,11 @@
       "summary": "This Ohio bill would ban public funding or support for new data centers and place limits on their construction. It aims to restrict the growth of data center infrastructure across the state.",
       "stage": "Filed",
       "stance": "restrictive",
+      "dimensionStances": {
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",
@@ -198,6 +214,11 @@
       "summary": "This bill regulates how much water data centers can withdraw and consume in Ohio, establishing rules and oversight for data center water use. It creates new legal requirements and penalties related to water withdrawal by data centers.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "review",
+        "community": "none"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -223,6 +244,10 @@
       "summary": "This Ohio bill establishes minimum requirements and protections for customers who use data center services in the state. It creates a new chapter of law governing the relationship between data centers and their customers, likely covering data handling, access, and accountability standards.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -247,6 +272,11 @@
       "summary": "This bill would require data centers in Ohio to get approval from the Public Utilities Commission before connecting to the electrical grid. It adds regulatory oversight to how data centers access electricity infrastructure, potentially slowing or limiting large-scale connections.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "review",
+        "land-use": "none"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -272,6 +302,10 @@
       "summary": "This bill requires data centers in Ohio to report their water usage on a monthly and annual basis to state authorities. It also prevents data centers from using nondisclosure agreements to hide water consumption information from local governments.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",

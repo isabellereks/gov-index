@@ -49,7 +49,13 @@ const JURISDICTIONS = [
   "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
 ];
 
-const MAX_BILLS_PER_JURISDICTION = 12;
+const DEFAULT_MAX_BILLS = 12;
+// Federal Congress produces far more AI/DC bills than any single state and
+// is the primary lens users drill into first, so we cap it higher.
+const PER_JURISDICTION_MAX: Record<string, number> = {
+  US: 40,
+};
+const maxBillsFor = (j: string) => PER_JURISDICTION_MAX[j] ?? DEFAULT_MAX_BILLS;
 const MIN_RELEVANCE = 60;
 
 interface SearchResult {
@@ -217,7 +223,7 @@ async function ingestJurisdiction(state: string) {
   // Sort by relevance desc, cap
   const top = Array.from(unique.values())
     .sort((a, b) => b.relevance - a.relevance)
-    .slice(0, MAX_BILLS_PER_JURISDICTION);
+    .slice(0, maxBillsFor(state));
 
   const detailed: BillResponse["bill"][] = [];
   for (const item of top) {

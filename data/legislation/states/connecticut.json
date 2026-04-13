@@ -2,9 +2,10 @@
   "state": "Connecticut",
   "stateCode": "CT",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Connecticut has 8 relevant bills tracked in 2025–2026 — 1 on data-center policy and 7 on AI regulation. 2 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "none",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Connecticut is advancing regulation on AI, with no data-center legislation currently tracked. On AI: SB00092 (in committee) — Establishes additional protections for warehouse workers, likely including rules around automated monitoring and work-quota systems driven by algorithms.",
   "legislation": [
     {
       "id": "ct-sb00092",
@@ -30,6 +31,12 @@
       "summary": "This wide-ranging Connecticut bill creates a comprehensive AI regulatory framework including a new AI Policy Office, disclosure requirements for AI providers, rules on synthetic media detectability, and restrictions on automated hiring tools. It also establishes workforce training programs and a health AI initiative while imposing obligations on developers of powerful 'frontier' AI models.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-workforce": "concerning",
+        "ai-synthetic": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -57,6 +64,11 @@
       "summary": "This Connecticut bill strengthens consumer privacy protections by regulating data brokers, restricting the use of facial recognition technology, limiting sharing of precise location data, and requiring businesses to disclose when they use algorithms to set personalized prices. It also expands workers' rights by removing exemptions that allowed employment-related data processing decisions to go unchecked.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive",
+        "ai-workforce": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency",
@@ -233,6 +245,10 @@
       "summary": "This bill establishes a framework for the responsible use of artificial intelligence in Connecticut, addressing safety, transparency, and accountability requirements. It implements the Governor's budget recommendations related to AI innovation and oversight.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "ai-safety",
         "algorithmic-transparency",
@@ -252,6 +268,11 @@
       "summary": "This bill sets rules for how employers in Connecticut can use automated systems and AI when making decisions about workers, such as hiring, firing, or promotions. It requires transparency and establishes protections to ensure employees are treated fairly when AI is involved in workplace decisions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-workforce": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-in-employment",

@@ -2,9 +2,10 @@
   "state": "Alabama",
   "stateCode": "AL",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Alabama has 11 relevant bills tracked in 2025–2026 — 6 on data-center policy and 5 on AI regulation. 6 advance stricter regulation. 4 offer incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Alabama is under discussion on data centers and advancing regulation on AI. On data centers: SB270 (on the floor) — Requires Alabama's Public Service Commission to review contracts between electric utilities and large data centers that draw significant amounts of power. On AI: SB63 (on the floor) — Sets rules for how health insurance companies can use artificial intelligence when deciding whether to approve or deny medical coverage.",
   "legislation": [
     {
       "id": "al-sb270",
@@ -13,6 +14,10 @@
       "summary": "This bill requires Alabama's Public Service Commission to review contracts between electric utilities and large data centers that draw significant amounts of power. The goal is to ensure that these high-energy deals don't negatively impact grid stability or raise electricity costs for other customers.",
       "stage": "Floor",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "review"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -199,6 +204,10 @@
       "summary": "This bill requires that content created by artificial intelligence be clearly labeled or disclosed to viewers. It includes enforcement mechanisms to ensure compliance with the disclosure requirement.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "deepfake-regulation"
@@ -220,6 +229,10 @@
       "summary": "This bill sets rules for how health insurance companies can use artificial intelligence when deciding whether to approve or deny medical coverage. It aims to ensure AI-driven coverage decisions are fair, transparent, and subject to human oversight.",
       "stage": "Floor",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency"
@@ -241,6 +254,11 @@
       "summary": "This Alabama bill requires chatbots to verify users' ages and follow safety protocols, with special rules for AI-powered therapy chatbots. It gives people the right to sue if these requirements are violated.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "child-safety",
         "ai-in-healthcare",

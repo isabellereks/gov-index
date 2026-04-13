@@ -2,9 +2,10 @@
   "state": "New Hampshire",
   "stateCode": "NH",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "New Hampshire has 9 relevant bills tracked in 2025–2026 — 3 on data-center policy and 6 on AI regulation. 3 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "New Hampshire is under discussion on data centers and advancing regulation on AI. On data centers: SB439 (in committee) — Addresses how New Hampshire municipalities can regulate the siting and zoning of data centers within their jurisdictions. On AI: HB1460 (in committee) — Bans the sale of personal data belonging to children in New Hampshire.",
   "legislation": [
     {
       "id": "nh-hb1694",
@@ -13,6 +14,10 @@
       "summary": "This bill sets rules for how websites and data brokers can collect, use, and share people's personal information. It aims to give consumers more control and protection over their data held by these companies.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -106,6 +111,10 @@
       "summary": "This bill addresses how New Hampshire municipalities can regulate the siting and zoning of data centers within their jurisdictions. It deals with local government authority over where data centers can be built or operated.",
       "stage": "Committee",
       "stance": "review",
+      "dimensionStances": {
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "local-control"
@@ -149,6 +158,10 @@
       "summary": "This bill establishes a 'Digital Choice Act' in New Hampshire, likely giving consumers rights over their personal data collected by digital platforms. It would impose obligations on companies regarding how they handle, share, or process user data.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -240,6 +253,12 @@
       "summary": "This bill would ban all new data center construction in New Hampshire while creating a committee to study the environmental effects of data centers. It combines an outright prohibition with a formal review of impacts like energy use, water consumption, and emissions.",
       "stage": "Dead",
       "stance": "restrictive",
+      "dimensionStances": {
+        "environmental": "restrictive",
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "environmental-review",
         "water-consumption",

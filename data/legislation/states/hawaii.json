@@ -2,9 +2,10 @@
   "state": "Hawaii",
   "stateCode": "HI",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Hawaii has 3 relevant bills tracked in 2025–2026 on AI regulation. 2 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "none",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Hawaii is under discussion on AI, with no data-center legislation currently tracked. On AI: SB2049 (in committee) — Bans police in Hawaii from using biometric surveillance technology (such as facial recognition) unless specific conditions are satisfied.",
   "legislation": [
     {
       "id": "hi-hb775",
@@ -56,6 +57,10 @@
       "summary": "This bill makes it a crime in Hawaii to create or share sexually explicit deepfake images or videos without consent. It targets AI-generated fake content that depicts real people in sexual situations.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "child-safety",
@@ -79,6 +84,10 @@
       "summary": "This bill bans police in Hawaii from using biometric surveillance technology (such as facial recognition) unless specific conditions are satisfied. It places strict limits on how and when law enforcement can deploy these tools.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"

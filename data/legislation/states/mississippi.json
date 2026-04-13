@@ -2,9 +2,10 @@
   "state": "Mississippi",
   "stateCode": "MS",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Mississippi has 4 relevant bills tracked in 2025–2026 on AI regulation. 1 imposes active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "none",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "",
   "legislation": [
     {
       "id": "ms-hb534",
@@ -33,6 +34,10 @@
       "summary": "This Mississippi bill requires political advertisements that use AI-generated content to clearly disclose that fact to the public. Campaigns or individuals who fail to include the required disclosure face civil penalties and can be sued by affected parties or the state attorney general.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "concerning"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"
@@ -96,6 +101,10 @@
       "summary": "This bill would create a Mississippi consumer privacy law giving residents the right to access, correct, delete, or opt out of the sale of their personal data held by large businesses. Companies collecting such data would face new requirements around transparency, security practices, and data protection assessments.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"

@@ -2,9 +2,10 @@
   "state": "New Mexico",
   "stateCode": "NM",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "New Mexico has 5 relevant bills tracked in 2025–2026 on AI regulation. 1 imposes active bans or moratoriums.",
+  "stanceDatacenter": "none",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "New Mexico is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB22 (filed) — Prohibits the distribution of intimate deepfake images — realistic AI-generated or manipulated photos or videos of real people in sexual contexts — without their consent.",
   "legislation": [
     {
       "id": "nm-hm6",
@@ -34,6 +35,10 @@
       "summary": "This bill establishes transparency requirements for artificial intelligence systems used in New Mexico, requiring developers or deployers to disclose when AI is being used and how it makes decisions. It aims to ensure people know when AI is affecting them and have access to information about how those systems work.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -56,6 +61,10 @@
       "summary": "This bill prohibits the distribution of intimate deepfake images — realistic AI-generated or manipulated photos or videos of real people in sexual contexts — without their consent. It establishes legal penalties for sharing such content, with likely enhanced protections for minors.",
       "stage": "Filed",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "child-safety",
@@ -155,6 +164,10 @@
       "summary": "This bill establishes safety requirements for chatbots, likely including disclosure rules and protections for users—especially children—interacting with AI-powered conversational systems. It aims to ensure people know when they are talking to an AI and that certain safeguards are in place to prevent harm.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -200,6 +213,10 @@
       "summary": "This bill establishes accountability requirements for artificial intelligence systems used in New Mexico, likely including risk assessments, transparency obligations, and oversight mechanisms. It aims to ensure AI tools are used responsibly and that people are protected from harmful or biased automated decisions.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",

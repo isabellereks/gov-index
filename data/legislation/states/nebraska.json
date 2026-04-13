@@ -2,9 +2,10 @@
   "state": "Nebraska",
   "stateCode": "NE",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Nebraska has 9 relevant bills tracked in 2025–2026 — 2 on data-center policy and 7 on AI regulation. 3 have been enacted into law. 2 impose active bans or moratoriums.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Nebraska is under discussion on data centers and advancing regulation on AI. On data centers: LB1010 (enacted) — Establishes new rules for large electricity customers like data centers and crypto miners, addressing how they connect to and impact the power grid. On AI: LB525 (enacted) — Establishes privacy protections for agricultural data and sets safety requirements for conversational AI systems in Nebraska.",
   "legislation": [
     {
       "id": "ne-lb1111",
@@ -13,6 +14,10 @@
       "summary": "This Nebraska bill requires data centers to submit annual energy load reports to the state Power Review Board and gives public utilities new authority to regulate data centers and cryptocurrency mining operations. It establishes oversight mechanisms aimed at managing the significant electricity demand these facilities place on the grid.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "review",
+        "energy": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -34,6 +39,10 @@
       "summary": "This Nebraska bill would establish consumer protection rules around artificial intelligence, likely requiring transparency and accountability from companies that deploy AI systems. It aims to protect residents from potential harms caused by AI tools and automated decision-making.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -55,6 +64,10 @@
       "summary": "This Nebraska bill establishes rules protecting people's biometric data — such as fingerprints, face scans, and iris patterns — by requiring consent before collection and limiting how companies can use or share that information. It creates legal rights and remedies for residents whose biometric privacy is violated.",
       "stage": "Dead",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -92,6 +105,11 @@
       "summary": "This Nebraska bill establishes new rules for large electricity customers like data centers and crypto miners, addressing how they connect to and impact the power grid. It also covers energy storage regulation, taxation, and eminent domain powers related to energy storage resources.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "concerning",
+        "land-use": "review"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -131,6 +149,10 @@
       "summary": "This bill establishes safety requirements for conversational AI systems, such as chatbots and virtual assistants, operating in Nebraska. It likely mandates disclosures, safeguards, and oversight measures to protect users from potential harms.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "ai-safety",
         "algorithmic-transparency",
@@ -152,6 +174,10 @@
       "summary": "This bill establishes privacy protections for agricultural data and sets safety requirements for conversational AI systems in Nebraska. It creates rules around how AI chatbots and similar tools must operate, likely including disclosure and transparency obligations.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "ai-safety",
@@ -173,6 +199,10 @@
       "summary": "This Nebraska bill would require organizations using AI systems to follow risk management and transparency standards, creating new oversight rules for how AI is developed and used. It also establishes a related fund and updates public records laws to account for AI-related information.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -194,6 +224,10 @@
       "summary": "This bill establishes rules in Nebraska to protect people's biometric data — such as fingerprints, face scans, and iris patterns — by requiring consent before collection and limiting how companies can use or share it. It gives individuals legal rights over their own biological identifiers and sets penalties for violations.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"

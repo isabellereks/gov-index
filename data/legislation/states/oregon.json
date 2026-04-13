@@ -2,9 +2,10 @@
   "state": "Oregon",
   "stateCode": "OR",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Oregon has 3 relevant bills tracked in 2025–2026 — 1 on data-center policy and 2 on AI regulation. 2 have been enacted into law. 2 advance stricter regulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Oregon is under discussion across both data centers and AI. On data centers: HB4084 (enacted) — Creates a fast-track permitting program for economic development projects while specifically restricting data centers from using the state's enterprise zone tax incentive program. On AI: SB1546 (enacted) — Requires companies that operate AI companion software to clearly disclose to users that they are interacting with AI and not a human, and to have safety protocols in place to detect and p…",
   "legislation": [
     {
       "id": "or-hb4053",
@@ -34,6 +35,10 @@
       "summary": "This bill requires companies that operate AI companion software to clearly disclose to users that they are interacting with AI and not a human, and to have safety protocols in place to detect and prevent content that could encourage suicidal or self-harm thoughts. It also includes special protections for minors and mandates annual public reports on safety referrals.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -69,6 +74,10 @@
       "summary": "Oregon is creating a state commission on artificial intelligence to monitor how AI is used in government and advise lawmakers on policy. The state will also hire a dedicated officer to develop a strategic vision for privacy, data protection, and AI.",
       "stage": "Dead",
       "stance": "review",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-consumer": "review"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy",
@@ -201,6 +210,10 @@
       "summary": "This Oregon bill creates a fast-track permitting program for economic development projects while specifically restricting data centers from using the state's enterprise zone tax incentive program. It also adjusts job-creation tax credits and requires state agencies to publish lists of available permits.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "tax-incentives",
         "economic-development",

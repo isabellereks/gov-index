@@ -2,9 +2,10 @@
   "state": "Vermont",
   "stateCode": "VT",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Vermont has 11 relevant bills tracked in 2025–2026 — 2 on data-center policy and 9 on AI regulation. 1 imposes active bans or moratoriums.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Vermont is under discussion on data centers and advancing regulation on AI. On data centers: S0205 (in committee) — Would temporarily ban the construction of new AI data centers in Vermont while the state studies their impacts. On AI: H0816 (in committee) — Sets rules for how artificial intelligence can be used when providing mental health services to patients.",
   "legislation": [
     {
       "id": "vt-h0727",
@@ -13,6 +14,10 @@
       "summary": "This Vermont bill sets sustainability requirements for new data centers, addressing their environmental footprint including energy use, water consumption, and carbon emissions. It likely imposes mandatory reviews or standards that data center operators must meet before or during deployment.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -36,6 +41,10 @@
       "summary": "This Vermont bill sets rules for how artificial intelligence can be used when providing mental health services to patients. It aims to ensure AI tools used in mental health care meet safety and transparency standards to protect patients.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",
@@ -60,6 +69,12 @@
       "summary": "This bill would temporarily ban the construction of new AI data centers in Vermont while the state studies their impacts. The moratorium pauses new projects until lawmakers can review effects on energy, water, and the environment.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "environmental": "restrictive",
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "environmental-review",
         "grid-capacity",
@@ -87,6 +102,10 @@
       "summary": "This bill focuses on how data is collected and managed within Vermont's criminal justice system. It likely establishes requirements or oversight for tracking criminal justice data, which could include how automated tools or algorithms interact with that data.",
       "stage": "Committee",
       "stance": "review",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-consumer": "review"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -108,6 +127,11 @@
       "summary": "This Vermont bill establishes protections for people's neurological data and mental privacy, while regulating how AI can be used in health and human services decisions. It creates rights around brain data and imposes requirements on AI systems that affect health or social services.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "data-privacy",
@@ -134,6 +158,10 @@
       "summary": "This bill would establish oversight rules and safety requirements for companies that build or use AI systems deemed inherently dangerous. It places significant compliance obligations on AI developers and deployers operating in Vermont.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "ai-safety",
         "algorithmic-transparency",
@@ -159,6 +187,10 @@
       "summary": "This Vermont bill establishes rules and oversight for the use of artificial intelligence, likely including transparency and safety requirements for AI systems. It aims to regulate how AI is developed or deployed to protect residents from potential harms.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -208,6 +240,10 @@
       "summary": "This Vermont bill would establish rules for how social media platforms and AI systems must operate, likely including transparency requirements, safety standards, and protections for users. It represents a broad regulatory framework aimed at holding these technologies accountable to public standards.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -232,6 +268,10 @@
       "summary": "This bill regulates how artificial intelligence can be used by health insurers when making coverage decisions, such as approving or denying medical treatments. It likely requires transparency and human oversight to ensure AI tools don't unfairly deny patients the care they need.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",

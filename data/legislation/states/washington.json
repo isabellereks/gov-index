@@ -2,9 +2,10 @@
   "state": "Washington",
   "stateCode": "WA",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Washington has 8 relevant bills tracked in 2025–2026 — 5 on data-center policy and 3 on AI regulation. 2 have been enacted into law. 6 advance stricter regulation. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Washington is under discussion across both data centers and AI. On data centers: HB2515 (in committee) — Establishes rules for large energy-consuming facilities, such as data centers, addressing how they connect to and impact the electrical grid. On AI: SB5395 (enacted) — Strengthens transparency and accountability requirements for the prior authorization process used by health insurers to approve or deny medical treatments.",
   "legislation": [
     {
       "id": "wa-sb6231",
@@ -35,6 +36,10 @@
       "summary": "This Washington state bill establishes consumer protections related to artificial intelligence systems, likely requiring transparency and accountability from AI developers and deployers. It aims to safeguard residents from potential harms caused by AI-driven decisions affecting their lives.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",
@@ -174,6 +179,12 @@
       "summary": "This bill establishes rules for large energy-consuming facilities, such as data centers, addressing how they connect to and impact the electrical grid. It likely imposes review requirements and restrictions to manage the strain these facilities place on energy infrastructure and rates.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -240,6 +251,10 @@
       "summary": "This bill strengthens transparency and accountability requirements for the prior authorization process used by health insurers to approve or deny medical treatments. It likely targets the use of automated or AI-driven systems that make coverage decisions, requiring greater oversight and fairness in those determinations.",
       "stage": "Enacted",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency"

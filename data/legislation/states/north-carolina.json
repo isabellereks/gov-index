@@ -2,9 +2,10 @@
   "state": "North Carolina",
   "stateCode": "NC",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "North Carolina has 7 relevant bills tracked in 2025–2026 — 2 on data-center policy and 5 on AI regulation. 1 has been enacted into law. 2 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "North Carolina is under discussion on data centers and leaning restrictive on AI. On data centers: H1002 (in committee) — Aims to protect North Carolina utility ratepayers, likely by limiting how costs from large energy consumers like data centers are passed on to regular customers. On AI: H805 (enacted) — Aims to prevent the sexual exploitation of women and minors, likely addressing non-consensual synthetic or digital media used for exploitation.",
   "legislation": [
     {
       "id": "nc-s133",
@@ -57,6 +58,10 @@
       "summary": "This bill aims to prevent the sexual exploitation of women and minors, likely addressing non-consensual synthetic or digital media used for exploitation. It establishes prohibitions or penalties related to such content.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "child-safety"
@@ -239,6 +244,10 @@
       "summary": "This bill prohibits the use of AI to create deceptive advertisements in North Carolina. It targets misleading AI-generated content used in advertising, banning such practices to protect consumers from manipulation.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"

@@ -2,9 +2,10 @@
   "state": "Arizona",
   "stateCode": "AZ",
   "region": "na",
-  "stance": "concerning",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Arizona has 8 relevant bills tracked in 2025–2026 — 3 on data-center policy and 5 on AI regulation. 6 advance stricter regulation. 2 offer incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Arizona is under discussion on data centers and advancing regulation on AI. On data centers: HB2738 (filed) — Establishes rules for cost responsibility agreements specifically for data centers, likely requiring data centers to pay for or share the costs of grid upgrades and infrastructure needed… On AI: HB2592 (in committee) — Sets rules for how Arizona state agencies can use artificial intelligence, likely requiring oversight, transparency, or accountability measures.",
   "legislation": [
     {
       "id": "az-sb1815",
@@ -13,6 +14,10 @@
       "summary": "This Arizona bill sets rules for how businesses must handle consumers' personal data, giving people rights over their information and placing obligations on companies that collect or process it. It establishes requirements around data use, consumer consent, and transparency for organizations controlling personal data.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -76,6 +81,10 @@
       "summary": "This Arizona bill sets rules for how businesses must handle people's personal data, including requirements around collection, use, and transparency. It places obligations on companies to protect consumer data rights and limits how personal information can be gathered and processed.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -185,6 +194,10 @@
       "summary": "This bill sets rules for chatbots that collect or use personal data, requiring them to meet specific requirements around transparency and data handling. It aims to protect users by regulating how AI-powered chat systems interact with and store personal information.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -245,6 +258,10 @@
       "summary": "This bill regulates how insurance companies use modeling and data organizations to set rates or make decisions, adding oversight to algorithmic and data-driven insurance practices. It aims to increase accountability and transparency in how insurers collect and apply data in their models.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"

@@ -2,9 +2,10 @@
   "state": "Minnesota",
   "stateCode": "MN",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Minnesota has 11 relevant bills tracked in 2025–2026 — 9 on data-center policy and 2 on AI regulation. 1 imposes active bans or moratoriums. 6 offer incentives or deregulation.",
+  "stanceDatacenter": "review",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Minnesota is under discussion across both data centers and AI. On data centers: SF5100 (in committee) — Modifies existing rules and requirements that govern how data centers are built and operated in the state. On AI: SF1242 (in committee) — Requires law enforcement in Minnesota to obtain a warrant before using facial recognition technology to identify individuals.",
   "legislation": [
     {
       "id": "mn-hf4153",
@@ -13,6 +14,10 @@
       "summary": "This bill makes it easier for data centers to get water use approvals, exempts them from sales tax on electricity, and excludes their electricity use from calculations that determine how much solar energy utilities must provide. Overall, it reduces regulatory and financial burdens on data centers operating in Minnesota.",
       "stage": "Committee",
       "stance": "favorable",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "favorable"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -84,6 +89,10 @@
       "summary": "This bill requires law enforcement in Minnesota to obtain a warrant before using facial recognition technology to identify individuals. It establishes legal guardrails around how police can deploy this surveillance tool, protecting people's privacy rights.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
@@ -223,6 +232,10 @@
       "summary": "This Minnesota bill modifies existing rules and requirements that govern how data centers are built and operated in the state. The changes could affect where data centers can be located, how they interact with local communities, and the economic conditions surrounding their development.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "review",
+        "land-use": "review"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",
@@ -269,6 +282,10 @@
       "summary": "This Minnesota bill sets new rules for data centers around water use permits and environmental review requirements. It also exempts data centers from having to contribute to an energy conservation fund, while adding oversight on large water appropriation projects.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "favorable"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",

@@ -2,9 +2,10 @@
   "state": "Georgia",
   "stateCode": "GA",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Georgia has 11 relevant bills tracked in 2025–2026 — 5 on data-center policy and 6 on AI regulation. 1 has been enacted into law. 4 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Georgia is advancing regulation across both data centers and AI. On data centers: HB1063 (in committee) — Requires Georgia electric utilities to shield residential and retail customers from bearing the costs tied to data center construction and operation. On AI: SR789 (enacted) — This resolution creates a Georgia Senate committee to study the effects and implications of artificial intelligence.",
   "legislation": [
     {
       "id": "ga-hb1323",
@@ -13,6 +14,10 @@
       "summary": "This bill would require new data centers in Georgia to operate as 'hybrid power data centers,' meaning they must use a combination of power sources, and be certified by the Public Service Commission. It aims to reduce the strain that large data centers place on the electrical grid by mandating diversified energy use.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "renewable-energy",
@@ -36,6 +41,10 @@
       "summary": "This Georgia bill prohibits health insurance companies from using artificial intelligence alone to make coverage decisions for healthcare services. Human review must be part of any such decision-making process.",
       "stage": "Floor",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency"
@@ -81,6 +90,10 @@
       "summary": "This bill requires Georgia electric utilities to shield residential and retail customers from bearing the costs tied to data center construction and operation. It mandates specific contract terms to ensure that data centers, not everyday ratepayers, cover the expenses their energy demands place on the grid.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "restrictive",
+        "community": "favorable"
+      },
       "impactTags": [
         "energy-rates",
         "grid-capacity",
@@ -106,6 +119,12 @@
       "summary": "This bill would temporarily ban the construction of new data centers in Georgia while a state commission studies their impact on utilities, the environment, and communities. It establishes a formal review body to assess how data centers affect power grids, water use, and other public resources before development can resume.",
       "stage": "Filed",
       "stance": "restrictive",
+      "dimensionStances": {
+        "environmental": "restrictive",
+        "energy": "restrictive",
+        "community": "restrictive",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "grid-capacity",
         "environmental-review",
@@ -133,6 +152,10 @@
       "summary": "This bill would prevent electric utilities from spreading the costs of serving commercial data centers across all ratepayers, requiring that those costs be charged specifically to the data centers themselves. It aims to protect regular electricity customers from subsidizing the high energy demands of data center operations.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "none"
+      },
       "impactTags": [
         "energy-rates",
         "grid-capacity",
@@ -158,6 +181,10 @@
       "summary": "This Georgia bill would use property tax revenue collected from data centers to fund a statewide homestead exemption, reducing property taxes for homeowners. It essentially links data center tax contributions to direct financial relief for residential property owners across the state.",
       "stage": "Filed",
       "stance": "favorable",
+      "dimensionStances": {
+        "community": "favorable",
+        "land-use": "none"
+      },
       "impactTags": [
         "tax-incentives",
         "local-zoning",
@@ -255,6 +282,10 @@
       "summary": "This Georgia law requires that performers give their consent before their likeness can be used to create a digital replica through AI. Performers who have their likeness used without permission can sue for violations.",
       "stage": "Filed",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "data-privacy"
@@ -276,6 +307,11 @@
       "summary": "This Georgia bill bans the distribution of computer-generated obscene material depicting children and adds enhanced criminal sentences for offenders who use artificial intelligence to commit certain crimes. It updates the state's obscenity laws to specifically address AI-generated content targeting minors.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "child-safety",

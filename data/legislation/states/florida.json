@@ -2,9 +2,10 @@
   "state": "Florida",
   "stateCode": "FL",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Florida has 9 relevant bills tracked in 2025–2026 — 4 on data-center policy and 5 on AI regulation. 1 imposes active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Florida is advancing regulation across both data centers and AI. On data centers: S0484 (on the floor) — Gives local governments control over zoning and land-use rules for large data centers, sets utility service requirements for big power customers, and blocks water-use permits for… On AI: S0480 (in committee) — Reorganizes Florida's state technology operations by moving the Florida Digital Service into a new division called DIGIT within the Governor's office.",
   "legislation": [
     {
       "id": "fl-h1007",
@@ -13,6 +14,12 @@
       "summary": "This bill places significant restrictions on large data centers in Florida, including banning the use of fresh water (requiring reclaimed water instead), giving local governments control over data center land-use planning, and requiring energy and grid impact studies before construction permits are issued. It also prohibits state agencies from signing nondisclosure agreements that hide data center-related information from the public.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "community": "favorable",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",
@@ -39,6 +46,10 @@
       "summary": "This Florida bill allows insurance companies and HMOs to use AI to help process claims, but prohibits AI from being the sole reason a claim is denied or reduced. A qualified human professional must make the final call on any claim denial or payment reduction.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-in-healthcare",
@@ -64,6 +75,10 @@
       "summary": "This Florida bill reforms how police conduct eyewitness identification procedures, including placing limits on when facial recognition technology can be used. It sets strict documentation, recording, and procedural requirements for lineups and other identification methods.",
       "stage": "Dead",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-synthetic": "none"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"
@@ -127,6 +142,12 @@
       "summary": "This Florida bill gives local governments control over zoning and land-use rules for large data centers, sets utility service requirements for big power customers, and blocks water-use permits for large-scale data centers under certain conditions. It also requires a study on the impacts of building and operating large-scale data centers in the state.",
       "stage": "Floor",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning",
+        "community": "favorable",
+        "land-use": "favorable"
+      },
       "impactTags": [
         "local-zoning",
         "local-control",
@@ -177,6 +198,10 @@
       "summary": "This bill shields information about plans to build or locate data centers from public records requests in Florida. It keeps site selection details confidential, which can help companies avoid competitors learning their expansion plans but reduces public visibility into where data centers may be built.",
       "stage": "Committee",
       "stance": "favorable",
+      "dimensionStances": {
+        "community": "favorable",
+        "land-use": "favorable"
+      },
       "impactTags": [
         "local-zoning",
         "nda-transparency"
@@ -252,6 +277,10 @@
       "summary": "This bill restricts Florida government agencies from contracting with AI vendors unless specific requirements are met, and requires parental consent before minors can use companion chatbot platforms. It also mandates that chatbot operators periodically remind users they are interacting with a bot.",
       "stage": "Dead",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "ai-safety",

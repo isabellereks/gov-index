@@ -2,9 +2,10 @@
   "state": "United States",
   "stateCode": "US",
   "region": "na",
-  "stance": "favorable",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "The US federal government has 12 relevant bills tracked in 2025–2026 — 7 on data-center policy and 5 on AI regulation. 1 imposes active bans or moratoriums. 2 offer incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "review",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "The US federal government is advancing regulation on data centers and under discussion on AI. On data centers: HB1736 (on the floor) — Generative AI Terrorism Risk Assessment Act. On AI: HB7270 (in committee) — Creates a coordinated government strategy to combat identity fraud and theft across the financial services industry.",
   "legislation": [
     {
       "id": "us-sb3682",
@@ -13,6 +14,10 @@
       "summary": "This bill would require utilities to create separate waiting lists and special electricity rate categories specifically for data centers, so that their massive power demands don't drive up costs for regular consumers. It aims to protect households and businesses from bearing the financial burden of data centers connecting to the electric grid.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "review"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -84,6 +89,10 @@
       "summary": "This bill sets rules for how law enforcement agencies can use facial recognition technology, placing restrictions and oversight requirements on its use. It aims to prevent misuse while establishing accountability measures for police use of this AI-powered identification tool.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy",
@@ -109,6 +118,10 @@
       "summary": "This federal bill would require data center operators to report their energy and water usage to state governments and federal agencies like the EPA and Department of Energy. The goal is to increase transparency about the environmental footprint of data centers across the country.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -132,6 +145,11 @@
       "summary": "This bill requires data centers to meet specific obligations to protect residential electricity customers from bearing the cost burden of data center power demands. It prioritizes everyday ratepayers over data center operators when it comes to grid access and energy pricing.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "review",
+        "land-use": "none"
+      },
       "impactTags": [
         "energy-rates",
         "grid-capacity",
@@ -155,6 +173,11 @@
       "summary": "This bill directs the U.S. Secretary of Energy to study how data centers affect communities of color and low-income communities. It is a research and fact-finding effort without imposing any new restrictions or regulations on data centers.",
       "stage": "Committee",
       "stance": "review",
+      "dimensionStances": {
+        "environmental": "review",
+        "community": "review",
+        "land-use": "review"
+      },
       "impactTags": [
         "environmental-review",
         "local-control",
@@ -182,6 +205,10 @@
       "summary": "This bill aims to protect American households from the strain that large data centers place on the electric grid, likely by imposing requirements or restrictions on data center energy use. It focuses on preventing data centers from causing higher electricity costs or reliability problems for everyday consumers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -204,6 +231,10 @@
       "summary": "This federal bill requires data centers to report on how they affect air quality, water quality, and electricity use. It focuses on gathering information rather than imposing restrictions or bans.",
       "stage": "Committee",
       "stance": "review",
+      "dimensionStances": {
+        "environmental": "review",
+        "energy": "review"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -252,6 +283,10 @@
       "summary": "This bill would restrict lawsuits that could slow down or block the environmental permitting process for building data centers and related infrastructure. It is designed to make it easier and faster to get data centers approved by limiting legal challenges during the environmental review process.",
       "stage": "Committee",
       "stance": "favorable",
+      "dimensionStances": {
+        "environmental": "favorable",
+        "community": "none"
+      },
       "impactTags": [
         "environmental-review",
         "local-control"
@@ -287,6 +322,589 @@
         "Tim Sheehy",
         "Steve Daines",
         "John Hickenlooper"
+      ]
+    },
+    {
+      "id": "us-sb1489",
+      "billCode": "SB1489",
+      "title": "Anti-Racism in Public Health Act of 2025",
+      "summary": "A bill to amend the Public Health Service Act to provide for public health research and investment into understanding and eliminating structural racism and police violence.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "economic-development"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-04-10",
+      "partyOrigin": "D",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/1489/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB1489/2025",
+      "legiscanId": 2023149,
+      "sponsors": [
+        "Elizabeth Warren",
+        "Edward Markey",
+        "Jeff Merkley",
+        "Tina Smith"
+      ]
+    },
+    {
+      "id": "us-sb178",
+      "billCode": "SB178",
+      "title": "Ensuring Accurate and Complete Abortion Data Reporting Act of 2025",
+      "summary": "A bill to amend title XIX of the Social Security Act and the Public Health Service Act to improve the reporting of abortion data to the Centers for Disease Control and Prevention, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-01-22",
+      "partyOrigin": "R",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/178/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB178/2025",
+      "legiscanId": 1936889,
+      "sponsors": [
+        "Joni Ernst",
+        "James Lankford",
+        "Steve Daines",
+        "Kevin Cramer"
+      ]
+    },
+    {
+      "id": "us-hb2884",
+      "billCode": "HB2884",
+      "title": "Anti-Racism in Public Health Act of 2025",
+      "summary": "To amend the Public Health Service Act to provide for public health research and investment into understanding and eliminating structural racism and police violence.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "economic-development"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-04-10",
+      "partyOrigin": "D",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/2884/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB2884/2025",
+      "legiscanId": 2023275,
+      "sponsors": [
+        "Ayanna Pressley",
+        "Joyce Beatty",
+        "Shontel Brown",
+        "Andre Carson"
+      ]
+    },
+    {
+      "id": "us-hb627",
+      "billCode": "HB627",
+      "title": "Ensuring Accurate and Complete Abortion Data Reporting Act of 2025",
+      "summary": "To amend title XIX of the Social Security Act and Public Health Service Act to improve the reporting of abortion data to the Centers for Disease Control and Prevention, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-01-22",
+      "partyOrigin": "R",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/627/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB627/2025",
+      "legiscanId": 1936797,
+      "sponsors": [
+        "Ralph Norman",
+        "Rick Allen",
+        "Daniel Webster",
+        "Russ Fulcher"
+      ]
+    },
+    {
+      "id": "us-sb1713",
+      "billCode": "SB1713",
+      "title": "Agriculture Innovation Act of 2025",
+      "summary": "A bill to amend the Food Security Act of 1985 to authorize the Secretary of Agriculture to improve agricultural productivity, profitability, resilience, and ecological outcomes through modernized data infrastructure and analysis, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-05-12",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/1713/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB1713/2025",
+      "legiscanId": 2030591,
+      "sponsors": [
+        "Amy Klobuchar",
+        "John Thune"
+      ]
+    },
+    {
+      "id": "us-hb5784",
+      "billCode": "HB5784",
+      "title": "Artificial Intelligence Wisdom for Innovative Small Enterprises Act AI–WISE Act",
+      "summary": "To amend the Small Business Act to help small business concerns critically evaluate artificial intelligence tools, and for other purposes.",
+      "stage": "Floor",
+      "stance": "concerning",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2026-01-26",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/5784/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB5784/2025",
+      "legiscanId": 2046890,
+      "sponsors": [
+        "Hillary Scholten",
+        "Troy Downing",
+        "Josh Gottheimer",
+        "Brian Fitzpatrick"
+      ]
+    },
+    {
+      "id": "us-sb2081",
+      "billCode": "SB2081",
+      "title": "RISE Act of 2025 Responsible Innovation and Safe Expertise Act of 2025",
+      "summary": "A bill to establish immunity from civil liability for certain artificial intelligence developers, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-06-12",
+      "partyOrigin": "R",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/2081/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB2081/2025",
+      "legiscanId": 2037217,
+      "sponsors": [
+        "Cynthia Lummis"
+      ]
+    },
+    {
+      "id": "us-sb1378",
+      "billCode": "SB1378",
+      "title": "TAME Extreme Weather and Wildfires Act Transformational Artificial intelligence to Modernize the Economy against Extreme Weather and Wildfires Act",
+      "summary": "A bill to enhance the use by the National Oceanic and Atmospheric Administration of artificial intelligence for weather forecasting, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-04-09",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/1378/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB1378/2025",
+      "legiscanId": 2022578,
+      "sponsors": [
+        "Brian Schatz",
+        "Tim Sheehy",
+        "Ben Lujan",
+        "Peter Welch"
+      ]
+    },
+    {
+      "id": "us-sb3202",
+      "billCode": "SB3202",
+      "title": "Advanced Artificial Intelligence Security Readiness Act of 2025",
+      "summary": "A bill to direct the Director of the National Security Agency to develop guidance to secure artificial intelligence related technologies, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-11-19",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/3202/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB3202/2025",
+      "legiscanId": 2053374,
+      "sponsors": [
+        "Todd Young",
+        "Mark Kelly"
+      ]
+    },
+    {
+      "id": "us-sb2938",
+      "billCode": "SB2938",
+      "title": "Artificial Intelligence Risk Evaluation Act of 2025",
+      "summary": "A bill to require the Secretary of Energy to establish the Advanced Artificial Intelligence Evaluation Program, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "ai-safety"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-09-29",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/2938/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB2938/2025",
+      "legiscanId": 2045360,
+      "sponsors": [
+        "Josh Hawley",
+        "Richard Blumenthal",
+        "Marsha Blackburn"
+      ]
+    },
+    {
+      "id": "us-hb6275",
+      "billCode": "HB6275",
+      "title": "China AI Power Report Act",
+      "summary": "To require the Secretary of Commerce to submit a report annually on the advanced artificial intelligence capabilities of the People's Republic of China, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-11-21",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/6275/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB6275/2025",
+      "legiscanId": 2053841,
+      "sponsors": [
+        "James Moylan",
+        "Eugene Vindman",
+        "Bill Huizenga",
+        "Jefferson Shreve"
+      ]
+    },
+    {
+      "id": "us-hb5764",
+      "billCode": "HB5764",
+      "title": "AI for Main Street Act",
+      "summary": "To amend the Small Business Act to require small business development centers to assist small business concerns with the use of artificial intelligence, and for other purposes.",
+      "stage": "Floor",
+      "stance": "concerning",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2026-01-26",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/5764/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB5764/2025",
+      "legiscanId": 2046871,
+      "sponsors": [
+        "Mark Alford",
+        "Hillary Scholten",
+        "Eugene Vindman",
+        "Josh Harder"
+      ]
+    },
+    {
+      "id": "us-hb5388",
+      "billCode": "HB5388",
+      "title": "American Artificial Intelligence Leadership and Uniformity Act",
+      "summary": "To provide a national framework to sustain American leadership in artificial intelligence, to require an actionable Federal plan aligned to that policy, and to establish a temporary moratorium preempting certain State laws that restrict artificial intelligence models and syste...",
+      "stage": "Committee",
+      "stance": "concerning",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-09-16",
+      "partyOrigin": "R",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/5388/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB5388/2025",
+      "legiscanId": 2044380,
+      "sponsors": [
+        "Michael Baumgartner"
+      ]
+    },
+    {
+      "id": "us-hb1736",
+      "billCode": "HB1736",
+      "title": "Generative AI Terrorism Risk Assessment Act",
+      "summary": "To require the Secretary of Homeland Security to conduct annual assessments on terrorism threats to the United States posed by terrorist organizations utilizing generative artificial intelligence applications, and for other purposes.",
+      "stage": "Floor",
+      "stance": "concerning",
+      "impactTags": [
+        "property-values"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-11-20",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/1736/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB1736/2025",
+      "legiscanId": 1987991,
+      "sponsors": [
+        "August Pfluger",
+        "Michael Guest",
+        "Gabe Evans",
+        "Pablo Jose Hernandez"
+      ]
+    },
+    {
+      "id": "us-hb7209",
+      "billCode": "HB7209",
+      "title": "TRAIN Act Transparency and Responsibility for Artificial Intelligence Networks Act",
+      "summary": "To create an administrative subpoena process to assist copyright owners in determining which of their copyrighted works have been used in the training of artificial intelligence models.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "nda-transparency"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2026-01-22",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/7209/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB7209/2025",
+      "legiscanId": 2091456,
+      "sponsors": [
+        "Madeleine Dean",
+        "Nathaniel Moran",
+        "Laurel Lee"
+      ]
+    },
+    {
+      "id": "us-sb2455",
+      "billCode": "SB2455",
+      "title": "TRAIN Act Transparency and Responsibility for Artificial Intelligence Networks Act",
+      "summary": "A bill to create an administrative subpoena process to assist copyright owners in determining which of their copyrighted works have been used in the training of artificial intelligence models.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "nda-transparency"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-07-24",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/2455/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB2455/2025",
+      "legiscanId": 2040591,
+      "sponsors": [
+        "Peter Welch",
+        "Marsha Blackburn",
+        "Josh Hawley",
+        "Adam Schiff"
+      ]
+    },
+    {
+      "id": "us-hb5351",
+      "billCode": "HB5351",
+      "title": "NSF AI Education Act of 2025",
+      "summary": "To support National Science Foundation education and professional development relating to artificial intelligence, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-09-15",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/5351/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB5351/2025",
+      "legiscanId": 2044133,
+      "sponsors": [
+        "Vince Fong",
+        "Andrea Salinas",
+        "Brittany Pettersen",
+        "Eugene Vindman"
+      ]
+    },
+    {
+      "id": "us-hb2770",
+      "billCode": "HB2770",
+      "title": "TAME Extreme Weather and Wildfires Act Transformational Artificial intelligence to Modernize the Economy against Extreme Weather and Wildfires Act",
+      "summary": "To direct the use of artificial intelligence by National Oceanic and Atmospheric Administration to adapt to extreme weather, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-04-09",
+      "partyOrigin": "R",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/2770/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB2770/2025",
+      "legiscanId": 2022459,
+      "sponsors": [
+        "Scott Franklin"
+      ]
+    },
+    {
+      "id": "us-sb2381",
+      "billCode": "SB2381",
+      "title": "PROACTIV Artificial Intelligence Data Act of 2025 Preventing Recurring Online Abuse of Children Through Intentional Vetting of Artificial Intelligence Data Act of 2025",
+      "summary": "A bill to require the Director of the National Institute of Standards and Technology to develop a framework for detecting, removing, and reporting child pornography in datasets used to train artificial intelligence systems, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "child-safety"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-07-22",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/2381/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB2381/2025",
+      "legiscanId": 2040128,
+      "sponsors": [
+        "John Cornyn",
+        "Andy Kim",
+        "Ted Budd"
+      ]
+    },
+    {
+      "id": "us-sb321",
+      "billCode": "SB321",
+      "title": "Decoupling America's Artificial Intelligence Capabilities from China Act of 2025",
+      "summary": "A bill to amend title 18, United States Code, to prohibit United States persons from advancing artificial intelligence capabilities within the People's Republic of China, and for other purposes.",
+      "stage": "Committee",
+      "stance": "concerning",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-01-29",
+      "partyOrigin": "R",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/321/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB321/2025",
+      "legiscanId": 1948171,
+      "sponsors": [
+        "Josh Hawley"
+      ]
+    },
+    {
+      "id": "us-sb3062",
+      "billCode": "SB3062",
+      "title": "GUARD Act Guidelines for User Age-verification and Responsible Dialogue Act of 2025",
+      "summary": "A bill to require artificial intelligence chatbots to implement age verification measures and make certain disclosures, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "child-safety"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-10-28",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/3062/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB3062/2025",
+      "legiscanId": 2047758,
+      "sponsors": [
+        "Josh Hawley",
+        "Richard Blumenthal",
+        "Katie Boyd Britt",
+        "Mark Warner"
+      ]
+    },
+    {
+      "id": "us-sb3339",
+      "billCode": "SB3339",
+      "title": "AI Workforce PREPARE Act AI Workforce Projections, Research, and Evaluations to Promote AI Readiness and Employment Act",
+      "summary": "A bill to better forecast and plan for the impact of artificial intelligence on the workforce of the United States, to provide data to improve training programs for in-demand industry sectors and occupations, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [
+        "job-creation"
+      ],
+      "category": "ai-governance",
+      "updatedDate": "2025-12-03",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/3339/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB3339/2025",
+      "legiscanId": 2056926,
+      "sponsors": [
+        "Jim Banks",
+        "Margaret Hassan",
+        "John Hickenlooper",
+        "Jon Husted"
+      ]
+    },
+    {
+      "id": "us-hb3210",
+      "billCode": "HB3210",
+      "title": "Artificial Intelligence Literacy and Inclusion Act",
+      "summary": "To direct the National Science Foundation to make awards for artificial intelligence literacy programs, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-05-06",
+      "partyOrigin": "D",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/3210/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB3210/2025",
+      "legiscanId": 2029224,
+      "sponsors": [
+        "Adriano Espaillat",
+        "Ted Lieu",
+        "Yvette Clarke",
+        "Josh Gottheimer"
+      ]
+    },
+    {
+      "id": "us-hb3679",
+      "billCode": "HB3679",
+      "title": "Small Business Artificial Intelligence Advancement Act",
+      "summary": "To require the Director of the National Institute of Standards and Technology to develop resources for small businesses in utilizing artificial intelligence, and for other purposes.",
+      "stage": "Floor",
+      "stance": "concerning",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2026-02-24",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/3679/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB3679/2025",
+      "legiscanId": 2035367,
+      "sponsors": [
+        "Mike Collins",
+        "Haley Stevens",
+        "Laura Gillen",
+        "Eugene Vindman"
+      ]
+    },
+    {
+      "id": "us-hb6306",
+      "billCode": "HB6306",
+      "title": "AI Fraud Deterrence Act",
+      "summary": "To increase penalties for the commission of financial crimes using artificial intelligence.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-11-25",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/6306/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB6306/2025",
+      "legiscanId": 2054344,
+      "sponsors": [
+        "Ted Lieu",
+        "Neal Dunn"
+      ]
+    },
+    {
+      "id": "us-hb5078",
+      "billCode": "HB5078",
+      "title": "Protecting Information by Local Leaders for Agency Resilience Act PILLAR Act",
+      "summary": "To amend the Homeland Security Act of 2002 to reauthorize the State and local cybersecurity grant program of the Cybersecurity and Infrastructure Security Agency of the Department of Homeland Security, and for other purposes.",
+      "stage": "Floor",
+      "stance": "concerning",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-11-18",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/5078/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB5078/2025",
+      "legiscanId": 2043072,
+      "sponsors": [
+        "Andrew Ogles",
+        "Andrew Garbarino",
+        "Eric Swalwell",
+        "Gabe Evans"
+      ]
+    },
+    {
+      "id": "us-hb7968",
+      "billCode": "HB7968",
+      "title": "Small AI Innovators Empowerment Act",
+      "summary": "To authorize the Department of Commerce to carry out a study on challenges faced by United States small artificial intelligence businesses, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2026-03-17",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/house-bill/7968/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/HB7968/2025",
+      "legiscanId": 2135381,
+      "sponsors": [
+        "Suhas Subramanyam",
+        "Jay Obernolte",
+        "Josh Gottheimer",
+        "Julie Fedorchak"
+      ]
+    },
+    {
+      "id": "us-sb3336",
+      "billCode": "SB3336",
+      "title": "Reliable Artificial Intelligence Research Act of 2025",
+      "summary": "A bill to require the Secretary of Homeland Security to carry out prize competitions to advance the science of interpretability and to develop adversarial robustness with respect to artificial intelligence products, and for other purposes.",
+      "stage": "Committee",
+      "stance": "review",
+      "impactTags": [],
+      "category": "ai-governance",
+      "updatedDate": "2025-12-03",
+      "partyOrigin": "B",
+      "sourceUrl": "https://www.congress.gov/bill/119th-congress/senate-bill/3336/all-info",
+      "legiscanUrl": "https://legiscan.com/US/bill/SB3336/2025",
+      "legiscanId": 2056821,
+      "sponsors": [
+        "Margaret Hassan",
+        "Jim Banks"
       ]
     }
   ]

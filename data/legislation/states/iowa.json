@@ -2,9 +2,10 @@
   "state": "Iowa",
   "stateCode": "IA",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Iowa has 10 relevant bills tracked in 2025–2026 — 6 on data-center policy and 4 on AI regulation. 1 imposes active bans or moratoriums. 3 offer incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "favorable",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Iowa is advancing regulation on data centers and leaning innovation-friendly on AI. On data centers: HF2447 (in committee) — Requires data centers in Iowa to report on their water and energy usage and establishes specific tariff rules related to those resources. On AI: HSB294 (in committee) — Regulates the use of AI to create election-related content, such as deepfakes or synthetic media that could mislead voters.",
   "legislation": [
     {
       "id": "ia-hf2447",
@@ -13,6 +14,10 @@
       "summary": "This bill requires data centers in Iowa to report on their water and energy usage and establishes specific tariff rules related to those resources. It creates new regulatory obligations around how data centers consume water and electricity, with potential cost implications for operators.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "energy-rates",
@@ -36,6 +41,11 @@
       "summary": "This Iowa bill regulates the use of AI to create election-related content, such as deepfakes or synthetic media that could mislead voters. It also establishes protections for people interacting with AI systems and sets penalties for violations.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency",
@@ -93,6 +103,10 @@
       "summary": "This Iowa bill requires data centers to report their water and energy usage and subjects them to specific utility tariff requirements. It imposes new oversight obligations on data centers related to their consumption of water and electricity resources.",
       "stage": "Filed",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -155,6 +169,10 @@
       "summary": "This Iowa bill requires data centers to use water-efficient cooling technologies and encourages the use of recycled or non-drinking water sources. Data centers that fail to comply would face civil penalties.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -197,6 +215,10 @@
       "summary": "This Iowa bill would require high schools to include computer science and AI education in their curricula and graduation requirements, while also affecting teacher preparation programs and college admissions. It establishes mandatory standards for how AI and computer science are taught across the state.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-public": "favorable"
+      },
       "impactTags": [
         "ai-in-education",
         "ai-safety"
@@ -218,6 +240,10 @@
       "summary": "This Iowa bill requires high schools to include computer science and artificial intelligence in their curricula and graduation requirements, and updates teacher preparation programs to cover these topics. It aims to ensure students and educators are equipped with AI and computer science knowledge.",
       "stage": "Filed",
       "stance": "favorable",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-public": "favorable"
+      },
       "impactTags": [
         "ai-in-education",
         "algorithmic-transparency"
@@ -238,6 +264,10 @@
       "summary": "This bill addresses who legally owns the content created by AI systems and the AI models themselves after they have been trained. It establishes rules around intellectual property rights for AI-generated outputs and trained AI systems.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "review",
+        "ai-consumer": "none"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"

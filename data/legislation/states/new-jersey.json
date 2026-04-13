@@ -2,9 +2,10 @@
   "state": "New Jersey",
   "stateCode": "NJ",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "New Jersey has 10 relevant bills tracked in 2025–2026 — 4 on data-center policy and 6 on AI regulation. 2 impose active bans or moratoriums. 1 offers incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "New Jersey is advancing regulation across both data centers and AI. On data centers: S3379 (in committee) — Would require data center owners and operators in New Jersey to report their water and energy usage to the Board of Public Utilities twice a year. On AI: A4163 (in committee) — Imposes civil fines on political campaigns that use AI-generated deepfakes to misrepresent candidates in advertisements.",
   "legislation": [
     {
       "id": "nj-s3379",
@@ -13,6 +14,10 @@
       "summary": "This bill would require data center owners and operators in New Jersey to report their water and energy usage to the Board of Public Utilities twice a year. The goal is to increase transparency around how much resources data centers consume.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -62,6 +67,10 @@
       "summary": "This bill imposes civil fines on political campaigns that use AI-generated deepfakes to misrepresent candidates in advertisements. It targets fabricated or manipulated media used in elections to deceive voters about what a candidate said or did.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "algorithmic-transparency"
@@ -106,6 +115,10 @@
       "summary": "This bill creates privacy protections for consumer health data held by healthcare providers, setting rules around how that data can be collected, used, and shared. It places significant obligations on entities handling health information to safeguard patient privacy.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "ai-in-healthcare"
@@ -127,6 +140,10 @@
       "summary": "This bill creates privacy protections for consumer health data held by health care providers and other entities in New Jersey. It sets rules around how health data can be collected, used, and shared, giving patients more control over their personal health information.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "ai-in-healthcare"
@@ -208,6 +225,10 @@
       "summary": "This bill requires data center owners and operators in New Jersey to report their water and energy usage to the Board of Public Utilities every six months. It creates mandatory transparency around how much power and water data centers consume, without outright banning or limiting their operations.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "carbon-emissions",
@@ -233,6 +254,10 @@
       "summary": "This bill requires data center owners and operators in New Jersey to regularly report their water and energy usage to the Board of Public Utilities. It creates mandatory transparency and oversight around how much power and water data centers consume.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "review",
+        "energy": "review"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -257,6 +282,10 @@
       "summary": "This bill requires data center owners and operators in New Jersey to submit reports on their water and energy usage to the Board of Public Utilities. It creates mandatory disclosure obligations aimed at tracking the resource consumption of data centers in the state.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",

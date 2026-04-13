@@ -2,9 +2,10 @@
   "state": "Kentucky",
   "stateCode": "KY",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Kentucky has 10 relevant bills tracked in 2025–2026 — 5 on data-center policy and 5 on AI regulation. 1 imposes active bans or moratoriums.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Kentucky is advancing regulation across both data centers and AI. On data centers: HB593 (in committee) — Requires data centers to obtain electricity only through special contracts that protect other utility customers from bearing the costs of new infrastructure built to serve data c… On AI: HB676 (on the floor) — Creates a statewide health data system in Kentucky that collects and shares health information from various participants, governed by a board and operated by a consortium of public health…",
   "legislation": [
     {
       "id": "ky-hb593",
@@ -13,6 +14,11 @@
       "summary": "This Kentucky bill requires data centers to obtain electricity only through special contracts that protect other utility customers from bearing the costs of new infrastructure built to serve data centers. It establishes a formal application and review process to ensure data center power demands don't raise rates or hurt service quality for residential and other customers.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "review",
+        "land-use": "review"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -40,6 +46,11 @@
       "summary": "This Kentucky bill restricts how licensed therapists and psychotherapists can use AI tools during therapy sessions, including banning AI from assisting when sessions are recorded. It also prohibits advertising therapy services unless delivered by a licensed human professional.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "restrictive"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency",
@@ -65,6 +76,11 @@
       "summary": "This Kentucky bill requires data centers built on agricultural land to file a decommissioning plan and post a financial bond before operating, ensuring cleanup costs are covered when a facility closes. It also requires data centers receiving state tax exemptions to work with local governments on improving energy and water efficiency.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "community": "review",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "protected-land",
         "environmental-review",
@@ -89,6 +105,10 @@
       "summary": "This Kentucky bill requires large data centers using more than 100 megawatts of electricity to get Public Service Commission approval before receiving utility service, ensuring the data center pays for the new infrastructure it needs. The law is designed to prevent ordinary utility customers from bearing the costs of expanding the grid for massive data center operations.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "energy": "concerning",
+        "community": "none"
+      },
       "impactTags": [
         "grid-capacity",
         "energy-rates",
@@ -112,6 +132,10 @@
       "summary": "This Kentucky bill prevents government agencies from signing secrecy agreements with data center companies that go beyond what state law already allows, and ensures the public has access to information about data center projects and their impacts. It also stops contracts from overriding Kentucky's open records and open meetings laws, and protects local officials' ability to discuss data center effects with the public.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "concerning",
+        "land-use": "none"
+      },
       "impactTags": [
         "nda-transparency",
         "local-control",
@@ -156,6 +180,10 @@
       "summary": "This bill requires data centers in Kentucky to complete a water feasibility study before opening and submit annual reports on their water usage to the state's Energy and Environment Cabinet. It introduces mandatory oversight of how much water data centers consume, adding regulatory hurdles before operations can begin.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "review"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure",
@@ -178,6 +206,10 @@
       "summary": "This Kentucky bill gives consumers rights over their personal data held by social media companies and AI systems, and requires those companies to allow users to move their data to other platforms. It also sets rules for how social media and AI companies can share data with each other, with enforcement by the Attorney General.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -199,6 +231,11 @@
       "summary": "This Kentucky bill sets rules for companies offering AI-powered mental health chatbots, requiring them to clearly disclose that users are interacting with AI, protect users' personal health information, and avoid deceptive advertising. The Attorney General would have authority to enforce these requirements.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-public": "concerning"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "data-privacy",
@@ -222,6 +259,10 @@
       "summary": "This bill creates a Kentucky Health Command within the state's technology office to develop and oversee an AI-assisted virtual health platform for rural healthcare providers. The platform can provide health information and services but is prohibited from practicing medicine or diagnosing and treating conditions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-public": "favorable"
+      },
       "impactTags": [
         "ai-in-healthcare",
         "algorithmic-transparency"
@@ -262,6 +303,10 @@
       "summary": "This bill creates a statewide health data system in Kentucky that collects and shares health information from various participants, governed by a board and operated by a consortium of public health colleges. It establishes rules for how health data is submitted, shared, and protected, with enforcement powers for non-compliance.",
       "stage": "Floor",
       "stance": "review",
+      "dimensionStances": {
+        "ai-consumer": "concerning",
+        "ai-public": "favorable"
+      },
       "impactTags": [
         "data-privacy",
         "ai-in-healthcare"

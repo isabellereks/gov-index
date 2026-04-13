@@ -2,9 +2,10 @@
   "state": "Kansas",
   "stateCode": "KS",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Kansas has 8 relevant bills tracked in 2025–2026 — 5 on data-center policy and 3 on AI regulation. 3 have been enacted into law. 4 impose active bans or moratoriums. 2 offer incentives or deregulation.",
+  "stanceDatacenter": "concerning",
+  "stanceAI": "restrictive",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Kansas is advancing regulation on data centers and leaning restrictive on AI. On data centers: SB531 (in committee) — Would ban the construction or operation of new large data centers in Kansas counties that have experienced a drought emergency in the past three years. On AI: HB2183 (enacted) — Updates Kansas criminal law to ban the creation and distribution of AI-generated or digitally altered sexual images of children, even when no real child was directly involved in making them.",
   "legislation": [
     {
       "id": "ks-sb526",
@@ -13,6 +14,10 @@
       "summary": "This bill requires data centers to be built on land already zoned for industrial or manufacturing use (or unzoned) as of July 1, 2025, in order to qualify for a sales tax exemption. It effectively restricts where data centers can be located to receive tax benefits, steering them away from residential or commercial zones.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "community": "concerning",
+        "land-use": "concerning"
+      },
       "impactTags": [
         "local-zoning",
         "tax-incentives"
@@ -33,6 +38,10 @@
       "summary": "This Kansas bill bans the use of DeepSeek and other AI platforms controlled by foreign adversary nations on state-owned devices and government networks. It also prohibits state use of genetic sequencing equipment or software produced by foreign adversaries.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-consumer": "none"
+      },
       "impactTags": [
         "ai-safety",
         "data-privacy"
@@ -92,6 +101,11 @@
       "summary": "This bill would ban the construction or operation of new large data centers in Kansas counties that have experienced a drought emergency in the past three years. It aims to protect water resources in drought-stressed areas from the heavy water demands of large data center facilities.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "environmental": "restrictive",
+        "community": "concerning",
+        "land-use": "restrictive"
+      },
       "impactTags": [
         "water-consumption",
         "local-zoning",
@@ -130,6 +144,10 @@
       "summary": "This bill would require data centers in Kansas to use closed-loop cooling systems, which recirculate water rather than continuously drawing fresh water. The goal is to reduce the amount of water data centers consume from local supplies.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "environmental": "concerning",
+        "energy": "concerning"
+      },
       "impactTags": [
         "water-consumption",
         "water-infrastructure"
@@ -150,6 +168,12 @@
       "summary": "This bill would make it illegal to train AI systems to encourage suicide or violence, form emotional bonds with users, pose as healthcare professionals, or simulate human relationships. It broadly restricts AI from providing emotional support or encouraging social isolation.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "restrictive",
+        "ai-consumer": "restrictive",
+        "ai-public": "restrictive",
+        "ai-synthetic": "none"
+      },
       "impactTags": [
         "ai-safety",
         "child-safety",
@@ -172,6 +196,10 @@
       "summary": "This bill updates Kansas criminal law to ban the creation and distribution of AI-generated or digitally altered sexual images of children, even when no real child was directly involved in making them. It also prohibits sharing realistic fake explicit images of identifiable real people without their consent.",
       "stage": "Enacted",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-consumer": "restrictive",
+        "ai-synthetic": "restrictive"
+      },
       "impactTags": [
         "deepfake-regulation",
         "child-safety",

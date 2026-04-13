@@ -2,9 +2,10 @@
   "state": "Michigan",
   "stateCode": "MI",
   "region": "na",
-  "stance": "restrictive",
-  "lastUpdated": "2026-04-11",
-  "contextBlurb": "Michigan has 9 relevant bills tracked in 2025–2026 on AI regulation. 4 impose active bans or moratoriums.",
+  "stanceDatacenter": "none",
+  "stanceAI": "concerning",
+  "lastUpdated": "2026-04-13",
+  "contextBlurb": "Michigan is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB5769 (in committee) — Creates a new law in Michigan specifically protecting the privacy of consumers' reproductive health data.",
   "legislation": [
     {
       "id": "mi-sb0198",
@@ -13,6 +14,10 @@
       "summary": "This bill creates new rules governing how automobile dealers collect and handle customer data. It establishes requirements around what data can be gathered and how it must be managed, aiming to protect consumer privacy in car dealership transactions.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "none",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -34,6 +39,10 @@
       "summary": "This bill would ban companion chatbots from being made available to minors in Michigan. It creates a new law specifically targeting AI-powered social or emotional companion apps that children could access.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "child-safety",
         "ai-safety",
@@ -78,6 +87,10 @@
       "summary": "This bill would create a new Michigan law giving consumers rights over their personal data, including how it is collected, used, and shared by businesses. It establishes rules companies must follow to protect consumer privacy and would include oversight and enforcement mechanisms.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "data-privacy",
         "algorithmic-transparency"
@@ -161,6 +174,10 @@
       "summary": "This bill creates the Michigan Kids Code Act, which establishes online safety protections for children by regulating how internet services collect data and deliver content to minors. It imposes restrictions on platforms to limit harmful algorithmic recommendations and data practices targeting kids.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "restrictive"
+      },
       "impactTags": [
         "child-safety",
         "data-privacy",
@@ -185,6 +202,11 @@
       "summary": "This Michigan bill would prohibit employers from using electronic monitoring or automated decision-making tools in the workplace except for specific allowed purposes. It creates new workplace protections against algorithmic surveillance and automated employment decisions.",
       "stage": "Committee",
       "stance": "restrictive",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning",
+        "ai-workforce": "restrictive"
+      },
       "impactTags": [
         "ai-in-employment",
         "algorithmic-transparency",
@@ -233,6 +255,10 @@
       "summary": "This bill establishes rules governing how law enforcement agencies in Michigan can use license plate reader systems to track and record vehicle information. It sets guidelines intended to regulate the collection, storage, and use of that data by police.",
       "stage": "Committee",
       "stance": "concerning",
+      "dimensionStances": {
+        "ai-governance-dim": "concerning",
+        "ai-consumer": "concerning"
+      },
       "impactTags": [
         "algorithmic-transparency",
         "data-privacy"
