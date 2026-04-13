@@ -12,7 +12,7 @@
       "status": "operational",
       "yearBuilt": 2024,
       "yearProposed": 2020,
-      "notes": "Microsoft's AMS13/14 hyperscale campus at Cultuurweg 11 in Agriport A7, Hollands Kroon; two buildings each with five data halls, part of Azure West Europe region. Construction approval came in April 2023 after protracted permitting and local farmer protests over water consumption; protests also erupted in 2025 over alleged IDF use of Azure cloud.",
+      "notes": "Dutch farmer protests over water consumption held up permitting for years, and 2025 protests erupted over alleged IDF use of Azure cloud. Microsoft's AMS13/14 campus at Agriport A7 anchors Azure West Europe with two buildings of five data halls each, approved in April 2023.",
       "concerns": [
         "water-consumption",
         "local-zoning",
@@ -33,7 +33,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Microsoft purchased 50 hectares adjacent to its AMS13/14 campus in late 2025 for a major hyperscale expansion, citing AI-driven demand and sovereign data storage needs from 300,000 Dutch customers. Plans include rainwater harvesting for cooling and a publicly accessible area; Microsoft has pledged greater community transparency after earlier local opposition.",
+      "notes": "Microsoft pledged greater community transparency after earlier local opposition when buying 50 hectares next to AMS13/14 in late 2025 for a major hyperscale expansion. Plans include rainwater-harvested cooling and a public area, citing AI demand and sovereign storage needs from 300,000 Dutch customers.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -54,7 +54,7 @@
       "status": "operational",
       "yearBuilt": 2016,
       "yearProposed": 2014,
-      "notes": "Google's first Netherlands data center, expanded multiple times since opening in 2016 with total investment exceeding €2.5 billion; uses recycled industrial water from the Eemskanaal via a €45M water treatment plant and is powered by 100% renewable energy including wind farms at Delfzijl.",
+      "notes": "Google's first Netherlands data center, expanded multiple times since opening in 2016 with total investment exceeding \u20ac2.5 billion; uses recycled industrial water from the Eemskanaal via a \u20ac45M water treatment plant and is powered by 100% renewable energy including wind farms at Delfzijl.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -74,7 +74,7 @@
       "status": "operational",
       "yearBuilt": 2025,
       "yearProposed": 2023,
-      "notes": "Google opened this €600 million data center in November 2025 after breaking ground in December 2023; the facility uses advanced air-cooling to limit water use, has rooftop solar panels, and is equipped to support waste-heat recovery for potential future district heating networks.",
+      "notes": "Google opened this \u20ac600 million data center in November 2025 after breaking ground in December 2023; the facility uses advanced air-cooling to limit water use, has rooftop solar panels, and is equipped to support waste-heat recovery for potential future district heating networks.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -113,7 +113,7 @@
       "status": "operational",
       "yearBuilt": 2017,
       "yearProposed": 2015,
-      "notes": "Equinix operates nine Amsterdam IBX data centers (AM1–AM11), forming one of Europe's densest interconnection hubs anchored at Amsterdam Science Park and the Laarderhoogtweg campus; the facilities host AMS-IX and NL-IX internet exchanges and connect to more than 150 network service providers.",
+      "notes": "Equinix operates nine Amsterdam IBX data centers (AM1\u2013AM11), forming one of Europe's densest interconnection hubs anchored at Amsterdam Science Park and the Laarderhoogtweg campus; the facilities host AMS-IX and NL-IX internet exchanges and connect to more than 150 network service providers.",
       "concerns": [
         "grid-capacity",
         "local-zoning"
@@ -132,7 +132,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "Four pre-permitted hyperscale projects (up to 70MW each, ≤10 ha) are advancing near Schiphol despite a 2026 parliamentary motion calling for a halt; the municipality already hosts 30+ data centers and residents are actively opposing two projects being built immediately adjacent to residential neighborhoods.",
+      "notes": "Four pre-permitted Haarlemmermeer hyperscale projects are advancing despite a 2026 parliamentary motion calling for a halt, with residents actively opposing two built adjacent to residential neighborhoods. The municipality already hosts 30+ data centers at up to 70 MW each.",
       "concerns": [
         "residential-proximity",
         "grid-capacity",
@@ -155,7 +155,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Microsoft is the sole tenant of a newly leased hyperscale facility in Amsterdam whose pre-2022 permit allows construction despite the national hyperscale ban and the 2023–2025 Amsterdam municipal moratorium on new data centers; the project has drawn parliamentary criticism for monopolising scarce grid capacity.",
+      "notes": "Parliament is criticizing Microsoft for monopolising scarce grid capacity at this Amsterdam site, whose pre-2022 permit lets it build despite the national hyperscale ban and Amsterdam's 2023\u20132025 moratorium. Microsoft is the sole tenant of the newly leased 70 MW facility.",
       "concerns": [
         "grid-capacity",
         "local-control",
@@ -176,7 +176,7 @@
       "status": "operational",
       "yearBuilt": 2022,
       "yearProposed": 2019,
-      "notes": "Google's second Dutch data center, located at Agriport A7 in Hollands Kroon, opened following a €1.1 billion investment announced in 2019; it sits near Microsoft's AMS13/14 campus and is powered by 100% renewable energy from Dutch wind and solar PPAs.",
+      "notes": "Google's second Dutch data center, located at Agriport A7 in Hollands Kroon, opened following a \u20ac1.1 billion investment announced in 2019; it sits near Microsoft's AMS13/14 campus and is powered by 100% renewable energy from Dutch wind and solar PPAs.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -196,7 +196,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2021,
-      "notes": "Meta's proposed 166-hectare, 200MW hyperscale campus—which would have been the largest data center in the Netherlands—was officially cancelled in July 2022 after the Dutch Senate blocked land sale, opponents won local elections, and the Council of State struck down the zoning plan in September 2023; cited as the landmark case in Dutch data center community opposition and regulatory tightening.",
+      "notes": "The Dutch Senate blocked the land sale, opponents won local elections, and the Council of State struck down the zoning plan in September 2023 \u2014 the landmark case in Dutch DC opposition. Meta's 166-hectare, 200 MW hyperscale campus would have been the Netherlands' largest; officially cancelled July 2022.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -281,7 +281,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "Three-building hyperscale campus (Data Centres E, F, G) on a 65-acre site at Cruiserath Road, approved by An Coimisiún Pleanála in March 2026 after a three-year planning process including community and environmental appeals. AWS secured its EirGrid grid connection in 2019, pre-dating the Dublin moratorium; approval is conditional on a renewable PPA.",
+      "notes": "Three-building hyperscale campus (Data Centres E, F, G) on a 65-acre site at Cruiserath Road, approved by An Coimisi\u00fan Plean\u00e1la in March 2026 after a three-year planning process including community and environmental appeals. AWS secured its EirGrid grid connection in 2019, pre-dating the Dublin moratorium; approval is conditional on a renewable PPA.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -302,7 +302,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2019,
-      "notes": "DUB20 campus on the 100-acre former Irish Fertilisers Industries site at Avoca River Business Park; broke ground in late 2025 after receiving Ireland's first large-scale data center EirGrid grid connection in over four years. Phase 1 delivers 90 MW with full build-out to 200 MW across five buildings; includes a 293 MW biogas power plant and 220 kV substation for offshore wind. Part of a €3.5bn dual-campus investment with DUB30.",
+      "notes": "First large-scale EirGrid connection approved in Ireland in over four years, breaking Dublin's de facto data-center moratorium. DUB20 sits on the 100-acre former Irish Fertilisers site at Avoca River Business Park: 90 MW phase 1, 200 MW across five buildings, with an on-site 293 MW biogas plant and 220 kV offshore-wind substation. \u20ac3.5bn dual-campus investment with DUB30.",
       "concerns": [
         "carbon-emissions",
         "environmental-review",
@@ -322,7 +322,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2019,
-      "notes": "DUB30 campus located ~5 km from DUB20 at Kish Business Park, County Wicklow; Phase 1 planned for 90 MW scaling to 150 MW. Officially launched by Taoiseach Micheál Martin in May 2025 as 'the model for future data centre development in Ireland.' Construction follows DUB20; part of the same €3.5bn Starwood-backed Echelon program.",
+      "notes": "DUB30 campus located ~5 km from DUB20 at Kish Business Park, County Wicklow; Phase 1 planned for 90 MW scaling to 150 MW. Officially launched by Taoiseach Miche\u00e1l Martin in May 2025 as 'the model for future data centre development in Ireland.' Construction follows DUB20; part of the same \u20ac3.5bn Starwood-backed Echelon program.",
       "concerns": [
         "carbon-emissions",
         "environmental-review",
@@ -342,7 +342,7 @@
       "status": "operational",
       "yearBuilt": 2018,
       "yearProposed": 2016,
-      "notes": "Equinix's xScale DB6x and DB7x campus in Blanchardstown Business & Technology Park; a three-building hyperscale-capable campus providing interconnection, cloud on-ramps, and colocation. Equinix also acquired BT Ireland's data centers in December 2024 for €59 million, broadening its Irish footprint.",
+      "notes": "Equinix's xScale DB6x and DB7x campus in Blanchardstown Business & Technology Park; a three-building hyperscale-capable campus providing interconnection, cloud on-ramps, and colocation. Equinix also acquired BT Ireland's data centers in December 2024 for \u20ac59 million, broadening its Irish footprint.",
       "concerns": [
         "grid-capacity",
         "local-zoning",
@@ -362,7 +362,7 @@
       "status": "operational",
       "yearBuilt": 2014,
       "yearProposed": 2012,
-      "notes": "Digital Realty (formerly Interxion) operates multiple campus buildings at Profile Park, Clondalkin, including DUB3/DUB10, DUB15, and the planned DUB16; DUB11 near Dublin Airport also forms part of the portfolio. Dublin's largest carrier-neutral colocation footprint, providing cross-connects to 100+ carriers and cloud on-ramps. A planned DUB16 expansion at Profile Park awaits grid clarity under the new CRU connection framework.",
+      "notes": "Dublin's largest carrier-neutral colocation footprint, with cross-connects to 100+ carriers and cloud on-ramps. Digital Realty (formerly Interxion) operates DUB3/DUB10, DUB15 and planned DUB16 at Profile Park, plus DUB11 near Dublin Airport. DUB16 expansion awaits grid clarity under the new CRU connection framework.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -382,7 +382,7 @@
       "status": "operational",
       "yearBuilt": 2020,
       "yearProposed": 2017,
-      "notes": "Echelon's DUB10 facility in Clondalkin, Dublin, designed to provide over 90 MW of IT load; one of Echelon's two operational Dublin campus sites alongside the planned DUB40 at Grange Castle. The facility is part of Echelon's ~400 MW combined Irish portfolio backed by Starwood Capital's €850 million 2024 investment.",
+      "notes": "Echelon's DUB10 facility in Clondalkin, Dublin, designed to provide over 90 MW of IT load; one of Echelon's two operational Dublin campus sites alongside the planned DUB40 at Grange Castle. The facility is part of Echelon's ~400 MW combined Irish portfolio backed by Starwood Capital's \u20ac850 million 2024 investment.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -402,7 +402,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Google filed in June 2024 to build a 72,400 sqm third data center on 50 acres adjacent to its two existing Grange Castle facilities, targeting a 2027 go-live using an existing EirGrid connection authorization. South Dublin County Council refused planning permission in August 2024, citing insufficient grid capacity, lack of on-site renewable energy, absence of clarity on Irish PPAs, and no connection to the district heating network. The proposal remains unresolved.",
+      "notes": "South Dublin County Council refused planning permission in August 2024 citing insufficient grid capacity, no on-site renewables, no PPA clarity, and no district-heating connection. Google's 72,400 sqm third Grange Castle facility on 50 acres targeted 2027 go-live using an existing EirGrid authorization; unresolved.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -416,7 +416,7 @@
     {
       "id": "intl-se-meta-lulea-campus",
       "operator": "Meta Platforms",
-      "location": "Luleå, Norrbotten, Sweden",
+      "location": "Lule\u00e5, Norrbotten, Sweden",
       "country": "Sweden",
       "lat": 65.5744,
       "lng": 22.1858,
@@ -444,7 +444,7 @@
       "status": "operational",
       "yearBuilt": 2019,
       "yearProposed": null,
-      "notes": "World's first 'climate-positive' data center and first built from cross-laminated timber; exports waste heat to Falun's district heating system and is powered by 100% renewables (75% hydro, 25% wind). Hosts DeepL's first liquid-cooled Nvidia DGX GB200 in Europe. Expansion backed by €600 million in debt financing announced September 2025.",
+      "notes": "World's first 'climate-positive' data center and first built from cross-laminated timber; exports waste heat to Falun's district heating system and is powered by 100% renewables (75% hydro, 25% wind). Hosts DeepL's first liquid-cooled Nvidia DGX GB200 in Europe. Expansion backed by \u20ac600 million in debt financing announced September 2025.",
       "concerns": [
         "carbon-emissions",
         "water-consumption"
@@ -463,7 +463,7 @@
       "status": "operational",
       "yearBuilt": 2007,
       "yearProposed": null,
-      "notes": "Six-facility campus (STO1–STO6) in Kista and Akalla, formerly Interxion; STO6 at Vandagatan 3 uses remote seawater cooling and runs cooling-free for over half the year. Stockholm's largest carrier- and cloud-neutral colocation hub with 160+ customers and 25,000 m² of colocation space.",
+      "notes": "Six-facility campus (STO1\u2013STO6) in Kista and Akalla, formerly Interxion; STO6 at Vandagatan 3 uses remote seawater cooling and runs cooling-free for over half the year. Stockholm's largest carrier- and cloud-neutral colocation hub with 160+ customers and 25,000 m\u00b2 of colocation space.",
       "concerns": [
         "grid-capacity",
         "property-values",
@@ -494,7 +494,7 @@
     {
       "id": "intl-se-ecodatacenter-borlange",
       "operator": "EcoDataCenter",
-      "location": "Borlänge, Dalarna, Sweden",
+      "location": "Borl\u00e4nge, Dalarna, Sweden",
       "country": "Sweden",
       "lat": 60.4861,
       "lng": 15.4369,
@@ -515,7 +515,7 @@
     {
       "id": "intl-se-atnorth-langsele-swe02",
       "operator": "atNorth",
-      "location": "Långsele, Västernorrland, Sweden",
+      "location": "L\u00e5ngsele, V\u00e4sternorrland, Sweden",
       "country": "Sweden",
       "lat": 63.1758,
       "lng": 16.9997,
@@ -523,7 +523,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "atNorth's first Swedish mega-site on a 50-hectare plot in Hamre Industrial Park, Sollefteå Municipality; expanded from an initial 200 MW plan to 300 MW, with operational target of H1 2028. Site is fully zoned; detailed planning and permitting still underway as of early 2026.",
+      "notes": "atNorth's first Swedish mega-site on a 50-hectare plot in Hamre Industrial Park, Sollefte\u00e5 Municipality; expanded from an initial 200 MW plan to 300 MW, with operational target of H1 2028. Site is fully zoned; detailed planning and permitting still underway as of early 2026.",
       "concerns": [
         "grid-capacity",
         "local-zoning",
@@ -536,7 +536,7 @@
     {
       "id": "intl-se-brookfield-strangnas-ai",
       "operator": "Brookfield Asset Management",
-      "location": "Strängnäs, Södermanland, Sweden",
+      "location": "Str\u00e4ngn\u00e4s, S\u00f6dermanland, Sweden",
       "country": "Sweden",
       "lat": 59.378,
       "lng": 17.0282,
@@ -544,7 +544,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Announced June 2025; a $9.9 billion AI data center at Gorsingeberget on the E20 highway, ~80 km west of Stockholm. Initial buildout of 300 MW will scale to 750 MW over a 10–15 year construction timeline, making it potentially Europe's largest AI infrastructure cluster. A two-year planning phase with the Strängnäs municipality began in mid-2025.",
+      "costUSD": 9900000000,
+      "notes": "Announced June 2025; a $9.9 billion AI data center at Gorsingeberget on the E20 highway, ~80 km west of Stockholm. Initial buildout of 300 MW will scale to 750 MW over a 10\u201315 year construction timeline, making it potentially Europe's largest AI infrastructure cluster. A two-year planning phase with the Str\u00e4ngn\u00e4s municipality began in mid-2025.",
       "concerns": [
         "grid-capacity",
         "environmental-review",
@@ -586,7 +587,7 @@
       "status": "operational",
       "yearBuilt": 2022,
       "yearProposed": null,
-      "notes": "atNorth's first Swedish site (SWE01) opened in 2022; a carrier-neutral metro colocation facility focused on HPC and AI workloads powered by renewable energy. Serves as atNorth's Swedish foothold ahead of the planned Långsele mega-site.",
+      "notes": "atNorth's first Swedish site (SWE01) opened in 2022; a carrier-neutral metro colocation facility focused on HPC and AI workloads powered by renewable energy. Serves as atNorth's Swedish foothold ahead of the planned L\u00e5ngsele mega-site.",
       "concerns": [
         "grid-capacity",
         "energy-rates"
@@ -597,7 +598,7 @@
     {
       "id": "intl-se-edgemode-marviken",
       "operator": "EdgeMode / Vertical Data",
-      "location": "Marviken, Östergötland, Sweden",
+      "location": "Marviken, \u00d6sterg\u00f6tland, Sweden",
       "country": "Sweden",
       "lat": 58.5498,
       "lng": 16.8352,
@@ -626,7 +627,7 @@
       "status": "operational",
       "yearBuilt": 2011,
       "yearProposed": 2009,
-      "notes": "Google's flagship hyperscale campus on a former Stora Enso paper mill site, cooled by Baltic seawater; a €1 billion expansion announced in 2024 added a seventh data center building, and a district-heat recovery partnership with Haminan Energia now meets ~80% of Hamina's district-heating needs.",
+      "notes": "Google's flagship hyperscale campus on a former Stora Enso paper mill site, cooled by Baltic seawater; a \u20ac1 billion expansion announced in 2024 added a seventh data center building, and a district-heat recovery partnership with Haminan Energia now meets ~80% of Hamina's district-heating needs.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -646,7 +647,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "Microsoft's Hepokorpi (Högnäs) campus in Espoo is under active construction as part of a multi-site Azure cloud region; waste heat will be recovered by Fortum and fed into the Espoo/Kauniainen district-heating network, projected to cover ~40% of heat demand for ~250,000 customers.",
+      "notes": "Microsoft's Hepokorpi (H\u00f6gn\u00e4s) campus in Espoo is under active construction as part of a multi-site Azure cloud region; waste heat will be recovered by Fortum and fed into the Espoo/Kauniainen district-heating network, projected to cover ~40% of heat demand for ~250,000 customers.",
       "concerns": [
         "noise-vibration",
         "local-zoning",
@@ -668,7 +669,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "Destia Oy began earthworks at the Sundsberg site in January 2025; blasting and crushing noise drew residents to municipal meetings through 2025. Fortum's adjacent heat-pump plant, under construction since 2023, is designed to capture data center waste heat for the district-heating grid.",
+      "notes": "Blasting and crushing noise from Destia Oy's Sundsberg earthworks drew Kirkkonummi residents to municipal meetings through 2025. Microsoft's campus is paired with Fortum's adjacent heat-pump plant (under construction since 2023) to feed district heating.",
       "concerns": [
         "noise-vibration",
         "local-zoning",
@@ -690,7 +691,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "atNorth's FIN04 mega-campus spans 45 hectares in Myllykoski, Kouvola, with a target capacity of 430 MW and a path to several hundred additional MW; heat reuse partner KSS Energia will feed recovered heat into the local district network. First building is targeted for H1 2026–H1 2027 depending on source.",
+      "notes": "atNorth's FIN04 mega-campus spans 45 hectares in Myllykoski, Kouvola, with a target capacity of 430 MW and a path to several hundred additional MW; heat reuse partner KSS Energia will feed recovered heat into the local district network. First building is targeted for H1 2026\u2013H1 2027 depending on source.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -711,7 +712,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Google purchased a 1,400-hectare land parcel across the Kajaani and Muhos municipalities from state agency Metsähallitus for ~€27 million in 2024 for a potential hyperscale expansion; investment was explicitly put on hold pending resolution of Finland's proposed ~40× electricity-tax hike, which was ultimately legislated to take effect July 1, 2026.",
+      "notes": "Google put a potential hyperscale expansion on hold over Finland's ~40\u00d7 electricity-tax hike, which was legislated for July 1, 2026. The company bought 1,400 hectares across Kajaani and Muhos from Mets\u00e4hallitus for ~\u20ac27M in 2024.",
       "concerns": [
         "energy-rates",
         "grid-capacity",
@@ -732,7 +733,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "London-based algorithmic trading firm XTX Markets is building a large-scale proprietary data center campus on a 478-acre site in Kajaani with a planned investment exceeding €1 billion; YIT Corporation is the primary contractor. A second building was signed but placed under investment review following Finland's electricity-tax change.",
+      "notes": "London-based algorithmic trading firm XTX Markets is building a large-scale proprietary data center campus on a 478-acre site in Kajaani with a planned investment exceeding \u20ac1 billion; YIT Corporation is the primary contractor. A second building was signed but placed under investment review following Finland's electricity-tax change.",
       "concerns": [
         "energy-rates",
         "grid-capacity",
@@ -763,7 +764,7 @@
     {
       "id": "intl-fi-verne-mantsala",
       "operator": "Verne (Ardian)",
-      "location": "Mäntsälä, Uusimaa, Finland",
+      "location": "M\u00e4nts\u00e4l\u00e4, Uusimaa, Finland",
       "country": "Finland",
       "lat": 60.635,
       "lng": 25.318,
@@ -771,7 +772,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Verne announced a 10-hectare, 70 MW HPC/AI campus in Mäntsälä in late 2024, with construction set to begin mid-2025 and completion in ~2027; the facility will operate on 100% renewable energy and waste heat will be channelled into local district heating.",
+      "notes": "Verne announced a 10-hectare, 70 MW HPC/AI campus in M\u00e4nts\u00e4l\u00e4 in late 2024, with construction set to begin mid-2025 and completion in ~2027; the facility will operate on 100% renewable energy and waste heat will be channelled into local district heating.",
       "concerns": [
         "grid-capacity",
         "local-zoning",
@@ -828,7 +829,7 @@
       "status": "operational",
       "yearBuilt": 2000,
       "yearProposed": null,
-      "notes": "Equinix operates 15 data centers across Germany, with its flagship IBX campus cluster in Frankfurt anchoring Europe's second-largest data center market. FR2 is a major financial low-latency trading hub hosting Deutsche Börse, Eurex, and Xetra, while the FR9x/FR11x xScale facilities serve hyperscale cloud customers.",
+      "notes": "Equinix operates 15 data centers across Germany, with its flagship IBX campus cluster in Frankfurt anchoring Europe's second-largest data center market. FR2 is a major financial low-latency trading hub hosting Deutsche B\u00f6rse, Eurex, and Xetra, while the FR9x/FR11x xScale facilities serve hyperscale cloud customers.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -848,7 +849,7 @@
       "status": "operational",
       "yearBuilt": 2023,
       "yearProposed": null,
-      "notes": "Google's first owned data center in Germany, opened in 2023 and serving as the physical anchor of its Frankfurt Cloud Region. Located ~20 km from DE-CIX, it uses ambient air and air-pressure cooling to reduce water consumption; Google announced continued investment as part of a €5.5 billion Germany commitment through 2029.",
+      "notes": "Google's first owned data center in Germany, opened in 2023 and serving as the physical anchor of its Frankfurt Cloud Region. Located ~20 km from DE-CIX, it uses ambient air and air-pressure cooling to reduce water consumption; Google announced continued investment as part of a \u20ac5.5 billion Germany commitment through 2029.",
       "concerns": [
         "water-consumption",
         "carbon-emissions",
@@ -868,7 +869,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Announced in November 2025 as part of Google's €5.5 billion Germany investment plan, this new campus will strengthen Google's Frankfurt Cloud Region and host Germany's first Google heat-recovery project, feeding waste heat into the Energieversorgung Offenbach district heating network.",
+      "notes": "Announced in November 2025 as part of Google's \u20ac5.5 billion Germany investment plan, this new campus will strengthen Google's Frankfurt Cloud Region and host Germany's first Google heat-recovery project, feeding waste heat into the Energieversorgung Offenbach district heating network.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -889,7 +890,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "CyrusOne's seventh Frankfurt facility, FRA7, broke ground in July 2024 on a 63,000 sqm plot at the Frankfurt Westside regeneration campus. The first 9 MW phase targets Q2 2026 delivery; however, grid constraints forced a controversial May 2025 deal with E.ON to add 61 MW via on-site gas-fired generation, drawing criticism from environmental regulators who noted this pattern is common in Frankfurt's saturated data center belt.",
+      "notes": "Grid constraints forced CyrusOne into a controversial May 2025 deal with E.ON to add 61 MW via on-site gas generation, drawing criticism from regulators as a growing pattern across Frankfurt's saturated data center belt. FRA7 broke ground July 2024 on a 63,000 sqm plot; first 9 MW targets Q2 2026.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -910,7 +911,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Part of Microsoft's €3.2 billion German AI infrastructure investment, this data center at the INKA: terra nova industrial park in Bergheim broke ground in March 2026 with NRW Minister of Economics in attendance. Powered exclusively by green wind energy with a closed-loop cooling system; one of three NRW sites targeting 520 MW combined capacity for the Rhenish mining area.",
+      "notes": "Part of Microsoft's \u20ac3.2 billion German AI infrastructure investment, this data center at the INKA: terra nova industrial park in Bergheim broke ground in March 2026 with NRW Minister of Economics in attendance. Powered exclusively by green wind energy with a closed-loop cooling system; one of three NRW sites targeting 520 MW combined capacity for the Rhenish mining area.",
       "concerns": [
         "grid-capacity",
         "local-zoning",
@@ -951,7 +952,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "Europe's largest planned green data center campus, covering 350,000 sqm across two sites 30 km from Berlin's Brandenburg Gate. Adjacent to a major substation coupled to large onshore wind farms, Phase I targets 2026 operability; VIRTUS has committed waste heat to feed Wustermark's future district heating network. Grid connection demand in the Berlin-Brandenburg region is severely strained, with Stromnetz Berlin only partially fulfilling about half of all high/medium-voltage requests in 2025.",
+      "notes": "Stromnetz Berlin fulfilled only about half of all high/medium-voltage requests in 2025, but VIRTUS's Wustermark campus sits next to a wind-coupled substation and is billed as Europe's largest planned green DC. 350,000 sqm across two sites 30 km from Berlin, Phase I targeting 2026 operation with waste heat pledged to district heating.",
       "concerns": [
         "grid-capacity",
         "environmental-review",
@@ -993,7 +994,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "NTT's FRA6 campus, planned for the former US Army Anderson Barracks site (Rhein-Selz Park, ~70 ha, ~750,000 sqm) ~50 km south of Frankfurt, received unanimous city council development-plan approval in late 2025 with the plan becoming legally binding in Q1 2026. Nine buildings are planned across the site in a €5 billion investment; groundbreaking is targeted for early 2027 with a 2029 launch. Power demand—equivalent to ~500,000 households—raises significant grid and carbon concerns.",
+      "costUSD": 5900000000,
+      "notes": "Power demand equivalent to ~500,000 households is driving grid and carbon concerns at NTT's \u20ac5B FRA6 campus on the former US Army Anderson Barracks site. Nine buildings are planned across 70 ha south of Frankfurt; city council unanimously approved the development plan in late 2025, with groundbreaking in early 2027 and 2029 launch.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1027,7 +1029,7 @@
     {
       "id": "intl-fr-equinix-pa8x-pantin",
       "operator": "Equinix",
-      "location": "Pantin, Île-de-France, France",
+      "location": "Pantin, \u00cele-de-France, France",
       "country": "France",
       "lat": 48.896,
       "lng": 2.403,
@@ -1047,7 +1049,7 @@
     {
       "id": "intl-fr-equinix-pa10-saint-denis",
       "operator": "Equinix",
-      "location": "Saint-Denis, Île-de-France, France",
+      "location": "Saint-Denis, \u00cele-de-France, France",
       "country": "France",
       "lat": 48.9306,
       "lng": 2.358,
@@ -1067,7 +1069,7 @@
     {
       "id": "intl-fr-digital-realty-mrs-campus",
       "operator": "Digital Realty",
-      "location": "Marseille, Provence-Alpes-Côte d'Azur, France",
+      "location": "Marseille, Provence-Alpes-C\u00f4te d'Azur, France",
       "country": "France",
       "lat": 43.3108,
       "lng": 5.3739,
@@ -1075,7 +1077,7 @@
       "status": "operational",
       "yearBuilt": 2013,
       "yearProposed": null,
-      "notes": "Digital Realty's MRS1–MRS5 campus at and around the Grand Port Maritime de Marseille is the dominant colocation presence in the city, providing ~76% of Marseille's live IT capacity. Direct access to 16+ submarine cables connecting Europe to Africa, the Middle East, and Asia. Faced community backlash and an anti-data-center festival in 2024 organized by activist group 'Le Nuage était sous nos pieds.'",
+      "notes": "Activist group 'Le Nuage \u00e9tait sous nos pieds' ran an anti-data-center festival in 2024 against Digital Realty's dominance in Marseille. The MRS1\u2013MRS5 campus at the Grand Port Maritime provides ~76% of Marseille's live IT capacity with direct access to 16+ submarine cables to Africa, the Middle East, and Asia.",
       "concerns": [
         "water-consumption",
         "carbon-emissions",
@@ -1089,7 +1091,7 @@
     {
       "id": "intl-fr-digital-realty-mrs6-bouc-bel-air",
       "operator": "Digital Realty",
-      "location": "Bouc-Bel-Air, Provence-Alpes-Côte d'Azur, France",
+      "location": "Bouc-Bel-Air, Provence-Alpes-C\u00f4te d'Azur, France",
       "country": "France",
       "lat": 43.45,
       "lng": 5.41,
@@ -1118,7 +1120,7 @@
       "status": "operational",
       "yearBuilt": 2012,
       "yearProposed": null,
-      "notes": "OVHcloud's Strasbourg campus (SBG1–SBG5) is one of the company's flagship European sites and part of France's first SecNumCloud-qualified availability zone region alongside Roubaix and Gravelines. SBG5 was opened after the catastrophic 2021 fire destroyed SBG2 on the same site.",
+      "notes": "OVHcloud's Strasbourg campus (SBG1\u2013SBG5) is one of the company's flagship European sites and part of France's first SecNumCloud-qualified availability zone region alongside Roubaix and Gravelines. SBG5 was opened after the catastrophic 2021 fire destroyed SBG2 on the same site.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1138,7 +1140,7 @@
       "status": "operational",
       "yearBuilt": 2003,
       "yearProposed": null,
-      "notes": "OVHcloud's historic headquarters and flagship campus in Roubaix (RBX1–RBX10), the birthplace of the company, serves as a key node in France's first three-availability-zone SecNumCloud region. A tenth building (RBX10) was added to expand capacity.",
+      "notes": "OVHcloud's historic headquarters and flagship campus in Roubaix (RBX1\u2013RBX10), the birthplace of the company, serves as a key node in France's first three-availability-zone SecNumCloud region. A tenth building (RBX10) was added to expand capacity.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions"
@@ -1149,7 +1151,7 @@
     {
       "id": "intl-fr-ntt-paris1-corbeil-essonnes",
       "operator": "NTT DATA",
-      "location": "Le Coudray-Montceaux, Île-de-France, France",
+      "location": "Le Coudray-Montceaux, \u00cele-de-France, France",
       "country": "France",
       "lat": 48.575,
       "lng": 2.46,
@@ -1157,7 +1159,7 @@
       "status": "operational",
       "yearBuilt": 2020,
       "yearProposed": null,
-      "notes": "NTT DATA's Paris 1 campus, located ~50 km south of Paris near Corbeil-Essonnes, provides up to 84 MW of critical IT load across three data centers serving enterprise clients and hyperscalers. One of the largest single campuses by capacity in the Île-de-France region.",
+      "notes": "NTT DATA's Paris 1 campus, located ~50 km south of Paris near Corbeil-Essonnes, provides up to 84 MW of critical IT load across three data centers serving enterprise clients and hyperscalers. One of the largest single campuses by capacity in the \u00cele-de-France region.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -1177,7 +1179,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Announced at the Choose France summit in May 2024, Microsoft's €2+ billion AI data center on a 37-hectare site near Mulhouse is described as the largest of its kind planned in France. The project is in pre-feasibility/pre-permitting phase as of early 2026, with a building permit expected mid-2026 and operations targeted around 2028–2029. Faces significant community opposition over loss of ~36 hectares of farmland (including organic plots), grid strain, noise, and water use.",
+      "costUSD": 2200000000,
+      "notes": "Residents in Petit-Landau are fighting Microsoft's \u20ac2B+ AI data center over the loss of 36 hectares of farmland including organic plots, plus grid strain, noise, and water use. Announced at Choose France May 2024 as France's largest planned of its kind; building permit expected mid-2026, operations 2028\u20132029.",
       "concerns": [
         "local-zoning",
         "local-control",
@@ -1215,7 +1218,7 @@
     {
       "id": "intl-fr-eclairion-besse-sur-braye",
       "operator": "Eclairion",
-      "location": "Bessé-sur-Braye, Pays de la Loire, France",
+      "location": "Bess\u00e9-sur-Braye, Pays de la Loire, France",
       "country": "France",
       "lat": 47.829,
       "lng": 0.753,
@@ -1223,7 +1226,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Eclairion plans to place AI GPU hosting containers inside a former Arjowiggins paper mill in Bessé-sur-Braye, with 100 MW available on-site and a projected €600 million investment. The project has received local approval and construction is expected to begin in 2026 with a target opening of 2028, positioning it as one of France's first purpose-built sovereign AI hyperscale facilities outside major metro clusters.",
+      "notes": "Eclairion is converting the former Arjowiggins paper mill in Bess\u00e9-sur-Braye into a 100 MW AI GPU hosting site \u2014 a \u20ac600M sovereign-AI play outside the main French metro clusters. Locally approved; construction starts 2026, targeting 2028 opening.",
       "concerns": [
         "grid-capacity",
         "local-zoning",
@@ -1263,7 +1266,7 @@
       "status": "operational",
       "yearBuilt": 2020,
       "yearProposed": null,
-      "notes": "VIRTUS London5 is the UK's largest single data center by footprint and power capacity in 2026, covering ~50,000 m² and holding BREEAM Excellent certification. It entered a 31 MW wind PPA linked to the Lynn and Inner Dowsing windfarms, commencing October 2025.",
+      "notes": "VIRTUS London5 is the UK's largest single data center by footprint and power capacity in 2026, covering ~50,000 m\u00b2 and holding BREEAM Excellent certification. It entered a 31 MW wind PPA linked to the Lynn and Inner Dowsing windfarms, commencing October 2025.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1302,7 +1305,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Nine-storey, 32,000 m² facility breaking ground in October 2025 with a £275 million investment, set for completion in 2028. Powered by two new 132 kV substations and designed to integrate both air and liquid cooling for AI and HPC workloads, targeting BREEAM Excellent and 100% renewable energy.",
+      "notes": "Nine-storey, 32,000 m\u00b2 facility breaking ground in October 2025 with a \u00a3275 million investment, set for completion in 2028. Powered by two new 132 kV substations and designed to integrate both air and liquid cooling for AI and HPC workloads, targeting BREEAM Excellent and 100% renewable energy.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions"
@@ -1321,7 +1324,7 @@
       "status": "operational",
       "yearBuilt": 2025,
       "yearProposed": 2024,
-      "notes": "Google's first UK-operated data center, opened September 2025 on a 33-acre site as part of a £5 billion two-year UK investment. Uses advanced air-cooling to limit water consumption, and is equipped for off-site heat recovery to supply local district heating.",
+      "notes": "Google's first UK-operated data center, opened September 2025 on a 33-acre site as part of a \u00a35 billion two-year UK investment. Uses advanced air-cooling to limit water consumption, and is equipped for off-site heat recovery to supply local district heating.",
       "concerns": [
         "water-consumption",
         "carbon-emissions",
@@ -1341,7 +1344,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Equinix acquired the former DC01UK 85-acre green belt site in October 2025 for £3.9 billion, planning 2+ million sq ft and 250+ MW across three buildings. The original planning process drew over 900 local objections due to green belt and carbon concerns; construction is targeted to begin in 2027 with operations by 2029.",
+      "notes": "The original planning process drew over 900 local objections over green belt and carbon concerns before Equinix bought the 85-acre South Mimms site for \u00a33.9B in October 2025. Plans for 2+M sq ft and 250+ MW across three buildings; construction 2027, operations 2029.",
       "concerns": [
         "local-zoning",
         "environmental-review",
@@ -1363,7 +1366,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "Part of Microsoft's £22 billion UK AI infrastructure commitment (2025–2028), this £1 billion campus in north-west London supports the UK South Azure region. Microsoft also has confirmed UK developments in Newport (Wales), Leeds (Skelton Grange), and Loughton (Essex AI supercomputer with Nscale).",
+      "notes": "Part of Microsoft's \u00a322 billion UK AI infrastructure commitment (2025\u20132028), this \u00a31 billion campus in north-west London supports the UK South Azure region. Microsoft also has confirmed UK developments in Newport (Wales), Leeds (Skelton Grange), and Loughton (Essex AI supercomputer with Nscale).",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1383,7 +1386,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "UK government's first designated AI Growth Zone, beginning at 100 MW with plans to scale to 500 MW, leveraging surplus power from the decommissioned JET nuclear fusion reactor and a direct 400 kV powerline. Thames Water has flagged water capacity concerns near the site, and UKAEA was shortlisting private sector partners in late 2025.",
+      "notes": "Thames Water has flagged water capacity concerns at the UK's first designated AI Growth Zone, which scales from 100 MW to 500 MW on surplus power from the decommissioned JET nuclear fusion reactor. UKAEA was shortlisting private partners in late 2025.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -1404,7 +1407,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Designated as the UK's second AI Growth Zone on a former steelworks brownfield site, with the potential to become Europe's largest data center development at ~500,000 m². Tension exists between DSIT (pushing rapid AI infrastructure) and DESNZ (concerned about energy/water consumption) over the pace and terms of development.",
+      "notes": "DSIT is pushing rapid AI infrastructure while DESNZ raises energy/water concerns at the UK's second AI Growth Zone, creating a visible intra-government tension. The ~500,000 m\u00b2 former Teesside steelworks site could become Europe's largest data center development.",
       "concerns": [
         "carbon-emissions",
         "energy-rates",
@@ -1426,7 +1429,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Colt secured approval for a £2.5 billion expansion of its Hayes Digital Park, adding three new hyperscale facilities (LON6, LON7, LON8) for 97 MW of new IT power and bringing total campus capacity to 160 MW. Construction is scheduled to begin in mid-2026 with first operations in 2028–2029.",
+      "notes": "Colt secured approval for a \u00a32.5 billion expansion of its Hayes Digital Park, adding three new hyperscale facilities (LON6, LON7, LON8) for 97 MW of new IT power and bringing total campus capacity to 160 MW. Construction is scheduled to begin in mid-2026 with first operations in 2028\u20132029.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1438,7 +1441,7 @@
     {
       "id": "intl-es-aws-villanueva-de-gallego",
       "operator": "Amazon Web Services",
-      "location": "Villanueva de Gállego, Zaragoza, Aragón, Spain",
+      "location": "Villanueva de G\u00e1llego, Zaragoza, Arag\u00f3n, Spain",
       "country": "Spain",
       "lat": 41.735,
       "lng": -0.847,
@@ -1446,7 +1449,7 @@
       "status": "operational",
       "yearBuilt": 2022,
       "yearProposed": 2020,
-      "notes": "AWS launched its EU Spain Region (eu-south-2) in Aragón in November 2022, with the flagship site at Villanueva de Gállego being the largest data center in Aragón. AWS has announced a cumulative €33.7bn ($39bn) investment to expand across all three Aragón provinces (Zaragoza, Huesca, Teruel), raising serious water-consumption concerns as the three proposed expansion centers are licensed to draw over 755,000 cubic metres of water per year.",
+      "notes": "AWS's three proposed Arag\u00f3n expansion centers are licensed to draw over 755,000 cubic metres of water per year, raising sharp concern in drought-stressed Spain. AWS's eu-south-2 flagship launched November 2022 at Villanueva de G\u00e1llego and anchors a cumulative \u20ac33.7bn ($39bn) three-province commitment.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -1460,7 +1463,7 @@
     {
       "id": "intl-es-microsoft-aragon-villamayor",
       "operator": "Microsoft",
-      "location": "Villamayor de Gállego, Zaragoza, Aragón, Spain",
+      "location": "Villamayor de G\u00e1llego, Zaragoza, Arag\u00f3n, Spain",
       "country": "Spain",
       "lat": 41.719,
       "lng": -0.801,
@@ -1468,7 +1471,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "Part of the Microsoft 'MSFT Region' PIGA plan covering three Aragón campuses (Villamayor de Gállego ~80 ha, La Muela ~146 ha, Zaragoza city ~57 ha) totalling 283 ha. Initial planning approval was received in late 2025; construction of all three phases is expected to begin following final approval. Total Microsoft investment in Aragón is €6.69bn. Water use in an already drought-stressed region is a key community concern.",
+      "notes": "Water use in drought-stressed Arag\u00f3n is the key community concern at Microsoft's \u20ac6.69bn MSFT Region PIGA plan. Villamayor de G\u00e1llego (80 ha) is one of three Arag\u00f3n campuses totalling 283 ha alongside La Muela and Zaragoza city; initial planning approval was received late 2025.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -1483,7 +1486,7 @@
     {
       "id": "intl-es-microsoft-aragon-la-muela",
       "operator": "Microsoft",
-      "location": "La Muela, Zaragoza, Aragón, Spain",
+      "location": "La Muela, Zaragoza, Arag\u00f3n, Spain",
       "country": "Spain",
       "lat": 41.591,
       "lng": -1.096,
@@ -1491,7 +1494,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "The largest of Microsoft's three-campus MSFT Region PIGA plan in Aragón at 146 hectares. Awaiting final regulatory approval as of early 2026; building costs alone across all three sites are expected to exceed €5.3bn. The project will also involve 240km of new fiber optic cable installation across the region.",
+      "notes": "The largest of Microsoft's three-campus MSFT Region PIGA plan in Arag\u00f3n at 146 hectares. Awaiting final regulatory approval as of early 2026; building costs alone across all three sites are expected to exceed \u20ac5.3bn. The project will also involve 240km of new fiber optic cable installation across the region.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -1514,7 +1517,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Meta committed €750 million in January 2025 to construct a large-scale data center in Talavera de la Reina. The location was chosen for its inland position, available land, and renewable energy access. As an arid interior region, water-consumption concerns mirror those in Aragón, and the project draws scrutiny given Meta's 95% data-center share of its global water usage.",
+      "notes": "Water-consumption scrutiny is sharp at Meta's \u20ac750M Talavera de la Reina campus, given the arid inland location and Meta's global water footprint (95% from data centers). Committed January 2025 and chosen for renewable energy access.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -1528,7 +1531,7 @@
     {
       "id": "intl-es-nabiax-adc3-madrid",
       "operator": "Nabiax (Aermont Capital)",
-      "location": "Alcalá de Henares, Madrid, Spain",
+      "location": "Alcal\u00e1 de Henares, Madrid, Spain",
       "country": "Spain",
       "lat": 40.4819,
       "lng": -3.3647,
@@ -1547,7 +1550,7 @@
     {
       "id": "intl-es-qts-calatorao-zaragoza",
       "operator": "QTS Data Centers (Blackstone)",
-      "location": "Calatorao, Zaragoza, Aragón, Spain",
+      "location": "Calatorao, Zaragoza, Arag\u00f3n, Spain",
       "country": "Spain",
       "lat": 41.528,
       "lng": -1.282,
@@ -1555,7 +1558,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "QTS Data Centers, operated by Blackstone, is developing a massive hyperscale campus in the Europa-Puerta Sur industrial park in Calatorao, Zaragoza, with a planned 300 MW electrical capacity. The site is part of the broader Aragón hyperscale boom; Aragón leads all Spanish secondary regions with over €30bn in announced investments from Microsoft, AWS, and Blackstone.",
+      "notes": "QTS Data Centers, operated by Blackstone, is developing a massive hyperscale campus in the Europa-Puerta Sur industrial park in Calatorao, Zaragoza, with a planned 300 MW electrical capacity. The site is part of the broader Arag\u00f3n hyperscale boom; Arag\u00f3n leads all Spanish secondary regions with over \u20ac30bn in announced investments from Microsoft, AWS, and Blackstone.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -1576,7 +1579,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Pure DC's €400m MAD01 campus received final planning approval in late 2025; substation construction began November 2025 with data hall construction to follow after the Iberdrola-connected substation is energised by early 2027. The project uses closed-loop cooling with zero water consumption, addressing growing water-scarcity concerns in Madrid's hyperscale zone.",
+      "notes": "Pure DC's \u20ac400m MAD01 campus received final planning approval in late 2025; substation construction began November 2025 with data hall construction to follow after the Iberdrola-connected substation is energised by early 2027. The project uses closed-loop cooling with zero water consumption, addressing growing water-scarcity concerns in Madrid's hyperscale zone.",
       "concerns": [
         "grid-capacity",
         "energy-rates",
@@ -1596,7 +1599,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2026,
-      "notes": "Apto announced a €2bn ($2.3bn) five-building hyperscale campus on a 195,000 m² brownfield site (former bottling plant) in Fuenlabrada, ~14km from central Madrid. At full build-out it will be the largest data center development in the Madrid cloud region. Institutional support from Comunidad de Madrid; construction to begin upon building permit issuance.",
+      "notes": "Apto announced a \u20ac2bn ($2.3bn) five-building hyperscale campus on a 195,000 m\u00b2 brownfield site (former bottling plant) in Fuenlabrada, ~14km from central Madrid. At full build-out it will be the largest data center development in the Madrid cloud region. Institutional support from Comunidad de Madrid; construction to begin upon building permit issuance.",
       "concerns": [
         "grid-capacity",
         "energy-rates",
@@ -1662,7 +1665,7 @@
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": "Multi-tenant"
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "intl-sg-equinix-sg5-jurong-west",
@@ -1675,14 +1678,14 @@
       "status": "operational",
       "yearBuilt": 2022,
       "yearProposed": null,
-      "notes": "SG5 at 6 Sunview Drive is Equinix's newest Singapore IBX, part of post-moratorium capacity allocation won by Equinix in 2023 alongside Microsoft, GDS, and AirTrunk-ByteDance consortium; designed to meet Singapore's Green DC Roadmap PUE ≤1.3 standard.",
+      "notes": "SG5 at 6 Sunview Drive is Equinix's newest Singapore IBX, part of post-moratorium capacity allocation won by Equinix in 2023 alongside Microsoft, GDS, and AirTrunk-ByteDance consortium; designed to meet Singapore's Green DC Roadmap PUE \u22641.3 standard.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
         "energy-rates"
       ],
       "source": "researched",
-      "primaryUser": "Multi-tenant"
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "intl-sg-airtrunk-sgp1-loyang",
@@ -1761,7 +1764,7 @@
         "energy-rates"
       ],
       "source": "researched",
-      "primaryUser": "Multi-tenant"
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "intl-sg-keppel-dc-genting-lane-campus",
@@ -1794,7 +1797,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "SGP 9 is a planned AI-ready hyperscale tower at 82 Genting Lane, the third building on the Keppel Data Centre Campus; designed for high-density compute workloads and aligned with the Green DC Roadmap's PUE ≤1.3 mandate.",
+      "notes": "SGP 9 is a planned AI-ready hyperscale tower at 82 Genting Lane, the third building on the Keppel Data Centre Campus; designed for high-density compute workloads and aligned with the Green DC Roadmap's PUE \u22641.3 mandate.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1836,7 +1839,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "Singtel Tuas DC broke ground August 2023 and was targeted for completion by 2025–2026; operated under Singtel's Nxera brand and positioned as a cornerstone of Singapore's digital infrastructure, with Singtel partnering NVIDIA to roll out GPU clusters from 2026.",
+      "notes": "Singtel Tuas DC broke ground August 2023 and was targeted for completion by 2025\u20132026; operated under Singtel's Nxera brand and positioned as a cornerstone of Singapore's digital infrastructure, with Singtel partnering NVIDIA to roll out GPU clusters from 2026.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1936,7 +1939,7 @@
       "status": "operational",
       "yearBuilt": 2023,
       "yearProposed": null,
-      "notes": "Google's first owned data center in Japan, opened in March 2023 in Inzai City, Chiba — a designated 'Data Center Park' approximately 40km northeast of central Tokyo. Built as part of a $730M Japan infrastructure investment and positioned within the dense Inzai/Chiba hyperscale cluster alongside Colt DCS and AirTrunk facilities.",
+      "notes": "Google's first owned data center in Japan, opened in March 2023 in Inzai City, Chiba \u2014 a designated 'Data Center Park' approximately 40km northeast of central Tokyo. Built as part of a $730M Japan infrastructure investment and positioned within the dense Inzai/Chiba hyperscale cluster alongside Colt DCS and AirTrunk facilities.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -1956,7 +1959,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "SoftBank acquired the former Sharp LCD panel factory in Sakai City (Osaka Prefecture) for ~$676M in March 2025, converting the 450,000 sqm site into a hyperscale AI data center. The facility — SoftBank's third in Japan and a flagship for the SB OpenAI Japan joint venture — targets 150MW initial capacity expanding to 250–400MW, with full operations planned by end of 2026.",
+      "notes": "SoftBank acquired the former Sharp LCD panel factory in Sakai City (Osaka Prefecture) for ~$676M in March 2025, converting the 450,000 sqm site into a hyperscale AI data center. The facility \u2014 SoftBank's third in Japan and a flagship for the SB OpenAI Japan joint venture \u2014 targets 150MW initial capacity expanding to 250\u2013400MW, with full operations planned by end of 2026.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -2219,7 +2222,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Landmark $15 billion (2026–2030) Adani–Google AI campus announced October 2025; gigawatt-scale AI data center with dedicated subsea cable infrastructure and 100% renewable power from Adani Green Energy, intended to be India's largest AI computing campus.",
+      "costUSD": 15000000000,
+      "notes": "Landmark $15 billion (2026\u20132030) Adani\u2013Google AI campus announced October 2025; gigawatt-scale AI data center with dedicated subsea cable infrastructure and 100% renewable power from Adani Green Energy, intended to be India's largest AI computing campus.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -2241,7 +2245,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Reliance's announced gigawatt-scale (expandable to 3 GW) AI data center campus adjacent to its existing refinery complex in Jamnagar; to be powered entirely by on-site green energy (solar, wind, hydrogen) and equipped with NVIDIA Blackwell AI processors, with estimated investment of $20–30 billion.",
+      "costUSD": 30000000000,
+      "notes": "Reliance's announced gigawatt-scale (expandable to 3 GW) AI data center campus adjacent to its existing refinery complex in Jamnagar; to be powered entirely by on-site green energy (solar, wind, hydrogen) and equipped with NVIDIA Blackwell AI processors, with estimated investment of $20\u201330 billion.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -2263,7 +2268,7 @@
       "status": "operational",
       "yearBuilt": 2018,
       "yearProposed": null,
-      "notes": "AWS SYD51 campus at 1 William Dean Street, Eastern Creek, forming part of the AWS Asia Pacific (Sydney) Region launched in 2012. AWS has committed AU$20 billion in Australian data centre infrastructure from 2025–2029, with Sydney and Melbourne as primary expansion markets.",
+      "notes": "AWS SYD51 campus at 1 William Dean Street, Eastern Creek, forming part of the AWS Asia Pacific (Sydney) Region launched in 2012. AWS has committed AU$20 billion in Australian data centre infrastructure from 2025\u20132029, with Sydney and Melbourne as primary expansion markets.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -2283,7 +2288,7 @@
       "status": "operational",
       "yearBuilt": 2014,
       "yearProposed": null,
-      "notes": "CDC's Eastern Creek campus features four operational data centres (EC1–EC4) totalling over 200 MW, with EC5 and EC6 under construction adding further capacity. The campus is one of the largest sovereign-grade facilities in the southern hemisphere, hosting Australian government and hyperscaler workloads.",
+      "notes": "CDC's Eastern Creek campus features four operational data centres (EC1\u2013EC4) totalling over 200 MW, with EC5 and EC6 under construction adding further capacity. The campus is one of the largest sovereign-grade facilities in the southern hemisphere, hosting Australian government and hyperscaler workloads.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -2303,7 +2308,7 @@
       "status": "operational",
       "yearBuilt": 2018,
       "yearProposed": null,
-      "notes": "Microsoft Azure Australia Central region, delivered via a strategic partnership with CDC Data Centres in Canberra. The only major cloud region in Australia offering services for Unclassified and Protected government data, serving national security and defence workloads. Microsoft's AU$5 billion expansion plan (2023–2025) includes growing from 20 to 29 sites across Canberra, Sydney, and Melbourne.",
+      "notes": "Microsoft Azure Australia Central region, delivered via a strategic partnership with CDC Data Centres in Canberra. The only major cloud region in Australia offering services for Unclassified and Protected government data, serving national security and defence workloads. Microsoft's AU$5 billion expansion plan (2023\u20132025) includes growing from 20 to 29 sites across Canberra, Sydney, and Melbourne.",
       "concerns": [
         "local-control",
         "grid-capacity"
@@ -2363,7 +2368,8 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "NSW Government-approved AU$3.1 billion campus at 105–113 Hollinsworth Road; six four-storey data centre buildings totalling 504 MW (scalable to 1 GW), designated the largest data centre development in the Southern Hemisphere. Blacktown City Council objected on engineering and planning grounds before state override approval in November 2025.",
+      "costUSD": 2000000000,
+      "notes": "Blacktown City Council objected on engineering and planning grounds before NSW overrode local approval in November 2025. CDC's AU$3.1B, 504 MW Marsden Park campus \u2014 scalable to 1 GW across six four-storey buildings \u2014 is billed as the largest DC development in the Southern Hemisphere.",
       "concerns": [
         "local-zoning",
         "local-control",
@@ -2388,7 +2394,7 @@
       "status": "operational",
       "yearBuilt": 2021,
       "yearProposed": null,
-      "notes": "AirTrunk SYD2 hyperscale campus at 1 Sirius Road, Lane Cove West; a 4-hectare, 24-data-hall facility with 150 MW+ capacity that completed its third expansion phase in 2024. A second adjacent facility on Apollo Place was recently approved, drawing significant community concern over water consumption and infrastructure strain in the Marsfield water supply zone.",
+      "notes": "A recently approved second AirTrunk facility on Apollo Place drew community concern over water consumption and strain on the Marsfield supply zone. SYD2 is a 4-hectare, 24-hall, 150 MW+ hyperscale campus at 1 Sirius Road, Lane Cove West; its third expansion phase completed in 2024.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -2431,7 +2437,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Macquarie Technology Group's IC3 Super West sovereign AI data centre at 269 Lane Cove Road, Macquarie Park, received AU$200 million from the National Reconstruction Fund in March 2026 to accelerate construction. Situated in the heavily clustered Macquarie Park precinct where Sydney Water has confirmed the Marsfield supply zone is at full capacity.",
+      "notes": "Sydney Water has confirmed the Marsfield supply zone is at full capacity just as Macquarie Technology Group's IC3 Super West ramps construction. The sovereign AI facility received AU$200M from the National Reconstruction Fund in March 2026 to accelerate the 269 Lane Cove Road site.",
       "concerns": [
         "water-infrastructure",
         "water-consumption",
@@ -2453,7 +2459,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "CDC's AU$2.7 billion Laverton campus broke ground in February 2025, targeting a 150 MW initial phase as part of a combined Brooklyn–Laverton Melbourne cluster planned for 780 MW+. Positioned to serve hyperscalers and AI platform providers; Melbourne's data centre pipeline is reported 97% pre-committed.",
+      "notes": "CDC's AU$2.7 billion Laverton campus broke ground in February 2025, targeting a 150 MW initial phase as part of a combined Brooklyn\u2013Laverton Melbourne cluster planned for 780 MW+. Positioned to serve hyperscalers and AI platform providers; Melbourne's data centre pipeline is reported 97% pre-committed.",
       "concerns": [
         "grid-capacity",
         "water-consumption",

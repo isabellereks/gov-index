@@ -13,7 +13,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "Part of the $24.7B PW Digital Gateway corridor near Manassas National Battlefield Park; rezoning was voided by a Virginia circuit court in August 2025 and upheld by the Court of Appeals in April 2026, leaving the project in legal limbo. Compass's share alone would require up to 1.7 GW at full buildout across ~825 acres.",
+      "notes": "Virginia's Court of Appeals upheld an August 2025 circuit court ruling voiding the rezoning in April 2026, leaving Compass's 1.7 GW share of the $24.7B PW Digital Gateway in legal limbo. The 825-acre site sits next to Manassas National Battlefield Park.",
       "concerns": [
         "environmental-review",
         "local-zoning",
@@ -24,7 +24,7 @@
         "water-consumption"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-va-pw-digital-gateway-qts",
@@ -38,7 +38,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "QTS's ~800-acre portion of the PW Digital Gateway mega-campus on Pageland Lane adjacent to Manassas battlefield; rezoning was voided by Virginia appellate courts in 2025–2026 and remains in legal jeopardy pending a potential Virginia Supreme Court appeal.",
+      "notes": "Virginia appellate courts voided the rezoning in 2025\u20132026 and the project hangs on a potential Virginia Supreme Court appeal. QTS's ~800-acre Pageland Lane portion of the PW Digital Gateway sits adjacent to Manassas battlefield.",
       "concerns": [
         "environmental-review",
         "local-zoning",
@@ -49,7 +49,7 @@
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-va-powerhouse-95-spotsylvania",
@@ -70,7 +70,7 @@
         "local-zoning"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-va-vantage-va4-stafford",
@@ -105,14 +105,15 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "$3B hyperscale campus (VA1) on 87.5 acres groundbroken in Q4 2025; phased delivery of 300 MW in 2027, 300 MW in 2030, and 300 MW by 2033–2035, with 100% renewable energy from an on-site substation and AI-ready closed-loop water cooling.",
+      "costUSD": 8800000000,
+      "notes": "$3B hyperscale campus (VA1) on 87.5 acres groundbroken in Q4 2025; phased delivery of 300 MW in 2027, 300 MW in 2030, and 300 MW by 2033\u20132035, with 100% renewable energy from an on-site substation and AI-ready closed-loop water cooling.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-va-stack-stafford-technology-campus",
@@ -126,6 +127,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
+      "costUSD": 10000000000,
       "notes": "500-acre campus acquired from Peterson Companies for $302M in January 2025, divided into four sub-campuses with six planned 300 MW Dominion Energy substations; construction expected to begin late 2025 with first phase live by 2027.",
       "concerns": [
         "grid-capacity",
@@ -134,7 +136,7 @@
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-va-equinix-ashburn-campus",
@@ -148,14 +150,14 @@
       "status": "operational",
       "yearBuilt": 1999,
       "yearProposed": null,
-      "notes": "The world's premier internet exchange point — Equinix's Ashburn campus comprises 20+ IBX buildings (DC1–DC22) handling over 70% of global internet traffic; anchor of 'Data Center Alley' and the densest colocation/peering ecosystem on earth.",
+      "notes": "The world's premier internet exchange point \u2014 Equinix's Ashburn campus comprises 20+ IBX buildings (DC1\u2013DC22) handling over 70% of global internet traffic; anchor of 'Data Center Alley' and the densest colocation/peering ecosystem on earth.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud prov."
     },
     {
       "id": "researched-va-starwood-plaza500-bren-mar",
@@ -169,7 +171,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "$165M Plaza 500 hyperscale project in the Bren Mar/Bren Pointe residential district of Fairfax County; approved by the county Board of Supervisors in September 2024 but opposed by the 'Save Bren Mar' coalition; as of early 2025 still awaiting Virginia SCC ruling on a required new substation and transmission lines 60 feet from townhomes.",
+      "notes": "The 'Save Bren Mar' coalition is fighting Starwood's $165M Plaza 500 over transmission lines slated to run 60 feet from townhomes in the Bren Mar residential district. Fairfax County approved it September 2024; Virginia SCC ruling on the required new substation is still pending.",
       "concerns": [
         "residential-proximity",
         "noise-vibration",
@@ -192,7 +194,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "DataBank's IAD5 campus in the Culpeper Technology Zone — an 85-acre, two-facility campus totaling 1.4M sq ft and 192 MW, designed with HPC/AI-ready universal data halls; the CTZ's pro-development zoning framework was designed to preemptively address community opposition.",
+      "notes": "Culpeper's Technology Zone was designed to preempt community opposition, and DataBank's 85-acre IAD5 campus is the first big test: 1.4M sq ft, 192 MW, HPC/AI-ready across two buildings.",
       "concerns": [
         "grid-capacity",
         "water-consumption"
@@ -212,7 +214,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "$3B, 300 MW, 1.525M sq ft data center campus approved 3-2 by the Powhatan County Planning Commission in October 2024 after months of local opposition citing noise, traffic, and environmental impact; Dominion Energy must still build a new substation and power lines, creating an additional battleground for opponents.",
+      "costUSD": 2700000000,
+      "notes": "Powhatan County approved Province Group's $3B, 300 MW campus 3-2 in October 2024 over months of opposition on noise, traffic, and environmental impact. Dominion's required new substation and power lines are the next battleground for opponents.",
       "concerns": [
         "noise-vibration",
         "grid-capacity",
@@ -222,7 +225,7 @@
         "water-infrastructure"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-or-google-the-dalles-campus",
@@ -236,7 +239,7 @@
       "status": "operational",
       "yearBuilt": 2006,
       "yearProposed": null,
-      "notes": "Google's original hyperscale campus in Oregon, now comprising multiple buildings with over $2.4 billion invested. Highly controversial for water consumption — Google uses roughly a third of The Dalles' total water supply, prompting the city to seek a reservoir expansion in Mount Hood National Forest.",
+      "notes": "Google uses roughly a third of The Dalles' total water supply, prompting the city to pursue a reservoir expansion in Mount Hood National Forest. Google's original Oregon hyperscale campus now spans multiple buildings with over $2.4B invested since 2006.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -258,7 +261,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Google's fifth data center in The Dalles — a 290,000 sq ft facility at 3500 River Road (former aluminum smelter Superfund site) with Whiting-Turner as contractor on a $600 million project. A second building at this site is expected to come online in 2026.",
+      "notes": "Google's fifth data center in The Dalles \u2014 a 290,000 sq ft facility at 3500 River Road (former aluminum smelter Superfund site) with Whiting-Turner as contractor on a $600 million project. A second building at this site is expected to come online in 2026.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -280,7 +283,8 @@
       "status": "operational",
       "yearBuilt": 2011,
       "yearProposed": null,
-      "notes": "Meta's first wholly owned hyperscale campus, now spanning multiple buildings with an estimated 1,289 MW capacity and over $2 billion invested. The facility uses 100% non-potable water for cooling and helped launch the Open Compute Project.",
+      "costUSD": 2000000000,
+      "notes": "Meta's first wholly owned hyperscale campus, now spanning multiple buildings with an estimated 1,289 MW capacity and $2B cumulative investment disclosed by Meta over 14 years across 11 buildings. The facility uses 100% non-potable water for cooling and helped launch the Open Compute Project.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -323,7 +327,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Two AWS data centers under active construction in Hermiston as of late 2025, with the city annexing an additional 800 acres zoned for 'hyperscale data center' use to attract further expansion. Local officials raised concerns about water supply and electricity rate hikes.",
+      "notes": "Hermiston officials have raised water-supply and rate-hike concerns even as the city annexed 800 more acres zoned for 'hyperscale data center' to draw further AWS expansion. Two AWS data centers are under active construction here as of late 2025.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -345,7 +349,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2026,
-      "notes": "Amazon purchased 1,300 acres (formerly Threemile Canyon Farms dairy land) along the Columbia River near Boardman in March 2026 for a potential 'exascale' campus of up to 20 buildings, estimated at $12 billion. Oregon's Department of Land Conservation and Development has flagged the unprecedented scale of farmland rezoning needed.",
+      "notes": "Oregon's Department of Land Conservation and Development has flagged the unprecedented scale of farmland rezoning needed for Amazon's potential $12B 'exascale' campus near Boardman. AWS bought 1,300 acres of former Threemile Canyon Farms dairy land along the Columbia River in March 2026, eyeing up to 20 buildings.",
       "concerns": [
         "local-zoning",
         "environmental-review",
@@ -388,7 +392,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Flexential acquired a parcel at 3935 NE Aloclek Place in September 2025 for its sixth Hillsboro data center — a 350,000 sq ft, 27 MW facility designed for AI and cloud workloads, located directly across from its Hillsboro 1 campus.",
+      "notes": "Flexential acquired a parcel at 3935 NE Aloclek Place in September 2025 for its sixth Hillsboro data center \u2014 a 350,000 sq ft, 27 MW facility designed for AI and cloud workloads, located directly across from its Hillsboro 1 campus.",
       "concerns": [
         "grid-capacity",
         "local-zoning"
@@ -408,7 +412,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2023,
-      "notes": "Crane Data Centers broke ground in July 2025 on a 48 MW (two-phase, 24 MW each) campus at 3975 Heather St in Forest Grove, the city's first data center. Residents have raised concerns about noise, property values, wetland impacts, and the height of planned 75-foot buildings.",
+      "notes": "Forest Grove residents are pushing back on noise, property-value, wetland, and 75-foot building-height concerns at the city's first data center. Crane broke ground July 2025 on a 48 MW two-phase campus at 3975 Heather St.",
       "concerns": [
         "noise-vibration",
         "residential-proximity",
@@ -452,7 +456,8 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Project Matador: a 5,769-acre 'HyperGrid' campus co-developed with the Texas Tech University System, targeting 11 GW at full build-out powered by natural gas, solar, and planned Westinghouse AP1000 nuclear reactors; first 1 GW of gas-fired power expected by end of 2026. Faces intense community opposition over air quality (TCEQ approved 93 gas turbines), Ogallala Aquifer strain, and greenhouse gas emissions; subject of a class-action investor lawsuit and Sierra Club warnings that its 5,100+ MW gas capacity would be the largest gas plant in the US.",
+      "costUSD": 60000000000,
+      "notes": "Sierra Club says Fermi's 5,100+ MW gas capacity would be the largest gas plant in the US, and a class-action investor lawsuit piles on top of TCEQ's approval of 93 gas turbines. Project Matador is a 5,769-acre 'HyperGrid' with Texas Tech, targeting 11 GW via gas, solar, and planned AP1000 reactors; first 1 GW by end of 2026. Fermi disclosed a $60B initial build cost (total projection up to $300B).",
       "concerns": [
         "carbon-emissions",
         "environmental-review",
@@ -462,7 +467,7 @@
         "residential-proximity"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-tx-meta-el-paso-campus",
@@ -476,7 +481,8 @@
       "status": "under-construction",
       "yearBuilt": 2025,
       "yearProposed": 2025,
-      "notes": "Meta broke ground in October 2025 on a 1,000-acre hyperscale AI campus in Northeast El Paso near Stan Roberts Sr. Ave.; investment dramatically expanded from $1.5B to $10B in March 2026, with 1 GW capacity targeted by 2028. Faces significant community opposition over water usage (up to 1.5M gallons/day at full build-out), air pollution from 813 modular gas generators, and large property tax abatements; El Paso organized community meetings through April 2026 in response to public backlash.",
+      "costUSD": 10000000000,
+      "notes": "El Paso held community meetings through April 2026 over Meta's 813 modular gas generators, 1.5M-gallon/day water draw, and property-tax abatements. Meta broke ground October 2025 on a 1,000-acre campus in Northeast El Paso; investment jumped from $1.5B to $10B in March 2026, targeting 1 GW by 2028.",
       "concerns": [
         "water-consumption",
         "carbon-emissions",
@@ -499,13 +505,14 @@
       "status": "under-construction",
       "yearBuilt": 2025,
       "yearProposed": 2025,
-      "notes": "Joint-venture 768-acre hyperscale campus in northern Ellis County between Dallas and Fort Worth, adjacent to Google's Midlothian complex; planned across 24 buildings in three phases with a 1.8 GW switchyard on-site and first building energization targeted for May 2026. The first 500 MW tranche has ERCOT approval; total direct construction impact is estimated at over $5B.",
+      "costUSD": 5000000000,
+      "notes": "PowerHouse/Provident's 768-acre Ellis County campus sits adjacent to Google's Midlothian complex and targets 1.8 GW across 24 buildings with a $5B+ construction footprint. First 500 MW has ERCOT approval; first building energization is slated for May 2026.",
       "concerns": [
         "grid-capacity",
         "energy-rates"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-tx-cyrusone-fort-bliss-el-paso",
@@ -519,7 +526,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2026,
-      "notes": "The U.S. Army selected Carlyle Group to develop hyperscale AI data centers on approximately 1,384 acres at Fort Bliss under a 50-year enhanced-use lease, with a targeted $2B investment and initial operations in 2027; the Army retains land ownership while Carlyle finances, builds, and operates. This is the first Texas execution of a 2025 executive order directing underutilized federal land toward commercial AI infrastructure; Army Corps of Engineers will oversee environmental review.",
+      "notes": "Fort Bliss is the first Texas site under a 2025 executive order steering underutilized federal land to commercial AI infrastructure. The Army picked Carlyle Group to build on 1,384 acres via a 50-year enhanced-use lease, $2B investment, operations starting 2027; Army Corps oversees environmental review.",
       "concerns": [
         "environmental-review",
         "grid-capacity"
@@ -539,14 +546,14 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Tract's Caldwell Valley campus grew to nearly 3,000 acres in January 2026 after adding 1,458 acres to an existing 1,515-acre parcel between Austin and San Antonio; designed for up to 2 GW of total capacity with initial 360 MW targeting energization in 2028 under a Facility Design Agreement with Bluebonnet Electric Cooperative. Land acquisition included an 18-month engagement with state agencies and local communities.",
+      "notes": "Tract's Caldwell Valley grew to nearly 3,000 acres in January 2026, targeting 2 GW between Austin and San Antonio under a Facility Design Agreement with Bluebonnet Electric Cooperative. Initial 360 MW is targeted for 2028 energization.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
         "local-control"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-tx-eneus-energy-harlingen-rgv",
@@ -560,7 +567,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Scotland-based Eneus Energy (RGV Property LLC) is planning a 1,785-acre hyperscale campus near Valley International Airport outside Harlingen, with up to 16 data halls and 1 GW of interconnection capacity secured; as of April 2026, no formal proposal has been submitted to local authorities. Cameron County commissioners passed a resolution in April 2026 opposing data centers that lack safeguards, while Harlingen residents raised water and electricity concerns; the city-owned utility agreed to supply over 4.6 million gallons/day of reclaimed wastewater for the project.",
+      "costUSD": 14000000000,
+      "notes": "Cameron County commissioners passed a resolution in April 2026 opposing data centers that lack safeguards, targeting Scotland-based Eneus Energy's 1,785-acre, 1 GW Harlingen proposal. Harlingen's city utility agreed to supply 4.6M gallons/day of reclaimed wastewater; no formal proposal has been filed yet.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -569,7 +577,7 @@
         "environmental-review"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-tx-cyrusone-bosque-county-waco",
@@ -583,7 +591,8 @@
       "status": "under-construction",
       "yearBuilt": 2025,
       "yearProposed": 2024,
-      "notes": "CyrusOne's 400 MW data center along the Brazos River in rural Bosque County northwest of Waco is already under construction and projected to increase county tax revenue by 120% (~$70M) over three decades. Community members gathered in strong opposition at town hall meetings in December 2025, raising concerns about noise, water, and the rush of rural data center development; Hood County commissioners rejected a moratorium on new development despite similar public opposition.",
+      "costUSD": 1200000000,
+      "notes": "Bosque County residents packed December 2025 town halls opposing CyrusOne's 400 MW Brazos River build, while neighboring Hood County commissioners rejected a moratorium on similar projects. Construction is already underway and the site is projected to raise county tax revenue by 120% (~$70M) over three decades.",
       "concerns": [
         "noise-vibration",
         "water-consumption",
@@ -592,7 +601,7 @@
         "residential-proximity"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-tx-skybox-round-rock",
@@ -606,7 +615,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2024,
-      "notes": "Skybox is pursuing a rezoning of approximately 29.69 acres near East Old Settlers Boulevard and A.W. Grimes Boulevard in Round Rock to build a data center adjacent to the Chandler Creek neighborhood; a second campus of ~140 acres to the west is also in planning. The proposal passed its first City Council reading in late 2025; residents raised concerns about noise, water, and energy consumption; a closed-loop cooling system is required under the proposed PUD.",
+      "notes": "Chandler Creek residents are fighting Skybox's proposed ~30-acre rezoning near East Old Settlers Boulevard, with a second ~140-acre campus also in planning. The proposal passed its first Round Rock City Council reading in late 2025; the PUD requires closed-loop cooling.",
       "concerns": [
         "noise-vibration",
         "water-consumption",
@@ -629,7 +638,7 @@
       "status": "under-construction",
       "yearBuilt": 2025,
       "yearProposed": 2024,
-      "notes": "A 200 MW, 1.5 million sq ft colocation campus on West Military Drive and Loop 1604 in San Antonio comprising five buildings; an on-site 334 MW CPS Energy dual-fed substation is included, with the first building targeting 300,000 sq ft of space. The campus is designed to support both air- and liquid-cooled AI workloads with 2N power configuration per building.",
+      "notes": "Streams/CyrusOne's 200 MW San Antonio colocation campus spans five buildings and 1.5M sq ft at West Military Drive and Loop 1604, anchored by a 334 MW CPS Energy dual-fed substation. Built for air- and liquid-cooled AI workloads with 2N power per building.",
       "concerns": [
         "grid-capacity",
         "energy-rates"
@@ -656,7 +665,7 @@
         "environmental-review"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-ga-qts-fayetteville-excalibur",
@@ -670,7 +679,7 @@
       "status": "under-construction",
       "yearBuilt": 2023,
       "yearProposed": 2022,
-      "notes": "Known as 'Project Excalibur,' this Blackstone-owned QTS mega-campus spans 615 acres with up to 16 buildings and 6.6 million sq ft; construction began in 2023 with full build-out targeted by 2032. Poised to be one of the world's largest multi-tenant data center campuses.",
+      "notes": "Blackstone-owned QTS is building 'Project Excalibur' into one of the world's largest multi-tenant campuses: 615 acres, up to 16 buildings, 6.6M sq ft. Construction began in 2023 with full build-out targeted for 2032.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -678,7 +687,7 @@
         "local-zoning"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-ga-prologis-project-sail-coweta",
@@ -692,7 +701,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Highly controversial 'Project Sail': a $17B, 9-building campus on 832 acres of rural/forested land near Plant Yates; rezoning approved in a narrow 3-2 vote in April 2026 despite 8,000+ resident signatures in opposition and concerns over water, noise, and environmental impact. Construction expected to start 12–18 months after land purchase.",
+      "costUSD": 17000000000,
+      "notes": "Coweta County approved 'Project Sail' 3-2 in April 2026 despite 8,000+ resident signatures against it, over water, noise, and environmental concerns. Prologis plans a $17B, 9-building campus on 832 acres of rural/forested land near Plant Yates; construction starts 12\u201318 months after land purchase.",
       "concerns": [
         "local-zoning",
         "residential-proximity",
@@ -704,7 +714,7 @@
         "local-control"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-ga-digital-realty-project-bunkhouse-bartow",
@@ -718,7 +728,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "'Project Bunkhouse' is a $19B, 8.6 million sq ft, 12-building campus on 876 acres of agricultural land in Bartow County, managed by Digital Realty; rezoning was recommended by the Planning Commission in June 2025. At 1,830 MW full build-out it would consume more power than the entire city of Atlanta.",
+      "costUSD": 19000000000,
+      "notes": "At 1,830 MW full build-out, Digital Realty's 'Project Bunkhouse' would consume more power than the entire city of Atlanta. The $19B, 12-building, 876-acre campus on Bartow County farmland got a Planning Commission rezoning recommendation in June 2025.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -729,7 +740,7 @@
         "energy-rates"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-ga-dc-blox-atlanta-west-lithia-springs",
@@ -783,7 +794,7 @@
       "status": "under-construction",
       "yearBuilt": 2025,
       "yearProposed": 2024,
-      "notes": "Manulife-backed Serverfarm is converting a 498,960 sq ft warehouse at 10835 Hazelbrand Rd into a 60 MW hyperscale data center initially powered by natural gas until Georgia Power completes a new substation. The site was annexed into the city of Covington via a 5-1 council vote amid carbon-emissions concerns.",
+      "notes": "Covington annexed the site 5-1 over carbon-emissions concerns, letting Manulife-backed Serverfarm run its new 60 MW Hazelbrand Rd warehouse conversion on natural gas until Georgia Power finishes a substation.",
       "concerns": [
         "carbon-emissions",
         "grid-capacity",
@@ -847,7 +858,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Trammell Crow is planning a $21B 'Forsyth Technology Campus' on a 1,632-acre site along I-75 roughly 60 miles southeast of Atlanta, with 12 million sq ft of data center space across multiple buildings. An early-stage DRI filing was submitted in late 2025; rezoning and community review are pending.",
+      "notes": "Trammell Crow's $21B Forsyth Technology Campus would span 1,632 acres and 12M sq ft along I-75 ~60 miles southeast of Atlanta. A DRI filing went in late 2025; rezoning and community review are pending.",
       "concerns": [
         "local-zoning",
         "grid-capacity",
@@ -891,13 +902,14 @@
       "status": "under-construction",
       "yearBuilt": 2023,
       "yearProposed": 2023,
-      "notes": "Hyperscale campus in Mesa's Elliot Road Technology Corridor expanding to 450+ MW across 6 buildings; 206 MW operational since April 2023 with two additional buildings (PH02/PH03) under construction expected in 2025–2026. Powered by Salt River Project (SRP) with an air-cooled, closed-loop chilled water system requiring near-zero water.",
+      "costUSD": 2000000000,
+      "notes": "Hyperscale campus in Mesa's Elliot Road Technology Corridor expanding to 450+ MW across 6 buildings; 206 MW operational since April 2023 with two additional buildings (PH02/PH03) under construction expected in 2025\u20132026. Powered by Salt River Project (SRP) with an air-cooled, closed-loop chilled water system requiring near-zero water.",
       "concerns": [
         "grid-capacity",
         "water-consumption"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-az-project-blue-tucson-pima",
@@ -911,7 +923,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Controversial 290-acre data center campus on unincorporated Pima County land near Houghton Road, developed by Beale Infrastructure (Blue Owl-backed). Tucson City Council unanimously rejected annexation in August 2025; Pima County Board approved land sale 3-2 in December 2025 and land closed Dec. 24, 2025. ACC approved a TEP energy supply agreement (4-1) in December 2025; AG Kris Mayes contested the energy deal. Originally tied to Amazon Web Services; sources link Meta as a possible end-user after AWS exit. Faces active litigation from the No Desert Data Center Coalition and ongoing opposition over energy rates, water use, and lack of public transparency. Target operational date 2027.",
+      "notes": "AG Kris Mayes is contesting the TEP energy supply deal and the No Desert Data Center Coalition has filed active litigation after Tucson rejected annexation but Pima County approved the land sale 3-2. The 290-acre Beale Infrastructure (Blue Owl-backed) campus near Houghton Road was tied to AWS, with Meta now reported as likely end-user; operations targeted for 2027.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -936,7 +948,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Proposed 600-acre data center campus by Beale Infrastructure (same developer as Project Blue) in the Town of Marana; rezoning approved by the Town Council in January 2026. Projected $5 billion capital investment and 550–750 MW of power at full buildout. Faces strong community opposition over noise from backup generators, energy rate impacts, and proximity to residential areas; the No Desert Data Center Coalition is actively organizing against it.",
+      "costUSD": 5000000000,
+      "notes": "The No Desert Data Center Coalition is organizing against Beale Infrastructure's second Arizona campus over backup-generator noise, rate impacts, and residential proximity. Marana Town Council approved rezoning on the 600-acre site in January 2026, with $5B investment and 550\u2013750 MW at full buildout.",
       "concerns": [
         "noise-vibration",
         "grid-capacity",
@@ -946,7 +959,7 @@
         "local-zoning"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-az-project-baccara-waddell-az",
@@ -960,7 +973,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Two ~1-million-sq-ft data center buildings on a ~160-acre unincorporated Maricopa County site just north of Luke Air Force Base, powered by an on-site 700 MW natural gas plant (ACC issued Certificate of Environmental Compatibility unanimously Feb. 4, 2026). Construction slated Q3 2026; first building online Q1 2028. Faces intense grassroots opposition (Stop Project Baccara Coalition, ~5,000-signature petition) over air quality from gas generators, residential proximity, water well impacts, and carbon emissions.",
+      "notes": "The Stop Project Baccara Coalition has gathered ~5,000 petition signatures against Takanock's on-site 700 MW gas plant just north of Luke AFB, citing air quality, water wells, and residential proximity. ACC issued a Certificate of Environmental Compatibility Feb. 4, 2026; construction is slated Q3 2026 for Q1 2028 operation.",
       "concerns": [
         "carbon-emissions",
         "noise-vibration",
@@ -971,7 +984,7 @@
         "local-control"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-az-vermaland-la-osa-eloy-az",
@@ -985,7 +998,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Massive $33 billion 'La Osa Project' on a 3,374-acre site in unincorporated Pinal County along the Greene Canal south of Eloy, capable of up to 3 GW—more than the entire Phoenix metro's current data center capacity. Pinal County Planning & Zoning held a non-voting informational session in July 2025; commissioners raised concerns about flood zones, land subsidence fissures, wildlife corridors, and feasibility. Energy plan begins with a gas-fired plant transitioning to solar; air-cooled design proposed. No hyperscale tenant confirmed. Rezoning approval anticipated 2026; full buildout over ~10 years.",
+      "costUSD": 33000000000,
+      "notes": "Pinal County commissioners have flagged flood zones, land-subsidence fissures, and wildlife corridor impacts at Vermaland's $33B 'La Osa Project' \u2014 3,374 acres south of Eloy targeting 3 GW, more than the entire Phoenix metro's current DC capacity. Energy plan opens with a gas plant; no hyperscale tenant confirmed; rezoning anticipated 2026.",
       "concerns": [
         "environmental-review",
         "water-consumption",
@@ -994,7 +1008,7 @@
         "local-zoning"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-az-verma-lallian-hassayampa-tonopah-az",
@@ -1008,7 +1022,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Developer Anita Verma-Lallian (backed by Chamath Palihapitiya) purchased the ~2,100-acre Hassayampa Ranch site for $51 million in May 2025 and received Maricopa County Board of Supervisors zoning approval for a data center industrial park estimated at $25 billion. Up to 6–8 hyperscalers reportedly interested, including Meta, Google, and OpenAI. Rural residents in Tonopah opposed the project over water well impacts, property values, noise, rising energy costs, and loss of rural character.",
+      "notes": "Tonopah residents are fighting Chamath Palihapitiya-backed developer Anita Verma-Lallian's $25B Hassayampa Ranch industrial park over water wells, property values, noise, and energy costs. Maricopa County approved rezoning on the 2,100-acre site after a $51M May 2025 purchase; Meta, Google and OpenAI are reportedly interested.",
       "concerns": [
         "water-infrastructure",
         "property-values",
@@ -1032,7 +1046,7 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Aligned Data Centers broke ground April 15, 2025 on its Glendale campus (PHX-13), the first of four planned facilities on a 100-acre site totaling 72 MW for this phase. Powered by a new 230 kV APS transmission line; uses Aligned's Delta³ air cooling arrays with a closed-loop water recycling system to minimize consumption in the arid Southwest.",
+      "notes": "Aligned Data Centers broke ground April 15, 2025 on its Glendale campus (PHX-13), the first of four planned facilities on a 100-acre site totaling 72 MW for this phase. Powered by a new 230 kV APS transmission line; uses Aligned's Delta\u00b3 air cooling arrays with a closed-loop water recycling system to minimize consumption in the arid Southwest.",
       "concerns": [
         "grid-capacity",
         "water-consumption"
@@ -1072,6 +1086,7 @@
       "status": "under-construction",
       "yearBuilt": 2025,
       "yearProposed": 2024,
+      "costUSD": 1000000000,
       "notes": "Google's Redhawk Mesa campus at the intersection of Elliot and Sossaman roads spans ~750,000 sq ft at full buildout; Phase 1 (288,530 sq ft data hall) became operational July 2025. Phase 2 targets 280,000 sq ft and 400 MW across 185 acres and is under construction. Supports Google Cloud and AI services.",
       "concerns": [
         "grid-capacity",
@@ -1092,13 +1107,13 @@
       "status": "under-construction",
       "yearBuilt": 2022,
       "yearProposed": 2021,
-      "notes": "Stream's 157-acre Phoenix hyperscale campus (seven buildings, PHX I–VII) near Goodyear is the largest data center development of its kind in the Valley, targeting 280 MW of critical load across 2+ million sq ft at full buildout. PHX I (40 MW) is fully leased and operational; PHX II and subsequent buildings are under development for hyperscale tenants.",
+      "notes": "Stream's 157-acre Phoenix hyperscale campus (seven buildings, PHX I\u2013VII) near Goodyear is the largest data center development of its kind in the Valley, targeting 280 MW of critical load across 2+ million sq ft at full buildout. PHX I (40 MW) is fully leased and operational; PHX II and subsequent buildings are under development for hyperscale tenants.",
       "concerns": [
         "grid-capacity",
         "water-consumption"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-ia-meta-altoona-ia",
@@ -1133,7 +1148,7 @@
       "status": "operational",
       "yearBuilt": 2014,
       "yearProposed": 2014,
-      "notes": "Microsoft's Project Alluvion campus at 550 SE White Crane Road is the largest single data center in Iowa at ~200 MW and over 918,000 sq ft; part of a multi-campus West Des Moines cluster where Microsoft has invested $3–5 billion and owns 650+ acres.",
+      "notes": "Microsoft's Project Alluvion campus at 550 SE White Crane Road is the largest single data center in Iowa at ~200 MW and over 918,000 sq ft; part of a multi-campus West Des Moines cluster where Microsoft has invested $3\u20135 billion and owns 650+ acres.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -1155,7 +1170,7 @@
       "status": "under-construction",
       "yearBuilt": 2024,
       "yearProposed": 2017,
-      "notes": "Apple's 2,000-acre Waukee campus (Project Morgan) opened its first building in 2024 and is expanding toward a planned six-building, ~1.9 million sq ft campus with an investment of ~$1.3–1.4 billion; runs on 100% renewable energy.",
+      "notes": "Apple's 2,000-acre Waukee campus (Project Morgan) opened its first building in 2024 and is expanding toward a planned six-building, ~1.9 million sq ft campus with an investment of ~$1.3\u20131.4 billion; runs on 100% renewable energy.",
       "concerns": [
         "water-consumption",
         "grid-capacity",
@@ -1176,7 +1191,7 @@
       "status": "under-construction",
       "yearBuilt": 2025,
       "yearProposed": 2024,
-      "notes": "QTS is constructing a $750 million–$1.75 billion, 612-acre, 7-building campus at the Big Cedar Industrial Center in SW Cedar Rapids; uses a waterless cooling system and is the largest economic development investment in Cedar Rapids history.",
+      "notes": "QTS is constructing a $750 million\u2013$1.75 billion, 612-acre, 7-building campus at the Big Cedar Industrial Center in SW Cedar Rapids; uses a waterless cooling system and is the largest economic development investment in Cedar Rapids history.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -1241,7 +1256,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Google proposed a six-building campus near the Duane Arnold nuclear plant in Linn County, signing a 25-year nuclear PPA in late 2025; highly controversial due to water and local-control concerns, prompting Linn County to pass a new data center ordinance in February 2026, after which Google pivoted to seek annexation into the City of Palo.",
+      "notes": "Linn County passed a new data center ordinance in February 2026 over water and local-control concerns, and Google pivoted to seek annexation into the City of Palo. The six-building campus sits next to the Duane Arnold nuclear plant and rides a 25-year nuclear PPA signed in late 2025.",
       "concerns": [
         "water-consumption",
         "water-infrastructure",
@@ -1273,7 +1288,7 @@
         "environmental-review"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-ia-edged-ankeny-ia",
@@ -1530,11 +1545,12 @@
       "country": "United States",
       "lat": 34.8857,
       "lng": -79.6951,
-      "capacityMW": null,
+      "capacityMW": 2240,
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "A $10 billion, 800-acre campus at Energy Way Industrial Park featuring up to 20 data center buildings; broke ground October 2025 and is billed as the largest single capital project in North Carolina history. Sited adjacent to Duke Energy's 2.24 GW Sherwood H. Smith Jr. natural gas complex; full build-out expected 2027–2028.",
+      "costUSD": 10000000000,
+      "notes": "A $10 billion, 800-acre campus at Energy Way Industrial Park featuring up to 20 data center buildings; broke ground October 2025 and is billed as the largest single capital project in North Carolina history. Sited adjacent to Duke Energy's 2.24 GW Sherwood H. Smith Jr. natural gas complex; full build-out expected 2027\u20132028.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -1556,7 +1572,8 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2022,
-      "notes": "A $1B+ four-campus cluster (Lyle Creek/Conover, Boyd Farm/Maiden, Stover/Hickory) totaling an estimated 720–810 MW across 15 planned 48 MW buildings; construction restarted across all three sites simultaneously in early 2026 after a ~7-month pause. Duke Energy is contracted to supply power.",
+      "costUSD": 1000000000,
+      "notes": "A $1B+ four-campus cluster (Lyle Creek/Conover, Boyd Farm/Maiden, Stover/Hickory) totaling an estimated 720\u2013810 MW across 15 planned 48 MW buildings; construction restarted across all three sites simultaneously in early 2026 after a ~7-month pause. Duke Energy is contracted to supply power.",
       "concerns": [
         "grid-capacity",
         "water-consumption",
@@ -1626,7 +1643,7 @@
         "residential-proximity"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-nc-ess-kingsboro-tarboro-nc",
@@ -1640,7 +1657,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "A $19.2B, 900 MW, 300-acre campus in the Kingsboro development; groundbreaking was targeted for Q1 2026 after Edgecombe County commissioners amended zoning to permit data centers in heavy industrial districts. A separate 100 MW ESS project in Tarboro was previously rejected by the town following community opposition.",
+      "costUSD": 19200000000,
+      "notes": "Edgecombe County commissioners amended zoning to permit data centers in heavy industrial districts, clearing ESS's $19.2B, 900 MW Kingsboro campus for a Q1 2026 groundbreak. A separate 100 MW ESS project in Tarboro was rejected after community opposition.",
       "concerns": [
         "local-zoning",
         "local-control",
@@ -1650,7 +1668,7 @@
         "environmental-review"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-nc-project-delta-stokes-county-nc",
@@ -1664,7 +1682,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Known as 'Project Delta,' a proposed 1,800-acre campus near Duke Energy's Belews Creek plant site targeting several hundred MW; the Stokes County planning board voted against it in December 2025 and ~100 residents protested at the January 2026 commission meeting. An Action Network petition from Clean Water for NC garnered over 2,600 signatures citing Dan River pollution risks.",
+      "notes": "Stokes County's planning board voted against 'Project Delta' in December 2025 and Clean Water for NC collected 2,600+ signatures citing Dan River pollution risks. The proposed 1,800-acre campus sits next to Duke Energy's Belews Creek plant and targets several hundred MW.",
       "concerns": [
         "local-control",
         "local-zoning",
@@ -1708,7 +1726,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "A 333–350-acre campus along Stamey Farm Road and Hickory Highway comprising five data center buildings (~270,000 sq ft each) with air-cooling systems; Statesville City Council finalized rezoning in October 2025, and Compass submitted a site plan application. Duke Energy's contracted to supply power via a nearby substation.",
+      "notes": "A 333\u2013350-acre campus along Stamey Farm Road and Hickory Highway comprising five data center buildings (~270,000 sq ft each) with air-cooling systems; Statesville City Council finalized rezoning in October 2025, and Compass submitted a site plan application. Duke Energy's contracted to supply power via a nearby substation.",
       "concerns": [
         "local-zoning",
         "grid-capacity",
@@ -1736,7 +1754,7 @@
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-oh-softbank-ports-piketon-oh",
@@ -1750,7 +1768,8 @@
       "status": "under-construction",
       "yearBuilt": null,
       "yearProposed": 2026,
-      "notes": "Groundbreaking held March 20, 2026 on the former Portsmouth Gaseous Diffusion Plant (DOE land), now branded the 'PORTS Technology Campus'; the 10 GW data center campus will be powered by a co-located 9.2 GW natural gas generation complex in a DOE-SoftBank-AEP Ohio public-private partnership. Part of a $550B Japan-US trade commitment.",
+      "costUSD": 500000000000,
+      "notes": "SoftBank broke ground March 20, 2026 on the former Portsmouth Gaseous Diffusion Plant, pairing a 10 GW campus with a co-located 9.2 GW natural gas complex under a DOE-SoftBank-AEP Ohio partnership. The 'PORTS Technology Campus' is part of a $550B Japan-US trade commitment.",
       "concerns": [
         "carbon-emissions",
         "environmental-review",
@@ -1759,7 +1778,7 @@
         "residential-proximity"
       ],
       "source": "researched",
-      "primaryUser": "SoftBank / AI hyperscalers"
+      "primaryUser": "OpenAI"
     },
     {
       "id": "researched-oh-aws-wilmington-oh",
@@ -1773,6 +1792,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
+      "costUSD": 4000000000,
       "notes": "A $4 billion hyperscale campus spanning 471 acres off US-68, first proposed in late 2025; faces intense community opposition and repeated tabling by the Wilmington Planning Commission due to incomplete traffic, water, and stormwater studies as of March 2026.",
       "concerns": [
         "residential-proximity",
@@ -1799,7 +1819,8 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "A $3.6 billion, 1.65 million sq-ft AI data center campus on 133 acres along SR-45; Lordstown Village Council initially voted 6-0 to ban all data centers before switching to a moratorium after the developer filed a lawsuit with the Ohio Supreme Court demanding zoning compliance.",
+      "costUSD": 3600000000,
+      "notes": "Lordstown Village Council voted 6-0 to ban all data centers, then switched to a moratorium after the developer sued at the Ohio Supreme Court demanding zoning compliance. Bristolville 25 is planning a $3.6B, 1.65M sq-ft AI campus on 133 acres along SR-45.",
       "concerns": [
         "local-control",
         "local-zoning",
@@ -1809,7 +1830,7 @@
         "water-infrastructure"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-oh-meta-j5-piqua-oh",
@@ -1823,7 +1844,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Dubbed 'Project Klondike,' this ~$1B data center was fast-tracked by the Piqua City Commission in November 2025 via emergency resolution under an NDA; investigative reporting linked shell company J5 LLC to Meta's HQ address, sparking a 2,500+ signature petition from residents over lack of transparency and water/energy concerns.",
+      "notes": "Investigative reporting tied shell company J5 LLC to Meta's HQ address, and Piqua residents responded with a 2,500+ signature petition after the City Commission fast-tracked this $1B 'Project Klondike' under NDA in November 2025.",
       "concerns": [
         "local-control",
         "water-consumption",
@@ -1847,7 +1868,7 @@
       "status": "proposed",
       "yearBuilt": null,
       "yearProposed": 2025,
-      "notes": "Shell company DB Stu LLC, incorporated the same day as a confirmed Meta subsidiary, is proposing a data center in Mount Orab; officials signed an NDA prohibiting disclosure of the developer's identity, prompting Ohio Rep. Adam Bird to introduce legislation banning NDAs in such public approval processes.",
+      "notes": "Ohio Rep. Adam Bird introduced legislation banning NDAs in data-center approvals after Mount Orab officials signed one hiding the developer's identity. Shell company DB Stu LLC, incorporated the same day as a confirmed Meta subsidiary, is behind the proposal.",
       "concerns": [
         "local-control",
         "local-zoning",
@@ -1878,7 +1899,7 @@
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-oh-aligned-sandusky-oh",
@@ -1954,7 +1975,7 @@
       "status": "under-construction",
       "yearBuilt": 2022,
       "yearProposed": 2021,
-      "notes": "Former coal plant site converted to AI/HPC campus in Niagara County; Fluidstack (backed by Google, which holds a ~14% stake in TeraWulf) has leased 360 MW across 10-year agreements worth ~$3.7B. CB-4 and CB-5 buildings energization slated for H2 2026, with total infrastructure capacity expandable to 750 MW. Residents near the Somerset facility report constant ~95-decibel noise from cooling fans.",
+      "notes": "Lake Mariner (Fluidstack) \u2014 Residents near the Somerset facility report constant ~95-decibel cooling-fan noise as TeraWulf converts a former coal plant into a 750 MW AI/HPC campus. Google-backed Fluidstack has leased 360 MW under 10-year agreements worth ~$3.7B; CB-4 and CB-5 energization is slated for H2 2026.",
       "concerns": [
         "noise-vibration",
         "water-consumption",
@@ -1962,7 +1983,9 @@
         "carbon-emissions"
       ],
       "source": "researched",
-      "primaryUser": "Fluidstack (Google-backed)"
+      "primaryUser": "Anthropic / G42 (via Fluidstack)",
+      "computeH100e": 72000,
+      "costUSD": 2200000000
     },
     {
       "id": "researched-ny-terawulf-cayuga-lansing-ny",
@@ -1975,7 +1998,8 @@
       "capacityMW": 400,
       "status": "proposed",
       "yearProposed": 2025,
-      "notes": "TeraWulf secured an 80-year ground lease on ~183 acres at the former Cayuga Power Plant (Milliken Station, retired 2019) to develop up to 400 MW of data center capacity, with 138 MW expected online in H2 2026. Environmentalists and local critics warn of noise, water use from Cayuga Lake, and disputed green-energy claims, calling it a potential 'sacrifice zone.'",
+      "costUSD": 400000000,
+      "notes": "Local critics and environmentalists are calling Lansing a potential 'sacrifice zone,' citing noise, Cayuga Lake water draw, and disputed green-energy claims. TeraWulf holds an 80-year ground lease on 183 acres at the retired Milliken Station coal plant, with 138 MW of 400 MW expected online H2 2026.",
       "concerns": [
         "noise-vibration",
         "water-consumption",
@@ -1985,7 +2009,7 @@
         "residential-proximity"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-ny-stream-stamp-genesee-county-ny",
@@ -1998,7 +2022,8 @@
       "capacityMW": 500,
       "status": "proposed",
       "yearProposed": 2025,
-      "notes": "Proposed $19.5B hyperscale campus (backed by Apollo Global Management) at the 1,250-acre STAMP industrial megasite in Genesee County, targeting a Fortune 50 tenant. Faces intense community and legal opposition from the Tonawanda Seneca Nation, Sierra Club, and local residents over wetlands impact, noise, electricity cost hikes, and a controversial $1.46B public subsidy package. GCEDC began reviewing the financial assistance application in February 2026.",
+      "costUSD": 19460000000,
+      "notes": "The Tonawanda Seneca Nation, Sierra Club, and local residents are fighting a $1.46B public subsidy package and wetland impacts at Stream's Apollo-backed $19.5B STAMP campus. The 1,250-acre Genesee County megasite is targeting a Fortune 50 tenant; GCEDC began reviewing the subsidy application in February 2026.",
       "concerns": [
         "noise-vibration",
         "grid-capacity",
@@ -2009,7 +2034,7 @@
         "local-control"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "Cloud hyp."
     },
     {
       "id": "researched-ny-ranalli-super-dc-lysander-ny",
@@ -2022,7 +2047,7 @@
       "capacityMW": 300,
       "status": "proposed",
       "yearProposed": 2025,
-      "notes": "Proposed hyperscale campus on 120 acres of vacant land in suburban Lysander (Onondaga County), led by local developer James Ranalli. Has requested 300 MW of grid interconnection from NYISO — equivalent to ~200,000 average households. Currently in early planning stages with no confirmed anchor tenant.",
+      "notes": "Proposed hyperscale campus on 120 acres of vacant land in suburban Lysander (Onondaga County), led by local developer James Ranalli. Has requested 300 MW of grid interconnection from NYISO \u2014 equivalent to ~200,000 average households. Currently in early planning stages with no confirmed anchor tenant.",
       "concerns": [
         "grid-capacity",
         "energy-rates",
@@ -2031,7 +2056,7 @@
         "environmental-review"
       ],
       "source": "researched",
-      "primaryUser": null
+      "primaryUser": "N/A"
     },
     {
       "id": "researched-ny-ibm-quantum-starling-poughkeepsie-ny",
@@ -2044,7 +2069,7 @@
       "capacityMW": null,
       "status": "proposed",
       "yearProposed": 2025,
-      "notes": "IBM announced in June 2025 a dedicated IBM Quantum Data Center in Poughkeepsie to house its 'Quantum Starling' system — the world's first planned large-scale fault-tolerant quantum computer using 200 logical qubits. Full delivery expected by 2029. Not a conventional hyperscale facility but a landmark quantum-computing infrastructure project.",
+      "notes": "IBM's Poughkeepsie site will house 'Quantum Starling,' the world's first planned large-scale fault-tolerant quantum computer at 200 logical qubits, with full delivery by 2029. Announced June 2025 \u2014 a landmark quantum-computing infrastructure project, not a conventional hyperscale facility.",
       "concerns": [
         "grid-capacity"
       ],
@@ -2062,7 +2087,7 @@
       "capacityMW": 150,
       "status": "operational",
       "yearBuilt": 2000,
-      "notes": "Equinix's NY/NJ Secaucus campus (NY2/NY3/NY4) is the company's largest site in the New York City metro, serving financial, media, and enterprise customers with dense carrier and cloud interconnection. NY3 is Equinix's largest individual site in the metro and a critical Internet Exchange hub. The campus faces NYC grid pressure and Local Law 97 carbon-intensity compliance requirements.",
+      "notes": "Equinix's Secaucus campus (NY2/NY3/NY4) is the company's largest NYC-metro site and a critical Internet Exchange hub for financial, media, and enterprise customers. Faces Local Law 97 carbon-intensity compliance and NYC-metro grid pressure.",
       "concerns": [
         "grid-capacity",
         "carbon-emissions",
@@ -2082,7 +2107,7 @@
       "capacityMW": 60,
       "status": "operational",
       "yearBuilt": 2005,
-      "notes": "Digital Realty operates multiple carrier-dense colocation facilities in the NYC metro (including 111 8th Ave and 60 Hudson St area interconnection points), controlling a majority of carrier-dense square footage alongside Equinix and CoreSite. Facilities face NYC Local Law 97 carbon-intensity fines beginning 2025, requiring operators to procure zero-carbon power or electrify mechanical loads.",
+      "notes": "Digital Realty's NYC carrier-dense colocation footprint \u2014 including 111 8th Ave and 60 Hudson St interconnects \u2014 faces Local Law 97 carbon-intensity fines starting 2025, forcing zero-carbon procurement or mechanical-load electrification. Controls majority carrier-dense square footage alongside Equinix and CoreSite.",
       "concerns": [
         "carbon-emissions",
         "grid-capacity",
@@ -2102,13 +2127,683 @@
       "capacityMW": 45,
       "status": "operational",
       "yearBuilt": 2018,
-      "notes": "DataBank's Orangeburg complex, located ~30 miles north of Midtown Manhattan in Rockland County, is an exurban 'clean-sheet' development with approximately 45 MW of expansion headroom. It illustrates the broader trend of carriers moving data center load out of congested NYC to suburban sites with better substation capacity and lower property costs.",
+      "notes": "DataBank's Orangeburg complex is a clean-sheet exurban site 30 miles north of Midtown Manhattan with 45 MW of expansion headroom, exemplifying the move of DC load out of congested NYC to suburban substations with cheaper land.",
       "concerns": [
         "grid-capacity",
         "residential-proximity"
       ],
       "source": "researched",
       "primaryUser": null
+    },
+    {
+      "id": "researched-or-google-the-dalles-aluminum-site",
+      "operator": "Google",
+      "location": "The Dalles, OR (former Columbia Falls Aluminum site)",
+      "state": "OR",
+      "country": "United States",
+      "lat": 45.6189,
+      "lng": -121.1808,
+      "capacityMW": 200,
+      "status": "proposed",
+      "yearProposed": 2022,
+      "notes": "The Dalles is lobbying Congress (HR 655) to hand it 150 acres of Mount Hood National Forest to triple its Dog River reservoir for this campus \u2014 pulling cold water from salmon habitat above Bonneville Dam. Google is building ~$600M on the former Columbia Falls Aluminum site (190 acres, Whiting-Turner, breaking ground 2026). WaterWatch and Oregon tribes are pressing Wyden and Merkley to kill the land transfer.",
+      "concerns": [
+        "water-consumption",
+        "water-infrastructure",
+        "protected-land",
+        "environmental-review",
+        "local-control"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-wi-vantage-port-washington-stargate-lighthouse",
+      "operator": "Vantage Data Centers",
+      "location": "Port Washington, WI",
+      "state": "WI",
+      "country": "United States",
+      "lat": 43.3873,
+      "lng": -87.8728,
+      "capacityMW": 1000,
+      "status": "under-construction",
+      "yearProposed": 2025,
+      "costUSD": 15000000000,
+      "notes": "Opponents filed a February 2026 petition to recall Mayor Ted Neitzke IV over how fast the city approved this project, citing grid strain and rate impacts. 'Lighthouse' is Stargate's Midwest anchor \u2014 four Vantage-built buildings, ~1 GW for OpenAI/Oracle, completing 2028. Broke ground December 2025 with $175M+ committed to regional water, wastewater and power upgrades.",
+      "concerns": [
+        "grid-capacity",
+        "energy-rates",
+        "water-consumption",
+        "local-control",
+        "nda-transparency"
+      ],
+      "source": "researched",
+      "primaryUser": "OpenAI"
+    },
+    {
+      "id": "researched-ca-imperial-valley-data-center-campus",
+      "operator": "Imperial Valley Computer Manufacturing",
+      "location": "Imperial, CA (Aten & Clark roads)",
+      "state": "CA",
+      "country": "United States",
+      "lat": 32.8494,
+      "lng": -115.5437,
+      "capacityMW": 330,
+      "status": "proposed",
+      "yearProposed": 2025,
+      "costUSD": 10000000000,
+      "notes": "Residents are trying to block every data center in Imperial County via a November 2026 ballot initiative, after supervisors voted 4-1 to advance this 330 MW, 950,000-sq-ft campus; the developer has countersued the City of Imperial in federal court. The 74-acre Google-linked site at Aten & Clark pulls from an already-stressed aquifer and strains IID grid capacity.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity",
+        "energy-rates",
+        "environmental-review",
+        "residential-proximity",
+        "local-control"
+      ],
+      "source": "researched",
+      "primaryUser": "Google #speculative"
+    },
+    {
+      "id": "researched-ca-vantage-santa-clara-i",
+      "operator": "Vantage Data Centers",
+      "location": "Santa Clara, CA",
+      "state": "CA",
+      "country": "United States",
+      "lat": 37.3896,
+      "lng": -121.9754,
+      "capacityMW": 77,
+      "status": "operational",
+      "yearBuilt": 2010,
+      "notes": "Santa Clara's cheap municipal SVP power is why this cluster exists at all \u2014 and data-center draw is now the city's single largest load concern. Vantage's 77 MW Santa Clara I campus is the largest LEED Platinum DC campus in North America, serving hyperscale and enterprise tenants in the core Silicon Valley market.",
+      "concerns": [
+        "grid-capacity",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud hyp."
+    },
+    {
+      "id": "researched-ca-vantage-santa-clara-iii-ca3",
+      "operator": "Vantage Data Centers",
+      "location": "Santa Clara, CA",
+      "state": "CA",
+      "country": "United States",
+      "lat": 37.3845,
+      "lng": -121.9795,
+      "capacityMW": 64,
+      "status": "operational",
+      "yearBuilt": 2019,
+      "notes": "Vantage's CA3 facility, widely cited as the single largest data center in California by commissioned capacity. Sits within Vantage's broader Santa Clara footprint that totals roughly 216 MW across three campuses once CA1/CA2/CA3 expansions are built out.",
+      "concerns": [
+        "grid-capacity",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud hyp."
+    },
+    {
+      "id": "researched-ca-edgecore-silicon-valley-sv01",
+      "operator": "EdgeCore Digital Infrastructure",
+      "location": "Santa Clara, CA",
+      "state": "CA",
+      "country": "United States",
+      "lat": 37.3954,
+      "lng": -121.9627,
+      "capacityMW": 80,
+      "status": "operational",
+      "yearBuilt": 2022,
+      "notes": "EdgeCore's Silicon Valley campus supports up to 80 MW of critical IT load across roughly 700,000 square feet. Built to AI/HPC densities in one of the most power-constrained metros in the country \u2014 SVP has at times paused new service connections while substation upgrades catch up.",
+      "concerns": [
+        "grid-capacity",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud hyp."
+    },
+    {
+      "id": "researched-ca-coresite-sv9-santa-clara",
+      "operator": "CoreSite",
+      "location": "Santa Clara, CA",
+      "state": "CA",
+      "country": "United States",
+      "lat": 37.3617,
+      "lng": -121.9719,
+      "capacityMW": 34,
+      "status": "operational",
+      "yearBuilt": 2023,
+      "notes": "CoreSite's SV9 added ~200,000 sq ft and 34 MW of turn-key capacity when it opened in 2023, extending the SV7/SV8/SV9 interconnection campus that anchors carrier and cloud on-ramp traffic for much of Northern California.",
+      "concerns": [
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud prov."
+    },
+    {
+      "id": "researched-ca-ntt-silicon-valley-sv1",
+      "operator": "NTT Global Data Centers",
+      "location": "Santa Clara, CA",
+      "state": "CA",
+      "country": "United States",
+      "lat": 37.3568,
+      "lng": -121.9784,
+      "capacityMW": 16,
+      "status": "operational",
+      "yearBuilt": 2014,
+      "notes": "NTT's SV1 facility offers 16 MW of critical IT load across ~64,000 sq ft of data floor. Smaller than the hyperscale-focused campuses in the area, but a long-standing NTT/RagingWire asset that serves global enterprise customers needing West Coast presence.",
+      "concerns": [
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud prov."
+    },
+    {
+      "id": "researched-ca-cologix-sv1-santa-clara",
+      "operator": "Cologix",
+      "location": "Santa Clara, CA",
+      "state": "CA",
+      "country": "United States",
+      "lat": 37.3764,
+      "lng": -121.9846,
+      "capacityMW": 20,
+      "status": "operational",
+      "yearBuilt": 2017,
+      "notes": "Cologix SV1 is an ~84,000-sq-ft interconnection-dense hub on a 5-acre Santa Clara campus, offering up to 20 MW. Positioned as a carrier-neutral edge site rather than a hyperscale box \u2014 a common pattern in the Santa Clara market where land is scarce and every megawatt is rationed.",
+      "concerns": [
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud prov."
+    },
+    {
+      "id": "researched-ca-equinix-la1-one-wilshire",
+      "operator": "Equinix",
+      "location": "Los Angeles, CA (One Wilshire)",
+      "state": "CA",
+      "country": "United States",
+      "lat": 34.0482,
+      "lng": -118.2578,
+      "capacityMW": 45,
+      "status": "operational",
+      "yearBuilt": 2000,
+      "notes": "Equinix's LA cluster anchored at One Wilshire \u2014 the most important carrier-hotel building on the US West Coast and the primary trans-Pacific cable landing interconnect point for Los Angeles. Not a hyperscale AI campus, but critical public-internet infrastructure: a large share of US \u2194 Asia traffic passes through this building's meet-me rooms.",
+      "concerns": [
+        "grid-capacity",
+        "residential-proximity"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud prov."
+    },
+    {
+      "id": "researched-ca-prime-mcclellan-sacramento",
+      "operator": "Prime Data Centers",
+      "location": "Sacramento, CA (McClellan Park)",
+      "state": "CA",
+      "country": "United States",
+      "lat": 38.6666,
+      "lng": -121.3997,
+      "capacityMW": 48,
+      "status": "under-construction",
+      "yearProposed": 2024,
+      "notes": "Restore the Delta's January 2026 white paper flagged Sacramento's AI buildout as an underregulated threat to the Sacramento-San Joaquin estuary. Prime's Building 2 adds ~110,000 sq ft on 7.74 acres at 2407 Ak Street in McClellan Park. The region is drawing AI tenants with faster SMUD power and cheaper land than the Bay Area.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity",
+        "environmental-review"
+      ],
+      "source": "researched",
+      "primaryUser": null
+    },
+    {
+      "id": "researched-la-meta-hyperion-richland-parish",
+      "operator": "Meta",
+      "location": "Richland Parish, LA",
+      "state": "LA",
+      "country": "United States",
+      "lat": 32.4771,
+      "lng": -91.6323,
+      "capacityMW": 2000,
+      "status": "under-construction",
+      "yearProposed": 2024,
+      "costUSD": 27000000000,
+      "notes": "Entergy is building three new gas-fired units to serve Hyperion, locking in decades of methane emissions and drawing sustained Louisiana pushback. Meta's largest-ever AI campus: ~4M sq ft, up to 9 buildings, 2,250 acres in Richland Parish (plus 1,400 more bought in 2025), scaling from 2 GW toward 5 GW. Meta + Blue Owl JV announced October 2025 targets $27B total development cost.",
+      "concerns": [
+        "carbon-emissions",
+        "grid-capacity",
+        "water-consumption",
+        "environmental-review",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Meta"
+    },
+    {
+      "id": "researched-in-aws-project-rainier-new-carlisle",
+      "operator": "Amazon Web Services",
+      "location": "New Carlisle, IN",
+      "state": "IN",
+      "country": "United States",
+      "lat": 41.7014,
+      "lng": -86.5086,
+      "capacityMW": 2200,
+      "status": "under-construction",
+      "yearProposed": 2023,
+      "costUSD": 34900000000,
+      "computeH100e": 686000,
+      "notes": "Project Rainier \u2014 Project Rainier is AWS's 1,200-acre New Carlisle campus purpose-built for Anthropic, hosting ~500,000 Trainium2 chips by October 2025 and targeting over one million by year-end. Seven of 30 buildings are live; full 2.2 GW buildout plus a $15B expansion makes Indiana the largest single-state AWS investment to date.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "energy-rates",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Anthropic"
+    },
+    {
+      "id": "researched-ms-aws-madison-county-mega-site",
+      "operator": "Amazon Web Services",
+      "location": "Madison County, MS",
+      "state": "MS",
+      "country": "United States",
+      "lat": 32.5967,
+      "lng": -90.0367,
+      "capacityMW": 1500,
+      "status": "under-construction",
+      "yearProposed": 2024,
+      "costUSD": 10900000000,
+      "notes": "Project Rainier Madison \u2014 AWS's two Madison County industrial parks demand energy equivalent to ~700,000 homes, and Entergy Mississippi is building new generation to serve them. Total AWS Mississippi buildout now sits at ~$25B across 1,700 acres \u2014 $10B initial, $11B expansion, and a separate $1B Hinds County site \u2014 anchoring the state's 'Digital Delta' push.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "energy-rates",
+        "tax-incentives",
+        "nda-transparency"
+      ],
+      "source": "researched",
+      "primaryUser": "AWS",
+      "computeH100e": 214000
+    },
+    {
+      "id": "researched-pa-aws-cumulus-susquehanna",
+      "operator": "Amazon Web Services",
+      "location": "Salem Township, PA (Susquehanna nuclear plant)",
+      "state": "PA",
+      "country": "United States",
+      "lat": 41.0914,
+      "lng": -76.1447,
+      "capacityMW": 960,
+      "status": "under-construction",
+      "yearProposed": 2024,
+      "costUSD": 650000000,
+      "notes": "FERC rejected an amended interconnection agreement in late 2024, casting doubt on whether hyperscale DCs can pull power directly off a nuclear plant and skip grid cost-sharing. AWS bought the Cumulus campus from Talen for $650M and is contracted to ramp to 960 MW off the 2.5 GW Susquehanna reactor \u2014 one of the first US 'behind-the-meter' nuclear deals.",
+      "concerns": [
+        "grid-capacity",
+        "energy-rates",
+        "nda-transparency",
+        "local-control"
+      ],
+      "source": "researched",
+      "primaryUser": "AWS"
+    },
+    {
+      "id": "researched-tx-stargate-shackelford-vantage",
+      "operator": "Vantage Data Centers",
+      "location": "Shackelford County, TX",
+      "state": "TX",
+      "country": "United States",
+      "lat": 32.7311,
+      "lng": -99.3448,
+      "capacityMW": 1400,
+      "status": "under-construction",
+      "yearProposed": 2025,
+      "costUSD": 25000000000,
+      "notes": "Vantage's 1.4 GW Shackelford campus is Stargate Phase 2's Texas anchor alongside the flagship Abilene facility. Part of a five-site September 2025 expansion designed to deliver 5.5+ GW of OpenAI/Oracle/SoftBank AI capacity across Texas and New Mexico; first building online in 2026.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "energy-rates",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "OpenAI"
+    },
+    {
+      "id": "researched-nm-stargate-project-jupiter-dona-ana",
+      "operator": "Oracle / OpenAI",
+      "location": "Santa Teresa, NM (Do\u00f1a Ana County)",
+      "state": "NM",
+      "country": "United States",
+      "lat": 31.8403,
+      "lng": -106.7023,
+      "capacityMW": 1000,
+      "status": "under-construction",
+      "yearProposed": 2025,
+      "costUSD": 50000000000,
+      "notes": "New Mexico granted substantial tax incentives despite limited public disclosure of the water plan in drought-stressed Do\u00f1a Ana County. Project Jupiter is Stargate's NM anchor on the Santa Teresa flats, targeting end-2026 first-phase operation; $50B over five years and up to $165B over 30, paired with Abilene and Shackelford via the Permian power belt.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity",
+        "energy-rates",
+        "tax-incentives",
+        "nda-transparency",
+        "environmental-review"
+      ],
+      "source": "researched",
+      "primaryUser": "OpenAI"
+    },
+    {
+      "id": "researched-nd-applied-digital-polaris-forge-1-ellendale",
+      "operator": "Applied Digital",
+      "location": "Ellendale, ND",
+      "state": "ND",
+      "country": "United States",
+      "lat": 46.0016,
+      "lng": -98.5275,
+      "capacityMW": 400,
+      "status": "under-construction",
+      "yearProposed": 2022,
+      "notes": "Polaris Forge 1 is fully leased to CoreWeave under a 15-year, ~$11B deal running Anthropic and other frontier-model workloads; 400 MW critical-IT scalable to a full gigawatt. First 100 MW is live, 150 MW Building 2 targets mid-2026. Adjacent legacy 180 MW ELN01 crypto-mining facility marks a high-profile bitcoin-to-AI pivot.",
+      "concerns": [
+        "grid-capacity",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "CoreWeave"
+    },
+    {
+      "id": "researched-tn-xai-colossus-2-tulane-expansion",
+      "operator": "xAI",
+      "location": "5414 Tulane Rd, Memphis, TN",
+      "state": "TN",
+      "country": "United States",
+      "lat": 35.0417,
+      "lng": -90.1381,
+      "capacityMW": 300,
+      "status": "under-construction",
+      "yearProposed": 2025,
+      "costUSD": 659000000,
+      "notes": "Boxtown residents and the Southern Environmental Law Center are fighting xAI's on-site gas turbines \u2014 originally permitted as 'temporary' \u2014 and this $659M expansion intensifies air-quality concerns. The new 312,000-sq-ft building on 79 acres sits next to Colossus 2 at 5420 Tulane, part of Musk's plan to scale the Memphis supercluster to 1M GPUs by 2026.",
+      "concerns": [
+        "carbon-emissions",
+        "grid-capacity",
+        "residential-proximity",
+        "environmental-review",
+        "local-control"
+      ],
+      "source": "researched",
+      "primaryUser": "xAI"
+    },
+    {
+      "id": "researched-ms-xai-macrohard-southaven",
+      "operator": "xAI",
+      "location": "Southaven, MS",
+      "state": "MS",
+      "country": "United States",
+      "lat": 34.9889,
+      "lng": -89.9803,
+      "capacityMW": 400,
+      "status": "under-construction",
+      "yearProposed": 2025,
+      "costUSD": 20000000000,
+      "notes": "By crossing the state line into Mississippi, xAI taps both Entergy and TVA power while sidestepping the Memphis air- and water-fight tied to Boxtown. Codenamed 'MACROHARD,' this third Memphis-area facility was bought December 2025 and will push xAI's metro compute footprint past 2 GW.",
+      "concerns": [
+        "grid-capacity",
+        "carbon-emissions",
+        "energy-rates",
+        "nda-transparency"
+      ],
+      "source": "researched",
+      "primaryUser": "xAI"
+    },
+    {
+      "id": "researched-sc-google-berkeley-county-moncks-corner",
+      "operator": "Google",
+      "location": "Berkeley County, SC (Moncks Corner)",
+      "state": "SC",
+      "country": "United States",
+      "lat": 33.196,
+      "lng": -79.9932,
+      "capacityMW": 250,
+      "status": "operational",
+      "yearBuilt": 2008,
+      "costUSD": 2400000000,
+      "notes": "Middendorf aquifer water draw has fueled recurring community fights at Google's Moncks Corner campus, while Santee Cooper keeps expanding substation capacity to keep pace. One of Google's oldest and largest sites with ~$2.4B invested since 2007; still expanding as the Charleston metro absorbs more cloud and AI load.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-ga-google-douglas-county-douglasville",
+      "operator": "Google",
+      "location": "Douglas County, GA (Douglasville)",
+      "state": "GA",
+      "country": "United States",
+      "lat": 33.6944,
+      "lng": -84.6989,
+      "capacityMW": 200,
+      "status": "operational",
+      "yearBuilt": 2003,
+      "costUSD": 1200000000,
+      "notes": "Georgia Power's West Georgia service territory is now one of the Southeast's most demand-stressed, and the Georgia PSC has repeatedly approved new generation and rate hikes to serve Google's Douglasville anchor. Operating since 2003 with $1.2B+ invested; also anchors a Douglas/South Fulton cluster with DataBank, DC BLOX, and T5.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-nv-google-henderson",
+      "operator": "Google",
+      "location": "Henderson, NV",
+      "state": "NV",
+      "country": "United States",
+      "lat": 36.0395,
+      "lng": -114.9817,
+      "capacityMW": 200,
+      "status": "under-construction",
+      "yearProposed": 2019,
+      "costUSD": 600000000,
+      "notes": "Nevada's Colorado River allocations are already over-subscribed under the 2007 interim guidelines, making water the recurring flashpoint for this $600M+ Henderson campus. The Great Basin Water Network and other local groups have pushed back on Google's air-cooling guarantees, arguing the commitments are unverifiable. Google announced the Clark County site in 2019 and has expanded it since.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity",
+        "environmental-review",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-tx-google-midlothian-ellis-county",
+      "operator": "Google",
+      "location": "Midlothian, TX (Ellis County)",
+      "state": "TX",
+      "country": "United States",
+      "lat": 32.4826,
+      "lng": -96.9942,
+      "capacityMW": 400,
+      "status": "operational",
+      "yearBuilt": 2019,
+      "notes": "Google is layering another $40B on top of this DFW footprint via new November 2025 campuses in Armstrong and Haskell \u2014 making Texas its largest growth corridor. The flagship Midlothian/Red Oak twins anchor Google Cloud's south-central region; water draw and Oncor grid upgrades are the lead local concerns.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-tx-google-haskell-county-40b-buildout",
+      "operator": "Google",
+      "location": "Haskell County, TX",
+      "state": "TX",
+      "country": "United States",
+      "lat": 33.158,
+      "lng": -99.7334,
+      "capacityMW": 1500,
+      "status": "proposed",
+      "yearProposed": 2025,
+      "costUSD": 40000000000,
+      "notes": "Regional groundwater districts have flagged aquifer draw as the gating constraint on Google's Haskell anchor before construction even starts. Haskell headlines the November 2025 $40B Texas announcement (with Armstrong and a separate February 2026 Wilbarger site), leveraging ERCOT wind-corridor interconnects for cheap megawatts.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity",
+        "tax-incentives",
+        "nda-transparency",
+        "environmental-review"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-mo-google-kansas-city",
+      "operator": "Google",
+      "location": "Kansas City, MO",
+      "state": "MO",
+      "country": "United States",
+      "lat": 39.1155,
+      "lng": -94.6268,
+      "capacityMW": 250,
+      "status": "operational",
+      "yearBuilt": 2024,
+      "costUSD": 1000000000,
+      "notes": "Evergy flagged Google's KC campus as the single largest load driver behind its 2025 IRP, sparking a public fight over how much new generation cost lands on Missouri residential bills. Ratepayer groups are asking the PSC to ringfence data-center demand; the $1B+, ~300-acre site powers Google Cloud's us-central1/2 regions.",
+      "concerns": [
+        "grid-capacity",
+        "energy-rates",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-tn-google-clarksville-montgomery-county",
+      "operator": "Google",
+      "location": "Clarksville, TN (Montgomery County)",
+      "state": "TN",
+      "country": "United States",
+      "lat": 36.5298,
+      "lng": -87.3595,
+      "capacityMW": 200,
+      "status": "operational",
+      "yearBuilt": 2019,
+      "costUSD": 600000000,
+      "notes": "SELC is challenging TVA's 2024 IRP in federal court \u2014 the plan calls for 4,600 MW of new gas generation driven largely by data-center demand, including Google's Clarksville site. Started as a $600M 2019 commitment and has since expanded; TVA power locks in decades of methane emissions to serve it.",
+      "concerns": [
+        "carbon-emissions",
+        "grid-capacity",
+        "environmental-review"
+      ],
+      "source": "researched",
+      "primaryUser": "Google"
+    },
+    {
+      "id": "researched-oh-meta-prometheus-new-albany",
+      "operator": "Meta",
+      "location": "New Albany, OH",
+      "state": "OH",
+      "country": "United States",
+      "lat": 40.0811,
+      "lng": -82.8088,
+      "capacityMW": 531,
+      "costUSD": 15600000000,
+      "computeH100e": 494000,
+      "status": "under-construction",
+      "yearProposed": 2023,
+      "notes": "Meta Prometheus \u2014 Meta's AI supercluster in the New Albany Business Park, using a mix of weatherproof tents and traditional buildings to stand up capacity faster. Sits alongside Google's much older New Albany campus in the same park.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Meta"
+    },
+    {
+      "id": "researched-tx-crusoe-goodnight-claude",
+      "operator": "Crusoe",
+      "location": "Claude, TX",
+      "state": "TX",
+      "country": "United States",
+      "lat": 35.1126,
+      "lng": -101.3596,
+      "capacityMW": 500,
+      "status": "proposed",
+      "yearProposed": 2025,
+      "notes": "Goodnight \u2014 Crusoe's Panhandle campus for Google DeepMind workloads, redesigned from 7 X-shaped buildings to 6 rectangular ones during permitting. Part of Crusoe's broader pivot from flare-gas bitcoin mining to purpose-built AI hosting.",
+      "concerns": [
+        "grid-capacity",
+        "carbon-emissions",
+        "water-consumption"
+      ],
+      "source": "researched",
+      "primaryUser": "Google DeepMind"
+    },
+    {
+      "id": "researched-ms-aws-ridgeland-rainier",
+      "operator": "Amazon Web Services",
+      "location": "Ridgeland, MS (Madison County)",
+      "state": "MS",
+      "country": "United States",
+      "lat": 32.4287,
+      "lng": -90.1295,
+      "capacityMW": 400,
+      "status": "proposed",
+      "yearProposed": 2025,
+      "notes": "Project Rainier Ridgeland \u2014 AWS's second Madison County site, across town from the Canton mega-campus, using the same direct-air-cooled Rainier design for Anthropic Claude training workloads.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Anthropic"
+    },
+    {
+      "id": "researched-tx-coreweave-helios-afton",
+      "operator": "CoreWeave",
+      "location": "Afton, TX",
+      "state": "TX",
+      "country": "United States",
+      "lat": 33.7721,
+      "lng": -100.849,
+      "capacityMW": 800,
+      "status": "proposed",
+      "yearProposed": 2025,
+      "notes": "Helios \u2014 CoreWeave's 800 MW retrofit of the former Galaxy crypto-mining facility in Dickens County, approved 2025 to serve Microsoft AI workloads. Another flare-gas-to-AI infrastructure conversion in the Texas Panhandle.",
+      "concerns": [
+        "grid-capacity",
+        "carbon-emissions",
+        "water-consumption"
+      ],
+      "source": "researched",
+      "primaryUser": "Microsoft"
+    },
+    {
+      "id": "researched-ia-qts-fairfax-cedar-rapids",
+      "operator": "QTS Data Centers",
+      "location": "Fairfax, IA (Cedar Rapids metro)",
+      "state": "IA",
+      "country": "United States",
+      "lat": 41.9219,
+      "lng": -91.783,
+      "capacityMW": 616,
+      "status": "proposed",
+      "yearProposed": 2024,
+      "notes": "QTS Cedar Rapids \u2014 616 MW campus phased across late 2026 and 2027, adding to Cedar Rapids' rapid emergence as a hyperscale cluster alongside Google's pre-existing campus.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "tax-incentives"
+      ],
+      "source": "researched",
+      "primaryUser": "Cloud hyp."
     }
   ]
 }
