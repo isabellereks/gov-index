@@ -353,7 +353,7 @@ export default function GlobePage() {
 
   return (
     <div className="h-dvh w-screen overflow-hidden bg-[#0a0a0c] relative flex font-sans touch-none">
-      <div className={`flex-1 relative flex items-center justify-center overflow-hidden transition-[padding] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${drawerOpen ? "md:pr-[380px]" : ""}`}>
+      <div className={`flex-1 relative flex justify-center overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${drawerOpen ? "items-start pt-10 md:pt-0 md:items-center md:pr-[380px]" : "items-center"}`}>
         <Link
           href="/#datacenters"
           className="absolute top-3 left-3 md:top-6 md:left-6 z-20 inline-flex items-center gap-1.5 text-xs md:text-sm text-white/50 hover:text-white/80 transition-colors"
@@ -364,16 +364,16 @@ export default function GlobePage() {
           TrackPolicy
         </Link>
 
-        <div className="absolute bottom-[max(0.75rem,env(safe-area-inset-bottom))] left-3 md:bottom-6 md:left-6 z-20 flex items-center gap-4 md:gap-6">
+        <div className="absolute bottom-[max(0.75rem,env(safe-area-inset-bottom))] left-3 md:bottom-6 md:left-6 z-20 flex items-center gap-5 md:gap-6">
           <div>
-            <div className="text-[10px] md:text-[11px] text-white/40 tracking-tight">Facilities</div>
-            <div className="text-base md:text-lg font-semibold text-white/90 tabular-nums">
+            <div className="text-xs text-white/40 tracking-tight">Facilities</div>
+            <div className="text-xl md:text-2xl font-semibold text-white/90 tabular-nums">
               <NumberFlow value={statsReady ? stats.total : 0} />
             </div>
           </div>
           <div>
-            <div className="text-[10px] md:text-[11px] text-white/40 tracking-tight">Total capacity</div>
-            <div className="text-base md:text-lg font-semibold text-white/90 tabular-nums">
+            <div className="text-xs text-white/40 tracking-tight">Total capacity</div>
+            <div className="text-xl md:text-2xl font-semibold text-white/90 tabular-nums">
               <NumberFlow value={statsReady ? parseFloat((stats.totalMW / 1000).toFixed(1)) : 0} format={{ minimumFractionDigits: 1, maximumFractionDigits: 1 }} suffix=" GW" />
             </div>
           </div>
