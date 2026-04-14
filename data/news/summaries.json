@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T12:21:13.645Z",
+  "generatedAt": "2026-04-14T13:10:52.996Z",
   "regional": {
     "na": {
       "summary": "Anthropic's Mythos model has drawn attention from Washington policymakers and financial sector figures, with the company's co-founder confirming it is talking to the Trump administration about the next AI model while government officials and banks weigh its cybersecurity implications. A leaked OpenAI memo revealed a strategy to attack Anthropic as a competitor, while OpenAI simultaneously distanced itself from Microsoft. On the infrastructure front, community resistance to data centers is intensifying across multiple states: Auburn's plan commission recommended a data center moratorium on April 14, Ohio residents forced a vote for a yearlong moratorium on local data centers, New Jersey voters polled in favor of a moratorium on data center construction, Apex held a public hearing on a data center ban after community pushback, and a letter urged Maine Governor Janet Mills to approve a moratorium on data center development. Massillon, by contrast, scaled back its data center ban amid developer interest, illustrating the uneven local regulatory landscape.",
@@ -84,7 +84,7 @@
       "generatedAt": "2026-04-14T12:21:13.644Z"
     },
     "eu": {
-      "summary": "The EU AI Act's high-risk provisions are set to lock in for all member states by August 2, 2026, driving parallel national implementation efforts: Ireland has advanced legislation establishing a National AI Office ahead of that deadline, Germany is moving on a national AI Act implementation bill traced to a September 2025 draft, and Luxembourg has issued an update on harmonised EU AI rules implementation. On the infrastructure side, the EU Cloud and AI Development Act aims to triple data center capacity in 5\u20137 years, while the European Commission has rolled out a Data Centre Energy Efficiency Package targeting 2030 carbon neutrality. The EU has also opened a consultation on measuring energy consumption and emissions of AI systems, signaling that environmental accountability for AI workloads is becoming a formal regulatory priority alongside capacity expansion.",
+      "summary": "The EU AI Act's high-risk provisions are set to lock in for all member states by August 2, 2026, driving parallel national implementation efforts: Ireland has advanced legislation establishing a National AI Office ahead of that deadline, Germany is moving on a national AI Act implementation bill traced to a September 2025 draft, and Luxembourg has issued an update on harmonised EU AI rules implementation. On the infrastructure side, the EU Cloud and AI Development Act aims to triple data center capacity in 5–7 years, while the European Commission has rolled out a Data Centre Energy Efficiency Package targeting 2030 carbon neutrality. The EU has also opened a consultation on measuring energy consumption and emissions of AI systems, signaling that environmental accountability for AI workloads is becoming a formal regulatory priority alongside capacity expansion.",
       "keyDevelopments": [
         {
           "headline": "EU Council Adopts AI Act Deadline Extension Mandate",
@@ -102,14 +102,14 @@
         },
         {
           "headline": "EU Launches Public Consultation on Data Centre Rating Scheme",
-          "source": "European Commission \u2013 Energy Directorate",
+          "source": "European Commission – Energy Directorate",
           "date": "2026-03-27",
           "url": "https://energy.ec.europa.eu/news/rating-scheme-data-centres-eu-commission-launches-call-feedback-2026-03-27_en",
           "relatedEntity": "European Union"
         },
         {
           "headline": "EU Endorses New Delhi AI Summit Declaration",
-          "source": "European Commission \u2013 Digital Strategy",
+          "source": "European Commission – Digital Strategy",
           "date": "2026-02-20",
           "url": "https://digital-strategy.ec.europa.eu/en/news/european-union-endorses-leaders-declaration-ai-summit-india",
           "relatedEntity": "European Union"
@@ -147,7 +147,7 @@
           "topic": "legislation"
         },
         {
-          "text": "triple data center capacity in 5\u20137 years",
+          "text": "triple data center capacity in 5–7 years",
           "topic": "infrastructure"
         },
         {
@@ -294,7 +294,7 @@
         {
           "id": "rss-google-news-ai-policy-l25jlk",
           "headline": "Billionaire Michael Burry: Anthropic Is a Serious Threat to Palantir Stock - The Motley Fool",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTHBtQ0g5SVpfSENUaVplbDNpZ3JGT0pkVFE0bmJ4MTJneHkydGdFRjhiazJLbFhKWjZVYTNRZGJRTXZLNVlVUnoxNi1BQWppME4zLXg0VDJESENucHlvbEFMZnIzN1FzdktWYnlGU2YwTV9HdmNzcXFJNW5VcTZIdGdzU1kyZXFyc3VoS19hQjhrZjNfQ0E?oc=5",
           "summary": "Investor Michael Burry has expressed concern that Anthropic poses a competitive threat to Palantir's stock performance.",
@@ -302,8 +302,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-6anq4l",
-          "headline": "Anthropic\u2019s Mythos Raises the Stakes for Software Security - Logistics Viewpoints",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Anthropic’s Mythos Raises the Stakes for Software Security - Logistics Viewpoints",
+          "source": "Google News — AI Policy",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRm4zUFBCMDJITkpwOUlTMEpHUmpTYWl2MDlZTjhUUFNGVDZNQVQ0RlR5aVVrczFQeHNmS05uV0o3NHhuUFc3allNenFxQ3BUd1h1TVk2aEFhT1hnMHJzeVp5ZUlpWF9peXhLMURnQmVzdkRtWlpuUFBpbi0tX3NBYnJ5b0hzbWMyRk9hZmtjN2l6YnFraTR3aEozc2Z2emhTdWdj?oc=5",
           "summary": "Anthropic has released or announced a product or initiative called Mythos that relates to software security.",
@@ -311,8 +311,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-hwjc9k",
-          "headline": "Banks Face Complex Cyber Risks From Anthropic\u2019s Mythos - PYMNTS.com",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Banks Face Complex Cyber Risks From Anthropic’s Mythos - PYMNTS.com",
+          "source": "Google News — AI Policy",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbGE2cC1YY0xzQVdZR1RPX2hHaGtMQ0FlWlVBUF9ka1NEX0YzZjNZTmdCdXI3S01BeFdYN25GdmI5Z3pHZ0NHRGpCNzZTWF96Q1hQYVhXbm1VZ3F0SG91aHZnTGh6bnJNRXZRRzhzZ1BKZTMzb1lGbjZxSUg1b01ZamZ4V19SRDNqVjlEcXMtVzR6Uzc0bTJOQ3JMMHg?oc=5",
           "summary": "A news report discusses cybersecurity concerns that banks may face in relation to a technology or system associated with Anthropic.",
@@ -321,7 +321,7 @@
         {
           "id": "rss-google-news-ai-policy-8a23vi",
           "headline": "Anthropic is facing a wave of user backlash over reports of performance issues with its Claude AI chatbot - Fortune",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdjF4UTYxNHptdnBDczE4UlI4Qk03a3hSVVJGTkZfV3FRN0FTbWlZbnBwMUhjM1pDT2YtcVZHYzVfT1Q3YlRTcXc2dVRGWjRvdzlIdW45ZUlPaDVKVm9vZmNMVzFNOXpNRFV3RFNlOGVXSHVDaWE3N2o3YW0tdEFsRGtsb2dHTTBSMjBfdDU2cDZfNzYxSmYtUFEya3JJY1dYQXRJNEZSYXdIQTBDVU5OR1VDWXJ5ZE02Zl9SSDUzQUF1VzhtTE1TSG9CY3hMQTlFbWRXYjRkVkQ?oc=5",
           "summary": "Anthropic's Claude chatbot is experiencing user complaints related to reported performance problems.",
@@ -330,7 +330,7 @@
         {
           "id": "rss-google-news-ai-policy-xvdy5h",
           "headline": "Did Anthropic, Alphabet, and Broadcom Just Say Checkmate to Nvidia? - The Motley Fool",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdEEtd1J2QnlFdkUxczRGUXRVQVJIZ0h4aE9yRlRRa0pLc3k4VnpTbXR5ZjQwRU1DOUwyb3RROW03MTdfV0FrX2JkbWdFRGhzblZIRGhGSk4wTXJaZTBtd3pxaXlYdGwybHo0SjZrTjV5Ykg3RHNJMUxBQVVxQnZzZ3MySmxreGJCODRRWkZtVmE4TFFna3FwbQ?oc=5",
           "summary": "Anthropic, Alphabet, and Broadcom have made moves that some analysts view as potentially challenging Nvidia's market position in AI chip manufacturing and infrastructure.",
@@ -338,8 +338,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-hlff99",
-          "headline": "Anthropic\u2019s Mythos puts DC, Wall Street on high alert - The Hill",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Anthropic’s Mythos puts DC, Wall Street on high alert - The Hill",
+          "source": "Google News — AI Policy",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcUp3RkNWbGJ0VmVYTS1PRG52a0JxZWZnNjlGcm5temxETUVpY0FCMnVLVGFvYnNIeFRXclAxZFBycnc1T3owVDZUTHhJdjJqYTRyTUtTY2FpQ3lDTVBFRWhxTnJTNzU5bThqSnVhdHc5SlNOdVhVSThPTDBVLTg3SHJUaGFHWkVROHZIVWxtY9IBlAFBVV95cUxQa2tSd2hmU3NkR09JYWxPLUNSWVM2M0dZMEc5WGlYVDBWQUV0SGZhcThTS3BxdjNISzMwX1ZfWGVfV2c3UHRDVktRWmxFb3h6V1Z1OVFMcG9sUnRTQmFWX01sd2Z2ZEk5Y3lfVVNxUkhvYXNxVVlzeTQ4SXYzY1pBZmFiNUVFU01YSUNjZWc0TlBVYk5S?oc=5",
           "summary": "Anthropic announced a project called Mythos that has drawn attention from policymakers and financial sector figures in Washington, D.C. and New York.",
@@ -348,7 +348,7 @@
         {
           "id": "rss-google-news-ai-policy-61419m",
           "headline": "Why Anthropic's Mythos model has Washington and Wall Street worked up - Euronews.com",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObDRnN3cxWU5qMkYyMFZGQmoyV0ZpWjZZRDVKWE9tX1lmTDQ4UkIxWXpsLWc4bDFOaGI3b0JZV1RrNVN6TVI5bF9HWnNIMVAxdDhrZUh5VzEwNUdrUkswbUpBUlJxcmZ3ODVva0tTQTJ0RkhOWkV6YkZhUGhsT3I4cnpDWlJUMzBLUm5pVkg3UVJvTmdzQWl0ak9XRWxYRnowM1RzM0dWbmhGSWlydy1MZjRSYko0MkU?oc=5",
           "summary": "Anthropic's Mythos model has generated attention among policymakers and financial industry figures, according to reporting from Euronews.",
@@ -357,7 +357,7 @@
         {
           "id": "rss-google-news-data-center--omvif1",
           "headline": "April 14: Auburn plan commission recommends data center moratorium - Fort Wayne Business Weekly",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQT280azQxaV9GYXZteTRuVHI4WTBKeEFHek1JNE5XZlZyQTBaVGNOM0lTdUhFNTF1bHdmQU9JSkhremFMeFpPc0FLZHVtbEdGWTVvclluaThYLWVmNzRqYzBLdFR2Z3lxck45Ql9uNjNGNDJldFJJMHIzRTBWOTZBTGNSeUVjVVlf?oc=5",
           "summary": "Auburn's plan commission has recommended a moratorium on data center development in the city.",
@@ -366,7 +366,7 @@
         {
           "id": "rss-google-news-data-center--dpnmgt",
           "headline": "N.J. voters want moratorium on data center construction, growth in energy supply, poll finds - New Jersey Globe",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTjZQbmV1bXpremF1VFVZdGtvNlpIb0NUSU5QMFB0M3ZaOXBETDFQTXJiVHhFT3pCYXZicWw0OUl5WklWMzB5X0ZOSEZvYUxiTThWQ3NwNmZMbVJvRW5GRXlydjI3MldsZ0ZFX0Z2OEZHSGtvS1NpMmcwY1MtR1dhdkV5eWNVaE83U3MzR2hORFdMU0RucTdEQ3o2aTc2S2tzUjR1LXNyT3hqQW8yajlhaUwyb29qZDlzNWRmbTZSUTVLbGs?oc=5",
           "summary": "A New Jersey poll found that voters support a moratorium on data center construction and increased energy supply development.",
@@ -375,7 +375,7 @@
         {
           "id": "rss-google-news-data-center--16xybu",
           "headline": "Apex holds public hearing on data center ban after community pushback - WRAL",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQkhYR2w2N05ENWw4MmNtLUdCUzNiNlkwWktZSWZfWVNPV25sZHVkWGswODJIZHBJbG9YbFdvTlhjbkhzNEJVSEJpeDZnbHd6TDByYlRiWGJ5UHpKTmtLQXpabEdsVXBQUzI0QmNTLU53WUxjRHA4VTFDZHJDOUZDMA?oc=5",
           "summary": "Apex held a public hearing regarding a proposed data center ban following community opposition.",
@@ -393,7 +393,7 @@
         {
           "id": "rss-google-news-data-center--j3derz",
           "headline": "Letter: Janet Mills should approve data center moratorium - Bangor Daily News",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdjFRQnIyQ0FlLTM2Vl83RkxNS041RVNHTy0wZVVYRkRIdlRwVmhlUFNORHlsSURFUU1IQXB6cUttNXhwa0hHeUFNT1BtdVVjQ2xLazhNVUMxenBoNU1ZVnhUZEhBckVLcWlhLThIQ1hleVlBQ01oWDI1VktDRjlUeVlpODZUWXJZaTk0QURsdjIxR1YySFVicHVwejFNSzdxbW0yT25YcnB6NFBueEhrRURNTU5VdjNVekMwa0JMSU9LbV9feXc?oc=5",
           "summary": "A letter writer has called on Maine Governor Janet Mills to approve a moratorium on data center development.",
@@ -402,7 +402,7 @@
         {
           "id": "rss-google-news-data-center--8d3n64",
           "headline": "Not in my backyard: Ohio residents force vote for yearlong moratorium on local data centers - Yahoo",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-14",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUXhBQk9NOW9EMi1ncGdONFRfU25FbWNOTjJ6WUc1YUN0Q3RKeDJYVnFtdFJpRk56OGdleXJJYlBYb093c0p6T2Q4Vml1V25tZWwtb1BidnJQUlN0MjJacHp6UjlmU3JUUnhfUGotVVV0bjkybXBQNExsTHdNTGVDWFc3YjREZVU1SmtjWA?oc=5",
           "summary": "Ohio residents have triggered a ballot measure that would impose a one-year moratorium on new data center development in their locality.",
@@ -411,7 +411,7 @@
         {
           "id": "rss-google-news-ai-policy-1zk621",
           "headline": "OpenAI Exec Reveals New Strategy in Leaked Memo: Attack Anthropic - Gizmodo",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNR1ZTRjhPYnF1RmJPbURHTl8xenNvcndyNENxdHJNOEFoc0FIWmp4SmdDZVBSV2pCdTVQQ1hJcmtYYW9zV3lOTkd4YjgxLTd2T2xaNFpVTDI5ekJVQ0hoQXN5bWZWejFyMW1RWXFPeHpkTXBYWlJaeXVha3l5ZGtEMk9TVERKLVhDQ1ZxYmEycGliVVF5cGtETEcyQQ?oc=5",
           "summary": "According to a leaked memo reported by Gizmodo, an OpenAI executive outlined a strategy involving actions toward competitor Anthropic.",
@@ -420,7 +420,7 @@
         {
           "id": "rss-google-news-ai-policy-v81egi",
           "headline": "Anthropic Is Speaking to Government About Mythos, Co-Founder Says - Forbes",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdFBNRnRINUxzbUxmbENWdGU5WG54VXRZbFgza1FsSm55blVzampSd2I0UFk0Rk5mMjJPbDJqTVNja3NKaVJKZF9fQnRhV3YwM3J5bGlVQWV3SWplTGNocER1ZDBiUUxBZjlPWG9pZEF0SVFHRDlUbFU2TVNMS3laQ2FYSTFuNVRkMTV6U0RYM2xtc0tYMkk0ek1WX1h5MnRCdjNSU3gyeUl3em9RYkJKa2M1bm5ZS1ZLQ28xWGFROA?oc=5",
           "summary": "Anthropic has engaged in discussions with government officials regarding Mythos, according to one of the company's co-founders.",
@@ -429,7 +429,7 @@
         {
           "id": "rss-google-news-data-center--3r7epu",
           "headline": "Massillon scales back data center ban amid developer interest - Canton Repository",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQMWF3VkNGU2lKZWZzdTU4UWZmcEpaZndQX3VESzRRUG82TUxHOWxxWFlQVC1obUVoZ3FKTWVtMjN1THRGM3BWdVUxS3prRzNMLWZURUlvMTNJTW1mV2l4NnVoLXh6Z0N1a2JsaU5Kc2FHWWM3cHNsWkhVS3JmNlh6R195V1VIcmgtVVU4aVFQalIzRlJJZldwTXY5SEdvbkU2VUZub1dRRlh0NHdSSDg5TzJsTG5uQUZZOXlueGI5RktIQ3F1Z3cyRUphT21neHc?oc=5",
           "summary": "Massillon has reduced restrictions on data center development following interest from developers in the area.",
@@ -437,8 +437,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-r5mmsm",
-          "headline": "World needs to \u2018get ready\u2019 for more powerful AI, Anthropic co-founder says - Nextgov/FCW",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "World needs to ‘get ready’ for more powerful AI, Anthropic co-founder says - Nextgov/FCW",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNalZGLVFranV3U2ZvZVdENUdQb3RYQzlhUDMxZWtCOGFOZUZxRTQyZEN4QXNfZ0tTak1xNUhNazYxNGVSbXRjOGoyWFpYN0g3X1ZqVlFhN29WYVE3b3VTYVBxVFgxSGRPamtzU2xBRDM2bGZJODZrR0s3TGV2UHpGYlVrVmh2NUwtdUZwX0ZmNjB5UWpubWJURU00QmZyZmI1NEs2VnFqSkhtRU43ZTd2WDNDMGg0N1Z6dXp1ekZDWXRJSnBVSDQ4?oc=5",
           "summary": "Anthropic co-founder has stated that the world should prepare for AI systems with greater capabilities.",
@@ -447,7 +447,7 @@
         {
           "id": "rss-google-news-data-center--mzttsq",
           "headline": "Clyde considers data center moratorium, seeks public input - WLOS",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTDhIUHgzMkY0eTVoc1BaWWcwYkZWTkZGc0hyaXd1TjBwNVZhYlZhNWJkYkpoSWsxUXVvbExnNnM2bE9UNXpBOFpmUW5DeU1xdGtjc0hWR3U5RlRrSGRlSnJCZzZEclc3NWpmVzlLbk8xUFRDbnhHTHFjQzh1WVdGODVHYVRFM1lDendkZmxlemE3TExULXhpclRYY3VVc2Nyemg3VkFUOVJJTE5yZGI3VWxRZ1ZobjdEM19GWUFVQTMtelVaQlNQakhGTXRUckRyZDhCVDBHa0FQTlZBVmRYZklERU9XajBOQ0tzeFFRMy1SUFo2?oc=5",
           "summary": "North Carolina's Clyde area is considering a potential moratorium on data center development and is soliciting public feedback on the proposal.",
@@ -456,7 +456,7 @@
         {
           "id": "rss-google-news-ai-policy-15o2gs",
           "headline": "Anthropic caused panic that Mythos will expose cybersecurity weak spots, but one industry veteran says the real problem is fixing, not finding, them - Fortune",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPck9ybWhpeHhmVGZDdllYVUI1a2hmVmdERm5MdWhQLXFnbUpKeTJIRUN2d1BCb05ySkV5dFRJOXVQSGlRTEd0Rzd3ZU4wQml4dkxHVnFha1ItVWdfRGQxdTRmN01ZZnFGMjFPOFdtVVhaT1hWMHVPWWJYemx6WDdsSUZwVjVsc3JjUzdNall4WWMxXy1BNkE?oc=5",
           "summary": "Anthropic faced concerns that a tool called Mythos could reveal cybersecurity vulnerabilities, though some industry experts argue that addressing existing vulnerabilities is a greater challenge than identifying them.",
@@ -465,7 +465,7 @@
         {
           "id": "rss-google-news-ai-policy-t7n92z",
           "headline": "OpenAI rips Anthropic, distances itself from Microsoft - Axios",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9EVG5JbElJZ0RxQVNxT2dMbjlIX0ZRSkxNTnNONHZxTm8xSGtHY2NlU3lBd3JTR3N0dVpOQzBtdlVvXzFDdWFsNFFaZ0JmZkkxZkdfbTg2cXY0c0lGSGdmYXg4bWNhUUF1ZjFqcHJzSGZYbjhY?oc=5",
           "summary": "OpenAI has publicly criticized Anthropic and clarified its separation from Microsoft's business interests.",
@@ -474,7 +474,7 @@
         {
           "id": "rss-google-news-ai-policy-inejjz",
           "headline": "Anthropic talking to the Trump administration about its next AI model, co-founder says - Reuters",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYVY2SFlMRWFIaklsVmluT2pLR2NIa0tOdUtEamZjRWVyRWl3MHlxUGFsdnAtbW9oUkVFYzNnMGk3WUlsMFRKTDREU3FnTGFHaTdWWWJ2c1VJcHJHSHJkMEFxb0FGbW5BLXowZ3FmS2xJVnJtRzVqZFFvaXFacWx2TFVkdVJSejRtYmVpS1lMMmt4aUE1cl9wZ0NTQlhXSVpJWktUR2pNTDFEeTk3Uk5UWXdRQVBibVVLdWxUZQ?oc=5",
           "summary": "Anthropic is in discussions with the Trump administration regarding its upcoming AI model, according to a statement from one of the company's co-founders.",
@@ -482,8 +482,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-fksl25",
-          "headline": "Opinion | The U.S. military is missing out because of Hegseth\u2019s war on Anthropic - The Washington Post",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Opinion | The U.S. military is missing out because of Hegseth’s war on Anthropic - The Washington Post",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLUxRS29GUk9MZ2M5Zy1fMU9yTzgtemdWbi1CTDNuVWtUd3YxWW5fR2VzbWl6a3FIcFFiOHp4Q0hKOWpjUF8xczRHN2g4QmU4LVgyc281RUhmM1ZfUDIyS2RDTXRXNVFvZklBTWQ1d01kbWZlSUhvVnM3WUR3eHdVSXVUTjZxVGw5d0JqNFZKbzBNMHJa?oc=5",
           "summary": "The headline references a critical opinion piece about U.S. military implications related to tensions between Pete Hegseth and Anthropic.",
@@ -492,7 +492,7 @@
         {
           "id": "rss-google-news-ai-policy-fpmk3n",
           "headline": "Veteran analyst drops bold take on Palantir Anthropic situation - thestreet.com",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOb0JJYkV2ZDJHNHJ1ak9jNDExWE12dlk0YkExcnVkdU5OXzFoXzF4RXoxbHRqUjBvc2JkdkxaR0FVWjYyaHdUZnVYcGhZU2hTcFZ1UHlWQzRjYzhIS0FPeFdLalhjcXRNUkxWTmQxRG16RXdCY3N4NUZoNTd2Nk9LQUZsUWtoNVBsREhXT0NQczh2eXNCU1pwQlI3RkxnUS16YmtLazRNcGF5dw?oc=5",
           "summary": "A financial analyst has offered commentary on the situation involving Palantir and Anthropic.",
@@ -500,8 +500,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-a6329o",
-          "headline": "Anthropic Mythos Reveals Pandora\u2019s Box Of AI Extensional Risks And For Safety Sakes Not Yet Publicly Released - Forbes",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Anthropic Mythos Reveals Pandora’s Box Of AI Extensional Risks And For Safety Sakes Not Yet Publicly Released - Forbes",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOX2FzNjBLYTJjQ2o5ZDB5YTl6VWx1LWdxem5xZlVhNFJhX3VkZjN0QXBCM0pSNmVXUFI2ZEJjdHE3Vkp3OXUteVVIOHpydzRHMVVhZmVpdHpnUE9VaFBaVlFxT1djOWwybk10LTFDYWdwcE5FdFpHbHZPVmtMbmtTMHVXRVNkVm5SNmMxN2RycFU5SndoYkExdW9fVHc2NHhxU3FFdUZmdFlzc2JxNjRpSzB4N1RQU3h6TnQydTRHM2tfVXEyYTVvYmxYQ2F4R01TZF90dWFxeGNPd1ZmZ3ZHU3ItNlNMZ0l0U3RfSXlwUllBdw?oc=5",
           "summary": "I can't write a summary from this headline alone, as it appears to contain promotional or speculative language (\"Mythos,\" \"Pandora's Box\") rather than describing a concrete policy development or announcement. To provide a factual summary, I would need access to the article body to verify what specific governance or safety initiative was actually announced.",
@@ -509,8 +509,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-hy6myx",
-          "headline": "Anthropic\u2019s Mythos: Our Takeaways - Small Wars Journal",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Anthropic’s Mythos: Our Takeaways - Small Wars Journal",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE01cExQLTJTZnEwMGFLbzFZYTl1b3VRcVBmZFZBcmVxSlZWbTdDc0FBRnNOSHZIMTlyd2Vaam5CRTBUdXQwdTdHMlhtdFM3b0t1UjJiNV9FUlN6aTdZZVQ2RHhlQW81ZXc2WkdXcDR2WWpvSnd0YTFQWUN3MFE?oc=5",
           "summary": "Anthropic released a report or statement called \"Mythos\" that prompted analysis and commentary on its policy implications.",
@@ -519,7 +519,7 @@
         {
           "id": "rss-google-news-ai-policy-71np19",
           "headline": "LexLab Program Prepares Lawyers for the Frontlines of AI Policy and Practice - UC Law San Francisco",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZFQ1ODRCVHpPWll2bDhhdDlkdVh1SzZacUQ2WTN4YlpyemJZNzBGc1doelZ1UmpmcFJLMUMtVTc0VjkxSlZPX0ZWNTJFbDhKNTFaYVEyN0tZUWdGckpMaEN4ekdvYmV1OGR3eTVnQ2kyMTJEWVdaUERYeExEanlLMTVOWERxRkVvaWVsMHc1OUZaTVE3SFdOTnFNWTNjWFVWM3pqM2tSdDBKTXZ6UkVTUEh3?oc=5",
           "summary": "UC Law San Francisco has launched a program called LexLab to train lawyers in AI policy and legal practice.",
@@ -528,7 +528,7 @@
         {
           "id": "rss-google-news-ai-policy-ac7li2",
           "headline": "US, UK regulators meet banks on Anthropic AI cyber risks to financial systems - Retail Banker International",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBCblF5eS1aeGlZcHJFZUk4YW9mb1E1YXFMbGxEbHFGVkpQRDdtZlBtejVVZ3J3X2FyQm9OV1N4MEt2VTlBd25fdG5QdFA4aWZoeUl4bldETWo0aWtBWVpMUlNxZG1zQ1g5OVFsNEhYQmJoTHliaWxUYUNUUXI?oc=5",
           "summary": "US and UK financial regulators held meetings with banks to discuss potential cybersecurity risks that Anthropic's AI systems could pose to financial infrastructure.",
@@ -536,8 +536,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-5m2h5d",
-          "headline": "Read OpenAI\u2019s latest internal memo about beating the competition \u2014 including Anthropic - The Verge",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Read OpenAI’s latest internal memo about beating the competition — including Anthropic - The Verge",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQY2RHRGxBNUFhaVVIeGdOWFN2bzhELUFENlh0ZU56NGRURUtzZjRFalRqbjhfd2h1d3dnQk1JLVJ0cU51eXgwTXUxNU9oZkZrRXZTX3N6V293NWd4MUl0VVlNQUpHbXc0aDQzLXJaZjRxSzZZQlpnZGljeG14VmVzTkZtdTFUWjNhamo5aE9IZk1SZmVmQUpHY0w2ZnB1UTJQ?oc=5",
           "summary": "OpenAI circulated an internal memo addressing competitive positioning in relation to other AI companies, including Anthropic.",
@@ -546,7 +546,7 @@
         {
           "id": "rss-google-news-ai-policy-18o9jn",
           "headline": "Scaling Managed Agents: Decoupling the brain from the hands - Anthropic",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5LY3VWakFxdE02bVBBdDNrSEJaY2NqV1ZkZ3hfNUxBeWFXZDdrU21vTTdnSFdNUGNPRVpSMWVyVGp6MWlQWTFYU2JIcVZDdDcwMXcwRlpYNExMeWZBMGxXOWJ3?oc=5",
           "summary": "Anthropic published research on decoupling computational processes in managed agents to improve scalability.",
@@ -555,7 +555,7 @@
         {
           "id": "rss-google-news-ai-policy-7rypb6",
           "headline": "Anthropic plots Lovable challenger, leak suggests - Sifted",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zTXZLYk1XSlFia0VESXUtZkIzTE9yOTE2V3E5VFY1ZnllRWR5RVlpeFp5dGh5eVNsMmVhNG95enpWVy1MbHBULXFvZ3MyczFjemJFOU5XZERyYjRENXhpYUhzU2IwUmppY2JYTg?oc=5",
           "summary": "According to a leak, Anthropic is reportedly planning to develop a competitor to a product or service called Lovable.",
@@ -563,8 +563,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-pay706",
-          "headline": "Goldman Sachs chief \u2018hyper-aware\u2019 of risks from Anthropic\u2019s Mythos AI - The Guardian",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Goldman Sachs chief ‘hyper-aware’ of risks from Anthropic’s Mythos AI - The Guardian",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV2VtMzBsWkQ5UmFfdzRsMW1waXVKeWNfOGtIbFljOXRvX29aTzFYclFiam1FMUdBc3dxVndxZ3l1aWt2dV9PRkl6SjVOaVAySXBQWjFnMlVGQ3ZTc0RtUlAxcmhNeGd3UEpsWHFEMEhsNEFmWnoyUlAzc0VjUjcyUDUwTTdmT2JhWk1DaGFpVTZ3NVUwVy1MSy0wQWhFRGQzYkRtWHNLb1pqZGQ4LUE2aDVrdEhJY0c5R24zNEVn?oc=5",
           "summary": "Goldman Sachs' chief executive has expressed heightened awareness of potential risks associated with Anthropic's Mythos AI system.",
@@ -572,8 +572,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-zck8wj",
-          "headline": "Anthropic\u2019s office is surprisingly AI-first, even for an AI company - Fast Company",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "Anthropic’s office is surprisingly AI-first, even for an AI company - Fast Company",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE41MXZkNHhJMkNSdFExb3JwVEtxVWpwR2VIaWFLbkdtRTVjV3QzWVg5eDhCYm82U2VneFk3VEwxWUoyRERVNTl3MEJub04wcDNieU44c09pWU5xeDZYcVg0RVU1VGczR0Vfc3R4MU5PbHh5Z1VE?oc=5",
           "summary": "Anthropic's office has been characterized as having notably AI-forward design and operations, even compared to other artificial intelligence companies.",
@@ -582,7 +582,7 @@
         {
           "id": "rss-google-news-ai-policy-pf1rg4",
           "headline": "Is Anthropic 'nerfing' Claude? Users increasingly report performance degradation as leaders push back - VentureBeat",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdjNJQnJ5VEhnTEs0YlBIR09TMlF0NWxQSlhYcDhwTXlNLXZGY2NzeUhpbkEyZjV2blJ4N3lGT2o5cHlUaWgyVVNNR1NIQ2hpVWh2bkYxNS1TREdyTEtTb0RsWGJJZWJZYWctSDBwU0Z2WlMyUmNudXZIaUlrVE9hWVN5NmI3WHpKaVJSZTlveEtLTTdBTWxfZ1kxSWxXcWUtaWc?oc=5",
           "summary": "Users have reported perceived performance decreases in Anthropic's Claude model, while company leadership has disputed these claims.",
@@ -590,8 +590,8 @@
         },
         {
           "id": "rss-google-news-ai-policy-phd9jv",
-          "headline": "AI-boosted hacks with Anthropic\u2019s Mythos could have dire consequences for banks - Reuters",
-          "source": "Google News \u2014 AI Policy",
+          "headline": "AI-boosted hacks with Anthropic’s Mythos could have dire consequences for banks - Reuters",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONkJ4X2xkUG9NUHg1WWQ0cmVod2VYclVmdWE3S3dueDM3Ymx3ZUJ4VHc0OHhoZkFuanF5TjlhVTlpY3huY180NzN0dC1HREJfOURaZF8xemprQlZVMFNSWE9lUS0wQU1hLTZXX05PNXhLNVliZDBOR090NDgxVks1UXZHYnh6MGI3WHpLZFBaSmMyY094OVZBUGhxb0NYVF9RUzFtNXZ5REl2MVNEb0JBLVgyNXVrVGdzcGNGNFNoWmFsa0ROakE?oc=5",
           "summary": "A Reuters report discusses potential security risks to banking systems posed by AI-assisted hacking techniques related to Anthropic's Mythos system.",
@@ -600,7 +600,7 @@
         {
           "id": "rss-google-news-ai-policy-oo9r9l",
           "headline": "Project Glasswing: Securing critical software for the AI era - Anthropic",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBfQUdtMDZYaEtZV0JMSk1ZSzdqTl9mV3dQTnZYcVEzaHo4cV8yUEl2a25QMWRXenFTYUQ3NF9WakR5WXVwaDRTZC1ZYw?oc=5",
           "summary": "Anthropic announced Project Glasswing, an initiative focused on improving security for critical software in the context of artificial intelligence development.",
@@ -609,7 +609,7 @@
         {
           "id": "rss-google-news-ai-policy-krs7cv",
           "headline": "No company in American history has ever grown like Anthropic - Axios",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1VRlVOX3VoM3ZmQXlybGxoaEJhNEVENDlSaHBDZTNkWXhMek1iWE9PZVlXTS15U29pYnBqdzRCZ193QTVURFpUd2pZNXJCbHVMQzZldGZMcXRhQncydHJESnNPT3J5UmJuenEwSw?oc=5",
           "summary": "Anthropic has achieved unusually rapid growth compared to other companies in American history, according to Axios reporting.",
@@ -618,7 +618,7 @@
         {
           "id": "rss-google-news-data-center--2jscoh",
           "headline": "Mills pushes for Jay exemption in data center bill - Spectrum News",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRU9uMV8zbnJrZENULUlxV2tsQ3NiWFp1a0t2VUh1U1ZtYjBLNDhUMkRhYW1ONU56ekFCd2Q0TzNyV21vS1FMZzdFaFA4akNXMTlMTmVYZXhxVUUtYWRmamgwLVd5RmFXdUkzTmFPYzFUSWxoN2VOVVZQODFldnRIb2YtdjBXSXhmSlZ5NnhoUnBlczZEQVJGdWdNUVRTeHZuTUdtQ3daSmg4VXJHaFE?oc=5",
           "summary": "Maine Governor Janet Mills is advocating for an exemption related to Jay in proposed data center legislation.",
@@ -626,8 +626,8 @@
         },
         {
           "id": "rss-google-news-data-center--8udrxl",
-          "headline": "Point & counterpoint: A data center moratorium would be a gift to China \u2014 Donald Kimball - Jacksonville Journal-Courier",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "headline": "Point & counterpoint: A data center moratorium would be a gift to China — Donald Kimball - Jacksonville Journal-Courier",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZlZoNzV6MHgzN3RSTXZPUHczYnN2NzFreTlBRFNkVURSMWRIdklfUWFTQ2NiVnhUWUtOeHlXMllTeGJyeXdxWEhFT2J5aGNsUzFjOUhzZDFhQkdSUnZmN3ZXWDNCQTNaaDVaMm03ekdvYXZ6cGp4TUoxN3dWaS1hc2k2cGxxWUJTbU9Tc0hBVVJVV21JNGNMTWVuOUdkbDg?oc=5",
           "summary": "Donald Kimball argues in an opinion piece that imposing a moratorium on data centers would benefit China's competitive position.",
@@ -636,7 +636,7 @@
         {
           "id": "rss-google-news-data-center--45xzrz",
           "headline": "Detroit convenes working group for data center zoning, policy - BridgeDetroit",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdU1yR21yWm1VTzFSWEZickdablZyU2xJWG9MdFRDRkVwajNIWVpIRWwzUHRjYy0wdWQxZ0VzdDNuUThabDBVaFNUa1JhTUdXZWV1cTFCa25iV3VPTWxmaGNvZ3prckdvTUp0bFlySm9DYlRTcFlWektRZWQ4WFY1bXE4bWM5cktqd3JuRjhvV1Q1alVud1E?oc=5",
           "summary": "Detroit has established a working group to develop zoning regulations and policies related to data centers.",
@@ -644,8 +644,8 @@
         },
         {
           "id": "rss-google-news-data-center--k44dn5",
-          "headline": "A rural county fears a data center \u2018freight train\u2019 - The Washington Post",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "headline": "A rural county fears a data center ‘freight train’ - The Washington Post",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV1VKbjQzU3Ayb093emh6NlA2ZGozb0w3dDJYZ0pPNkMyQWZaRkZBOXRCNDFVREVERk51WG5IWnN0YWJ2LWdxTElTUmo0dGxpVmYyWlE3SWVTcFl6MmxEekt6Mm5RcTNvaTdYVkFTUjhLeTREMTlkWUN4QU96c2Nrd1IxOUF5a3V6RXdMZ3ZQY1dCSms?oc=5",
           "summary": "A rural county has expressed concerns about the rapid pace of data center development in its area.",
@@ -654,7 +654,7 @@
         {
           "id": "rss-google-news-data-center--9kh2gl",
           "headline": "Carver passes 1-year moratorium on data centers amid AI-driven development boom - The Business Journals",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-13",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTmREbVZDd0RFcjdQM1NIMGVMVnZNWlIxYU1TUDJYOVo1OWVqMm5NQjFKamN2aEk2MjhZVTRSMWt6SlFpa3JZa1VfMzR6ajVIQzBlOTZ2ZWE1Wl9RcDFzV3BPUm9PTnZGczZzVDBYd21FSG83U2pDZ0c2S0ZfM2tzZmYwUXdkcTdUdzFmOUNPNHZZMEU?oc=5",
           "summary": "Carver passed a one-year moratorium on data center development as AI-related growth in the sector accelerated.",
@@ -663,7 +663,7 @@
         {
           "id": "rss-google-news-data-center--otjt52",
           "headline": "Moratorium or a different approach? Nearby counties vary on data centers - Wichita Eagle",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-12",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzZEt0bnpNcTZKOGRBOTdXRE85Uk1jOVUzTzVOMUtCVXd6b2NOa21zbUU0eGR3ck9sT2ozUTUzdkJKdU90cS10ai1ja2V2dFB4cTdjdGcyS1k3U2xMRWU5Y2tZXzA0VXBUMjF6SHlVeXZadGVOQWV3OdIBeEFVX3lxTE5xY1dsSHVzV1d5N2lzRkFfUU9BYjZuSDl0cmRpNnR2c0psdXcyazlyQTlUTXpHaE93WDkwcVVSeGdheDR2QjlrZ09uYTRMcTB1ZVFjQ1FvRm5icG5CdWxweFRXbUR2bjJaT1d2OG1yOVVkZ3JmeGoxTw?oc=5",
           "summary": "Different counties near Wichita are taking varied regulatory approaches to data center development, with some considering moratoriums while others pursue alternative policies.",
@@ -672,7 +672,7 @@
         {
           "id": "rss-google-news-data-center--4o7ooa",
           "headline": "Data centers are spreading around the country. Now, data-center bans are, too - CNN",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-12",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NaHo1U2dYbUs0Q25wSHg2b0IzbDBrYW12eWo5ejRQb1NYVm1VR3hoeTJieGpCRmlrNzUyZW1zcjNiOW01VkNNSndmUGNVWV9SWEN3QndBS0tBclBOckZVN2djN1ZUd01tOURHQ3R2QU5YNTg?oc=5",
           "summary": "As data centers expand geographically across the United States, some jurisdictions have begun implementing bans or moratoria on their development.",
@@ -681,7 +681,7 @@
         {
           "id": "rss-google-news-data-center--9s9yoc",
           "headline": "Carver becomes latest city to impose moratorium on data centers - Bring Me The News",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-12",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcnYxMm5jM29jYk9oQlUzREFRZW0zTy1ZVGVXVDhwTVB3a0hrbmt0Um5HR1R3dHYtSmxlOGE3Tmw5c0VqQWZrWFdnZWxzV2VBY19OREc1dUhLZkY1U3BmUUlaa0o2NG1uQ1hMbEttREprTVdnR2VhdGdDQU9oWFhNeUZ3cTBSREZZTmltLURyTVUtRVZvT1RUc3kwUHlXcHhIRlppWFRtZjM?oc=5",
           "summary": "Carver has implemented a moratorium on data center development, joining other cities with similar restrictions.",
@@ -690,7 +690,7 @@
         {
           "id": "rss-google-news-data-center--yxhes7",
           "headline": "These 12 states tried to pause new data centers. Maine could be the first to succeed. - Business Insider",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-11",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLTI4bDZ4VzNuNVZHbHNnemJxN1VwdDhWbExvVFEwaERtRjhtSVBFQzdBQ2V6cmhyZWgxa19ISDN3RWxKMEM4ZDRyOVppUGN2Q3drbzFhNS0xNC1kTmRlQkZHNElNbHRNbjF5MDdQNjhULTJpVFVjYzlMVHVLMkgzckFRWEtXWmFiWnhibWhjaUNVbUE?oc=5",
           "summary": "Maine is among twelve states that have pursued moratoriums on new data center construction, with Maine potentially becoming the first state to successfully implement such a policy.",
@@ -699,7 +699,7 @@
         {
           "id": "rss-google-news-data-center--ivj9yd",
           "headline": "Minnesota data centers: Carver City Council approves 1-year moratorium - FOX 9 Minneapolis-St. Paul",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-11",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOEI2YW9lS0J1NlQzSDJja21xVUc3M1l4MWRzWnlUTzlIdURlVXdPOXVVU2oyWWxlTUFJUnczSHE1OGQwQzRUekMxSVp3emtlTXhCb0lNbG96eG95WEwtcldqLWpERFk5cHROYWdFU0hPZnd4QXhTbzhIMkpyRE9qekJEamx2aEpLUm9qa3liZGotT3ZGUUprUHVOVdIBoAFBVV95cUxQemxBWGtBQ1VQREhxUTVYeHlxYTRTcXVQby0xcUtyTU5NR3FnLVA4U3NjMkRxTnpIelZxTGxoNV9PYjlMV0xzdEV3VUttVUpwWDFpLTkzbWZnd1NtMFpOclFSYUg4ZHlOVHlaemJfMl9SLTI1Y1A2UjhtTWhneFBFal8wYjItY2NfeG1fUXhVd1RmaGMtSTdrUGpZQWw1bjJ4?oc=5",
           "summary": "Carver City Council approved a one-year moratorium on data centers in the city.",
@@ -708,7 +708,7 @@
         {
           "id": "rss-the-verge-policy-2r0poo",
           "headline": "How Iran out-shitposted the White House",
-          "source": "The Verge \u2014 Policy",
+          "source": "The Verge — Policy",
           "date": "2026-04-11",
           "url": "https://www.theverge.com/policy/910401/iran-war-propaganda-blackout-lego-ai-slop",
           "summary": "Iranian state media used AI-generated content featuring Lego animations and other synthetic imagery to spread messages about the conflict, which became more widely shared on social media than authentic documentation of casualties from U.S. and Israeli military strikes on Iran. The article examines how the Iranian regime shifted from earlier efforts to suppress footage of internal protests to deploying AI-generated propaganda during the conflict.",
@@ -716,8 +716,8 @@
         },
         {
           "id": "rss-the-verge-policy-ktpf5i",
-          "headline": "Google says Polymarket bets showing up in News was an \u2018error\u2019",
-          "source": "The Verge \u2014 Policy",
+          "headline": "Google says Polymarket bets showing up in News was an ‘error’",
+          "source": "The Verge — Policy",
           "date": "2026-04-11",
           "url": "https://www.theverge.com/tech/910691/google-news-polymarket-bets-error",
           "summary": "Google said that links to Polymarket betting markets appearing in Google News search results alongside legitimate news articles were an error and have been removed. A Google spokesperson stated the prediction market site never met the company's eligibility policies for news content inclusion.",
@@ -744,7 +744,7 @@
         {
           "id": "rss-google-news-data-center--jf688q",
           "headline": "Clyde considers data center moratorium, seeks public input - WLOS",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-10",
           "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQLVR6ck1ZRDNUSGZoU21XalU0MXc1MEJwUlh5ZEFSN0lpQ3FVNWxOMGxDckxTTWtjdDkyNmNwSzE2NXJyZmRDU09xSG5Xc0VkZmpyRFpoYVAtNFNOMHN5dUV3Y1p5bjZTZWU4N0V5Y1Vfb2syN0t6cnVaWkdtcHo5b3c1WHFXM29ZS09jbjBLSWRLSDhIYW9lLVFFRkdQMHB1U0g4eVhKYnFCaDRRSE44QnhkX1JEYUNQQzcyVENvZl9MZFhudEp6MVF2enNwN09VYkJjNEdZMjZMQTF2NzhGNWstLWJ5czAwbkhVVFRyQnVMMkdlQzEzWTdfdUN6OE0?oc=5",
           "summary": "Clyde is considering implementing a data center moratorium and is soliciting public feedback on the proposal.",
@@ -753,7 +753,7 @@
         {
           "id": "rss-google-news-ai-policy-i7bua1",
           "headline": "CoreWeave Announces Multi-Year Agreement With Anthropic - CoreWeave",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-10",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZzNKM1M4amJOOU5sWmFRRXZ4UWlqLXVRcWx4QWRaNHNEMnBLMXFEQzFISVY1eC1aOUJzUjBySUpocEFQaGE1V3JlN3ZiWDZFTl9fd3NRSE0yQzVWOE1MVlRjV1hudXA4MFpkR283Mlp5MmtBekc5WGlmb2J0YTRqREV3TXV5WnUza0JMbEdIQQ?oc=5",
           "summary": "CoreWeave announced a multi-year infrastructure agreement with Anthropic.",
@@ -762,7 +762,7 @@
         {
           "id": "rss-google-news-data-center--pl5316",
           "headline": "Community pushback prompts Sault Tribe leadership to adopt moratorium on data centers - Michigan Advance",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-10",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcks2TEw0S3lFRWxtWFF3TWV0dHdJa0EwZUU4ZGxRa3BHXzVJUjZhcnJ2akdDMThkTmRFNmkyNXRkVGpNWGYyVmlHZXFIX2t3clVjNjFzYlkzVVNtNThoRkNmTlAxYkQ2cFB1dHVWYk1OWG55bVJTMFd1SHlVQXZzRFY1cFV3V3lrYTdYY3NZSV9SNnd5ZEFjVFJnR0FrM09OTi1FeFN4REZ6QnJNSnFOUHBveWU5V0U0WkE4SnV5QldSYkU?oc=5",
           "summary": "The Sault Tribe leadership has adopted a moratorium on data centers following community opposition.",
@@ -771,7 +771,7 @@
         {
           "id": "rss-google-news-data-center--abn2js",
           "headline": "Apex Town Council to Hold Public Hearing on Proposed Data Center Moratorium - INDY Week",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-10",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNX1phQ0l1V2JRc2tWY2F3UWFhNTJaUWFUYlUwbktwVldlcHIxTWFJRmpoZkh1QlROeFhPTFZDMDRNajFCRWtsUjJGY2tmRG1DLVFGb3dMWjFuamtLamdvelRCODl6TENFWjd4RG9lOEM5S2QwcHJkaG53SVlIZVpGa1dHN1QtNk1uYXVtZ0llRXB1ZFFZWkdxTUtaTFRYenozZmlScQ?oc=5",
           "summary": "The Apex Town Council plans to hold a public hearing regarding a proposed moratorium on data center development.",
@@ -780,7 +780,7 @@
         {
           "id": "rss-google-news-data-center--55jmbb",
           "headline": "Landmark data center moratorium passes Maine Legislature - Maine Morning Star",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-10",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUGNYcnpnWGRDczlSSVlFa1Rlc2RPYnZWaURTZFNuWXpBRUY3VG1UUnRIeS1MYVhmNloyaWJYYndhRnVHU0M1MWN0eFBoa050LUhLWmhCRXhHNFRmOEN4dlF6eWpRcXpJUTFWZ1JiREVYYzVLaW1sSnRiZ1QwZDNqQkVDNHdsOUtWdHpPMkZhUm9ZdGtTNE1ZU1JXSldvdw?oc=5",
           "summary": "Maine's legislature passed a moratorium on data center development.",
@@ -789,7 +789,7 @@
         {
           "id": "rss-google-news-data-center--qw2squ",
           "headline": "Champaign Co. takes another step toward moratorium on data center proposal - WCIA.com",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-10",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbHBfclQ2dnlUUldkdmZPSDRqeXZuQWhqSjJxRU5vc2JwYV9sM1ZabjVPRjRabDNIV2ZVc0IwM1hURTRmTDVOQmQ0Z0ZXaEYyY3hiTWwxcmIxbnctbU9jeEVxYWNwNUZtU2JPQzBDUmFpZUhST3FPZTFIQ2RKTWNHbzdpRk1mUFdmLXVHbjlqb1hvU1F2V2pncjBmMkpvX01QVXB6Nlh0eHlUMC1mNWV1RVRYaWtRWVg30gG-AUFVX3lxTE01VEROZVQydllzV3NLbEtZOTNoaGg3N2hVRWRzUEw5M1VnUHZtNllTaHU4NlBmOE1IVUhLZFhhdUgtZFNjMG8xMjZ2MG5SaExJeTRVNG1rS1M4MUUzOUtXek0tS29peWItRVd4UmxMME1tcE5ueWhmbkV4WXFkb2lDSURpeXZoNEtWYnpPSTczWURBUTBDQU9jdzA3RDdGNU9fUHNPRkNKV3lWSml6dVpFbE9ucHdDdUxlWFRrTHc?oc=5",
           "summary": "Champaign County has advanced a proposal to impose a temporary moratorium on data center development.",
@@ -798,7 +798,7 @@
         {
           "id": "rss-ars-technica-policy-ir7lbx",
           "headline": "Californians sue over AI tool that records doctor visits",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-10",
           "url": "https://arstechnica.com/tech-policy/2026/04/californians-sue-over-ai-tool-that-records-doctor-visits/",
           "summary": "A proposed class-action lawsuit was filed against Sutter Health and MemorialCare alleging that the healthcare providers used Abridge AI to record and transcribe patient-doctor conversations without adequate patient consent in violation of state and federal law. The plaintiffs claim they were not clearly notified that their medical conversations would be captured, transmitted outside clinical settings, or processed by third-party systems.",
@@ -806,8 +806,8 @@
         },
         {
           "id": "rss-the-verge-policy-n0fxbh",
-          "headline": "The Iranian Lego AI video creators credit their virality to \u2018heart\u2019",
-          "source": "The Verge \u2014 Policy",
+          "headline": "The Iranian Lego AI video creators credit their virality to ‘heart’",
+          "source": "The Verge — Policy",
           "date": "2026-04-10",
           "url": "https://www.theverge.com/ai-artificial-intelligence/909948/explosive-media-lego-iran-war-trump-netanyahu",
           "summary": "An Iranian content creation group called Explosive Media has produced AI-generated Lego videos that have gone viral, particularly on social media platforms, depicting US military operations in a critical light and attributing their popularity to emotional resonance rather than state backing. The group claims to operate independently with about 10 members, though their prolific output and timing have led some observers to suspect ties to Iranian government media operations.",
@@ -834,7 +834,7 @@
         {
           "id": "rss-google-news-ai-policy-xcpki4",
           "headline": "Trustworthy agents in practice - Anthropic",
-          "source": "Google News \u2014 AI Policy",
+          "source": "Google News — AI Policy",
           "date": "2026-04-09",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKOXlKRVVEZjZFVnJsaUlIUGJ6dGJGSXpxRXJoX0F6dy1YM0hEZ1Fla3R6MUJjeHl1SVlHVGZBNGVDdjdOeWdjeU16Qy1rMUtsbnM3VnVqSy0zZWIzRmJXLXd0TQ?oc=5",
           "summary": "Anthropic has published or announced work related to implementing trustworthy AI agents in practical applications.",
@@ -843,7 +843,7 @@
         {
           "id": "rss-google-news-data-center--86rgkm",
           "headline": "Maine set to become first state with data center ban - CNBC",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-09",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE55Z2hOTWc4aFRLeElVZEp5ZkR1bWNYQnY0bnZITlBpZHBnNVctZG5zMlFCdFkzdFNTaE5wZ3phOGRjbVBmQ0V5UjFIeV9zYmo2ZV96NDlzalZaNW01aG9kZ0NodzdPT1BocEHSAW9BVV95cUxQSUc3dHExZjNzQldoaUZ2SnMycEVRN0RpYUJyX2NUVncxUHpqQVRlbFNmeHVwOEdHVVc0ZTZ0elhTblY0MWNMNHQzc29fOC1EdFZSOGQtUjY1Nm10ZGY4YlE1R0lOUVFBUXZuRXRPcWM?oc=5",
           "summary": "Maine is moving toward becoming the first U.S. state to implement a ban on data centers.",
@@ -852,7 +852,7 @@
         {
           "id": "rss-ars-technica-policy-u8t58c",
           "headline": "First man convicted under Take It Down Act kept making AI nudes after arrest",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-09",
           "url": "https://arstechnica.com/tech-policy/2026/04/first-man-convicted-under-take-it-down-act-kept-making-ai-nudes-after-arrest/",
           "summary": "An Ohio man became the first person convicted under the Take It Down Act after pleading guilty to creating and distributing non-consensual intimate images of at least 10 victims using AI tools and real photographs. The 37-year-old continued creating and sharing such images even after his initial arrest and while on pre-trial release, facing potential prison sentences of up to two to three years depending on whether the images depicted adults or minors.",
@@ -861,7 +861,7 @@
         {
           "id": "rss-ars-technica-policy-qpe10l",
           "headline": "Police corporal created AI porn from driver's license pics",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-09",
           "url": "https://arstechnica.com/tech-policy/2026/04/state-police-corporal-created-porn-deepfakes-from-drivers-license-photos/",
           "summary": "A Pennsylvania state police corporal pleaded guilty to creating over 3,000 AI-generated pornographic deepfakes using photos obtained from state driver's license databases and covert recordings, along with other felonies including possession of child sexual abuse material and theft. The case reflects a growing trend of deepfake sexual imagery abuse, following a similar incident involving high school students who created deepfakes of classmates.",
@@ -870,7 +870,7 @@
         {
           "id": "rss-ars-technica-policy-qu4k5a",
           "headline": "Trump-appointed judges refuse to block Trump blacklisting of Anthropic AI tech",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-09",
           "url": "https://arstechnica.com/tech-policy/2026/04/trump-appointed-judges-refuse-to-block-trump-blacklisting-of-anthropic-ai-tech/",
           "summary": "A federal appeals court panel refused to block the Trump administration's blacklisting of Anthropic AI but agreed to expedite oral arguments scheduled for May 19, while a separate federal district court judge had previously granted Anthropic a preliminary injunction in a related case. The ruling does not address the legal merits of whether the blacklisting violates the First Amendment or constitutes an unlawful supply-chain designation.",
@@ -879,7 +879,7 @@
         {
           "id": "rss-the-verge-policy-hs6odi",
           "headline": "Florida launches investigation into OpenAI",
-          "source": "The Verge \u2014 Policy",
+          "source": "The Verge — Policy",
           "date": "2026-04-09",
           "url": "https://www.theverge.com/policy/909557/openai-florida-investigation",
           "summary": "Florida Attorney General James Uthmeier has launched an investigation into OpenAI, citing concerns about national security risks, potential data access by foreign adversaries, and alleged links between ChatGPT and criminal activities including child safety violations and a 2025 shooting at Florida State University. Uthmeier announced that subpoenas related to the investigation will be issued forthcoming.",
@@ -888,7 +888,7 @@
         {
           "id": "rss-the-verge-policy-k4gryx",
           "headline": "John Deere will pay farmers $99 million over right-to-repair lawsuit",
-          "source": "The Verge \u2014 Policy",
+          "source": "The Verge — Policy",
           "date": "2026-04-09",
           "url": "https://www.theverge.com/policy/909524/john-deere-class-action-settlement-farmers",
           "summary": "John Deere agreed to pay farmers $99 million to settle a class action lawsuit over restricted access to repair materials and will provide repair resources on a subscription basis for 10 years. The settlement also requires the company to enable offline diagnostics and reprogramming by end of 2026, allowing equipment owners to avoid authorized dealers for repairs.",
@@ -897,7 +897,7 @@
         {
           "id": "rss-google-news-data-center--ilc6cj",
           "headline": "Calvert County Strikes Down Data Center Moratorium In 2-3 Vote - The BayNet",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-08",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSkNTUWlRWGpRMmNHVmFuczhobmc1NWpVcHJmaHRhdTBXYmZrOHpFQ1lGSXYzQzAyNkx2UFlDS0hIMlQ4WTV1UGJYMjU3Z19iazdGVWNMYWdBVXNhWW93QVdsTWJ6dTl0bDlZNGtPYk82WmtXaEIxNERVWHhGVFZGQ1NlZU1hOVhLWUJ3Q3pR?oc=5",
           "summary": "Calvert County commissioners voted 2-3 to eliminate a moratorium on data center development in the county.",
@@ -906,7 +906,7 @@
         {
           "id": "rss-ars-technica-policy-gj32lj",
           "headline": "To beat Altman in court, Musk offers to give all damages to OpenAI nonprofit",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-08",
           "url": "https://arstechnica.com/tech-policy/2026/04/to-beat-altman-in-court-musk-offers-to-give-all-damages-to-open-ai-nonprofit/",
           "summary": "Elon Musk amended his lawsuit against OpenAI and CEO Sam Altman to seek no personal damages, instead requesting that any recovered funds be returned to OpenAI's nonprofit arm and that company leadership be removed. The legal strategy shift follows a judge's rejection of punitive damages and other remedies, with Musk arguing the case aims to prevent OpenAI's conversion from a nonprofit to private interests.",
@@ -915,7 +915,7 @@
         {
           "id": "rss-ars-technica-policy-ouppta",
           "headline": "LinkedIn scanning users' browser extensions sparks controversy and two lawsuits",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-08",
           "url": "https://arstechnica.com/tech-policy/2026/04/linkedin-scanning-users-browser-extensions-sparks-controversy-and-two-lawsuits/",
           "summary": "Two class action lawsuits were filed against LinkedIn in federal court on Monday, alleging the company inadequately disclosed its practice of scanning users' browser extensions to detect policy violations, with plaintiffs claiming the disclosure in LinkedIn's privacy policy is insufficient and that the company shares extension data with third parties. LinkedIn denies the allegations, stating it clearly discloses the scanning practice in its privacy policy and performs the scans solely to detect abuse and maintain site stability.",
@@ -960,7 +960,7 @@
         {
           "id": "rss-google-news-data-center--pfh2ib",
           "headline": "Maine House advances Sachs bill to establish a moratorium on data centers - Maine.gov",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-07",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSVkyVHpqRGw5aGEwcnRtUlA2Q3NtTEJVRWlUQ3JfQWsxMzdPWXdVaTVRUG01RmUyTEtJTGhHNXM1NVlpbVVSVnNjUDgzOGtQdFZnNmhNbmZEMkcwMmVVS1I1bG0yRmtNWnlFWHpvaDh0NmluVVZDeldYazhpcmxTNzA1N3djU2FVNXU1YlgyX29CWU9sOWppRXg4Rkp1Vm9mS2RBNG9R?oc=5",
           "summary": "Maine's House of Representatives moved forward with legislation sponsored by Sachs that would impose a moratorium on data center development in the state.",
@@ -969,7 +969,7 @@
         {
           "id": "rss-ars-technica-policy-y4mrc4",
           "headline": "What the heck is wrong with our AI overlords?",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-07",
           "url": "https://arstechnica.com/tech-policy/2026/04/what-the-heck-is-wrong-with-our-ai-overlords/",
           "summary": "An Ars Technica opinion piece critiques statements by OpenAI CEO Sam Altman about AI's future benefits, arguing that his optimistic framing overlooks potential downsides and reflects a broader pattern of uncritical technological utopianism among Silicon Valley leaders. The author contrasts Altman's vision of accelerating progress and prosperity with skepticism about whether such outcomes will materialize.",
@@ -987,7 +987,7 @@
         {
           "id": "rss-google-news-data-center--aupnt0",
           "headline": "Maine House advances data center moratorium - Maine Morning Star",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-06",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQV91NmxkelR4dWFTR2NXeW51WWlvcEhLdHNsNnU0bFY2N2ZMQURtUmVjYXhyd1FMZl9qRTM2dXprZjFVc2pyVm40cjRwLVV2ME5lOGZDMGdaR1h5ZXBKeFpxSmxpblYycDhjRjZjTy1FX1FGb0pJT3NxRFBSS2MwbWdpUmhQa2ZQeUpPSg?oc=5",
           "summary": "The Maine House of Representatives advanced legislation imposing a moratorium on data centers.",
@@ -995,8 +995,8 @@
         },
         {
           "id": "rss-ars-technica-policy-tvtdp1",
-          "headline": "\u201cThe problem is Sam Altman\u201d: OpenAI insiders don\u2019t trust CEO",
-          "source": "Ars Technica \u2014 Policy",
+          "headline": "“The problem is Sam Altman”: OpenAI insiders don’t trust CEO",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-06",
           "url": "https://arstechnica.com/tech-policy/2026/04/the-problem-is-sam-altman-openai-insiders-dont-trust-ceo/",
           "summary": "OpenAI released policy recommendations for managing advanced AI risks on the same day The New Yorker published an investigation alleging CEO Sam Altman has a history of deception and prioritizes personal advancement over organizational safety, based on interviews with over 100 insiders and internal communications. Altman disputed or claimed to have forgotten specific incidents cited in the report, attributing some shifts in his positions to changes in the AI landscape.",
@@ -1014,7 +1014,7 @@
         {
           "id": "rss-ars-technica-policy-d0nfw",
           "headline": "Trump ignores biggest reasons his AI data center buildout is failing",
-          "source": "Ars Technica \u2014 Policy",
+          "source": "Ars Technica — Policy",
           "date": "2026-04-03",
           "url": "https://arstechnica.com/tech-policy/2026/04/sad-trumps-ai-data-center-push-is-failing-blame-his-own-tariffs/",
           "summary": "Trump's AI data center expansion faces significant delays due to supply chain constraints on power infrastructure components, exacerbated by tariffs on Chinese imports, while local and state-level moratoriums on data center construction are gaining traction in response to community concerns about electricity costs and environmental impact.",
@@ -1041,7 +1041,7 @@
         {
           "id": "rss-google-news-data-center--tw977l",
           "headline": "Maine Is About to Become the First State to Ban New Data Centers - WSJ",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-04-02",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91LXl0b2xqMHZtbUtVMk96SzE5RFBlbnZIWFBzUzhqMVZuU2xNQlRfNEJRTFlGcnFwaWpCTERmMlNVTEZEbWs4Q1NOTDZaUk9GazIwY0lDS25iZWZIdUZGbjhRNndHa3U1OUE?oc=5",
           "summary": "Maine is set to become the first state to implement a ban on new data center construction.",
@@ -1062,7 +1062,7 @@
           "source": "NPR Technology",
           "date": "2026-04-02",
           "url": "https://www.npr.org/2026/04/02/nx-s1-5768216/whats-next-for-meta-after-trial-losses-layoffs",
-          "summary": "Meta has lost two major court cases\u2014one in New Mexico over child sexual exploitation on its platforms and one in Los Angeles regarding harms to a young user's mental health\u2014and announced layoffs of approximately 700 employees, primarily from its Reality Labs division that oversees Metaverse products. The company plans to appeal the verdicts and has pivoted toward significant investment in artificial intelligence, moving away from its earlier emphasis on virtual reality development.",
+          "summary": "Meta has lost two major court cases—one in New Mexico over child sexual exploitation on its platforms and one in Los Angeles regarding harms to a young user's mental health—and announced layoffs of approximately 700 employees, primarily from its Reality Labs division that oversees Metaverse products. The company plans to appeal the verdicts and has pivoted toward significant investment in artificial intelligence, moving away from its earlier emphasis on virtual reality development.",
           "summarySource": "article"
         },
         {
@@ -1086,7 +1086,7 @@
         {
           "id": "rss-google-news-data-center--s9iecv",
           "headline": "Sanders, Ocasio-Cortez push bill to impose AI data center moratorium - AP News",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-03-25",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMGc2TXVvUUpKdTh0bGE3MEE5Q3JwTlpJMFF1OWJjV0hsbEttTk8yN0h6UHNQVm9UNFRNa2l2NVRIUmJlLVdoUE5icTFJRmNBNWN3UXh4RFFROGlOekkxQktJWko2ellCZUZOc1RuUVE2ZGozUUdqVkF6cTJBcUwteWJNZUdvXzhyaEU1ZndKUEFnNS1BN09QWTRYM3lXbHRf?oc=5",
           "summary": "Senators Bernie Sanders and Representative Alexandria Ocasio-Cortez have introduced legislation that would impose a moratorium on artificial intelligence data centers.",
@@ -1095,7 +1095,7 @@
         {
           "id": "rss-google-news-data-center--nfulg3",
           "headline": "A movement to ban data centers gains steam across the U.S. - The Washington Post",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-03-25",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNV2JTNkR5QXdzM2ItTnRZS3ZELTE1NElpLU02V1ZvX0FFT2UtNjBUcno5OUJja3RPSGFQdDBIZVQ1X3JIWF9SZ2ZRbl9TeGVuQWxaM0dLX3dVMm5GeGhITkp1WXBDR2pjLUxvZkRTeHdmVGw3d1lRVDRacGQ4MXNwbHZPSGtjM0NBODdBTDY1UTJ2Mm43NWFVczB6UTQ?oc=5",
           "summary": "Multiple U.S. communities are pursuing restrictions on new data center construction.",
@@ -1104,7 +1104,7 @@
         {
           "id": "rss-google-news-data-center--ayao6n",
           "headline": "Exclusive: Sen. Warner calls AI data center moratorium championed by AOC \"idiocy\" - Axios",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-03-25",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPd2luQ2RyVUR5N0tKNzJGVWJTc0R2WTNvaXBhUnBRREVCa1lKS3dpUWhqYURFRDctYXVJb0N2OFAwZ1BibXE0OW9FYkU3OEY5OE5neU9rZHVkeHpObjZmME91dFJYRG1lcnBkaFVGbWZndGJVNHpHazVNT1FuX1p3ZnBR?oc=5",
           "summary": "Senator Warner criticized proposed AI data center moratorium legislation, describing it with strong language in an interview with Axios.",
@@ -1113,7 +1113,7 @@
         {
           "id": "rss-google-news-data-center--tot17p",
           "headline": "Bernie Sanders and AOC introduce bill to pause building of new datacenters | US news - The Guardian",
-          "source": "Google News \u2014 Data Center Moratoriums",
+          "source": "Google News — Data Center Moratoriums",
           "date": "2026-03-25",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRC1nUlBLQkpxc2Jvc0k3T1o5OERwcGtybnBlN0JNeVNBd2NKSHFuR3lCZW93UmpsLWt1TTFEbDRjdzdOZndzV01kWHFOckV0Q2tzTWtncS1oUmhuT0E4YkY1WXhwUTdBc2ZYS2dOM0tDU3ktSmpQMUVaYVBUakp2eTNyLWs?oc=5",
           "summary": "Bernie Sanders and Alexandria Ocasio-Cortez introduced legislation proposing a pause on the construction of new data centers.",
@@ -1407,7 +1407,7 @@
           "source": "Snell & Wilmer / Lexology",
           "date": "2026-03-28",
           "url": "https://www.swlaw.com/publication/building-in-arizonas-data-center-boom-how-federal-executive-orders-state-regulation-and-national-security-policy-are-reshaping-the-rules-for-developers/",
-          "summary": "Arizona HB 2756 prohibits data center operators from shifting grid infrastructure costs to utility customers, constraining project economics in a state where federal executive orders are accelerating development on federal lands. The legislation represents one of several state-level regulatory controls\u2014including water ordinances and zoning restrictions\u2014that remain binding constraints on data center projects despite federal permitting reforms.",
+          "summary": "Arizona HB 2756 prohibits data center operators from shifting grid infrastructure costs to utility customers, constraining project economics in a state where federal executive orders are accelerating development on federal lands. The legislation represents one of several state-level regulatory controls—including water ordinances and zoning restrictions—that remain binding constraints on data center projects despite federal permitting reforms.",
           "summarySource": "article"
         },
         {
@@ -1603,7 +1603,7 @@
           "source": "Privacy Daily",
           "date": "2026-03-16",
           "url": "https://privacy-daily.com/article/2026/03/16/connecticut-committee-clears-privacy-ai-bills-2603160066",
-          "summary": "Connecticut's General Law Committee approved two bills\u2014SB-4 and SB-5\u2014that would amend the state's privacy law and regulate AI and online safety, with provisions including a data deletion mechanism similar to California's, mandatory algorithmic pricing disclosures, and a geolocation data sales ban. The bills were advanced to the next legislative stage following a committee hearing earlier in March.",
+          "summary": "Connecticut's General Law Committee approved two bills—SB-4 and SB-5—that would amend the state's privacy law and regulate AI and online safety, with provisions including a data deletion mechanism similar to California's, mandatory algorithmic pricing disclosures, and a geolocation data sales ban. The bills were advanced to the next legislative stage following a committee hearing earlier in March.",
           "summarySource": "article"
         },
         {
@@ -1982,7 +1982,7 @@
           "source": "WFYI Public Media",
           "date": "2026-03-02",
           "url": "https://www.wfyi.org/news/articles/data-center-legislation-indiana-general-assembly-2026",
-          "summary": "Two Indiana bills aimed at regulating data center development\u2014HB 1245 requiring an electricity demand study and SB 257\u2014died without hearings during the 2026 legislative session, despite over 200 residents attending a public hearing to urge stronger oversight of the industry's expansion in the state.",
+          "summary": "Two Indiana bills aimed at regulating data center development—HB 1245 requiring an electricity demand study and SB 257—died without hearings during the 2026 legislative session, despite over 200 residents attending a public hearing to urge stronger oversight of the industry's expansion in the state.",
           "summarySource": "article"
         },
         {
@@ -2348,7 +2348,7 @@
           "source": "WBUR News",
           "date": "2026-04-06",
           "url": "https://www.wbur.org/news/2026/04/06/data-centers-ai-massachusetts-pollution-pushback",
-          "summary": "Lowell, Massachusetts unanimously voted for a one-year moratorium on data center development, and Everett residents are campaigning for a ban, as communities across the country increasingly oppose facilities citing concerns about noise, air pollution, water consumption, and strain on electrical grids. The facilities' growing energy demand\u2014U.S. data centers consumed as much electricity in 2024 as Pakistan uses annually\u2014has prompted opposition from over 140 activist groups in 24 states and calls from Senator Bernie Sanders for a nationwide construction pause.",
+          "summary": "Lowell, Massachusetts unanimously voted for a one-year moratorium on data center development, and Everett residents are campaigning for a ban, as communities across the country increasingly oppose facilities citing concerns about noise, air pollution, water consumption, and strain on electrical grids. The facilities' growing energy demand—U.S. data centers consumed as much electricity in 2024 as Pakistan uses annually—has prompted opposition from over 140 activist groups in 24 states and calls from Senator Bernie Sanders for a nationwide construction pause.",
           "summarySource": "article"
         },
         {
@@ -2393,7 +2393,7 @@
         },
         {
           "id": "rss-planet-detroit-tis5k8",
-          "headline": "Data center ordinance development continues in Washington Township: \u2018There is a limit to everything\u2019",
+          "headline": "Data center ordinance development continues in Washington Township: ‘There is a limit to everything’",
           "source": "Planet Detroit",
           "date": "2026-04-13",
           "url": "https://planetdetroit.org/2026/04/washington-township-weighs-data-center-impacts/",
@@ -2442,7 +2442,7 @@
           "source": "Michigan Advance",
           "date": "2026-02-27",
           "url": "https://michiganadvance.com/briefs/wortz-spearheads-bipartisan-effort-to-halt-data-center-construction-in-michigan/",
-          "summary": "Three Michigan House bills\u2014HBs 5594, 5595, and 5596\u2014propose halting the construction of new data centers in the state.",
+          "summary": "Three Michigan House bills—HBs 5594, 5595, and 5596—propose halting the construction of new data centers in the state.",
           "summarySource": "headline-only"
         },
         {
@@ -2757,7 +2757,7 @@
           "source": "Transparency Coalition AI",
           "date": "2026-02-09",
           "url": "https://www.transparencycoalition.ai/news/guide-to-nebraska-ai-chatbot-safety-bills-lb939-lb1185",
-          "summary": "Nebraska introduced two bills in its 2026 legislative session\u2014LB 1185 and LB 939\u2014that would impose safety requirements on AI chatbot operators serving minors, including mandatory disclosure that users are interacting with AI, restrictions on emotionally manipulative features, and safeguards against sexually explicit content. LB 939 would restrict AI chatbots with human-like features to users 18 and older, while LB 1185 would establish broader safety protocols applicable to all users and specific protections for minors.",
+          "summary": "Nebraska introduced two bills in its 2026 legislative session—LB 1185 and LB 939—that would impose safety requirements on AI chatbot operators serving minors, including mandatory disclosure that users are interacting with AI, restrictions on emotionally manipulative features, and safeguards against sexually explicit content. LB 939 would restrict AI chatbots with human-like features to users 18 and older, while LB 1185 would establish broader safety protocols applicable to all users and specific protections for minors.",
           "summarySource": "article"
         }
       ]
@@ -3327,7 +3327,7 @@
           "source": "Providence Business News / ON Worldwide",
           "date": "2026-02-13",
           "url": "https://www.onworldwide.com/index.php/news-articles-archives/5971-kennedy-bill-would-regulate-burgeoning-data-center-industry-in-rhode-island",
-          "summary": "Unable to provide summary \u2014 the provided article body does not contain substantive information about Rhode Island House Bill 7331 or data center energy costs and ratepayer protections. The text appears to be a news aggregation page containing unrelated local stories.",
+          "summary": "Unable to provide summary — the provided article body does not contain substantive information about Rhode Island House Bill 7331 or data center energy costs and ratepayer protections. The text appears to be a news aggregation page containing unrelated local stories.",
           "summarySource": "article"
         },
         {
@@ -3523,7 +3523,7 @@
           "source": "The Texas Tribune",
           "date": "2026-04-08",
           "url": "https://www.texastribune.org/2026/04/08/texas-data-centers-sales-tax-break-billion-dollars/",
-          "summary": "Texas will lose an estimated $3.2 billion in sales tax revenue over two years due to a data center tax exemption, with annual losses projected to exceed $1.3 billion and continue growing as AI-driven facility expansion accelerates. State lawmakers are considering legislation to limit or repeal the exemption, which has grown from costing $5\u201330 million annually in the early 2010s to becoming one of the nation's most expensive tax incentive programs.",
+          "summary": "Texas will lose an estimated $3.2 billion in sales tax revenue over two years due to a data center tax exemption, with annual losses projected to exceed $1.3 billion and continue growing as AI-driven facility expansion accelerates. State lawmakers are considering legislation to limit or repeal the exemption, which has grown from costing $5–30 million annually in the early 2010s to becoming one of the nation's most expensive tax incentive programs.",
           "summarySource": "article"
         },
         {
@@ -3572,7 +3572,7 @@
           "source": "Deseret News",
           "date": "2026-04-08",
           "url": "https://www.deseret.com/politics/2026/04/08/trump-artificial-intelligence-federal-framework-stalls-in-congress-as-utah-lawmakers-look-for-bipartisan-solution-modeled-on-utah-ai-policy-lab/",
-          "summary": "Utah Rep. Mike Kennedy is proposing that Congress adopt Utah's \"sandbox\" approach to AI policy\u2014which allows companies to operate under regulatory oversight before rules are finalized\u2014as a way to break the congressional deadlock over President Trump's national AI framework. Kennedy's proposal follows the success of Utah's state-level AI policy office, which has drafted liability agreements with companies and created regulations based on industry feedback.",
+          "summary": "Utah Rep. Mike Kennedy is proposing that Congress adopt Utah's \"sandbox\" approach to AI policy—which allows companies to operate under regulatory oversight before rules are finalized—as a way to break the congressional deadlock over President Trump's national AI framework. Kennedy's proposal follows the success of Utah's state-level AI policy office, which has drafted liability agreements with companies and created regulations based on industry feedback.",
           "summarySource": "article"
         },
         {
@@ -4073,7 +4073,7 @@
         },
         {
           "id": "eu-cloud-ai-act",
-          "headline": "EU Cloud and AI Development Act Aims to Triple Data Center Capacity in 5\u20137 Years",
+          "headline": "EU Cloud and AI Development Act Aims to Triple Data Center Capacity in 5–7 Years",
           "source": "EU Cloud AI Act Tracker",
           "date": "2026-04-08",
           "url": "https://www.eu-cloud-ai-act.com/"
