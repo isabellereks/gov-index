@@ -92,12 +92,16 @@ export default function AsiaMap({
               .filter((g) => ASIA_CODES.has(parseInt(g.id, 10)))
               // Render selected last so its stroke sits on top of neighbours.
               .sort((a, b) => {
-                const aSel = (a.id as string) === selectedGeoId;
-                const bSel = (b.id as string) === selectedGeoId;
+                // World-atlas pads ISO codes to 3 digits ("036"); our entity
+                // DB stores them unpadded ("36"). Normalize so lookups match.
+                const aId = String(parseInt(a.id as string, 10));
+                const bId = String(parseInt(b.id as string, 10));
+                const aSel = aId === selectedGeoId;
+                const bSel = bId === selectedGeoId;
                 return aSel === bSel ? 0 : aSel ? 1 : -1;
               })
               .map((geo) => {
-                const id = geo.id as string;
+                const id = String(parseInt(geo.id as string, 10));
                 const name = geo.properties.name as string;
                 const ent = getEntity(id, "asia");
                 const interactive = ent !== null;

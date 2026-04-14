@@ -27,7 +27,11 @@ import {
   DIMENSION_TAGS,
 } from "@/lib/dimensions";
 import { ALL_FACILITIES } from "@/lib/datacenters";
-import { STANCE_LABEL, STATE_FIPS } from "@/types";
+import { plantsInState } from "@/lib/energy-data";
+import { FUEL_COLOR, FUEL_LABEL, collapseFuel } from "@/lib/energy-colors";
+import type { FuelType } from "@/types";
+import { findRelatedFacilities } from "@/lib/action-facility-link";
+import { IMPACT_TAG_LABEL, STANCE_LABEL, STATE_FIPS } from "@/types";
 import SidePanel from "@/components/panel/SidePanel";
 import DepthStepper from "@/components/ui/DepthStepper";
 import TopToolbar from "@/components/ui/TopToolbar";
@@ -84,7 +88,11 @@ function countyStance(actions: MunicipalAction[]): StanceType {
   return "none";
 }
 
-function actionToLegislation(a: MunicipalAction, idx: number): Legislation {
+function actionToLegislation(
+  a: MunicipalAction,
+  idx: number,
+  relatedFacilityIds?: string[],
+): Legislation {
   return {
     id: `county-action-${idx}`,
     billCode: "Local",
@@ -96,11 +104,21 @@ function actionToLegislation(a: MunicipalAction, idx: number): Legislation {
     category: "data-center-siting",
     updatedDate: a.date,
     sourceUrl: a.sourceUrl,
+    ...(relatedFacilityIds && relatedFacilityIds.length > 0
+      ? { relatedFacilityIds }
+      : {}),
   };
 }
 
 function municipalityToEntity(m: MunicipalEntity): Entity {
   const dcStance = countyStance(m.actions);
+  // Match each action to nearby data centers (same state) via keyword
+  // search on operator + location. This gives us the action → facility
+  // edge used inside BillExpanded and the facility → actions edge used
+  // inside FacilityDetail.
+  const stateFacilities = ALL_FACILITIES.filter(
+    (f) => f.state === m.state,
+  );
   return {
     id: `muni-${m.id}`,
     geoId: m.fips,
@@ -112,7 +130,9 @@ function municipalityToEntity(m: MunicipalEntity): Entity {
     stanceDatacenter: dcStance,
     stanceAI: dcStance,
     contextBlurb: m.contextBlurb,
-    legislation: m.actions.map(actionToLegislation),
+    legislation: m.actions.map((a, idx) =>
+      actionToLegislation(a, idx, findRelatedFacilities(a, stateFacilities)),
+    ),
     keyFigures: [],
     news: [],
   };
@@ -231,6 +251,11 @@ export default function MapShell({
   const [selectedFacility, setSelectedFacility] = useState<DataCenter | null>(
     null,
   );
+  // Mid-drill animation target. While set, USStatesMap lifts that state
+  // (scales it up, fades the rest) before naView flips to "counties" and
+  // CountyMap takes over with its own zoom-in. Gives the puzzle-piece
+  // "this state breaks free and we focus on it" feel.
+  const [drillingTo, setDrillingTo] = useState<string | null>(null);
 
   // Forward-declared so the hover gates below can read it. Filled in
   // further down where the swipe gesture state actually lives.
@@ -433,10 +458,24 @@ export default function MapShell({
 
   const handleDoubleClickUsState = (stateName: string) => {
     if (getMunicipalitiesByState(stateName).length > 0) {
-      handleViewCounties(stateName);
+      stageCountyDrill(stateName);
     } else {
       handleSelectUsState(stateName);
     }
+  };
+
+  // Two-phase drill: first lift the target state in USStatesMap, then
+  // (after the lift settles) flip to CountyMap which runs its own
+  // zoom-in. Total perceived motion ~1s.
+  const DRILL_LIFT_MS = 360;
+  const stageCountyDrill = (stateName: string) => {
+    setDrillingTo(stateName);
+    window.setTimeout(() => {
+      handleViewCounties(stateName);
+      // Reset on the next frame so the fade-out doesn't briefly ghost
+      // back over CountyMap.
+      requestAnimationFrame(() => setDrillingTo(null));
+    }, DRILL_LIFT_MS);
   };
 
   const handleViewCounties = (stateName: string) =>
@@ -475,7 +514,7 @@ export default function MapShell({
       naView === "states" &&
       getMunicipalitiesByState(geoId).length > 0
     ) {
-      handleViewCounties(geoId);
+      stageCountyDrill(geoId);
     }
   };
 
@@ -651,6 +690,63 @@ export default function MapShell({
     region === "na" &&
     naView === "countries" &&
     selectedEntity?.canDrillDown === true;
+
+  // Show "View local actions →" in the panel when the selected US state
+  // has county-level municipal data. Gives a discoverable entry point
+  // that doesn't rely on the user guessing the double-click gesture.
+  const showViewCountiesButton =
+    region === "na" &&
+    naView === "states" &&
+    selectedGeoId !== null &&
+    getMunicipalitiesByState(selectedGeoId).length > 0;
+
+  // Aggregate the selected state's county actions into Legislation rows
+  // for the sidebar's "Local" tab. This lets users browse local actions
+  // without drilling — the zoom is for folks who want the geographic
+  // layout, not a required step.
+  const stateLocalActions: Legislation[] = useMemo(() => {
+    if (region !== "na" || naView !== "counties") return [];
+    const stateName = selectedStateName ?? selectedGeoId;
+    if (!stateName) return [];
+    const munis = getMunicipalitiesByState(stateName);
+    if (munis.length === 0) return [];
+    const stateFacilities = ALL_FACILITIES.filter(
+      (f) => f.state === stateName,
+    );
+    const rows: Legislation[] = [];
+    let idx = 0;
+    for (const m of munis) {
+      for (const a of m.actions) {
+        const base = actionToLegislation(
+          a,
+          idx++,
+          findRelatedFacilities(a, stateFacilities),
+        );
+        // Prefix county name so each row is identifiable when the list
+        // is flattened across many counties.
+        rows.push({
+          ...base,
+          title: `${m.name} · ${base.title}`,
+        });
+      }
+    }
+    // Enacted first, then under-review, proposed, failed. Within each,
+    // most recent updatedDate wins.
+    const order: Record<string, number> = {
+      Enacted: 4,
+      Floor: 3,
+      Committee: 2,
+      Filed: 1,
+      "Carried Over": 0,
+      Dead: -1,
+    };
+    rows.sort((a, b) => {
+      const diff = (order[b.stage] ?? 0) - (order[a.stage] ?? 0);
+      if (diff !== 0) return diff;
+      return (b.updatedDate ?? "").localeCompare(a.updatedDate ?? "");
+    });
+    return rows;
+  }, [region, naView, selectedGeoId, selectedStateName]);
 
   const regionIdx = REGION_ORDER.indexOf(region);
 
@@ -979,10 +1075,13 @@ export default function MapShell({
     };
 
     const swipeRegion = (dir: 1 | -1) => {
-      const len = REGION_ORDER.length;
+      // Clamp at the ends instead of wrapping. The wrap (Asia → NA) jumps
+      // halfway across the globe, which trackpad inertia turns into a
+      // double-fire and feels glitchy. Hitting a wall at Asia is more
+      // predictable.
       const idx = REGION_ORDER.indexOf(region);
-      const next = (idx + dir + len) % len;
-      if (next === idx) return false;
+      const next = idx + dir;
+      if (next < 0 || next >= REGION_ORDER.length) return false;
       handleRegionChange(REGION_ORDER[next]);
       return true;
     };
@@ -1169,6 +1268,7 @@ export default function MapShell({
                     onHoverFacility={handleHoverFacility}
                     onLeaveFacility={handleLeaveFacility}
                     onSelectFacility={handleSelectFacility}
+                    drillingTo={drillingTo}
                   />
                 )}
                 {naView === "counties" && selectedStateName && (
@@ -1220,6 +1320,12 @@ export default function MapShell({
         entity={selectedEntity}
         showViewStatesButton={showViewStatesButton}
         onViewStates={handleViewStates}
+        showViewCountiesButton={showViewCountiesButton}
+        onViewCounties={
+          selectedGeoId
+            ? () => stageCountyDrill(selectedGeoId)
+            : undefined
+        }
         visibility={chromeOpacity}
         size={panelSize}
         onSizeChange={setExplicitPanelSize}
@@ -1228,6 +1334,7 @@ export default function MapShell({
         onCloseFacility={handleCloseFacility}
         onSelectFacility={handleSelectFacility}
         lens={lens}
+        localActions={stateLocalActions}
       />
 
       {/* Top toolbar — region tabs + search trigger + ?  shortcut help.
@@ -1313,6 +1420,9 @@ export default function MapShell({
                   Epoch AI (CC-BY) · research
                 </p>
               </div>
+              {region === "na" && naView === "counties" && selectedStateName && (
+                <PowerPlantLegend stateName={selectedStateName} />
+              )}
             </div>
           </div>
         </div>
@@ -1321,6 +1431,133 @@ export default function MapShell({
       {/* Tooltip rendered OUTSIDE the slide rail so its position:fixed
           is relative to the viewport, not the transformed rail. */}
       {tooltip && !hoveredFacility && (() => {
+        // ─── County hover (rich municipality card) ────────────────────
+        // Rendered inside the same tooltip slot as the state/country
+        // card so positioning and z-index stay aligned. Matches the
+        // state card's visual language: small header row, muted context
+        // blurb, compact status rows, a footer hint.
+        if (tooltip.countyFips) {
+          const muni = getMunicipalityByFips(tooltip.countyFips);
+          if (muni) {
+            const stance = countyStance(muni.actions);
+            const stanceDot = STANCE_HEX[stance];
+            const actionCount = muni.actions.length;
+            const topActions = [...muni.actions]
+              .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""))
+              .slice(0, 3);
+            const blurb = (muni.contextBlurb ?? "").trim();
+            const firstSentence = blurb.match(/^[^.!?]+[.!?]/)?.[0] ?? blurb;
+            const clipped =
+              firstSentence.length > 140
+                ? `${firstSentence.slice(0, 137).trimEnd()}…`
+                : firstSentence;
+            const concerns = muni.concerns ?? [];
+            const visibleConcerns = concerns.slice(0, 4);
+            const hiddenConcerns = concerns.length - visibleConcerns.length;
+
+            return (
+              <div
+                className="fixed pointer-events-none z-50 w-[19rem]"
+                style={{ left: tooltip.x + 14, top: tooltip.y + 14 }}
+              >
+                <div
+                  className="rounded-xl bg-white/92 backdrop-blur-2xl border border-black/[.04] px-3.5 py-3"
+                  style={{
+                    boxShadow:
+                      "0 6px 24px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.05)",
+                  }}
+                >
+                  {/* Header — name + stance label in muted color, same
+                      shape as the state card's header. */}
+                  <div className="flex items-baseline justify-between gap-3">
+                    <span className="text-[13px] font-semibold text-ink tracking-tight truncate">
+                      {muni.name}
+                    </span>
+                    <span className="flex items-center gap-1.5 text-[11px] text-muted tracking-tight whitespace-nowrap">
+                      <span
+                        className="w-1.5 h-1.5 rounded-full"
+                        style={{ backgroundColor: stanceDot }}
+                        aria-hidden
+                      />
+                      {STANCE_LABEL[stance]}
+                    </span>
+                  </div>
+
+                  {clipped && (
+                    <p className="mt-1.5 text-[12px] text-ink/70 tracking-tight leading-[1.45]">
+                      {clipped}
+                    </p>
+                  )}
+
+                  {/* Issues — small muted chips, the "why this matters"
+                      signal. Capped at 4 with "+N more" overflow. */}
+                  {visibleConcerns.length > 0 && (
+                    <div className="mt-2.5 flex flex-wrap gap-1">
+                      {visibleConcerns.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-[10.5px] text-muted bg-black/[.04] px-2 py-0.5 rounded-full tracking-tight"
+                        >
+                          {IMPACT_TAG_LABEL[tag]}
+                        </span>
+                      ))}
+                      {hiddenConcerns > 0 && (
+                        <span className="text-[10.5px] text-muted/70 px-1 py-0.5 tracking-tight">
+                          +{hiddenConcerns}
+                        </span>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Actions — top 3 most recent, each with stance dot,
+                      title (2-line clamp), and a muted date tag. */}
+                  {topActions.length > 0 && (
+                    <div className="mt-2.5 pt-2.5 border-t border-black/[.05] flex flex-col gap-1.5">
+                      {topActions.map((a, i) => {
+                        const color = STANCE_HEX[actionStance(a.status)];
+                        return (
+                          <div
+                            key={i}
+                            className="flex items-start gap-2 text-[12px] tracking-tight leading-snug"
+                          >
+                            <span
+                              className="mt-[5px] w-1.5 h-1.5 rounded-full flex-shrink-0"
+                              style={{ backgroundColor: color }}
+                              aria-hidden
+                            />
+                            <div className="flex-1 min-w-0">
+                              <div className="text-ink/85 line-clamp-2">
+                                {a.title}
+                              </div>
+                              {a.date && (
+                                <div className="text-[10.5px] text-muted/80 mt-0.5 tracking-tight">
+                                  {a.date}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {/* Footer — total action count, replaces the old
+                      "Click to open" hint. */}
+                  <div className="mt-2.5 text-[11px] text-muted tracking-tight">
+                    {actionCount} total {actionCount === 1 ? "action" : "actions"}
+                    {actionCount > topActions.length && (
+                      <span className="text-muted/70">
+                        {" "}
+                        · {actionCount - topActions.length} more on open
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          }
+        }
+
         const ent = tooltip.geoId && tooltip.region
           ? getEntity(tooltip.geoId, tooltip.region)
           : null;
@@ -1497,22 +1734,31 @@ export default function MapShell({
                   )}
                 </div>
               )}
+
+              {tooltip.drillable && (
+                <div className="mt-2 text-[11px] text-ink/60 tracking-tight">
+                  Double-click to see counties →
+                </div>
+              )}
             </div>
           </div>
         );
       })()}
 
       {/* Rich facility detail card — overrides the plain tooltip when
-          a data center dot is being hovered. Hidden while a facility is
-          pinned so it doesn't float over the open panel. */}
-      {hoveredFacility && !selectedFacility && (
-        <DataCenterCard
-          facility={hoveredFacility.dc}
-          x={hoveredFacility.x}
-          y={hoveredFacility.y}
-          clusterSize={hoveredFacility.clusterSize}
-        />
-      )}
+          a data center dot is being hovered. Suppressed only when hovering
+          the exact facility that's already pinned (its info is in the
+          panel). Hovering OTHER facilities still shows the card so users
+          can browse without first closing the pinned one. */}
+      {hoveredFacility &&
+        hoveredFacility.dc.id !== selectedFacility?.id && (
+          <DataCenterCard
+            facility={hoveredFacility.dc}
+            x={hoveredFacility.x}
+            y={hoveredFacility.y}
+            clusterSize={hoveredFacility.clusterSize}
+          />
+        )}
     </div>
   );
 }
@@ -1541,6 +1787,45 @@ function SizeBandSwatch({ r, label }: { r: number; label: string }) {
       <span className="text-[11px] text-muted tracking-tight whitespace-nowrap">
         {label}
       </span>
+    </div>
+  );
+}
+
+function PowerPlantLegend({ stateName }: { stateName: string }) {
+  const plants = plantsInState(stateName);
+  if (plants.length === 0) return null;
+  const present = new Set<FuelType>(plants.map((p) => collapseFuel(p.fuelType)));
+  const ORDER: FuelType[] = [
+    "natural-gas",
+    "nuclear",
+    "coal",
+    "hydro",
+    "solar",
+    "wind",
+    "biomass",
+    "geothermal",
+    "battery",
+    "other",
+  ];
+  const fuels = ORDER.filter((f) => present.has(f));
+  return (
+    <div className="mt-3 pt-2.5 border-t border-black/[.05]">
+      <div className="text-[11px] font-semibold text-muted tracking-tight mb-2">
+        Power plants
+      </div>
+      <div className="grid grid-cols-2 gap-x-2.5 gap-y-1">
+        {fuels.map((f) => (
+          <div key={f} className="flex items-center gap-1.5 min-w-0">
+            <span
+              className="inline-block w-2 h-2 rounded-full flex-shrink-0"
+              style={{ backgroundColor: FUEL_COLOR[f], opacity: 0.7 }}
+            />
+            <span className="text-[11px] text-muted tracking-tight truncate">
+              {FUEL_LABEL[f]}
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
