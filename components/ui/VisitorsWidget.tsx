@@ -15,13 +15,12 @@ import { AnimatePresence, motion } from "framer-motion";
  */
 
 const LABELS = [
-  "browsing the map",
-  "tracking data-center fights",
-  "reading county actions",
   "watching the grid",
-  "counting moratoriums",
-  "drilling into states",
+  "counting bills",
+  "tracking politicians",
   "scouting local bills",
+  "watching the news",
+  "finding data centers",
 ];
 
 function seededBase(): number {
@@ -46,6 +45,16 @@ export default function VisitorsWidget() {
   // Pick a stable starting label so SSR → client hydration doesn't
   // flicker. Rotates every ~6s once mounted.
   const startingLabel = useMemo(() => Math.floor(Math.random() * LABELS.length), []);
+
+  // Longest possible string the slot ever holds, used as a ghost
+  // measurer so the slot's actual rendered width matches the widest
+  // label exactly — no truncation, no reflow. `ch` is too coarse for
+  // proportional fonts (Inter), so we lay the longest copy out invisibly
+  // and let the browser size it.
+  const longestLabel = useMemo(() => {
+    const widest = LABELS.reduce((a, b) => (b.length > a.length ? b : a), "");
+    return `people ${widest}`;
+  }, []);
 
   useEffect(() => {
     setMounted(true);
@@ -94,36 +103,65 @@ export default function VisitorsWidget() {
         <span className="absolute inset-0 rounded-full bg-stance-favorable/50 animate-ping" />
         <span className="relative w-2 h-2 rounded-full bg-stance-favorable" />
       </span>
-      <span className="text-ink font-semibold tabular-nums">
-        {count.toLocaleString()}
+      {/* Count: gentle fade-slide on increment so the digit change is
+          felt without snapping. Tabular-nums keeps the slot width
+          stable across digit changes. */}
+      <span
+        className="text-ink font-semibold tabular-nums relative inline-block overflow-hidden align-middle"
+        style={{ height: "1em", lineHeight: 1, minWidth: "2ch", textAlign: "right" }}
+      >
+        <AnimatePresence mode="sync" initial={false}>
+          <motion.span
+            key={count}
+            initial={{ y: "60%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            exit={{ y: "-60%", opacity: 0 }}
+            transition={{ duration: 0.32, ease: [0.32, 0.72, 0, 1] }}
+            className="absolute inset-0 block whitespace-nowrap text-right"
+            style={{ font: "inherit", lineHeight: 1, willChange: "transform, opacity" }}
+          >
+            {count.toLocaleString()}
+          </motion.span>
+        </AnimatePresence>
       </span>
-      <span className="text-muted flex items-center">
-        {count === 1 ? "person" : "people"}
-        {/* Slot-machine flip: old label slides up out of frame, new one
-            slides in from below. overflow-hidden clips the transitions so
-            it reads as a mechanical roll rather than a crossfade. */}
+      {/* Slot-machine label flip. Both spans live absolutely inside a
+          relative slot so they overlap during transition (no layout pop,
+          no parent reflow). Width pinned to the longest label so the
+          pill doesn't jitter as labels swap. Tween easing instead of
+          spring — springs overshoot text and read as glitch on a
+          ~1em tall surface. */}
+      <span
+        className="text-muted relative inline-block overflow-hidden align-middle"
+        style={{ height: "1em", lineHeight: 1 }}
+      >
+        {/* Invisible width-setter — sizes the slot to the widest label
+            in proportional units (Inter) so the pill width never
+            shifts when labels rotate. aria-hidden + visibility:hidden
+            so it doesn't reach AT or paint. */}
         <span
-          className="relative inline-block overflow-hidden ml-1"
-          style={{ height: "1.15em" }}
+          aria-hidden
+          className="invisible whitespace-nowrap"
+          style={{ font: "inherit", lineHeight: 1 }}
         >
-          <AnimatePresence mode="popLayout" initial={false}>
-            <motion.span
-              key={labelIdx}
-              initial={{ y: "100%", opacity: 0 }}
-              animate={{ y: "0%", opacity: 1 }}
-              exit={{ y: "-110%", opacity: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 420,
-                damping: 30,
-                mass: 0.6,
-              }}
-              className="inline-block whitespace-nowrap"
-            >
-              {LABELS[labelIdx]}
-            </motion.span>
-          </AnimatePresence>
+          {longestLabel}
         </span>
+        <AnimatePresence mode="sync" initial={false}>
+          <motion.span
+            key={labelIdx}
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            exit={{ y: "-100%", opacity: 0 }}
+            transition={{ duration: 0.42, ease: [0.32, 0.72, 0, 1] }}
+            className="absolute inset-0 block whitespace-nowrap"
+            style={{
+              font: "inherit",
+              lineHeight: 1,
+              willChange: "transform, opacity",
+            }}
+          >
+            {count === 1 ? "person" : "people"} {LABELS[labelIdx]}
+          </motion.span>
+        </AnimatePresence>
       </span>
     </div>
   );

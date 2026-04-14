@@ -81,7 +81,15 @@ export default function NorthAmericaMap({
         width={960}
         height={600}
         projection={naProj}
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          // Force high-quality vector rendering. Without this, mobile
+          // WebKit may pick optimizeSpeed for small primitives like the
+          // data-center dots, which is what makes them look pixelated
+          // when the parent layer is CSS-scaled for pinch-zoom.
+          shapeRendering: "geometricPrecision",
+        }}
       >
         {/* Layer 1 — Canada (interactive) + Mexico (neutral silhouette) */}
         <Geographies geography={WORLD_URL}>

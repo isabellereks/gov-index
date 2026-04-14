@@ -81,7 +81,11 @@ export default function USStatesMap({
         width={960}
         height={600}
         projection={usProj}
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          shapeRendering: "geometricPrecision",
+        }}
       >
         <Geographies geography={STATES_URL}>
           {({ geographies }) =>

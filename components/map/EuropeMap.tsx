@@ -80,7 +80,11 @@ export default function EuropeMap({
         width={960}
         height={600}
         projection={euProj}
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          shapeRendering: "geometricPrecision",
+        }}
       >
         <Geographies geography={WORLD_URL}>
           {({ geographies }) =>

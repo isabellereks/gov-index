@@ -1,8 +1,17 @@
 "use client";
 
 import { useEffect } from "react";
-import GlobeHero from "./GlobeHero";
+import dynamic from "next/dynamic";
 import type { Region } from "@/types";
+
+// GlobeHero's d3-geo orthographic projection produces SVG path strings that
+// depend on viewport size, so the SSR'd path never matches the client path
+// and React hydration errors out — taking down scroll listeners on the
+// hero subtree as collateral. Loading client-only sidesteps the mismatch.
+const GlobeHero = dynamic(() => import("./GlobeHero"), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0" aria-hidden />,
+});
 
 const clamp = (n: number, min: number, max: number) =>
   Math.max(min, Math.min(max, n));

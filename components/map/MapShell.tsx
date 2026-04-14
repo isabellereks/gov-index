@@ -408,10 +408,27 @@ export default function MapShell({
 
   const handleSelectEntity = (geoId: string) => {
     setSelectedFacility(null);
+
+    // Mobile shortcut: single-tap on a drillable US state drops the
+    // user straight into the county view. Double-tap-to-drill doesn't
+    // work reliably on touch (small states are hard targets, the
+    // second tap often lands on the sidebar). Desktop keeps the
+    // double-click flow so a single click can still "just select".
+    if (
+      isMobileViewport &&
+      region === "na" &&
+      naView === "states" &&
+      getMunicipalitiesByState(geoId).length > 0
+    ) {
+      stageCountyDrill(geoId);
+      return;
+    }
+
     navigateTo({ ...current, selectedGeoId: geoId });
-    // Clicking a country while the panel is collapsed to the Dynamic Island
-    // expands it back to the full square so the user can read the details.
-    if (panelSize === "min") {
+    // Desktop: clicking a country while collapsed expands the panel
+    // so the user immediately sees the detail. Mobile: keep the panel
+    // as the island — the user pulls it up when they want to read.
+    if (!isMobileViewport && panelSize === "min") {
       setExplicitPanelSize("md");
     }
   };
@@ -422,6 +439,15 @@ export default function MapShell({
   // walk through every region the user glanced at before popping a
   // real drill level. Drill navigation (selecting countries, drilling
   // into states/counties) still goes through navigateTo → pushState.
+  // Any navigation between regions / drill levels should reset the
+  // pinch-zoom back to 1× so the next view lands centered instead of
+  // carrying over the previous view's pan offset.
+  useEffect(() => {
+    setUserZoom(1);
+    setUserPan({ x: 0, y: 0 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [region, naView, selectedStateName]);
+
   const handleRegionChange = (next: Region) => {
     const updated: ViewState = {
       region: next,
@@ -443,8 +469,14 @@ export default function MapShell({
   const handleResetStates = () =>
     navigateTo({ ...current, selectedGeoId: null });
 
-  const handleViewStates = () =>
+  const handleViewStates = () => {
     navigateTo({ region: "na", naView: "states", selectedGeoId: null });
+    // On mobile the expanded panel would still be covering the map
+    // after this navigation, so the user's "View state policies" tap
+    // looked like it opened a white screen. Collapse back to the
+    // island so the new view is the first thing they see.
+    if (isMobileViewport) setExplicitPanelSize("min");
+  };
 
   // Clicking a US state from the continental (countries) view drills into
   // the states view with that state preselected. Keeps a single click flow.
@@ -471,6 +503,10 @@ export default function MapShell({
   const DRILL_LIFT_MS = 360;
   const stageCountyDrill = (stateName: string) => {
     setDrillingTo(stateName);
+    // On mobile, collapse the panel so the lift animation + county
+    // map are actually visible instead of happening behind an opaque
+    // sheet. Desktop keeps the panel open — there's room.
+    if (isMobileViewport) setExplicitPanelSize("min");
     window.setTimeout(() => {
       handleViewCounties(stateName);
       // Reset on the next frame so the fade-out doesn't briefly ghost
@@ -775,17 +811,48 @@ export default function MapShell({
   const [explicitPanelSize, setExplicitPanelSize] = useState<
     "min" | "md" | null
   >(null);
-  const panelSize: "min" | "md" = explicitPanelSize ?? "md";
+  // Mobile defaults to the Dynamic Island so the map gets the full
+  // viewport. Desktop defaults to the expanded panel since the sidebar
+  // sits to the side and doesn't steal map real estate.
+  const panelSize: "min" | "md" =
+    explicitPanelSize ?? (isMobileViewport ? "min" : "md");
 
-  // When the panel is collapsed to the Dynamic Island, the map gets a
-  // little extra zoom so it fills the freed-up space. On desktop (where
-  // the panel sits to the side) the bump is larger; on mobile (where
-  // the panel was at the bottom) a gentle bump is enough — 1.55x pushes
-  // the US off-screen on narrow viewports.
+  // The map SVG is authored at a 960×600 aspect ratio (1.6:1). In a
+  // narrow portrait viewport, "fit to width + preserve aspect" leaves
+  // huge vertical whitespace. Scaling the container up via CSS is the
+  // cheapest fix — 1.65× fills most phones without pushing the US off
+  // screen, and the rail transition still works since the scale is
+  // applied above it.
   const panelExtraZoom =
-    panelSize === "min" ? (isMobileViewport ? 1.12 : 1.55) : 1.0;
+    panelSize === "min" ? (isMobileViewport ? 2.0 : 1.55) : 1.0;
 
   const mapRootRef = useRef<HTMLDivElement>(null);
+
+  // ─── Mobile pinch-zoom + two-finger pan ────────────────────────────
+  //
+  // A user-controlled zoom/pan layer sits between the base map scale and
+  // the rail. Two simultaneous pointers activate pinch mode: the map
+  // scales around the pinch midpoint and translates with the centroid.
+  // A single pointer always falls through to the region-swipe path so
+  // horizontal flicks still work.
+  //
+  // State is reset whenever the user changes region or drill level so
+  // a zoom applied to "NA / counties / Loudoun" doesn't follow them
+  // back out to "NA / states".
+  const [userZoom, setUserZoom] = useState(1);
+  const [userPan, setUserPan] = useState({ x: 0, y: 0 });
+  const pinchRef = useRef<{
+    startDist: number;
+    startMidX: number;
+    startMidY: number;
+    startZoom: number;
+    startPanX: number;
+    startPanY: number;
+  } | null>(null);
+  const activePointersRef = useRef<Map<number, { x: number; y: number }>>(
+    new Map(),
+  );
+
 
   // ─── Interactive drag-swipe between regions ──────────────────────
   //
@@ -845,6 +912,31 @@ export default function MapShell({
     // Only drag from primary mouse button / touch / pen. Right-click
     // and middle-click shouldn't start a gesture.
     if (e.pointerType === "mouse" && e.button !== 0) return;
+
+    activePointersRef.current.set(e.pointerId, {
+      x: e.clientX,
+      y: e.clientY,
+    });
+
+    // Second touch arriving — enter pinch mode. Cancel any region-swipe
+    // in progress so the finger drag doesn't fight the pinch gesture.
+    if (activePointersRef.current.size === 2) {
+      const [p1, p2] = Array.from(activePointersRef.current.values());
+      const dx = p2.x - p1.x;
+      const dy = p2.y - p1.y;
+      pinchRef.current = {
+        startDist: Math.hypot(dx, dy) || 1,
+        startMidX: (p1.x + p2.x) / 2,
+        startMidY: (p1.y + p2.y) / 2,
+        startZoom: userZoom,
+        startPanX: userPan.x,
+        startPanY: userPan.y,
+      };
+      swipeRef.current = null;
+      isDraggingRef.current = false;
+      return;
+    }
+
     swipeRef.current = {
       startX: e.clientX,
       startY: e.clientY,
@@ -860,6 +952,43 @@ export default function MapShell({
   };
 
   const onMapPointerMove = (e: React.PointerEvent) => {
+    // Update latest position for this pointer (needed by pinch logic).
+    if (activePointersRef.current.has(e.pointerId)) {
+      activePointersRef.current.set(e.pointerId, {
+        x: e.clientX,
+        y: e.clientY,
+      });
+    }
+
+    // Pinch-zoom / two-finger pan — consumes the move; no region swipe.
+    if (pinchRef.current && activePointersRef.current.size >= 2) {
+      const pts = Array.from(activePointersRef.current.values());
+      const [p1, p2] = pts;
+      const dx = p2.x - p1.x;
+      const dy = p2.y - p1.y;
+      const dist = Math.hypot(dx, dy) || 1;
+      const midX = (p1.x + p2.x) / 2;
+      const midY = (p1.y + p2.y) / 2;
+      const b = pinchRef.current;
+      const rawZoom = b.startZoom * (dist / b.startDist);
+      const nextZoom = Math.max(1, Math.min(3.5, rawZoom));
+      const nextPanX = b.startPanX + (midX - b.startMidX);
+      const nextPanY = b.startPanY + (midY - b.startMidY);
+      // Clamp pan so the user can't fling the map into empty viewport —
+      // ceiling grows with zoom level (more room to pan when zoomed in).
+      const w = mapRootRef.current?.clientWidth ?? window.innerWidth;
+      const h = mapRootRef.current?.clientHeight ?? window.innerHeight;
+      const maxPanX = (w * (nextZoom - 1)) / 2 + 120;
+      const maxPanY = (h * (nextZoom - 1)) / 2 + 120;
+      setUserZoom(nextZoom);
+      setUserPan({
+        x: Math.max(-maxPanX, Math.min(maxPanX, nextPanX)),
+        y: Math.max(-maxPanY, Math.min(maxPanY, nextPanY)),
+      });
+      e.preventDefault();
+      return;
+    }
+
     const s = swipeRef.current;
     if (!s || e.pointerId !== s.pointerId) return;
     const dx = e.clientX - s.startX;
@@ -936,6 +1065,15 @@ export default function MapShell({
   };
 
   const onMapPointerUp = (e: React.PointerEvent) => {
+    // Lifting a finger during pinch — exit pinch mode as soon as we
+    // drop below two active pointers.
+    activePointersRef.current.delete(e.pointerId);
+    if (pinchRef.current && activePointersRef.current.size < 2) {
+      pinchRef.current = null;
+      swipeRef.current = null;
+      return;
+    }
+
     const s = swipeRef.current;
     if (!s || e.pointerId !== s.pointerId) return;
     if (!s.active) {
@@ -962,6 +1100,10 @@ export default function MapShell({
   };
 
   const onMapPointerCancel = (e: React.PointerEvent) => {
+    activePointersRef.current.delete(e.pointerId);
+    if (pinchRef.current && activePointersRef.current.size < 2) {
+      pinchRef.current = null;
+    }
     const s = swipeRef.current;
     if (!s || e.pointerId !== s.pointerId) return;
     endDrag(null);
@@ -987,7 +1129,12 @@ export default function MapShell({
   const onMapBackgroundClick = (e: React.MouseEvent) => {
     if (isDraggingRef.current || swipeRef.current?.swiped) return;
     const target = e.target as Element | null;
-    if (target?.closest?.("path, circle, text")) return;
+    // Interactive primitives we never want to treat as "empty map area":
+    // geography fills (path), facility glyph hit-targets (rect / circle),
+    // cluster count labels (text). rect was missing here, which is why
+    // clicking a DC from county/state view reset the view — the click
+    // bubbled up and this handler fired "step out of detail."
+    if (target?.closest?.("path, rect, circle, text")) return;
 
     if (selectedFacility) {
       setSelectedFacility(null);
@@ -1201,7 +1348,11 @@ export default function MapShell({
           transform: `scale(${panelExtraZoom})`,
           transformOrigin: "center center",
           willChange: "transform",
-          touchAction: "pan-y",
+          // `none` lets us fully own pinch-zoom and two-finger pan on
+          // mobile without the browser intercepting for page-zoom.
+          // Vertical page scroll still happens via JS-driven scroll-on-
+          // swipe handlers, so we're not losing anything functional.
+          touchAction: "none",
           transition: "transform 500ms cubic-bezier(0.5, 1.55, 0.4, 1)",
         }}
         onPointerDown={onMapPointerDown}
@@ -1217,6 +1368,22 @@ export default function MapShell({
           transform: `scale(${baseMapScale})`,
           transformOrigin: "center center",
           willChange: "transform",
+        }}
+      >
+      {/* User pinch/pan layer — sits between baseMapScale and the rail
+          so pinch-zoom transforms the content without fighting the
+          region rail's own translate. Transition is absent so the
+          map tracks the pinch 1:1; it snaps back softly when reset. */}
+      <div
+        className="absolute inset-0"
+        style={{
+          transform: `translate3d(${userPan.x}px, ${userPan.y}px, 0) scale(${userZoom})`,
+          transformOrigin: "center center",
+          willChange: "transform",
+          transition:
+            pinchRef.current === null
+              ? "transform 320ms cubic-bezier(0.32, 0.72, 0, 1)"
+              : "none",
         }}
       >
         {/* Sliding region rail — all three regions rendered side-by-side.
@@ -1236,7 +1403,7 @@ export default function MapShell({
           {REGION_ORDER.map((r) => (
           <div
             key={r}
-            className="w-full h-full flex-shrink-0 flex items-center justify-center pb-[40vh] lg:pb-0"
+            className="w-full h-full flex-shrink-0 flex items-center justify-center"
           >
             {r === "na" && (
               <div
@@ -1313,6 +1480,7 @@ export default function MapShell({
           </div>
         ))}
         </div>
+      </div>
       </div>
       </div>
 

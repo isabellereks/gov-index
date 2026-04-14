@@ -84,7 +84,11 @@ export default function AsiaMap({
         width={960}
         height={600}
         projection={asiaProj}
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          shapeRendering: "geometricPrecision",
+        }}
       >
         <Geographies geography={WORLD_URL}>
           {({ geographies }) =>
@@ -125,6 +129,14 @@ export default function AsiaMap({
                 const stroke = isSelected ? "#FFFFFF" : NEUTRAL_STROKE;
                 const strokeWidth = isSelected ? 4 : 1.5;
 
+                // Taiwan (ISO 158) is a sliver at Asia's scale — the
+                // visible path + hit target is too small to click
+                // without accidentally catching a data-center dot
+                // layered on top. Scale just this one country so both
+                // the fill and the click surface grow together.
+                const isTaiwan = id === "158";
+                const scaleBump = isTaiwan ? "scale(2.6)" : undefined;
+
                 const base = {
                   fill,
                   stroke,
@@ -137,6 +149,13 @@ export default function AsiaMap({
                   filter: isSelected
                     ? "drop-shadow(0 4px 12px rgba(0,0,0,0.15))"
                     : undefined,
+                  ...(scaleBump
+                    ? {
+                        transform: scaleBump,
+                        transformBox: "fill-box" as const,
+                        transformOrigin: "center" as const,
+                      }
+                    : {}),
                 };
 
                 return (
