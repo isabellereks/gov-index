@@ -11,6 +11,7 @@ import LegislationTable from "@/components/sections/LegislationTable";
 import DataCentersOverview from "@/components/sections/DataCentersOverview";
 import PoliticiansOverview from "@/components/sections/PoliticiansOverview";
 import LiveNews from "@/components/sections/LiveNews";
+import FadeInOnView from "@/components/ui/FadeInOnView";
 import { useScrollProgress } from "@/lib/use-scroll-progress";
 import type {
   Dimension,
@@ -89,15 +90,17 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-[1.1] mb-10">
             State of US policy
           </h2>
-          <SummaryBar lens={lens} />
-          <div className="mt-12">
+          <FadeInOnView>
+            <SummaryBar lens={lens} />
+          </FadeInOnView>
+          <FadeInOnView delay={80} className="mt-12">
             <DimensionToggle
               dimension={dimension}
               onChange={setDimension}
               lens={lens}
               onLensChange={setLens}
             />
-          </div>
+          </FadeInOnView>
         </div>
       </section>
 
@@ -110,7 +113,9 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-[1.1] mb-10">
             What happened this week
           </h2>
-          <AIOverview />
+          <FadeInOnView>
+            <AIOverview />
+          </FadeInOnView>
         </div>
       </section>
 
@@ -126,10 +131,12 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-[1.1] mb-10">
             Every bill we&rsquo;re tracking
           </h2>
-          <LegislationTable
-            dimension={dimension}
-            onNavigateToEntity={handleNavigateToEntity}
-          />
+          <FadeInOnView>
+            <LegislationTable
+              dimension={dimension}
+              onNavigateToEntity={handleNavigateToEntity}
+            />
+          </FadeInOnView>
         </div>
       </section>
 
@@ -153,7 +160,9 @@ export default function Page() {
             The totals still climb, mostly because everyone keeps asking the
             models to do more.
           </p>
-          <DataCentersOverview onNavigateToEntity={handleNavigateToEntity} />
+          <FadeInOnView>
+            <DataCentersOverview onNavigateToEntity={handleNavigateToEntity} />
+          </FadeInOnView>
         </div>
       </section>
 
@@ -173,7 +182,9 @@ export default function Page() {
             The legislators shaping AI and data-centre policy — and how
             their votes stack up against what they said they believed.
           </p>
-          <PoliticiansOverview />
+          <FadeInOnView>
+            <PoliticiansOverview />
+          </FadeInOnView>
         </div>
       </section>
 
@@ -195,7 +206,9 @@ export default function Page() {
               title="Live feed — updated automatically"
             />
           </h2>
-          <LiveNews />
+          <FadeInOnView>
+            <LiveNews />
+          </FadeInOnView>
         </div>
       </section>
 

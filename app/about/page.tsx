@@ -132,18 +132,6 @@ export default function AboutPage() {
               </a>
             </li>
             <li>
-              Frontier data center inventory from{" "}
-              <a
-                href="https://epochai.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
-              >
-                Epoch AI
-              </a>{" "}
-              (CC-BY)
-            </li>
-            <li>
               Icons by{" "}
               <a
                 href="https://streamlinehq.com"
@@ -165,9 +153,20 @@ export default function AboutPage() {
                 Isabelle Reksopuro
               </a>
             </li>
+            <li className="pt-2 text-muted">
+              Full data sources are listed on the{" "}
+              <Link
+                href="/methodology"
+                className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+              >
+                methodology
+              </Link>{" "}
+              page.
+            </li>
           </ul>
         </div>
       </div>
     </main>
   );
 }
+

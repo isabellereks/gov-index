@@ -12,6 +12,7 @@ import {
 } from "@/types";
 import { ALL_FACILITIES } from "@/lib/datacenters";
 import { DC_COLOR } from "@/components/map/DataCenterDots";
+import FadeInOnView from "@/components/ui/FadeInOnView";
 
 interface DataCentersOverviewProps {
   onNavigateToEntity: (target: ViewTarget) => void;
@@ -237,15 +238,19 @@ export default function DataCentersOverview({
       {/* Stats strip — wide, dense, scannable. Each cell stands alone but
           the row reads as a single cohesive unit. */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-6 gap-x-8 pb-8 mb-10 border-b border-black/[.06]">
-        {stats.map((s) => (
-          <div key={s.label} className="flex flex-col gap-2 min-w-0">
+        {stats.map((s, i) => (
+          <FadeInOnView
+            key={s.label}
+            delay={i * 60}
+            className="flex flex-col gap-2 min-w-0"
+          >
             <div className="text-[11px] text-muted tracking-tight">
               {s.label}
             </div>
             <div className="text-[22px] font-semibold text-ink tracking-tight leading-none tabular-nums truncate">
               {s.value}
             </div>
-          </div>
+          </FadeInOnView>
         ))}
       </div>
 

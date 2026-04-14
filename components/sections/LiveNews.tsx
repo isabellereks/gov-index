@@ -125,9 +125,21 @@ const LAST_UPDATED_FMT = new Intl.DateTimeFormat("en-US", {
 // the full date is only used once a story is a few days old. Based on the
 // latest news item we have, not on a pipeline-writer timestamp, so it
 // reflects real content freshness.
+//
+// Bare YYYY-MM-DD strings are parsed in the LOCAL timezone (not UTC) so
+// "2026-04-13" reads as Apr 13 wherever the user is — otherwise the day
+// shifts by one west of UTC and the label says "2 days ago" when the
+// story actually ran yesterday.
 function formatLastUpdated(iso: string | undefined): string | null {
   if (!iso) return null;
-  const d = new Date(iso);
+  const bareDate = /^\d{4}-\d{2}-\d{2}$/.exec(iso);
+  const d = bareDate
+    ? new Date(
+        Number(iso.slice(0, 4)),
+        Number(iso.slice(5, 7)) - 1,
+        Number(iso.slice(8, 10)),
+      )
+    : new Date(iso);
   if (Number.isNaN(d.getTime())) return null;
   const now = new Date();
   const startOf = (x: Date) => new Date(x.getFullYear(), x.getMonth(), x.getDate());

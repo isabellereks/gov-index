@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-11T22:53:25.267Z",
+  "generatedAt": "2026-04-14T00:00:00.000Z",
   "facilities": [
     {
       "id": "intl-nl-microsoft-ams13-14-middenmeer",
@@ -2468,6 +2468,276 @@
       ],
       "source": "researched",
       "primaryUser": "Hyperscalers / AI Compute"
+    },
+    {
+      "id": "intl-cn-gcbd-guiyang",
+      "operator": "GCBD (Guizhou-Cloud Big Data) for Apple iCloud",
+      "location": "Guiyang, Guizhou, China",
+      "country": "China",
+      "lat": 26.647,
+      "lng": 106.6302,
+      "capacityMW": 150,
+      "status": "operational",
+      "yearBuilt": 2018,
+      "notes": "Apple's iCloud data store for Chinese users, operated by state-owned GCBD under 2017 Cybersecurity Law data-localization rules. Centerpiece of the Guizhou cloud cluster.",
+      "concerns": [
+        "data-privacy",
+        "local-control"
+      ],
+      "source": "researched",
+      "primaryUser": "Apple"
+    },
+    {
+      "id": "intl-cn-alibaba-heyuan",
+      "operator": "Alibaba Cloud",
+      "location": "Heyuan, Guangdong, China",
+      "country": "China",
+      "lat": 23.7468,
+      "lng": 114.6997,
+      "capacityMW": 300,
+      "status": "operational",
+      "yearBuilt": 2018,
+      "notes": "Alibaba Cloud's flagship hyperscale campus serving South China demand; multiple gigawatt-scale buildings in operation by 2025.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Alibaba Cloud"
+    },
+    {
+      "id": "intl-cn-alibaba-zhangbei",
+      "operator": "Alibaba Cloud",
+      "location": "Zhangbei County, Hebei (Zhangjiakou hub), China",
+      "country": "China",
+      "lat": 41.1567,
+      "lng": 114.715,
+      "capacityMW": 280,
+      "status": "operational",
+      "yearBuilt": 2016,
+      "notes": "East-Data-West-Compute renewable-powered hub (high-altitude wind + solar). One of the first Chinese hyperscale campuses to commit to PUE < 1.25.",
+      "concerns": [
+        "renewable-energy",
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Alibaba Cloud"
+    },
+    {
+      "id": "intl-cn-tencent-guian",
+      "operator": "Tencent",
+      "location": "Gui'an New District, Guizhou, China",
+      "country": "China",
+      "lat": 26.418,
+      "lng": 106.453,
+      "capacityMW": 260,
+      "status": "operational",
+      "yearBuilt": 2019,
+      "notes": "Tencent's 'Seven Stars' tunnel data center carved into a mountainside in Guizhou \u2014 natural cooling, geographically dispersed disaster-recovery role for WeChat/QQ infrastructure.",
+      "concerns": [
+        "protected-land"
+      ],
+      "source": "researched",
+      "primaryUser": "Tencent"
+    },
+    {
+      "id": "intl-cn-bytedance-ulanqab",
+      "operator": "ByteDance / Volcano Engine",
+      "location": "Ulanqab, Inner Mongolia, China",
+      "country": "China",
+      "lat": 40.9923,
+      "lng": 113.1136,
+      "capacityMW": 350,
+      "status": "operational",
+      "yearBuilt": 2022,
+      "notes": "Anchor for ByteDance's training compute, sited in Inner Mongolia for cheap renewable power. Subject to East-Data-West-Compute energy efficiency mandates.",
+      "concerns": [
+        "grid-capacity",
+        "renewable-energy"
+      ],
+      "source": "researched",
+      "primaryUser": "ByteDance / TikTok"
+    },
+    {
+      "id": "intl-cn-china-telecom-hohhot",
+      "operator": "China Telecom",
+      "location": "Hohhot, Inner Mongolia, China",
+      "country": "China",
+      "lat": 40.8414,
+      "lng": 111.7522,
+      "capacityMW": 420,
+      "status": "operational",
+      "yearBuilt": 2014,
+      "notes": "China Telecom's Inner Mongolia Cloud Computing Information Park \u2014 one of Asia's largest single-operator data center campuses; AI workload allocations expanded under Phase II of East-Data-West-Compute.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption"
+      ],
+      "source": "researched",
+      "primaryUser": "China Telecom"
+    },
+    {
+      "id": "intl-cn-21vianet-beijing",
+      "operator": "21Vianet (Microsoft Azure China)",
+      "location": "Beijing, China",
+      "country": "China",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "capacityMW": 120,
+      "status": "operational",
+      "yearBuilt": 2014,
+      "notes": "21Vianet operates Microsoft Azure and Office 365 services inside China under license from Microsoft, required by Cybersecurity Law data-localization rules.",
+      "concerns": [
+        "data-privacy",
+        "local-control"
+      ],
+      "source": "researched",
+      "primaryUser": "Microsoft Azure China"
+    },
+    {
+      "id": "intl-cn-baidu-yangquan",
+      "operator": "Baidu",
+      "location": "Yangquan, Shanxi, China",
+      "country": "China",
+      "lat": 37.8576,
+      "lng": 113.5763,
+      "capacityMW": 180,
+      "status": "operational",
+      "yearBuilt": 2017,
+      "notes": "Baidu's flagship cloud + AI data center for ERNIE training; an early adopter of liquid cooling at scale in China.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Baidu"
+    },
+    {
+      "id": "intl-tw-google-changhua",
+      "operator": "Google",
+      "location": "Changhua County, Taiwan",
+      "country": "Taiwan",
+      "lat": 23.9937,
+      "lng": 120.5418,
+      "capacityMW": 110,
+      "status": "operational",
+      "yearBuilt": 2013,
+      "notes": "Google's first Asia data center; expanded multiple times since 2013. Sits at the center of Taipower's January 2026 tariff scrutiny over high-load operators.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "Google Cloud"
+    },
+    {
+      "id": "intl-tw-google-yunlin",
+      "operator": "Google",
+      "location": "Yunlin County, Taiwan",
+      "country": "Taiwan",
+      "lat": 23.7092,
+      "lng": 120.4313,
+      "capacityMW": 180,
+      "status": "under-construction",
+      "yearProposed": 2024,
+      "notes": "Google's second Taiwan campus, broke ground 2024; designed for AI workloads. Tariff-affected under Taipower's 2026 tiered pricing for inefficient operators.",
+      "concerns": [
+        "water-consumption",
+        "grid-capacity",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "Google Cloud"
+    },
+    {
+      "id": "intl-tw-microsoft-taipei",
+      "operator": "Microsoft",
+      "location": "Taipei, Taiwan",
+      "country": "Taiwan",
+      "lat": 25.033,
+      "lng": 121.5654,
+      "capacityMW": 90,
+      "status": "operational",
+      "yearBuilt": 2024,
+      "notes": "Microsoft's Taiwan Azure region (3 availability zones) launched 2024 as part of Microsoft's $10B Asia AI infrastructure push. Sovereign-cloud option for regulated Taiwanese workloads.",
+      "concerns": [
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Microsoft Azure"
+    },
+    {
+      "id": "intl-tw-aws-taipei",
+      "operator": "Amazon Web Services",
+      "location": "Taipei, Taiwan",
+      "country": "Taiwan",
+      "lat": 25.033,
+      "lng": 121.5654,
+      "capacityMW": 75,
+      "status": "under-construction",
+      "yearProposed": 2025,
+      "notes": "AWS announced a Taiwan region investment in 2024, with a $5B+ multi-year commitment. Landing in 2026/2027.",
+      "concerns": [
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "AWS"
+    },
+    {
+      "id": "intl-tw-chunghwa-banqiao",
+      "operator": "Chunghwa Telecom",
+      "location": "Banqiao, New Taipei, Taiwan",
+      "country": "Taiwan",
+      "lat": 25.0096,
+      "lng": 121.4592,
+      "capacityMW": 60,
+      "status": "operational",
+      "yearBuilt": 2010,
+      "notes": "Chunghwa Telecom's flagship colocation/cloud data center serving Taiwanese government and enterprise \u2014 the de facto sovereign-cloud anchor.",
+      "concerns": [
+        "grid-capacity"
+      ],
+      "source": "researched",
+      "primaryUser": "Chunghwa Telecom"
+    },
+    {
+      "id": "intl-tw-tsmc-fab21-arizona",
+      "operator": "TSMC",
+      "location": "Hsinchu Science Park, Taiwan",
+      "country": "Taiwan",
+      "lat": 24.7783,
+      "lng": 121.0177,
+      "capacityMW": 900,
+      "status": "operational",
+      "yearBuilt": 1987,
+      "notes": "TSMC's Hsinchu fab cluster (multiple fabs, including Fab 12 N3/N2) \u2014 not a hyperscale data center, but the world's most strategic AI-compute facility. Power draw rivals a small city; Taipower's 2026 tariffs explicitly carve out semi-fab obligations.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "TSMC (semiconductor fab)"
+    },
+    {
+      "id": "intl-tw-tsmc-tainan",
+      "operator": "TSMC",
+      "location": "Tainan Science Park, Taiwan",
+      "country": "Taiwan",
+      "lat": 23.0944,
+      "lng": 120.289,
+      "capacityMW": 1100,
+      "status": "operational",
+      "yearBuilt": 2018,
+      "notes": "TSMC's Southern Taiwan Science Park fabs (Fab 14, Fab 18) \u2014 host to N3 and N2 production for Apple, Nvidia, and AMD AI silicon. Single largest electricity consumer in southern Taiwan.",
+      "concerns": [
+        "grid-capacity",
+        "water-consumption",
+        "energy-rates"
+      ],
+      "source": "researched",
+      "primaryUser": "TSMC (semiconductor fab)"
     }
   ]
 }

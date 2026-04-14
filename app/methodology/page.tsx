@@ -125,6 +125,132 @@ export default function MethodologyPage() {
           </p>
         </div>
 
+        <div className="mt-16 pt-10 border-t border-black/[.06] space-y-8">
+          <div>
+            <div className="text-[13px] font-medium text-muted tracking-tight mb-1">
+              Sources
+            </div>
+            <p className="text-[13px] text-muted leading-relaxed max-w-prose">
+              Every dataset is drawn from a public source. Primary links
+              for individual bills and news items stay in the detail
+              panels; this is the rollup.
+            </p>
+          </div>
+
+          <SourceGroup title="Legislation">
+            <SourceItem
+              name="LegiScan"
+              href="https://legiscan.com"
+              note="US state and federal bill text, sponsors, progress events"
+            />
+            <SourceItem
+              name="Congress.gov"
+              href="https://www.congress.gov"
+              note="federal bill authoritative source"
+            />
+            <SourceItem
+              name="unitedstates/congress-legislators"
+              href="https://github.com/unitedstates/congress-legislators"
+              note="current member roster and identifiers"
+            />
+            <SourceItem
+              name="EUR-Lex"
+              href="https://eur-lex.europa.eu"
+              note="EU primary legislation text (AI Act, Energy Efficiency Directive)"
+            />
+            <SourceItem
+              name="European Parliament"
+              href="https://www.europarl.europa.eu"
+              note="MEP roster and votes"
+            />
+            <SourceItem
+              name="State legislature portals"
+              note="per-bill source links (Arizona, Kentucky, Washington, Montana, West Virginia, Arkansas, California, and 40+ others)"
+            />
+          </SourceGroup>
+
+          <SourceGroup title="Data centers">
+            <SourceItem
+              name="Epoch AI — Data on AI"
+              href="https://epoch.ai/data/data-centers"
+              note="frontier data center inventory (CC-BY 4.0)"
+            />
+            <SourceItem
+              name="Public reporting"
+              note="operator announcements, planning filings, and local news for sites Epoch doesn't yet cover"
+            />
+          </SourceGroup>
+
+          <SourceGroup title="Politicians">
+            <SourceItem
+              name="unitedstates/images"
+              href="https://github.com/unitedstates/images"
+              note="official congressional portraits (public domain)"
+            />
+            <SourceItem
+              name="FEC (Federal Election Commission)"
+              href="https://www.fec.gov"
+              note="campaign finance, donor, and PAC data"
+            />
+            <SourceItem
+              name="DIME database"
+              href="https://data.stanford.edu/dime"
+              note="Adam Bonica's ideology scores for US legislators"
+            />
+          </SourceGroup>
+
+          <SourceGroup title="Energy & infrastructure">
+            <SourceItem
+              name="U.S. Energy Information Administration (EIA)"
+              href="https://www.eia.gov/opendata/"
+              note="power plant capacity and state generation profiles"
+            />
+            <SourceItem
+              name="Natural Earth"
+              href="https://www.naturalearthdata.com"
+              note="country borders and water features (public domain)"
+            />
+          </SourceGroup>
+
+          <SourceGroup title="Maps & geocoding">
+            <SourceItem
+              name="us-atlas / world-atlas (Mike Bostock)"
+              href="https://github.com/topojson/us-atlas"
+              note="topojson geography bundles"
+            />
+            <SourceItem
+              name="react-simple-maps"
+              href="https://www.react-simple-maps.io"
+              note="map rendering primitives"
+            />
+            <SourceItem
+              name="Nominatim (OpenStreetMap)"
+              href="https://nominatim.openstreetmap.org"
+              note="facility geocoding (ODbL)"
+            />
+            <SourceItem
+              name="CARTO basemaps"
+              href="https://carto.com/basemaps"
+              note="tile layer for the facility detail view"
+            />
+          </SourceGroup>
+
+          <SourceGroup title="News">
+            <SourceItem
+              name="RSS & public article feeds"
+              note="Ars Technica, Reuters, The Hill, Politico, state-press outlets, policy-analysis blogs (BABL.ai, ALEC, state-specific mirrors)"
+            />
+          </SourceGroup>
+
+          <SourceGroup title="Classification & summarization">
+            <SourceItem
+              name="Anthropic — Claude"
+              href="https://www.anthropic.com"
+              note="bill categorization, stance inference, multi-dimension classification, and blurb summarization across every regenerated dataset"
+            />
+          </SourceGroup>
+        </div>
+
         <div className="mt-16 mb-3 text-[13px] font-medium text-muted tracking-tight">
           Impact tags by dimension
         </div>
@@ -140,5 +266,52 @@ export default function MethodologyPage() {
         <NuanceLegend />
       </div>
     </main>
+  );
+}
+
+function SourceGroup({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div>
+      <h3 className="text-[11px] font-medium text-muted tracking-tight mb-2">
+        {title}
+      </h3>
+      <ul className="text-sm text-ink/80 leading-relaxed space-y-1.5">
+        {children}
+      </ul>
+    </div>
+  );
+}
+
+function SourceItem({
+  name,
+  href,
+  note,
+}: {
+  name: string;
+  href?: string;
+  note?: string;
+}) {
+  return (
+    <li>
+      {href ? (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-ink underline underline-offset-2 hover:text-muted transition-colors"
+        >
+          {name}
+        </a>
+      ) : (
+        <span className="text-ink">{name}</span>
+      )}
+      {note && <span className="text-muted"> — {note}</span>}
+    </li>
   );
 }
