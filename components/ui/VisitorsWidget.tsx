@@ -58,12 +58,82 @@ export default function VisitorsWidget() {
 
   useEffect(() => {
     setMounted(true);
-    setCount(seededBase());
     setLabelIdx(startingLabel);
 
-    // Random walk — ±1 every 3–6s. Clamped to a sensible band so the
-    // number doesn't drift to 0 or runaway during long sessions.
+    // Session id persists for the tab lifetime. Using sessionStorage
+    // (not localStorage) means each new tab counts as a fresh visitor
+    // while a user clicking around stays one session.
+    let sessionId = sessionStorage.getItem("visitor-session");
+    if (!sessionId) {
+      sessionId =
+        typeof crypto !== "undefined" && "randomUUID" in crypto
+          ? crypto.randomUUID()
+          : Math.random().toString(36).slice(2);
+      sessionStorage.setItem("visitor-session", sessionId);
+    }
+
+    // Heartbeat + count fetch. If the API is unreachable or KV isn't
+    // provisioned yet (503 kv-not-configured), we fall back to the
+    // cosmetic drift from seededBase so the pill never shows "0".
+    let usingFallback = false;
+    async function heartbeat() {
+      try {
+        const r = await fetch("/api/visitors", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ sessionId }),
+          keepalive: true,
+        });
+        if (!r.ok) usingFallback = true;
+      } catch {
+        usingFallback = true;
+      }
+    }
+
+    async function fetchCount() {
+      try {
+        const r = await fetch("/api/visitors", { cache: "no-store" });
+        if (!r.ok) {
+          usingFallback = true;
+          applyFallback();
+          return;
+        }
+        const data = (await r.json()) as { count?: number };
+        if (typeof data.count === "number" && data.count > 0) {
+          setCount(data.count);
+          usingFallback = false;
+        } else {
+          // Count is 0 — the heartbeat just hasn't caught up yet on a
+          // fresh deploy. Treat as fallback for a beat so the pill
+          // doesn't read "0 people".
+          applyFallback();
+        }
+      } catch {
+        usingFallback = true;
+        applyFallback();
+      }
+    }
+
+    function applyFallback() {
+      if (!usingFallback) return;
+      setCount((c) => {
+        if (c > 0) return c;
+        return seededBase();
+      });
+    }
+
+    // Initial + recurring. Heartbeat every 30s (well under the 90s
+    // window the server GCs on). Count refresh every 15s so the
+    // displayed number feels live.
+    heartbeat().then(fetchCount);
+    const beat = window.setInterval(heartbeat, 30_000);
+    const poll = window.setInterval(fetchCount, 15_000);
+
+    // Cosmetic drift — only takes effect while `usingFallback` is true.
+    // Runs continuously so the number moves naturally when the API is
+    // down, and is a silent no-op when the real count is flowing.
     const drift = window.setInterval(() => {
+      if (!usingFallback) return;
       setCount((c) => {
         const base = seededBase();
         const delta = Math.random() < 0.5 ? -1 : 1;
@@ -81,6 +151,8 @@ export default function VisitorsWidget() {
     }, 6000);
 
     return () => {
+      window.clearInterval(beat);
+      window.clearInterval(poll);
       window.clearInterval(drift);
       window.clearInterval(rotate);
     };
