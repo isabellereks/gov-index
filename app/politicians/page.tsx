@@ -32,8 +32,8 @@ export default function PoliticiansPage() {
           Politicians
         </h1>
         <p className="text-sm text-muted mb-10 max-w-xl">
-          Who voted how on AI and data-centre policy — scored against what
-          they said they believed.
+          The lawmakers shaping AI and data-center policy — and what
+          they've actually done about it.
         </p>
         <Suspense fallback={<div className="text-sm text-muted">Loading…</div>}>
           <PoliticiansClient all={ALL_POLITICIANS} />

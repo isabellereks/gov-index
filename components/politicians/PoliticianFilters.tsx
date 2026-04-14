@@ -173,7 +173,7 @@ function SearchPill({
             onChange("");
           }
         }}
-        placeholder="Search by name"
+        placeholder="Name, state, or party"
         className="flex-1 bg-transparent text-sm text-ink placeholder:text-muted focus:outline-none min-w-0"
       />
       {value ? (

@@ -214,28 +214,28 @@ function inferStanceFromBills(
 
 const STANCE_STORY: Record<StanceType, { chip: string; line: string; dot: string }> = {
   restrictive: {
-    chip: "Pushing for tighter AI rules",
-    line: "Pushes for stricter guardrails on AI and data-centre development.",
+    chip: "Wants tighter AI rules",
+    line: "Pushes for stricter limits on AI and data centers.",
     dot: "bg-stance-restrictive",
   },
   concerning: {
-    chip: "Flagging AI risks",
-    line: "Publicly raises risks in AI or data-centre policy, stops short of a ban.",
+    chip: "Raising AI concerns",
+    line: "Calls out AI risks publicly, stops short of a ban.",
     dot: "bg-stance-concerning",
   },
   review: {
     chip: "Shaping AI policy",
-    line: "Actively shaping AI and data-centre policy across party lines rather than taking a hard for/against position.",
+    line: "Working on AI policy across party lines, not committed to one direction.",
     dot: "bg-stance-review",
   },
   favorable: {
-    chip: "Innovation-first on AI",
-    line: "Favours letting AI and data-centre industries expand with light-touch oversight.",
+    chip: "Pro-AI industry",
+    line: "Wants AI and data centers to grow with lighter rules.",
     dot: "bg-stance-favorable",
   },
   none: {
-    chip: "No public AI position",
-    line: "No public record of a stated position on AI or data-centre policy.",
+    chip: "No public stance",
+    line: "No public position on AI or data-center policy.",
     dot: "bg-stance-none",
   },
 };
@@ -398,7 +398,7 @@ function BillRow({
           )}
           {hasExpand && (
             <span className="text-[11px] text-muted">
-              {open ? "Hide" : "What's this?"}
+              {open ? "Less" : "Details"}
             </span>
           )}
         </div>
@@ -539,8 +539,7 @@ function DimeSpectrum({ score }: { score: number }) {
       </div>
       <div className="text-[11px] text-muted leading-snug">
         {dimeLabel(score)} ({score > 0 ? "+" : ""}
-        {score.toFixed(2)}). Based on the DIME score — who gives them
-        money across all campaigns, mapped to a liberal-to-conservative axis.
+        {score.toFixed(2)}). Inferred from who donates to them.
       </div>
     </div>
   );
@@ -597,11 +596,12 @@ function Expanded({ p }: { p: Legislator }) {
           </p>
           {inferred && inferred.stance !== stance && (
             <p className="mt-3 text-sm text-ink/75 leading-snug max-w-prose">
-              Their sponsored record leans{" "}
+              {inferred.count} of {sponsored.length} sponsored bills point
+              toward{" "}
               <span className="text-ink font-medium">
-                {STANCE_STORY[inferred.stance].chip.toLowerCase()}
+                {STANCE_STORY[inferred.stance].chip}
               </span>
-              {` — ${inferred.count} of ${sponsored.length} bills push in that direction.`}
+              .
             </p>
           )}
           {keyPoints.length > 0 && (
@@ -620,7 +620,7 @@ function Expanded({ p }: { p: Legislator }) {
       {/* Bills — prefer researched bills (richer + all mentioned in
           summary), fall back to formally-tracked sponsorships. */}
       {(p.researchedBills?.length ?? 0) > 0 ? (
-        <Section title={`Bills they've worked on (${p.researchedBills!.length})`}>
+        <Section title="Bills they've worked on">
           <ul className="flex flex-col">
             {p.researchedBills!.map((b, i) => (
               <ResearchedBillRow key={`${b.code}-${i}`} bill={b} />
@@ -628,7 +628,7 @@ function Expanded({ p }: { p: Legislator }) {
           </ul>
         </Section>
       ) : hasSponsored ? (
-        <Section title="Sponsored">
+        <Section title="Bills they sponsored">
           <ul className="flex flex-col">
             {sponsored.map((b) => (
               <SponsorRow key={b.id} bill={b} politicianId={p.id} />
@@ -639,11 +639,13 @@ function Expanded({ p }: { p: Legislator }) {
 
       {hasVotes && (
         <Section
-          title="Recorded votes"
+          title="How they voted"
           subtitle={
             p.alignment
-              ? `${p.alignment.alignedVotes} of ${p.alignment.totalVotes} line up with their stance.`
-              : undefined
+              ? `${p.alignment.alignedVotes} of ${p.alignment.totalVotes} match their stance.`
+              : p.votes && p.votes.length < 3
+                ? "Most AI bills pass by voice vote, so there's no record of who voted which way."
+                : undefined
           }
         >
           <ul className="flex flex-col">
@@ -655,7 +657,7 @@ function Expanded({ p }: { p: Legislator }) {
       )}
 
       {flagged.length > 0 && (
-        <Section title="Votes that clash with their stance">
+        <Section title="Votes against their stated position">
           <ul className="flex flex-col gap-1">
             {flagged.map((f, i) => (
               <li
@@ -684,7 +686,7 @@ function Expanded({ p }: { p: Legislator }) {
           .filter((d) => d.industry !== "technology" && d.industry !== "energy")
           .reduce((n, d) => n + d.amount, 0);
         return (
-          <Section title="Donors relevant to AI & data centres">
+          <Section title="AI & energy donors">
             <ul className="flex flex-col">
               {relevant.slice(0, 6).map((d, i) => (
                 <li
@@ -705,8 +707,7 @@ function Expanded({ p }: { p: Legislator }) {
             </ul>
             {otherTotal > 0 && (
               <p className="text-[11px] text-muted mt-2">
-                + {formatMoney(otherTotal)} from other industries (finance,
-                healthcare, labour, etc.).
+                {formatMoney(otherTotal)} more from other industries.
               </p>
             )}
           </Section>
@@ -720,14 +721,14 @@ function Expanded({ p }: { p: Legislator }) {
           dataset usually means "not in the DIME database" rather than
           genuinely centrist. */}
       {p.dimeScore != null && Math.abs(p.dimeScore) >= 0.05 && (
-        <Section title="Ideology">
+        <Section title="Political leaning">
           <DimeSpectrum score={p.dimeScore} />
         </Section>
       )}
 
       {/* Revolving door */}
       {(p.formerLobbyist || (p.revolvingDoorConnections?.length ?? 0) > 0) && (
-        <Section title="Revolving door">
+        <Section title="Industry ties">
           <ul className="flex flex-col gap-1 text-sm text-ink/85 leading-snug">
             {p.formerLobbyist && (
               <li>Worked as a registered lobbyist before holding office.</li>
@@ -761,20 +762,20 @@ function NumberStrip({ p }: { p: Legislator }) {
     items.push({ label: "Raised", value: formatMoney(p.totalRaised) });
   if (p.captureScore != null)
     items.push({
-      label: "Donor capture",
+      label: "Donor influence",
       value: `${Math.round(p.captureScore)}/100`,
       sub:
         p.captureScore >= 66
-          ? "High — votes often follow donors"
+          ? "Votes often follow donors"
           : p.captureScore >= 33
-            ? "Moderate"
-            : "Low — record tracks weakly with donors",
+            ? "Some donor overlap"
+            : "Record tracks weakly with donors",
     });
   if ((p.yearsInOffice ?? 0) > 0)
-    items.push({ label: "In office", value: `${p.yearsInOffice}y` });
+    items.push({ label: "In office", value: `${p.yearsInOffice} yrs` });
   if ((p.lobbyistBundled ?? 0) > 0)
     items.push({
-      label: "Lobbyist-bundled",
+      label: "From lobbyists",
       value: formatMoney(p.lobbyistBundled!),
     });
   if (items.length === 0) return null;

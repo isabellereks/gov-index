@@ -7,11 +7,11 @@ export default function AlignmentBadge({
 }) {
   if (!alignment) {
     return (
-      <div className="flex items-center gap-2" aria-label="Insufficient vote data">
+      <div className="flex items-center gap-2" aria-label="Too few votes to score">
         <Ring score={null} color="var(--color-muted)" />
         <div className="flex flex-col leading-tight">
           <span className="text-sm font-semibold text-muted">—</span>
-          <span className="text-[11px] text-muted">Insufficient data</span>
+          <span className="text-[11px] text-muted">Too few votes</span>
         </div>
       </div>
     );
@@ -36,9 +36,9 @@ export default function AlignmentBadge({
 }
 
 function bucketForScore(score: number): { label: string; colorVar: string } {
-  if (score >= 80) return { label: "Consistent", colorVar: "--color-stance-favorable" };
-  if (score >= 60) return { label: "Mixed", colorVar: "--color-stance-concerning" };
-  return { label: "Contradictory", colorVar: "--color-stance-restrictive" };
+  if (score >= 80) return { label: "Matches their stance", colorVar: "--color-stance-favorable" };
+  if (score >= 60) return { label: "Mixed record", colorVar: "--color-stance-concerning" };
+  return { label: "Breaks from their stance", colorVar: "--color-stance-restrictive" };
 }
 
 function Ring({ score, color }: { score: number | null; color: string }) {
