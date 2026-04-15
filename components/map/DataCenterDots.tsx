@@ -214,6 +214,7 @@ export function DcDot({
         fill={isProposed ? "#FFFFFF" : color}
         stroke={isProposed ? color : "#FFFFFF"}
         strokeWidth={isProposed ? 1.6 : 1.1}
+        shapeRendering="geometricPrecision"
         style={{
           cursor: interactive && onClick ? "pointer" : "default",
           pointerEvents: "all",

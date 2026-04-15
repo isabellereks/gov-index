@@ -488,6 +488,12 @@ export default function MapShell({
       g.preventDefault();
       const rawZoom = startZoom * g.scale;
       const nextZoom = Math.max(1, Math.min(3.5, rawZoom));
+      if (nextZoom <= 1.02) {
+        // Pinch-out past 1× → snap home.
+        setUserZoom(1);
+        setUserPan({ x: 0, y: 0 });
+        return;
+      }
       setUserZoom(nextZoom);
       // Gesture events don't give a centroid — keep the pan offset
       // steady so the map doesn't jitter. Users can two-finger drag
@@ -940,6 +946,13 @@ export default function MapShell({
     axisLocked: "x" | "y" | null;
     swiped: boolean;
     pointerId: number;
+    // Single-finger PAN mode — set when the gesture starts while the
+    // user is already zoomed in. Pinned userPan values so move deltas
+    // are applied relative to the finger's initial position, not the
+    // accumulated pan from prior gestures.
+    panMode: boolean;
+    startPanX: number;
+    startPanY: number;
   } | null>(null);
   // The drag runs entirely in the DOM layer — no React state updates
   // from pointerdown through pointerup, so the D3 map subtrees (which
@@ -1011,6 +1024,12 @@ export default function MapShell({
       axisLocked: null,
       swiped: false,
       pointerId: e.pointerId,
+      // When already zoomed, single-finger drags pan the map instead
+      // of swiping regions. User has to zoom out first to change
+      // regions (or will snap to baseline on pinch out).
+      panMode: userZoom > 1.02,
+      startPanX: userPan.x,
+      startPanY: userPan.y,
     };
   };
 
@@ -1035,6 +1054,15 @@ export default function MapShell({
       const b = pinchRef.current;
       const rawZoom = b.startZoom * (dist / b.startDist);
       const nextZoom = Math.max(1, Math.min(3.5, rawZoom));
+      // Snap to baseline the moment zoom collapses back to (near) 1×.
+      // Resets pan too so pinching out feels like "home" rather than
+      // leaving the map parked at whatever offset it had at 1.01×.
+      if (nextZoom <= 1.02) {
+        setUserZoom(1);
+        setUserPan({ x: 0, y: 0 });
+        e.preventDefault();
+        return;
+      }
       const nextPanX = b.startPanX + (midX - b.startMidX);
       const nextPanY = b.startPanY + (midY - b.startMidY);
       // Clamp pan so the user can't fling the map into empty viewport —
@@ -1056,6 +1084,23 @@ export default function MapShell({
     if (!s || e.pointerId !== s.pointerId) return;
     const dx = e.clientX - s.startX;
     const dy = e.clientY - s.startY;
+
+    // Single-finger PAN when already zoomed — move the map, not the
+    // region rail. Clamped to the same bounds the pinch handler uses.
+    if (s.panMode) {
+      e.preventDefault();
+      const w = mapRootRef.current?.clientWidth ?? window.innerWidth;
+      const h = mapRootRef.current?.clientHeight ?? window.innerHeight;
+      const maxPanX = (w * (userZoom - 1)) / 2 + 120;
+      const maxPanY = (h * (userZoom - 1)) / 2 + 120;
+      const nextPanX = s.startPanX + dx;
+      const nextPanY = s.startPanY + dy;
+      setUserPan({
+        x: Math.max(-maxPanX, Math.min(maxPanX, nextPanX)),
+        y: Math.max(-maxPanY, Math.min(maxPanY, nextPanY)),
+      });
+      return;
+    }
 
     // Axis lock — once the finger has moved ~8px in either axis, we
     // commit to that axis for the rest of the gesture. Horizontal →
