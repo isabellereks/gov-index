@@ -517,20 +517,17 @@ export default function SidePanel({
           onClick={closeAndCollapse}
           aria-label="Close"
           title="Close"
-          className="w-3 h-3 rounded-full bg-[#FF5F57] hover:brightness-95 active:brightness-90 transition flex items-center justify-center"
+          className="relative w-3 h-3 rounded-full bg-[#FF5F57] hover:brightness-95 active:brightness-90 transition"
         >
           <svg
-            width="7"
-            height="7"
-            viewBox="0 0 10 10"
-            fill="none"
-            className="opacity-0 group-hover/tl:opacity-80 transition-opacity"
+            viewBox="0 0 12 12"
+            className="absolute inset-0 w-full h-full opacity-0 group-hover/tl:opacity-100 transition-opacity"
             aria-hidden
           >
             <path
-              d="M3 3L7 7M7 3L3 7"
-              stroke="#4C0205"
-              strokeWidth="1.4"
+              d="M4.2 4.2 L7.8 7.8 M7.8 4.2 L4.2 7.8"
+              stroke="#4D0000"
+              strokeWidth="1.2"
               strokeLinecap="round"
             />
           </svg>
@@ -540,20 +537,17 @@ export default function SidePanel({
           onClick={collapseToIsland}
           aria-label="Minimize"
           title="Minimize"
-          className="w-3 h-3 rounded-full bg-[#FEBC2E] hover:brightness-95 active:brightness-90 transition flex items-center justify-center"
+          className="relative w-3 h-3 rounded-full bg-[#FEBC2E] hover:brightness-95 active:brightness-90 transition"
         >
           <svg
-            width="7"
-            height="7"
-            viewBox="0 0 10 10"
-            fill="none"
-            className="opacity-0 group-hover/tl:opacity-80 transition-opacity"
+            viewBox="0 0 12 12"
+            className="absolute inset-0 w-full h-full opacity-0 group-hover/tl:opacity-100 transition-opacity"
             aria-hidden
           >
             <path
-              d="M2.5 5H7.5"
-              stroke="#5C3C00"
-              strokeWidth="1.4"
+              d="M3.8 6 H8.2"
+              stroke="#5C3200"
+              strokeWidth="1.3"
               strokeLinecap="round"
             />
           </svg>
@@ -564,32 +558,27 @@ export default function SidePanel({
           aria-label={expanded ? "Shrink" : "Expand"}
           aria-pressed={expanded}
           title={expanded ? "Shrink" : "Expand"}
-          className="w-3 h-3 rounded-full bg-[#28C840] hover:brightness-95 active:brightness-90 transition flex items-center justify-center"
+          className="relative w-3 h-3 rounded-full bg-[#28C840] hover:brightness-95 active:brightness-90 transition"
         >
+          {/* Two corner triangles, clearly separated by a blank
+              diagonal through the middle — matches macOS Finder's zoom
+              glyph. Flips across the anti-diagonal when expanded so
+              the arrows appear to invert. */}
           <svg
-            width="8"
-            height="8"
-            viewBox="0 0 10 10"
-            fill="none"
-            className="opacity-0 group-hover/tl:opacity-80 transition-opacity"
+            viewBox="0 0 12 12"
+            className="absolute inset-0 w-full h-full opacity-0 group-hover/tl:opacity-100 transition-opacity"
             aria-hidden
           >
             {expanded ? (
-              <path
-                d="M6 4H8M6 4V2M6 4L9 1M4 6H2M4 6V8M4 6L1 9"
-                stroke="#0A3A0A"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+              <>
+                <path d="M8 3.5 H4 L8 7.5 Z" fill="#003D00" />
+                <path d="M4 8.5 H8 L4 4.5 Z" fill="#003D00" />
+              </>
             ) : (
-              <path
-                d="M2 4V2H4M8 6V8H6M2 2L4.5 4.5M8 8L5.5 5.5"
-                stroke="#0A3A0A"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+              <>
+                <path d="M3.5 3.5 H7 L3.5 7 Z" fill="#003D00" />
+                <path d="M8.5 8.5 H5 L8.5 5 Z" fill="#003D00" />
+              </>
             )}
           </svg>
         </button>

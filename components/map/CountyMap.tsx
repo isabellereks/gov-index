@@ -377,7 +377,11 @@ export default function CountyMap({
       <svg
         viewBox={`0 0 ${VIEWBOX_W} ${VIEWBOX_H}`}
         preserveAspectRatio="xMidYMid meet"
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          shapeRendering: "geometricPrecision",
+        }}
       >
         <defs>
           <filter id="water-blur" x="-2%" y="-2%" width="104%" height="104%">

@@ -101,6 +101,7 @@ export function DcIcon({
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       onClick={onClick}
+      shapeRendering="geometricPrecision"
       style={{
         cursor: interactive && onClick ? "pointer" : "default",
       }}
@@ -334,7 +335,7 @@ export default function DataCenterDots({
   if (!mounted || typeof projection !== "function") return null;
 
   return (
-    <g>
+    <g shapeRendering="geometricPrecision">
       {clusters.map((c) => {
         let projected: [number, number] | null | undefined;
         try {

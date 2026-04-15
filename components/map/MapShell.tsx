@@ -460,6 +460,54 @@ export default function MapShell({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [region, naView, selectedStateName]);
 
+  // iOS Safari fallback — WebKit fires native `gesture*` events for
+  // multi-touch pinch *in addition to* pointer events, and on older
+  // iOS versions the pointer path can drop frames or miss the second
+  // finger entirely. Using gesture.scale directly is the most
+  // reliable path on Safari; we preventDefault to block the browser's
+  // own pinch-to-zoom-page on the same gesture.
+  useEffect(() => {
+    const el = mapRootRef.current;
+    if (!el) return;
+    let startZoom = 1;
+    let startPanX = 0;
+    let startPanY = 0;
+    interface GestureEvent extends Event {
+      scale: number;
+      preventDefault(): void;
+    }
+    const onGestureStart = (e: Event) => {
+      const g = e as GestureEvent;
+      startZoom = userZoom;
+      startPanX = userPan.x;
+      startPanY = userPan.y;
+      g.preventDefault();
+    };
+    const onGestureChange = (e: Event) => {
+      const g = e as GestureEvent;
+      g.preventDefault();
+      const rawZoom = startZoom * g.scale;
+      const nextZoom = Math.max(1, Math.min(3.5, rawZoom));
+      setUserZoom(nextZoom);
+      // Gesture events don't give a centroid — keep the pan offset
+      // steady so the map doesn't jitter. Users can two-finger drag
+      // after zooming in via the pointer handlers.
+      setUserPan({ x: startPanX, y: startPanY });
+    };
+    const onGestureEnd = (e: Event) => {
+      (e as GestureEvent).preventDefault();
+    };
+    el.addEventListener("gesturestart", onGestureStart, { passive: false });
+    el.addEventListener("gesturechange", onGestureChange, { passive: false });
+    el.addEventListener("gestureend", onGestureEnd, { passive: false });
+    return () => {
+      el.removeEventListener("gesturestart", onGestureStart);
+      el.removeEventListener("gesturechange", onGestureChange);
+      el.removeEventListener("gestureend", onGestureEnd);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleRegionChange = (next: Region) => {
     const updated: ViewState = {
       region: next,
@@ -1362,14 +1410,12 @@ export default function MapShell({
         style={{
           transform: `scale(${panelExtraZoom})`,
           transformOrigin: "center center",
-          willChange: "transform",
-          // `pan-y` lets the browser own vertical page scroll — so a
-          // single-finger drag on the map scrolls past the hero to
-          // the sections below, which is the behavior everyone
-          // reaches for on mobile. Horizontal pan + pinch still fall
-          // through to our pointer handlers (region swipe + pinch-
-          // zoom), and the pinch handler calls preventDefault() to
-          // block any residual browser pinch-to-zoom-page.
+          // NO `will-change: transform` here — it promotes the subtree
+          // to its own GPU layer, which caches the SVG as a bitmap and
+          // scales THAT. On mobile with 1.8× zoom the cached bitmap
+          // reads as blurry. Letting the compositor re-rasterize SVG
+          // geometry each frame costs a bit of CPU but keeps vectors
+          // crisp.
           touchAction: "pan-y",
           transition: "transform 500ms cubic-bezier(0.5, 1.55, 0.4, 1)",
         }}
@@ -1385,7 +1431,6 @@ export default function MapShell({
         style={{
           transform: `scale(${baseMapScale})`,
           transformOrigin: "center center",
-          willChange: "transform",
         }}
       >
       {/* User pinch/pan layer — sits between baseMapScale and the rail
@@ -1397,7 +1442,9 @@ export default function MapShell({
         style={{
           transform: `translate3d(${userPan.x}px, ${userPan.y}px, 0) scale(${userZoom})`,
           transformOrigin: "center center",
-          willChange: "transform",
+          // will-change dropped for the same reason as the base scale
+          // wrapper — prevents the browser from caching the SVG as a
+          // bitmap and scaling it, which looks blurry at 2–3× zoom.
           transition:
             pinchRef.current === null
               ? "transform 320ms cubic-bezier(0.32, 0.72, 0, 1)"
@@ -1549,6 +1596,71 @@ export default function MapShell({
         }}
       >
         <VisitorsWidget />
+      </div>
+
+      {/* Bottom-right zoom controls — give users a + / − way to scale
+          the map when pinch isn't available (desktop trackpad that
+          doesn't ctrl+scroll, or mobile browsers that don't fire the
+          gesture events cleanly). Stacked vertically so they don't
+          fight the depth stepper or data-center legend at the bottom
+          right. Same chrome language as the toolbar. */}
+      <div
+        className="fixed bottom-28 right-4 lg:bottom-6 lg:right-6 z-30"
+        style={{
+          opacity: chromeOpacity,
+          pointerEvents: chromeOpacity < 0.5 ? "none" : "auto",
+        }}
+      >
+        <div
+          className="flex flex-col rounded-full bg-white/85 backdrop-blur-2xl border border-black/[.04] overflow-hidden"
+          style={{
+            boxShadow:
+              "0 8px 32px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04)",
+          }}
+        >
+          <button
+            type="button"
+            aria-label="Zoom in"
+            onClick={() =>
+              setUserZoom((z) => Math.min(3.5, +(z * 1.25).toFixed(3)))
+            }
+            className="w-9 h-9 flex items-center justify-center text-ink/70 hover:text-ink active:scale-95 transition"
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden>
+              <path
+                d="M7 3 V11 M3 7 H11"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
+          <div className="h-px bg-black/[.06]" aria-hidden />
+          <button
+            type="button"
+            aria-label="Zoom out"
+            onClick={() => {
+              setUserZoom((z) => {
+                const next = Math.max(1, +(z / 1.25).toFixed(3));
+                // Snap back to a centered view when returning to 1×
+                // so a previous pinch-pan doesn't leave the map
+                // lopsided after zooming fully out.
+                if (next === 1) setUserPan({ x: 0, y: 0 });
+                return next;
+              });
+            }}
+            className="w-9 h-9 flex items-center justify-center text-ink/70 hover:text-ink active:scale-95 transition"
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden>
+              <path
+                d="M3 7 H11"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Bottom-center depth stepper — drill breadcrumb. Visible in

@@ -72,10 +72,25 @@ export default function VisitorsWidget() {
       sessionStorage.setItem("visitor-session", sessionId);
     }
 
-    // Heartbeat + count fetch. If the API is unreachable or KV isn't
-    // provisioned yet (503 kv-not-configured), we fall back to the
-    // cosmetic drift from seededBase so the pill never shows "0".
-    let usingFallback = false;
+    // ─── Request budget ───────────────────────────────────────────────
+    //
+    // Vercel's free tier allows 1M edge requests/month. The old setup
+    // (heartbeat every 30-60s + poll every 15-20s) would hit that ceiling
+    // with just a handful of concurrent viewers. Now:
+    //
+    //   - one combined POST per hour — heartbeat + count in one response
+    //   - cosmetic drift between hourly snaps (±5 around the last truth)
+    //     so the number looks live without additional requests
+    //
+    // That's ~720 edge requests per tab per month vs. the previous 172k.
+    // The server's WINDOW_MS is 65 min so an hourly heartbeat stays
+    // inside the "active now" window.
+    const DRIFT_RANGE = 5;
+    // Anchor the drift around the most recent real count. Ref because
+    // the drift interval closes over state but doesn't need to re-render
+    // on each write.
+    const anchorRef = { current: 0 };
+
     async function heartbeat() {
       try {
         const r = await fetch("/api/visitors", {
@@ -83,83 +98,51 @@ export default function VisitorsWidget() {
           headers: { "content-type": "application/json" },
           body: JSON.stringify({ sessionId }),
           keepalive: true,
+          cache: "no-store",
         });
-        if (!r.ok) usingFallback = true;
-      } catch {
-        usingFallback = true;
-      }
-    }
-
-    async function fetchCount() {
-      try {
-        const r = await fetch("/api/visitors", { cache: "no-store" });
         if (!r.ok) {
-          // 503 = KV not provisioned, or 5xx. Fall back to cosmetic
-          // drift so the pill still has a number — the infra is down,
-          // we never want to claim 0.
-          usingFallback = true;
-          applyFallback();
+          // 5xx / KV unavailable — leave the displayed count alone and
+          // let drift keep it moving around the last known anchor (or
+          // a seeded base on very first load).
+          if (anchorRef.current === 0) anchorRef.current = seededBase();
           return;
         }
         const data = (await r.json()) as { count?: number };
         if (typeof data.count !== "number") {
-          usingFallback = true;
-          applyFallback();
+          if (anchorRef.current === 0) anchorRef.current = seededBase();
           return;
         }
-        // Trust the API. Only floor at 1 — we're on the page, so we
-        // are ourselves a session (our heartbeat POST may not have
-        // been recorded in the read snapshot, especially right after
-        // mount). Everything else reflects real KV state.
-        setCount(Math.max(1, data.count));
-        usingFallback = false;
+        // Trust the API. Floor at 1 — we're always a session ourselves.
+        const real = Math.max(1, data.count);
+        anchorRef.current = real;
+        setCount(real);
       } catch {
-        usingFallback = true;
-        applyFallback();
+        if (anchorRef.current === 0) anchorRef.current = seededBase();
       }
     }
 
-    function applyFallback() {
-      if (!usingFallback) return;
-      setCount((c) => {
-        if (c > 0) return c;
-        return seededBase();
-      });
-    }
+    // Initial heartbeat; then once an hour.
+    heartbeat();
+    const beat = window.setInterval(heartbeat, 60 * 60 * 1000);
 
-    // Initial + recurring. Heartbeat every 60s (well under the 5-min
-    // window the server GCs on). Count refresh every 20s so the
-    // displayed number feels live without hammering the API.
-    heartbeat().then(fetchCount);
-    const beat = window.setInterval(heartbeat, 60_000);
-    const poll = window.setInterval(fetchCount, 20_000);
-
-    // Re-heartbeat the instant a user alt-tabs back in. Without this, a
-    // viewer who switches away for ~5 min falls out of the window and
-    // the number appears to drop even though they're still "on".
-    const onVisibility = () => {
-      if (document.visibilityState === "visible") {
-        heartbeat().then(fetchCount);
-      }
-    };
-    document.addEventListener("visibilitychange", onVisibility);
-
-    // Cosmetic drift — only takes effect while `usingFallback` is true.
-    // Runs continuously so the number moves naturally when the API is
-    // down, and is a silent no-op when the real count is flowing.
+    // Cosmetic drift — ±DRIFT_RANGE around the anchor, random walk
+    // every few seconds. Runs whether the API is up or down; when it's
+    // up, each hourly heartbeat resets the anchor to the real count,
+    // and the drift starts moving around that new value. When it's
+    // down, `seededBase()` provided an initial anchor so the pill
+    // never reads 0.
     const drift = window.setInterval(() => {
-      if (!usingFallback) return;
       setCount((c) => {
-        const base = seededBase();
+        const anchor = anchorRef.current || seededBase();
         const delta = Math.random() < 0.5 ? -1 : 1;
         const next = c + delta;
-        const floor = Math.max(12, base - 18);
-        const ceil = base + 22;
+        const floor = Math.max(1, anchor - DRIFT_RANGE);
+        const ceil = anchor + DRIFT_RANGE;
         if (next < floor) return floor;
         if (next > ceil) return ceil;
         return next;
       });
-    }, 3500 + Math.random() * 2500);
+    }, 4000 + Math.random() * 3000);
 
     const rotate = window.setInterval(() => {
       setLabelIdx((i) => (i + 1) % LABELS.length);
@@ -167,10 +150,8 @@ export default function VisitorsWidget() {
 
     return () => {
       window.clearInterval(beat);
-      window.clearInterval(poll);
       window.clearInterval(drift);
       window.clearInterval(rotate);
-      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, [startingLabel]);
 
