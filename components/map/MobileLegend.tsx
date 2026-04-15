@@ -29,7 +29,7 @@ const SHORT_STANCE: Record<(typeof STANCE_ORDER)[number], string> = {
   favorable: "Favorable",
 };
 
-function StanceRow() {
+export function StanceRow() {
   return (
     <div>
       <div className="text-[11px] font-semibold text-muted tracking-tight mb-2">
@@ -75,7 +75,7 @@ function DimensionRow({ dimension }: { dimension: Dimension }) {
   );
 }
 
-function SizeRow() {
+export function SizeRow() {
   return (
     <div>
       <div className="text-[11px] font-semibold text-muted tracking-tight mb-2">
@@ -102,7 +102,7 @@ function SizeRow() {
   );
 }
 
-function DataCenterRow() {
+export function DataCenterRow() {
   const items = [
     { color: "#0A84FF", label: "Operational", hollow: false },
     { color: "#FF9500", label: "Building", hollow: false },

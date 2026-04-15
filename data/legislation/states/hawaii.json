@@ -6,7 +6,7 @@
   "stanceDatacenter": "none",
   "stanceAI": "review",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Hawaii has no enacted AI law. Pending bills would criminalize non-consensual sexual deepfakes, ban police use of facial recognition without specific conditions, and stand up an AI institute at the University of Hawaii. No data-center legislation is being tracked.",
+  "contextBlurb": "Hawaii's legislature is actively examining AI across a notably broad range of domains — from algorithmic transparency in law enforcement (SB2049) and deepfake regulation (SB1156) to agricultural biosecurity, emergency preparedness, and arts funding — reflecting a whole-of-government approach to embedding AI oversight into existing policy areas. The state's geographic isolation and reliance on imported energy also shape its data center conversation, with SB539 touching on chemical safety considerations relevant to facility siting. All active measures remain in committee, signaling a legislature still in the deliberation phase rather than moving toward final votes.",
   "legislation": [
     {
       "id": "hi-hb775",

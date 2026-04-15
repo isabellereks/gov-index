@@ -1,6 +1,11 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
+import {
+  StanceRow,
+  DataCenterRow,
+  SizeRow,
+} from "@/components/map/MobileLegend";
 
 interface ShortcutsHelpProps {
   open: boolean;
@@ -15,7 +20,7 @@ interface Row {
 // Grouped keyboard reference. Each row's `keys` get rendered as separate
 // kbd-style chips so combinations read correctly. Pulled from the
 // keydown handler in MapShell so this stays a single source of truth.
-const GROUPS: { title: string; rows: Row[] }[] = [
+const KEYBOARD_GROUPS: { title: string; rows: Row[] }[] = [
   {
     title: "Move between regions",
     rows: [
@@ -43,6 +48,50 @@ const GROUPS: { title: string; rows: Row[] }[] = [
   },
 ];
 
+// Mobile gesture reference — the `?` button shows this instead of the
+// keyboard list when there's no keyboard around.
+const TOUCH_GROUPS: { title: string; rows: { label: string; hint: string }[] }[] = [
+  {
+    title: "Move between regions",
+    rows: [
+      { label: "Switch region", hint: "Tap a pill at the top (N. America / Europe / Asia)" },
+      { label: "Pan the map", hint: "Two-finger drag" },
+      { label: "Zoom the map", hint: "Pinch in or out" },
+    ],
+  },
+  {
+    title: "Explore a place",
+    rows: [
+      { label: "Select a country or state", hint: "Tap it" },
+      { label: "See counties", hint: "Tap a highlighted state — it drills in" },
+      { label: "Open a data center", hint: "Tap a circle on the map" },
+    ],
+  },
+  {
+    title: "Sidebar",
+    rows: [
+      { label: "Read details", hint: "Tap the pill at the top to expand" },
+      { label: "Dismiss", hint: "Swipe the sidebar down from the handle" },
+    ],
+  },
+];
+
+function useIsMobile(): boolean {
+  return useSyncExternalStore(
+    (callback) => {
+      if (typeof window === "undefined") return () => {};
+      const mq = window.matchMedia("(max-width: 1023px)");
+      mq.addEventListener("change", callback);
+      return () => mq.removeEventListener("change", callback);
+    },
+    () =>
+      typeof window !== "undefined"
+        ? window.matchMedia("(max-width: 1023px)").matches
+        : false,
+    () => false,
+  );
+}
+
 function Kbd({ children }: { children: React.ReactNode }) {
   return (
     <kbd className="inline-flex items-center justify-center min-w-[1.6rem] h-[1.6rem] px-1.5 rounded-md bg-bg/80 border border-black/[.06] text-[11px] font-medium text-ink tracking-tight font-sans">
@@ -53,6 +102,7 @@ function Kbd({ children }: { children: React.ReactNode }) {
 
 export default function ShortcutsHelp({ open, onClose }: ShortcutsHelpProps) {
   const cardRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (!open) return;
@@ -74,7 +124,7 @@ export default function ShortcutsHelp({ open, onClose }: ShortcutsHelpProps) {
     <div
       role="dialog"
       aria-modal="true"
-      aria-label="Keyboard shortcuts"
+      aria-label={isMobile ? "Map guide" : "Keyboard shortcuts"}
       className={`fixed inset-0 z-40 flex items-start justify-center pt-[14vh] px-4 bg-white/55 backdrop-blur-2xl transition-[opacity,backdrop-filter] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] ${
         open ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
@@ -89,7 +139,7 @@ export default function ShortcutsHelp({ open, onClose }: ShortcutsHelpProps) {
       >
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-sm font-semibold text-ink tracking-tight">
-            Keyboard shortcuts
+            {isMobile ? "Map guide" : "Keyboard shortcuts"}
           </h2>
           <button
             type="button"
@@ -108,36 +158,74 @@ export default function ShortcutsHelp({ open, onClose }: ShortcutsHelpProps) {
           </button>
         </div>
 
-        <div className="flex flex-col gap-4">
-          {GROUPS.map((group) => (
-            <div key={group.title}>
-              <div className="text-[11px] font-medium text-muted tracking-tight mb-2">
-                {group.title}
+        {isMobile ? (
+          <div className="flex flex-col gap-5">
+            {TOUCH_GROUPS.map((group) => (
+              <div key={group.title}>
+                <div className="text-[11px] font-medium text-muted tracking-tight mb-2">
+                  {group.title}
+                </div>
+                <ul className="flex flex-col gap-2">
+                  {group.rows.map((row) => (
+                    <li
+                      key={row.label}
+                      className="flex items-start justify-between gap-4 text-sm"
+                    >
+                      <span className="text-ink flex-shrink-0">{row.label}</span>
+                      <span className="text-muted text-right leading-snug">
+                        {row.hint}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="flex flex-col gap-1.5">
-                {group.rows.map((row) => (
-                  <li
-                    key={row.label}
-                    className="flex items-center justify-between text-sm text-ink"
-                  >
-                    <span>{row.label}</span>
-                    <span className="flex items-center gap-1">
-                      {row.keys.map((k, i) => (
-                        <span
-                          key={k}
-                          className="flex items-center gap-1 text-muted"
-                        >
-                          {i > 0 && <span className="text-[11px]">or</span>}
-                          <Kbd>{k}</Kbd>
-                        </span>
-                      ))}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+            ))}
+
+            {/* Legend — merged in from the old bottom-floating mobile
+                legend card. Keeping it inside the help sheet gives the
+                map back the full viewport and keeps the reference one
+                tap away. */}
+            <div className="pt-1 flex flex-col gap-3 border-t border-black/[.06]">
+              <div className="text-[11px] font-medium text-muted tracking-tight mt-1">
+                Legend
+              </div>
+              <StanceRow />
+              <DataCenterRow />
+              <SizeRow />
             </div>
-          ))}
-        </div>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-4">
+            {KEYBOARD_GROUPS.map((group) => (
+              <div key={group.title}>
+                <div className="text-[11px] font-medium text-muted tracking-tight mb-2">
+                  {group.title}
+                </div>
+                <ul className="flex flex-col gap-1.5">
+                  {group.rows.map((row) => (
+                    <li
+                      key={row.label}
+                      className="flex items-center justify-between text-sm text-ink"
+                    >
+                      <span>{row.label}</span>
+                      <span className="flex items-center gap-1">
+                        {row.keys.map((k, i) => (
+                          <span
+                            key={k}
+                            className="flex items-center gap-1 text-muted"
+                          >
+                            {i > 0 && <span className="text-[11px]">or</span>}
+                            <Kbd>{k}</Kbd>
+                          </span>
+                        ))}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

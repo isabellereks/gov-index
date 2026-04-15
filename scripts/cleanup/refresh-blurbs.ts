@@ -23,6 +23,7 @@ import Anthropic from "@anthropic-ai/sdk";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "../..");
 const STATES_DIR = join(ROOT, "data/legislation/states");
+const FEDERAL_PATH = join(ROOT, "data/legislation/federal.json");
 
 const MODEL = "claude-sonnet-4-6";
 
@@ -58,6 +59,7 @@ ${lines}
 
 Hard rules:
 - Do NOT contradict the bill list. If any bills are stage=Enacted, the blurb must NOT claim "no enacted law" / "nothing has passed" / similar.
+- Do NOT lead with "${data.state} has no enacted X" when there are substantial bills in Filed/Committee/Floor — that buries the actual story. LEAD with what IS happening (what's being debated, who's pushing it, what's distinctive). Lack of enacted laws may be mentioned, but it shouldn't be the opening frame.
 - Do NOT start with "${data.state} has X bills" — the user can already see them.
 - DO mention specific bill codes when they're significant (moratoriums, landmark legislation, enacted laws).
 - DO explain what makes this state DISTINCTIVE.
@@ -67,8 +69,12 @@ Return ONLY the blurb text, no quotes or formatting.`;
 }
 
 async function refresh(slug: string) {
-  const path = join(STATES_DIR, `${slug}.json`);
+  // "federal" is a special slug — same shape, different file location.
+  // Lets you say `refresh-blurbs --force federal` when Congress moves.
+  const path =
+    slug === "federal" ? FEDERAL_PATH : join(STATES_DIR, `${slug}.json`);
   const data = JSON.parse(readFileSync(path, "utf8")) as StateFile;
+  if (!data.state) data.state = slug === "federal" ? "the US federal government" : slug;
   const before = data.contextBlurb;
   const res = await client.messages.create({
     model: MODEL,

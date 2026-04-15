@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "New Hampshire has no enacted AI or data-center law. Pending bills would regulate AI systems performing licensed professional work, address municipal authority over data-center siting, ban the sale of children's personal data, and restrict state agencies from sharing data on autistic residents.",
+  "contextBlurb": "New Hampshire's legislature is wrestling with unusually wide-ranging and sometimes contradictory impulses: HB1265 would have outright banned new data center construction over environmental concerns, while HB1739 sought to actively incentivize large-scale data facilities — both died without passage. Consumer data privacy protections, AI governance for licensed professions (SB640), and municipal zoning authority over data centers (SB439) remain active debates, but no major legislation has yet crossed the finish line. That gap between ambitious proposals and actual enactments, combined with the ideologically diverse mix of bills, makes New Hampshire's policy direction harder to predict than most states.",
   "legislation": [
     {
       "id": "nh-hb1694",

@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Missouri has no enacted AI law. Pending bills would require age verification for companion chatbots, create a private right of action for undisclosed AI-generated content, and establish new siting rules for data centers.",
+  "contextBlurb": "Missouri's legislature is actively debating AI governance and data center accountability, with bills like SB1012 and SB1455 pushing for algorithmic transparency and AI safety standards, while HB2239's Artificial Intelligence Data Center Environmental Accountability Act targets the water, carbon, and grid impacts of large-scale data center growth. Child safety around AI chatbots is also a recurring theme, appearing across multiple bills at the committee stage. No AI or data center legislation has been enacted yet, leaving the state's regulatory direction unsettled.",
   "legislation": [
     {
       "id": "mo-hb1810",

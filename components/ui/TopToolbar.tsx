@@ -77,7 +77,7 @@ export default function TopToolbar({
       <div
         role="toolbar"
         aria-label="Map controls"
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-30 inline-flex items-center gap-1 p-1 rounded-full bg-white/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.08),0_2px_8px_rgba(0,0,0,0.04)] border border-black/[.04] max-w-[calc(100vw-2rem)]"
+        className="fixed top-6 left-1/2 -translate-x-1/2 z-30 inline-flex items-center gap-1 p-1.5 lg:p-1 rounded-full bg-white/85 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.08),0_2px_8px_rgba(0,0,0,0.04)] border border-black/[.04] max-w-[calc(100vw-2rem)]"
       >
         {/* Region tabs — the ink pill SLIDES between regions via
             framer-motion `layoutId`. Squishy spring: lower damping so it
@@ -95,7 +95,7 @@ export default function TopToolbar({
                 onClick={() => {
                   if (!active) onRegionChange(r);
                 }}
-                className={`relative px-3 h-7 inline-flex items-center justify-center rounded-full text-[11px] font-medium tracking-tight whitespace-nowrap transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.94] ${
+                className={`relative px-3.5 h-9 lg:px-3 lg:h-7 inline-flex items-center justify-center rounded-full text-[12px] lg:text-[11px] font-medium tracking-tight whitespace-nowrap transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.94] ${
                   active
                     ? "text-white"
                     : "text-muted hover:text-ink hover:bg-black/[.04]"
@@ -130,7 +130,7 @@ export default function TopToolbar({
           aria-label="Open search"
           whileTap={{ scale: 0.94 }}
           transition={{ type: "spring", stiffness: 400, damping: 30, mass: 0.6 }}
-          className="h-7 inline-flex items-center gap-2 px-2 sm:px-2.5 rounded-full text-muted hover:text-ink hover:bg-black/[.04] transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]"
+          className="h-9 lg:h-7 inline-flex items-center gap-2 px-2.5 lg:px-2 rounded-full text-muted hover:text-ink hover:bg-black/[.04] transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]"
         >
           <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
             <circle cx="6" cy="6" r="4.5" stroke="currentColor" strokeWidth="1.5" />

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -23,20 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="font-sans bg-white text-ink antialiased">
-        <Script
-          id="scroll-restoration"
-          strategy="beforeInteractive"
+        {/* Plain <script> tag — Next 16 + React 19 warn when a
+            `next/script` inline-body is rendered inside React because
+            inline scripts inside React components aren't executed on
+            the client. dangerouslySetInnerHTML is the supported path
+            for small boot snippets. */}
+        <script
           dangerouslySetInnerHTML={{
             __html: `if ('scrollRestoration' in history) history.scrollRestoration = 'manual';`,
           }}
         />
-        {process.env.NODE_ENV === "development" && (
-          <Script
-            src="//unpkg.com/react-grab/dist/index.global.js"
-            crossOrigin="anonymous"
-            strategy="beforeInteractive"
-          />
-        )}
         {children}
         <Analytics />
       </body>

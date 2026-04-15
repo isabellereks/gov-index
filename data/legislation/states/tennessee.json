@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Tennessee has no enacted AI or data-center law. Pending bills would require data centers to pay the full cost of their grid hookups, create a formal impact-review process before construction, ban deceptive political deepfakes within 90 days of an election, and limit police access to historical location data.",
+  "contextBlurb": "Tennessee's legislature is grappling with a surge of data center oversight proposals, with multiple bills (including HB2392 and SB2653) pushing for formal environmental and grid-impact review processes before new facilities can site — a notably proactive local-control approach. On AI, activity is narrower, with deepfake election legislation advancing in committee and a school-focused AI governance bill (HB0531) still in early stages. No AI or data center measures have been enacted yet, leaving significant policy questions unresolved as the session continues.",
   "legislation": [
     {
       "id": "tn-sb2112",

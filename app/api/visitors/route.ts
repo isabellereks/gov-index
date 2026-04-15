@@ -15,7 +15,11 @@ import { kv } from "@vercel/kv";
  * client falls back to its cosmetic drift. No build-time dependency.
  */
 
-const WINDOW_MS = 90_000;
+// 5 minutes. Matches the "active now" window used by Vercel Analytics,
+// GA realtime, and Plausible. A tighter window (e.g. 90s) under-counts
+// anyone who alt-tabs, switches tabs, or briefly pauses between
+// heartbeats, which is why our number was reading ~20% of Vercel's.
+const WINDOW_MS = 5 * 60 * 1000;
 const KEY = "visitors:sessions";
 
 // Edge runtime: faster cold-start than node, and KV works natively.

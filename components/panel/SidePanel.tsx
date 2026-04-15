@@ -172,6 +172,10 @@ export default function SidePanel({
     explicitPosition ?? (isMobileViewport ? "bottom" : "left");
   const setPosition = (p: Position) => setExplicitPosition(p);
   const [preferredLayer, setPreferredLayer] = useState<Layer>("legislation");
+  // Green traffic-light "expand" — bigger reading surface. On mobile
+  // that means a ~90vh sheet; on desktop a wider panel. Resets to
+  // false whenever the panel collapses to the island.
+  const [expanded, setExpanded] = useState(false);
   const tabRefs = useRef<Partial<Record<Layer, HTMLButtonElement | null>>>({});
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [expandedSections, setExpandedSections] = useState<Set<Layer>>(new Set());
@@ -225,6 +229,12 @@ export default function SidePanel({
     if (scrollRef.current) scrollRef.current.scrollTop = 0;
   }, [entity?.id]);
 
+  // Expanded state is a per-session preference for the current view;
+  // collapsing to the island always clears it so reopening feels fresh.
+  useEffect(() => {
+    if (size === "min") setExpanded(false);
+  }, [size]);
+
   const availableLayers: Layer[] = [];
   if (hasLegislation) availableLayers.push("legislation");
   if (hasLocal) availableLayers.push("local");
@@ -246,7 +256,10 @@ export default function SidePanel({
   const positionStyle: CSSProperties = (() => {
     if (size === "min") {
       return {
-        top: "4.5rem",
+        // Sits 0.75rem below the (taller on mobile) region toolbar so
+        // the two pills don't kiss. Desktop pill is h-7 + p-1 = 36px,
+        // mobile pill is h-9 + p-1.5 = 48px; 5.75rem covers both.
+        top: "5.75rem",
         left: "50%",
         right: "auto",
         bottom: "auto",
@@ -315,17 +328,21 @@ export default function SidePanel({
           width: "calc(100vw - 1.5rem)",
           maxWidth: "26rem",
           minHeight: "0px",
-          maxHeight: "min(30rem, 60vh)",
+          maxHeight: expanded ? "min(44rem, 90vh)" : "min(30rem, 60vh)",
         };
       }
       return {
-        width: "min(20rem, calc(100vw - 2rem))",
+        width: expanded
+          ? "min(26rem, calc(100vw - 2rem))"
+          : "min(20rem, calc(100vw - 2rem))",
         minHeight: "0px",
         maxHeight: "min(22rem, 45vh)",
       };
     }
     return {
-      width: "min(22rem, calc(100vw - 2rem))",
+      width: expanded
+        ? "min(30rem, calc(100vw - 2rem))"
+        : "min(22rem, calc(100vw - 2rem))",
       minHeight: "0px",
       maxHeight: "calc(100vh - 9rem)",
     };
@@ -431,30 +448,29 @@ export default function SidePanel({
     : entity?.name ?? null;
 
   const renderMin = () => (
-    <div
-      onPointerDown={onDragPointerDown}
-      onPointerMove={onDragPointerMove}
-      onPointerUp={onDragPointerUp}
-      onPointerCancel={onDragPointerUp}
-      className={`h-full flex items-center justify-center gap-1.5 px-5 text-[13px] font-semibold text-ink tracking-tight whitespace-nowrap select-none touch-none ${
-        isDragging ? "cursor-grabbing" : "cursor-pointer"
-      }`}
+    // Plain <button> with onClick. The previous pointer-capture +
+    // custom tap-vs-drag detection was fragile: touch sequences
+    // misfired often enough that users reported "island doesn't open",
+    // and synthesized clicks would retarget to the map beneath when
+    // the pill animated away. A button with onClick uses the
+    // browser's own click path — taps just work.
+    <button
+      type="button"
+      onClick={(e) => {
+        e.stopPropagation();
+        setSize("md");
+      }}
       aria-label={
         islandPrimary
-          ? `${islandPrimary} — tap to open`
-          : "Tap to explore the map"
+          ? `${islandPrimary} — open for details`
+          : "Open map details"
       }
+      className="w-full h-full flex items-center justify-center gap-1.5 px-5 text-[13px] font-semibold text-ink tracking-tight whitespace-nowrap select-none cursor-pointer active:scale-[0.97] transition-transform"
     >
-      {/* Invisible left-spacer that mirrors the chevron's visible
-          glyph (not its full 10px block — the chevron path is drawn
-          inset 3px from the left of its SVG viewBox, so a 10px spacer
-          was over-compensating and biasing the label ~2px right. 6px
-          matches the chevron's visible footprint + a hair of optical
-          weighting, so text+chevron reads as geometrically centered. */}
-      <span
-        aria-hidden
-        className="w-[6px] flex-shrink-0"
-      />
+      {/* Invisible left-spacer matches the chevron's visible glyph
+          (6px, not the full 10px SVG block) so text+chevron read as
+          geometrically centered. */}
+      <span aria-hidden className="w-[6px] flex-shrink-0" />
       {islandPrimary ? (
         <span className="truncate">{islandPrimary}</span>
       ) : (
@@ -476,17 +492,114 @@ export default function SidePanel({
           strokeLinejoin="round"
         />
       </svg>
-    </div>
+    </button>
   );
+
+  const collapseToIsland = () => {
+    setExpanded(false);
+    setSize("min");
+  };
+  const closeAndCollapse = () => {
+    if (facilityMode && onCloseFacility) onCloseFacility();
+    setExpanded(false);
+    setSize("min");
+  };
 
   const renderMd = () => (
     <>
+      {/* Mac-style traffic-light controls — icons appear on hover (or
+          always on touch, where there's no hover state). Red = close +
+          dismiss facility; yellow = minimize to island; green = toggle
+          expanded reading surface. */}
+      <div className="group/tl flex items-center gap-1.5 px-3.5 pt-3 pb-1.5 flex-shrink-0">
+        <button
+          type="button"
+          onClick={closeAndCollapse}
+          aria-label="Close"
+          title="Close"
+          className="w-3 h-3 rounded-full bg-[#FF5F57] hover:brightness-95 active:brightness-90 transition flex items-center justify-center"
+        >
+          <svg
+            width="7"
+            height="7"
+            viewBox="0 0 10 10"
+            fill="none"
+            className="opacity-0 group-hover/tl:opacity-80 transition-opacity"
+            aria-hidden
+          >
+            <path
+              d="M3 3L7 7M7 3L3 7"
+              stroke="#4C0205"
+              strokeWidth="1.4"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
+        <button
+          type="button"
+          onClick={collapseToIsland}
+          aria-label="Minimize"
+          title="Minimize"
+          className="w-3 h-3 rounded-full bg-[#FEBC2E] hover:brightness-95 active:brightness-90 transition flex items-center justify-center"
+        >
+          <svg
+            width="7"
+            height="7"
+            viewBox="0 0 10 10"
+            fill="none"
+            className="opacity-0 group-hover/tl:opacity-80 transition-opacity"
+            aria-hidden
+          >
+            <path
+              d="M2.5 5H7.5"
+              stroke="#5C3C00"
+              strokeWidth="1.4"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          aria-label={expanded ? "Shrink" : "Expand"}
+          aria-pressed={expanded}
+          title={expanded ? "Shrink" : "Expand"}
+          className="w-3 h-3 rounded-full bg-[#28C840] hover:brightness-95 active:brightness-90 transition flex items-center justify-center"
+        >
+          <svg
+            width="8"
+            height="8"
+            viewBox="0 0 10 10"
+            fill="none"
+            className="opacity-0 group-hover/tl:opacity-80 transition-opacity"
+            aria-hidden
+          >
+            {expanded ? (
+              <path
+                d="M6 4H8M6 4V2M6 4L9 1M4 6H2M4 6V8M4 6L1 9"
+                stroke="#0A3A0A"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            ) : (
+              <path
+                d="M2 4V2H4M8 6V8H6M2 2L4.5 4.5M8 8L5.5 5.5"
+                stroke="#0A3A0A"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            )}
+          </svg>
+        </button>
+      </div>
       <div
         onPointerDown={onDragPointerDown}
         onPointerMove={onDragPointerMove}
         onPointerUp={onDragPointerUp}
         onPointerCancel={onDragPointerUp}
-        className={`flex items-center justify-center px-3 pt-2 pb-1 flex-shrink-0 select-none touch-none ${
+        className={`flex items-center justify-center px-3 pb-1 flex-shrink-0 select-none touch-none ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
         aria-label="Drag to move panel, tap to collapse"

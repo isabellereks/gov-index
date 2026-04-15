@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Ohio has no enacted AI or data-center law. A filed package would freeze new data-center sales-tax exemptions, license independent AI risk-verification organizations, and ban the sale of sensitive personal data to data brokers. A study commission on data centers is also advancing.",
+  "contextBlurb": "Ohio's legislature is grappling with an unusually aggressive wave of data center skepticism, with bills like HB710 and SB381 seeking to outright prohibit public support for new facilities and require utility commission approval before they can connect to the grid. Alongside those, proposals to strip data center tax exemptions (SB374) and mandate water consumption reporting (HB784, SB378) reflect growing concern about the infrastructure and environmental costs of rapid AI-driven buildout. On the AI side, activity remains largely exploratory, with governance and deepfake bills still in early stages and no major legislation enacted yet.",
   "legislation": [
     {
       "id": "oh-sb374",
@@ -109,7 +109,7 @@
       "id": "oh-hb646",
       "billCode": "HB646",
       "title": "Create the Data Center Study Commission",
-      "summary": "This bill creates a commission to study data centers in Ohio and their impacts. No restrictions or incentives are imposed \u2014 the commission will gather information and likely make future policy recommendations.",
+      "summary": "This bill creates a commission to study data centers in Ohio and their impacts. No restrictions or incentives are imposed — the commission will gather information and likely make future policy recommendations.",
       "stage": "Floor",
       "stance": "review",
       "dimensionStances": {

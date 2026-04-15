@@ -94,20 +94,25 @@ export default function VisitorsWidget() {
       try {
         const r = await fetch("/api/visitors", { cache: "no-store" });
         if (!r.ok) {
+          // 503 = KV not provisioned, or 5xx. Fall back to cosmetic
+          // drift so the pill still has a number — the infra is down,
+          // we never want to claim 0.
           usingFallback = true;
           applyFallback();
           return;
         }
         const data = (await r.json()) as { count?: number };
-        if (typeof data.count === "number" && data.count > 0) {
-          setCount(data.count);
-          usingFallback = false;
-        } else {
-          // Count is 0 — the heartbeat just hasn't caught up yet on a
-          // fresh deploy. Treat as fallback for a beat so the pill
-          // doesn't read "0 people".
+        if (typeof data.count !== "number") {
+          usingFallback = true;
           applyFallback();
+          return;
         }
+        // Trust the API. Only floor at 1 — we're on the page, so we
+        // are ourselves a session (our heartbeat POST may not have
+        // been recorded in the read snapshot, especially right after
+        // mount). Everything else reflects real KV state.
+        setCount(Math.max(1, data.count));
+        usingFallback = false;
       } catch {
         usingFallback = true;
         applyFallback();
@@ -122,12 +127,22 @@ export default function VisitorsWidget() {
       });
     }
 
-    // Initial + recurring. Heartbeat every 30s (well under the 90s
-    // window the server GCs on). Count refresh every 15s so the
-    // displayed number feels live.
+    // Initial + recurring. Heartbeat every 60s (well under the 5-min
+    // window the server GCs on). Count refresh every 20s so the
+    // displayed number feels live without hammering the API.
     heartbeat().then(fetchCount);
-    const beat = window.setInterval(heartbeat, 30_000);
-    const poll = window.setInterval(fetchCount, 15_000);
+    const beat = window.setInterval(heartbeat, 60_000);
+    const poll = window.setInterval(fetchCount, 20_000);
+
+    // Re-heartbeat the instant a user alt-tabs back in. Without this, a
+    // viewer who switches away for ~5 min falls out of the window and
+    // the number appears to drop even though they're still "on".
+    const onVisibility = () => {
+      if (document.visibilityState === "visible") {
+        heartbeat().then(fetchCount);
+      }
+    };
+    document.addEventListener("visibilitychange", onVisibility);
 
     // Cosmetic drift — only takes effect while `usingFallback` is true.
     // Runs continuously so the number moves naturally when the API is
@@ -155,6 +170,7 @@ export default function VisitorsWidget() {
       window.clearInterval(poll);
       window.clearInterval(drift);
       window.clearInterval(rotate);
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, [startingLabel]);
 

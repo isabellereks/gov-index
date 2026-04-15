@@ -36,7 +36,6 @@ import SidePanel from "@/components/panel/SidePanel";
 import DepthStepper from "@/components/ui/DepthStepper";
 import TopToolbar from "@/components/ui/TopToolbar";
 import VisitorsWidget from "@/components/ui/VisitorsWidget";
-import MobileLegend from "@/components/map/MobileLegend";
 import type { BreadcrumbItem } from "@/components/ui/Breadcrumb";
 import NorthAmericaMap from "./NorthAmericaMap";
 import USStatesMap from "./USStatesMap";
@@ -303,8 +302,21 @@ export default function MapShell({
       });
     }
     setSelectedFacility(dc);
-    setHoveredFacility(null);
-    if (panelSize === "min") setExplicitPanelSize("md");
+    // Desktop: clear the hover state so the tooltip doesn't duplicate
+    // the now-pinned panel content. Also auto-expand the panel.
+    // Mobile: keep the panel as the island, and LEAVE hoveredFacility
+    // set for ~2.5s so the DataCenterCard shows as a quick-peek
+    // tooltip, then auto-dismisses. Users get the gist without
+    // committing to opening the full sidebar.
+    if (!isMobileViewport) {
+      setHoveredFacility(null);
+      if (panelSize === "min") setExplicitPanelSize("md");
+    } else {
+      // Auto-dismiss the peek tooltip after a short read window.
+      window.setTimeout(() => {
+        setHoveredFacility((h) => (h?.dc.id === dc.id ? null : h));
+      }, 2500);
+    }
   };
   const handleCloseFacility = () => setSelectedFacility(null);
 
@@ -823,8 +835,11 @@ export default function MapShell({
   // cheapest fix — 1.65× fills most phones without pushing the US off
   // screen, and the rail transition still works since the scale is
   // applied above it.
+  // Mobile states view needed a touch more margin so the east coast
+  // doesn't clip off the right edge; dial from 2.0 → 1.8. Still fills
+  // the vertical whitespace but keeps NY/ME in frame.
   const panelExtraZoom =
-    panelSize === "min" ? (isMobileViewport ? 2.0 : 1.55) : 1.0;
+    panelSize === "min" ? (isMobileViewport ? 1.8 : 1.55) : 1.0;
 
   const mapRootRef = useRef<HTMLDivElement>(null);
 
@@ -1348,11 +1363,14 @@ export default function MapShell({
           transform: `scale(${panelExtraZoom})`,
           transformOrigin: "center center",
           willChange: "transform",
-          // `none` lets us fully own pinch-zoom and two-finger pan on
-          // mobile without the browser intercepting for page-zoom.
-          // Vertical page scroll still happens via JS-driven scroll-on-
-          // swipe handlers, so we're not losing anything functional.
-          touchAction: "none",
+          // `pan-y` lets the browser own vertical page scroll — so a
+          // single-finger drag on the map scrolls past the hero to
+          // the sections below, which is the behavior everyone
+          // reaches for on mobile. Horizontal pan + pinch still fall
+          // through to our pointer handlers (region swipe + pinch-
+          // zoom), and the pinch handler calls preventDefault() to
+          // block any residual browser pinch-to-zoom-page.
+          touchAction: "pan-y",
           transition: "transform 500ms cubic-bezier(0.5, 1.55, 0.4, 1)",
         }}
         onPointerDown={onMapPointerDown}
@@ -1545,17 +1563,9 @@ export default function MapShell({
         />
       </div>
 
-      {/* Comprehensive mobile legend — only shown when the side panel
-          is collapsed to the Dynamic Island (so the bottom of the
-          screen is free) AND we're on a mobile viewport. Bundles
-          stance / dimension colors with the data-center key. */}
-      {isMobileViewport && panelSize === "min" && (
-        <MobileLegend
-          dimension={dimension}
-          showDataCenters={showDataCenters}
-          visibility={chromeOpacity}
-        />
-      )}
+      {/* Mobile legend moved into the `?` help sheet in the top toolbar —
+          it was stealing valuable vertical space from the map. Desktop
+          still gets the DC legend block below when the DC layer is on. */}
 
       {/* Data center legend — Apple-style card, shown when the DC layer
           is active. Hidden on mobile (below `lg`) because the

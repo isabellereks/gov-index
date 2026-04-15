@@ -6,7 +6,7 @@
   "stanceDatacenter": "none",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Michigan has no enacted AI law. Pending bills would ban companion chatbots for minors, create a comprehensive consumer-data privacy regime, carve out special protections for reproductive-health data, and establish a Kids Code Act regulating how platforms serve content to children.",
+  "contextBlurb": "Michigan's legislature is actively debating a broad but fragmented AI and data policy agenda, with particular attention to protecting vulnerable populations — including a proposed ban on companion chatbots for minors (SB0760) and a kids' online code (SB0758) — alongside worker protections that would restrict employer use of automated decision tools (HB5579). The state is also navigating tension around data center incentives, with bills tied to restructuring the Michigan Strategic Fund raising questions about how aggressively the state will compete for AI infrastructure investment. None of these measures have cleared committee, leaving Michigan without enacted guardrails even as the scope of proposed regulation signals growing legislative concern.",
   "legislation": [
     {
       "id": "mi-sb0198",
