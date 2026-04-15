@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Wyoming is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: HB0102 (enacted) — Makes it a crime to use AI or synthetic media to create sexual content involving children, promote self-harm, or censor political speech.",
+  "contextBlurb": "Wyoming enacted a narrow AI law this session criminalizing the use of AI or synthetic media to create child sexual content, promote self-harm, or censor political speech, while clarifying that AI cannot be invoked as a legal defense for a crime. No data-center legislation is being tracked.",
   "legislation": [
     {
       "id": "wy-hb0185",

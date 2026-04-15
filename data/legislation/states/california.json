@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "California is advancing regulation on data centers and leaning restrictive on AI. On data centers: AB2619 (in committee) — Requires data centers in California to report their water usage and incorporates data center water consumption into local water supply planning processes. On AI: AB621 (enacted) — Updates California's law on deepfake pornography, which prohibits creating or sharing sexually explicit fake images of real people without their consent.",
+  "contextBlurb": "California tightened its data-broker and deepfake-pornography laws this session and is debating a standards commission that would license independent auditors to verify AI systems. The legislature is also treating data-center growth primarily as a water-use problem, with pending bills forcing disclosure of water draw and PUE standards.",
   "legislation": [
     {
       "id": "ca-sb361",

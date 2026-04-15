@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Kansas is advancing regulation on data centers and leaning restrictive on AI. On data centers: SB531 (in committee) — Would ban the construction or operation of new large data centers in Kansas counties that have experienced a drought emergency in the past three years. On AI: HB2183 (enacted) — Updates Kansas criminal law to ban the creation and distribution of AI-generated or digitally altered sexual images of children, even when no real child was directly involved in making them.",
+  "contextBlurb": "Kansas is moving a package that would ban new large data centers in counties under recent drought emergencies, require closed-loop cooling, and confine tax-exempt data centers to industrial-zoned land. Pending AI legislation would bar systems from simulating emotional relationships or posing as healthcare professionals.",
   "legislation": [
     {
       "id": "ks-sb526",

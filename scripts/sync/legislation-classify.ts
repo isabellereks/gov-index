@@ -602,6 +602,40 @@ function main() {
     const stanceDatacenter = lensStance(legislation, "datacenter");
     const stanceAI = lensStance(legislation, "ai");
     const stance = overallStance(stanceDatacenter, stanceAI);
+
+    const target =
+      state === "US"
+        ? join(OUT_DIR, "federal.json")
+        : join(OUT_STATES_DIR, `${stateFull.toLowerCase().replace(/\s+/g, "-")}.json`);
+
+    // Preserve hand-written blurbs: if the target already has a
+    // `contextBlurb`, keep it. The template-generated blurb is only a
+    // fallback for fresh jurisdictions. Prior runs of this script were
+    // overwriting editorial prose on every reclassify — we'd rather
+    // occasionally ship a stale blurb than silently nuke someone's
+    // writing. To force regeneration, delete the field in the JSON
+    // first or pass `--force-blurbs` (see below).
+    let contextBlurb: string | null = null;
+    if (existsSync(target) && !process.argv.includes("--force-blurbs")) {
+      try {
+        const existing = JSON.parse(readFileSync(target, "utf8")) as Partial<OutFile>;
+        if (existing.contextBlurb && existing.contextBlurb.trim().length > 0) {
+          contextBlurb = existing.contextBlurb;
+        }
+      } catch {
+        // fall through to regeneration
+      }
+    }
+    if (!contextBlurb) {
+      contextBlurb = writeContextBlurb(
+        state,
+        stateFull,
+        legislation,
+        stanceDatacenter,
+        stanceAI,
+      );
+    }
+
     const out: OutFile = {
       state: stateFull,
       stateCode: state,
@@ -610,20 +644,10 @@ function main() {
       stanceDatacenter,
       stanceAI,
       lastUpdated: new Date().toISOString().slice(0, 10),
-      contextBlurb: writeContextBlurb(
-        state,
-        stateFull,
-        legislation,
-        stanceDatacenter,
-        stanceAI,
-      ),
+      contextBlurb,
       legislation,
     };
 
-    const target =
-      state === "US"
-        ? join(OUT_DIR, "federal.json")
-        : join(OUT_STATES_DIR, `${stateFull.toLowerCase().replace(/\s+/g, "-")}.json`);
     writeFileSync(target, JSON.stringify(out, null, 2));
     totalBills += legislation.length;
     totalJurisdictions += 1;

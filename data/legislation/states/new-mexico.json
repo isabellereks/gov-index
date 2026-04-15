@@ -6,7 +6,7 @@
   "stanceDatacenter": "none",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "New Mexico is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB22 (filed) — Prohibits the distribution of intimate deepfake images — realistic AI-generated or manipulated photos or videos of real people in sexual contexts — without their consent.",
+  "contextBlurb": "New Mexico has no enacted AI or data-center law. A filed package would establish AI transparency and accountability requirements, criminalize non-consensual intimate deepfakes, set chatbot safety rules, and require oversight of state-agency AI use.",
   "legislation": [
     {
       "id": "nm-hm6",
@@ -59,7 +59,7 @@
       "id": "nm-hb22",
       "billCode": "HB22",
       "title": "Distribution Of Sensitive And Deepfake Images",
-      "summary": "This bill prohibits the distribution of intimate deepfake images — realistic AI-generated or manipulated photos or videos of real people in sexual contexts — without their consent. It establishes legal penalties for sharing such content, with likely enhanced protections for minors.",
+      "summary": "This bill prohibits the distribution of intimate deepfake images \u2014 realistic AI-generated or manipulated photos or videos of real people in sexual contexts \u2014 without their consent. It establishes legal penalties for sharing such content, with likely enhanced protections for minors.",
       "stage": "Filed",
       "stance": "restrictive",
       "dimensionStances": {
@@ -162,7 +162,7 @@
       "id": "nm-hb174",
       "billCode": "HB174",
       "title": "Chatbot Safety Act",
-      "summary": "This bill establishes safety requirements for chatbots, likely including disclosure rules and protections for users—especially children—interacting with AI-powered conversational systems. It aims to ensure people know when they are talking to an AI and that certain safeguards are in place to prevent harm.",
+      "summary": "This bill establishes safety requirements for chatbots, likely including disclosure rules and protections for users\u2014especially children\u2014interacting with AI-powered conversational systems. It aims to ensure people know when they are talking to an AI and that certain safeguards are in place to prevent harm.",
       "stage": "Filed",
       "stance": "concerning",
       "dimensionStances": {

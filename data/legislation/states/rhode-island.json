@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Rhode Island is under discussion on data centers and advancing regulation on AI. On data centers: S2776 (in committee) — Requires large data centers in Rhode Island to pay for the electrical infrastructure upgrades needed to support their high power demands. On AI: H7364 (in committee) — Requires warehouse employers in Rhode Island to give workers written notice of any performance quotas and the consequences of not meeting them when they are hired.",
+  "contextBlurb": "Rhode Island has no enacted AI or data-center law, but pending bills would require large data centers to pay for their own grid upgrades rather than socializing those costs, while competing legislation would offer property and sales-tax exemptions to attract them. A pending measure would also stand up a state AI oversight commission.",
   "legislation": [
     {
       "id": "ri-s2776",

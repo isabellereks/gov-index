@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "South Carolina is advancing regulation across both data centers and AI. On data centers: H5484 (in committee) — This South Carolina bill sets new rules for commercial data centers, including requirements to report water usage, file decommissioning plans, and meet specific electric service terms, while also r… On AI: H3431 (enacted) — This South Carolina bill requires social media platforms to use reasonable care with minors' personal data, limits how much personal information can be collected from children, and mandates parenta…",
+  "contextBlurb": "South Carolina is weighing one of the more detailed data-center oversight frameworks in the country, requiring siting permits, environmental-impact reviews, water-use reporting, and PSC certificates before new facilities can operate. A separate bill would ban algorithmic discrimination in high-risk AI systems.",
   "legislation": [
     {
       "id": "sc-s0867",

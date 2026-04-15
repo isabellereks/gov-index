@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "North Dakota is under discussion on data centers and leaning restrictive on AI. On data centers: HB1579 (enacted) — Directs a legislative study to examine how large energy consumers — such as data centers and AI facilities — affect North Dakota's electrical grid. On AI: SB2354 (enacted) — Regulates how students in North Dakota's K-12 and pre-K schools can use personal electronic devices like smartphones during the school day.",
+  "contextBlurb": "North Dakota enacted disclosure rules for AI-generated political content, a state K-12 smartphone restriction, and a legislative study of how large energy users affect the grid. Pending bills would give the Public Service Commission authority over data-center siting and create a state technology research center with compute credits.",
   "legislation": [
     {
       "id": "nd-hb1427",
@@ -87,7 +87,7 @@
       "id": "nd-hb1579",
       "billCode": "HB1579",
       "title": "AN ACT to provide for a legislative management study relating to the impact of large energy consumers on the state's electrical grid.",
-      "summary": "This bill directs a legislative study to examine how large energy consumers — such as data centers and AI facilities — affect North Dakota's electrical grid. It is exploratory in nature, gathering information without imposing any restrictions or incentives.",
+      "summary": "This bill directs a legislative study to examine how large energy consumers \u2014 such as data centers and AI facilities \u2014 affect North Dakota's electrical grid. It is exploratory in nature, gathering information without imposing any restrictions or incentives.",
       "stage": "Enacted",
       "stance": "review",
       "impactTags": [

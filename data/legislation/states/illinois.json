@@ -6,7 +6,7 @@
   "stanceDatacenter": "none",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Illinois is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB3303 (in committee) — Bans distributing deceptive AI-generated or manipulated media about candidates within 90 days of an election if it's intended to damage their reputation or mislead voters.",
+  "contextBlurb": "Illinois is weighing a broad provenance-labeling mandate that would force AI companies to embed origin metadata in generated images, video, and audio, plus a ban on deceptive political deepfakes within 90 days of an election. A separate bill would sharply limit police use of facial recognition.",
   "legislation": [
     {
       "id": "il-hb3312",

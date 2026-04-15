@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Utah is under discussion on data centers and advancing regulation on AI. On data centers: HB0076 (enacted) — Requires data centers in Utah to report on their water usage, increasing transparency around how much water these facilities consume. On AI: HB0273 (enacted) — Proposes changes to how technology is used in Utah classrooms, likely setting rules or restrictions around student use of devices and digital tools.",
+  "contextBlurb": "Utah enacted a package of water-use reporting for data centers, changes to critical-infrastructure rules, tighter privacy and cybersecurity requirements, and restrictions on student technology use in schools. It is one of the few states to pass binding data-center water disclosure this session.",
   "legislation": [
     {
       "id": "ut-hb0076",

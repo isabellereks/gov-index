@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "West Virginia is advancing regulation across both data centers and AI. On data centers: HB4948 (in committee) — Requires data centers in West Virginia to be built at least 500 feet away from any home, school, or house of worship. On AI: HB5034 (in committee) — Creates a West Virginia law protecting genetic and biometric data by requiring companies to tell consumers how their genetic information is collected and used, and banning the sale or tra…",
+  "contextBlurb": "West Virginia is weighing an unusually hard-line package: banning all state and local subsidies to data centers, requiring a 500-foot setback from homes and schools, and letting regulators restrict data-center water withdrawals when harm is detected. A separate bill would limit AI use in mental-health care.",
   "legislation": [
     {
       "id": "wv-hb4832",
@@ -256,7 +256,7 @@
       "id": "wv-hb5611",
       "billCode": "HB5611",
       "title": "Certified Microgrid Program",
-      "summary": "This bill sets rules for how data centers can be built or managed in West Virginia counties where the ground is mostly made of karst geology — a porous limestone terrain that is especially vulnerable to groundwater contamination and sinkholes. It appears to impose specific oversight or restrictions on data center siting in these environmentally sensitive areas.",
+      "summary": "This bill sets rules for how data centers can be built or managed in West Virginia counties where the ground is mostly made of karst geology \u2014 a porous limestone terrain that is especially vulnerable to groundwater contamination and sinkholes. It appears to impose specific oversight or restrictions on data center siting in these environmentally sensitive areas.",
       "stage": "Committee",
       "stance": "concerning",
       "dimensionStances": {

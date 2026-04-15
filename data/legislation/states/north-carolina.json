@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "North Carolina is under discussion on data centers and leaning restrictive on AI. On data centers: H1002 (in committee) — Aims to protect North Carolina utility ratepayers, likely by limiting how costs from large energy consumers like data centers are passed on to regular customers. On AI: H805 (enacted) — Aims to prevent the sexual exploitation of women and minors, likely addressing non-consensual synthetic or digital media used for exploitation.",
+  "contextBlurb": "North Carolina has no enacted AI or data-center law. Pending bills would protect ratepayers from the cost of serving hyperscalers, ban deceptive AI-generated ads, stand up a state AI innovation trust fund, and direct schools to study how to teach AI.",
   "legislation": [
     {
       "id": "nc-s133",
@@ -150,7 +150,7 @@
       "id": "nc-h638",
       "billCode": "H638",
       "title": "Equit. Escalation of Electricity Demand Act",
-      "summary": "This bill addresses how rapidly growing electricity demand — likely from data centers and AI facilities — is managed and paid for on North Carolina's power grid. It aims to ensure that the costs of expanding grid capacity are distributed fairly among those driving the increased demand rather than spread to all ratepayers.",
+      "summary": "This bill addresses how rapidly growing electricity demand \u2014 likely from data centers and AI facilities \u2014 is managed and paid for on North Carolina's power grid. It aims to ensure that the costs of expanding grid capacity are distributed fairly among those driving the increased demand rather than spread to all ratepayers.",
       "stage": "Committee",
       "stance": "concerning",
       "impactTags": [

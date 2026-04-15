@@ -6,7 +6,7 @@
   "stanceDatacenter": "restrictive",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Maine is leaning restrictive on data centers and advancing regulation on AI. On data centers: LD912 (enacted) — Caps the amount of electricity that can be supplied to data centers on commercial or industrial sites in Maine. On AI: LD1727 (enacted) — Requires businesses to be upfront with consumers when they are interacting with or being affected by artificial intelligence in commercial transactions.",
+  "contextBlurb": "Maine enacted a cap on how much electricity can be supplied to data centers at commercial and industrial sites this session, one of the hardest limits in the country. It also passed a law requiring businesses to disclose when consumers are dealing with AI, and a pending bill would restrict minors' access to AI chatbots and companion apps.",
   "legislation": [
     {
       "id": "me-ld912",

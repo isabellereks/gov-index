@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Arizona is under discussion on data centers and advancing regulation on AI. On data centers: HB2738 (filed) — Establishes rules for cost responsibility agreements specifically for data centers, likely requiring data centers to pay for or share the costs of grid upgrades and infrastructure needed… On AI: HB2592 (in committee) — Sets rules for how Arizona state agencies can use artificial intelligence, likely requiring oversight, transparency, or accountability measures.",
+  "contextBlurb": "Arizona has no enacted AI or data-center law. Pending bills would set rules for state-agency AI use, require data centers to pay their own share of grid upgrades, and create a consumer-style privacy regime obligating companies to disclose how they collect and handle personal data.",
   "legislation": [
     {
       "id": "az-sb1815",

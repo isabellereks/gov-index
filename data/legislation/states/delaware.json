@@ -6,7 +6,7 @@
   "stanceDatacenter": "none",
   "stanceAI": "review",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Delaware is under discussion on AI, with no data-center legislation currently tracked. On AI: HJR7 (enacted) — This resolution directs Delaware's AI Commission to work with the Secretary of State to design a regulatory sandbox — a controlled testing environment — for new technologies that use agentic AI, wh…",
+  "contextBlurb": "Delaware directed its AI Commission to design a regulatory sandbox for agentic AI systems, one of the few states formally studying autonomous agents. Pending legislation would extend warehouse-worker protections against algorithmic management. No data-center legislation is on the table.",
   "legislation": [
     {
       "id": "de-hb231",
@@ -35,7 +35,7 @@
       "id": "de-hjr7",
       "billCode": "HJR7",
       "title": "Directing The Artificial Intelligence Commission To Work In Collaboration With The Secretary Of State To Create A Regulatory Sandbox Framework For The Testing Of Innovative And Novel Technologies That Utilize Agentic Artificial Intelligence.",
-      "summary": "This resolution directs Delaware's AI Commission to work with the Secretary of State to design a regulatory sandbox — a controlled testing environment — for new technologies that use agentic AI, which can act autonomously to complete tasks. It is an exploratory step to study how to safely test and oversee these emerging AI systems without imposing hard restrictions yet.",
+      "summary": "This resolution directs Delaware's AI Commission to work with the Secretary of State to design a regulatory sandbox \u2014 a controlled testing environment \u2014 for new technologies that use agentic AI, which can act autonomously to complete tasks. It is an exploratory step to study how to safely test and oversee these emerging AI systems without imposing hard restrictions yet.",
       "stage": "Enacted",
       "stance": "review",
       "impactTags": [

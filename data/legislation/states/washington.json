@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "review",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Washington is under discussion across both data centers and AI. On data centers: HB2515 (in committee) — Establishes rules for large energy-consuming facilities, such as data centers, addressing how they connect to and impact the electrical grid. On AI: SB5395 (enacted) — Strengthens transparency and accountability requirements for the prior authorization process used by health insurers to approve or deny medical treatments.",
+  "contextBlurb": "Washington has no enacted AI or data-center law. Pending bills would strip several existing data-center tax exemptions, including one for equipment replacement, while a competing measure would offer new sales-tax breaks for a specific eastern county. A separate bill would establish AI consumer protections.",
   "legislation": [
     {
       "id": "wa-sb6231",

@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Ohio is advancing regulation across both data centers and AI. On data centers: HB646 (on the floor) — Creates a commission to study data centers in Ohio and their impacts. On AI: HB807 (filed) — Bans government agencies and private companies from selling sensitive personal data to data brokers or other private entities for profit.",
+  "contextBlurb": "Ohio has no enacted AI or data-center law. A filed package would freeze new data-center sales-tax exemptions, license independent AI risk-verification organizations, and ban the sale of sensitive personal data to data brokers. A study commission on data centers is also advancing.",
   "legislation": [
     {
       "id": "oh-sb374",
@@ -109,7 +109,7 @@
       "id": "oh-hb646",
       "billCode": "HB646",
       "title": "Create the Data Center Study Commission",
-      "summary": "This bill creates a commission to study data centers in Ohio and their impacts. No restrictions or incentives are imposed — the commission will gather information and likely make future policy recommendations.",
+      "summary": "This bill creates a commission to study data centers in Ohio and their impacts. No restrictions or incentives are imposed \u2014 the commission will gather information and likely make future policy recommendations.",
       "stage": "Floor",
       "stance": "review",
       "dimensionStances": {

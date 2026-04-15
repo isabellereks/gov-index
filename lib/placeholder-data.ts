@@ -22,7 +22,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "review",
-    contextBlurb: "The US federal government is advancing regulation on data centers and under discussion on AI. On data centers: HB1736 (on the floor) — Generative AI Terrorism Risk Assessment Act. On AI: HB7270 (in committee) — Creates a coordinated government strategy to combat identity fraud and theft across the financial services industry.",
+    contextBlurb: "Congress has no enacted AI or data-center law this session. Floor bills are concentrated on narrow agency-assist mandates, directing the SBA, NIST, and small-business development centers to help firms evaluate and adopt AI tools, and requiring DHS to assess terrorism threats from generative AI.",
     legislation: [
       {
         id: "us-sb3682",
@@ -2058,7 +2058,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Alabama is under discussion on data centers and advancing regulation on AI. On data centers: SB270 (on the floor) — Requires Alabama's Public Service Commission to review contracts between electric utilities and large data centers that draw significant amounts of power. On AI: SB63 (on the floor) — Sets rules for how health insurance companies can use artificial intelligence when deciding whether to approve or deny medical coverage.",
+    contextBlurb: "Alabama is weighing whether its Public Service Commission should vet the electricity contracts utilities sign with large data centers, and a parallel bill would extend the state's data-center tax breaks with a tighter sunset. On the AI side, lawmakers advanced rules on how health insurers can use AI to approve or deny coverage.",
     legislation: [
       {
         id: "al-sb270",
@@ -2386,7 +2386,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "favorable",
     stanceAI: "restrictive",
-    contextBlurb: "Alaska is leaning innovation-friendly on data centers and leaning restrictive on AI. On data centers: SB250 (in committee) — Establishes rules for how data centers connect to and receive utility services, likely streamlining the process for data centers to obtain power. On AI: HB57 (enacted) — Addresses multiple education topics including restricting wireless devices (like smartphones) in public schools.",
+    contextBlurb: "Alaska banned wireless devices in public schools this session but has no binding AI or data-center law on the books. Pending bills would create a legislative AI task force, set defamation liability for political deepfakes, and streamline utility hookups for data centers.",
     legislation: [
       {
         id: "ak-sb250",
@@ -2709,7 +2709,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Arizona is under discussion on data centers and advancing regulation on AI. On data centers: HB2738 (filed) — Establishes rules for cost responsibility agreements specifically for data centers, likely requiring data centers to pay for or share the costs of grid upgrades and infrastructure needed… On AI: HB2592 (in committee) — Sets rules for how Arizona state agencies can use artificial intelligence, likely requiring oversight, transparency, or accountability measures.",
+    contextBlurb: "Arizona has no enacted AI or data-center law. Pending bills would set rules for state-agency AI use, require data centers to pay their own share of grid upgrades, and create a consumer-style privacy regime obligating companies to disclose how they collect and handle personal data.",
     legislation: [
       {
         id: "az-sb1815",
@@ -3040,7 +3040,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "review",
     stanceAI: "none",
-    contextBlurb: "Arkansas is under discussion on data centers, with no AI legislation currently tracked. On data centers: HR1013 (in committee) — Would change the rules governing where and how cryptocurrency mining businesses can operate, including adjusting what local governments can and cannot regulate about these operat…",
+    contextBlurb: "Arkansas is moving to reopen its 2023 Data Centers Act and rework how much authority local governments have over crypto-mining operations, the state's closest analog to data centers. There is no active AI legislation.",
     legislation: [
       {
         id: "ar-sr7",
@@ -3331,7 +3331,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "concerning",
     stanceAI: "restrictive",
-    contextBlurb: "California is advancing regulation on data centers and leaning restrictive on AI. On data centers: AB2619 (in committee) — Requires data centers in California to report their water usage and incorporates data center water consumption into local water supply planning processes. On AI: AB621 (enacted) — Updates California's law on deepfake pornography, which prohibits creating or sharing sexually explicit fake images of real people without their consent.",
+    contextBlurb: "California tightened its data-broker and deepfake-pornography laws this session and is debating a standards commission that would license independent auditors to verify AI systems. The legislature is also treating data-center growth primarily as a water-use problem, with pending bills forcing disclosure of water draw and PUE standards.",
     legislation: [
       {
         id: "ca-sb361",
@@ -3665,7 +3665,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Colorado is under discussion on data centers and advancing regulation on AI. On data centers: SB102 (in committee) — Establishes accountability measures for large-scale data centers in Colorado, likely including requirements around energy use, grid impact, and reporting. On AI: HB1113 (in committee) — Modifies Colorado election laws, likely including rules around the use of AI-generated or synthetic media in political campaigns.",
+    contextBlurb: "Colorado is pushing a full slate of pending AI bills, including restrictions on AI in psychotherapy, transparency rules for companion chatbots, and limits on police surveillance tech. Separate legislation would require large data centers to meet clean-energy and grid-impact standards.",
     legislation: [
       {
         id: "co-sb102",
@@ -4025,7 +4025,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "none",
     stanceAI: "concerning",
-    contextBlurb: "Connecticut is advancing regulation on AI, with no data-center legislation currently tracked. On AI: SB00092 (in committee) — Establishes additional protections for warehouse workers, likely including rules around automated monitoring and work-quota systems driven by algorithms.",
+    contextBlurb: "Connecticut is debating a sweeping AI framework that would create a state AI Policy Office, regulate frontier-model developers, and rein in automated hiring tools. A parallel bill would eliminate the state's existing data-center tax incentives outright.",
     legislation: [
       {
         id: "ct-sb00092",
@@ -4370,7 +4370,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "none",
     stanceAI: "review",
-    contextBlurb: "Delaware is under discussion on AI, with no data-center legislation currently tracked. On AI: HJR7 (enacted) — This resolution directs Delaware's AI Commission to work with the Secretary of State to design a regulatory sandbox — a controlled testing environment — for new technologies that use agentic AI, wh…",
+    contextBlurb: "Delaware directed its AI Commission to design a regulatory sandbox for agentic AI systems, one of the few states formally studying autonomous agents. Pending legislation would extend warehouse-worker protections against algorithmic management. No data-center legislation is on the table.",
     legislation: [
       {
         id: "de-hb231",
@@ -4690,7 +4690,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "Florida is advancing regulation across both data centers and AI. On data centers: S0484 (on the floor) — Gives local governments control over zoning and land-use rules for large data centers, sets utility service requirements for big power customers, and blocks water-use permits for… On AI: S0480 (in committee) — Reorganizes Florida's state technology operations by moving the Florida Digital Service into a new division called DIGIT within the Governor's office.",
+    contextBlurb: "Florida is moving aggressively to hand data-center siting back to local governments, with a floor bill that would block water permits for large projects and require grid-impact studies before construction. A separate measure would shield site-selection details from public records.",
     legislation: [
       {
         id: "fl-h1007",
@@ -5042,7 +5042,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "Georgia is advancing regulation across both data centers and AI. On data centers: HB1063 (in committee) — Requires Georgia electric utilities to shield residential and retail customers from bearing the costs tied to data center construction and operation. On AI: SR789 (enacted) — This resolution creates a Georgia Senate committee to study the effects and implications of artificial intelligence.",
+    contextBlurb: "Georgia is advancing a restrictive floor bill that would ban health insurers from using AI alone to deny coverage, and the Senate has already stood up a study committee on AI's broader impact. Multiple pending data-center bills would stop utilities from passing hyperscaler power costs onto residential ratepayers.",
     legislation: [
       {
         id: "ga-hb1323",
@@ -5426,7 +5426,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "none",
     stanceAI: "review",
-    contextBlurb: "Hawaii is under discussion on AI, with no data-center legislation currently tracked. On AI: SB2049 (in committee) — Bans police in Hawaii from using biometric surveillance technology (such as facial recognition) unless specific conditions are satisfied.",
+    contextBlurb: "Hawaii has no enacted AI law. Pending bills would criminalize non-consensual sexual deepfakes, ban police use of facial recognition without specific conditions, and stand up an AI institute at the University of Hawaii. No data-center legislation is being tracked.",
     legislation: [
       {
         id: "hi-hb775",
@@ -5738,7 +5738,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "restrictive",
     stanceAI: "concerning",
-    contextBlurb: "Idaho is leaning restrictive on data centers and advancing regulation on AI. On data centers: H0895 (enacted) — Sets limits on how much water data centers in Idaho can use for cooling purposes. On AI: S1297 (enacted) — Establishes safety requirements for conversational AI systems, likely including disclosure and protective standards for users.",
+    contextBlurb: "Idaho capped how much water data centers can draw for cooling and enacted a Conversational AI Safety Act this session, a surprisingly restrictive combination for a red state. Pending bills would expand data-center tax exemptions and tighten rules on biometric data collection.",
     legislation: [
       {
         id: "id-h0609",
@@ -6050,7 +6050,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "none",
     stanceAI: "concerning",
-    contextBlurb: "Illinois is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB3303 (in committee) — Bans distributing deceptive AI-generated or manipulated media about candidates within 90 days of an election if it's intended to damage their reputation or mislead voters.",
+    contextBlurb: "Illinois is weighing a broad provenance-labeling mandate that would force AI companies to embed origin metadata in generated images, video, and audio, plus a ban on deceptive political deepfakes within 90 days of an election. A separate bill would sharply limit police use of facial recognition.",
     legislation: [
       {
         id: "il-hb3312",
@@ -6410,7 +6410,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "concerning",
     stanceAI: "restrictive",
-    contextBlurb: "Indiana is advancing regulation on data centers and leaning restrictive on AI. On data centers: HB1333 (in committee) — Sets new rules for data centers in Indiana, requiring them to contribute at least 1% of their tax savings to local governments before receiving sales tax exemptions on equipment purchases. On AI: HB1271 (enacted) — Regulates how hospitals and insurers handle health insurance claims, including a ban on using automated systems to submit claims without human review by the provider.",
+    contextBlurb: "Indiana is reconsidering the sales-tax exemption it granted data centers and is weighing a bill that would require a state water-consumption permit before any data center can operate. Other pending legislation would force social-media companies to get parental consent for users under 14.",
     legislation: [
       {
         id: "in-sb0083",
@@ -6789,7 +6789,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "favorable",
-    contextBlurb: "Iowa is advancing regulation on data centers and leaning innovation-friendly on AI. On data centers: HF2447 (in committee) — Requires data centers in Iowa to report on their water and energy usage and establishes specific tariff rules related to those resources. On AI: HSB294 (in committee) — Regulates the use of AI to create election-related content, such as deepfakes or synthetic media that could mislead voters.",
+    contextBlurb: "Iowa is debating bills that would require data centers to report water and energy use and adopt water-efficient cooling, while a parallel measure would adjust investment thresholds for the state's data-center sales-tax break. Pending AI legislation would regulate election-related synthetic media.",
     legislation: [
       {
         id: "ia-hf2447",
@@ -7124,7 +7124,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "concerning",
     stanceAI: "restrictive",
-    contextBlurb: "Kansas is advancing regulation on data centers and leaning restrictive on AI. On data centers: SB531 (in committee) — Would ban the construction or operation of new large data centers in Kansas counties that have experienced a drought emergency in the past three years. On AI: HB2183 (enacted) — Updates Kansas criminal law to ban the creation and distribution of AI-generated or digitally altered sexual images of children, even when no real child was directly involved in making them.",
+    contextBlurb: "Kansas is moving a package that would ban new large data centers in counties under recent drought emergencies, require closed-loop cooling, and confine tax-exempt data centers to industrial-zoned land. Pending AI legislation would bar systems from simulating emotional relationships or posing as healthcare professionals.",
     legislation: [
       {
         id: "ks-sb526",
@@ -7451,7 +7451,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "Kentucky is advancing regulation across both data centers and AI. On data centers: HB593 (in committee) — Requires data centers to obtain electricity only through special contracts that protect other utility customers from bearing the costs of new infrastructure built to serve data c… On AI: HB676 (on the floor) — Creates a statewide health data system in Kentucky that collects and shares health information from various participants, governed by a board and operated by a consortium of public health…",
+    contextBlurb: "Kentucky is pushing multiple bills to keep data-center power costs off ordinary ratepayers, including requiring PSC approval for any facility over 100 megawatts and mandating decommissioning bonds for data centers built on farmland. A separate bill would sharply restrict AI use in therapy sessions.",
     legislation: [
       {
         id: "ky-hb593",
@@ -7826,7 +7826,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Louisiana is under discussion on data centers and advancing regulation on AI. On data centers: HB1206 (in committee) — Requires data centers to obtain permits and report on how much water they use. On AI: HB119 (in committee) — Makes it illegal to create or share AI-generated images of real people without their consent.",
+    contextBlurb: "Louisiana enacted a law banning AI-generated deepfakes targeting K-12 students and is weighing bills to require water-use permits for data centers and oversee insurer use of AI in claims decisions. A broader AI consumer-rights bill is also in committee.",
     legislation: [
       {
         id: "la-hb1206",
@@ -8177,7 +8177,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "restrictive",
     stanceAI: "concerning",
-    contextBlurb: "Maine is leaning restrictive on data centers and advancing regulation on AI. On data centers: LD912 (enacted) — Caps the amount of electricity that can be supplied to data centers on commercial or industrial sites in Maine. On AI: LD1727 (enacted) — Requires businesses to be upfront with consumers when they are interacting with or being affected by artificial intelligence in commercial transactions.",
+    contextBlurb: "Maine enacted a cap on how much electricity can be supplied to data centers at commercial and industrial sites this session, one of the hardest limits in the country. It also passed a law requiring businesses to disclose when consumers are dealing with AI, and a pending bill would restrict minors' access to AI chatbots and companion apps.",
     legislation: [
       {
         id: "me-ld912",
@@ -8552,7 +8552,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "Maryland is advancing regulation across both data centers and AI. On data centers: HB120 (in committee) — Places a statewide ban on new data center construction, preventing both private builders and government bodies from proceeding with new projects. On AI: HB293 (on the floor) — Allows Maryland's student and workforce data system to share data with third-party data centers for multistate reporting, subject to written agreements and compliance requirements.",
+    contextBlurb: "Maryland is weighing a floor bill that would let the state's student and workforce data system share records with third-party data centers, plus legislation requiring large data-center operators to file disclosures and adopt formal siting rules by 2027. Another bill would expand police facial recognition inside homes.",
     legislation: [
       {
         id: "md-hb293",
@@ -8928,7 +8928,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Massachusetts is under discussion on data centers and advancing regulation on AI. On data centers: H495 (in committee) — Aims to reduce the greenhouse gas emissions produced by artificial intelligence systems and data centers in Massachusetts. On AI: H4640 (in committee) — Puts into law the recommendations made by a special commission studying facial recognition technology, likely establishing rules and restrictions on how it can be used.",
+    contextBlurb: "Massachusetts has no enacted AI or data-center law, but the legislature is considering a broad slate: emissions-reduction rules for AI and data centers, oversight of AI in healthcare decisions, codification of its facial-recognition commission recommendations, and general AI consumer protections.",
     legislation: [
       {
         id: "ma-s50",
@@ -9261,7 +9261,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "none",
     stanceAI: "concerning",
-    contextBlurb: "Michigan is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB5769 (in committee) — Creates a new law in Michigan specifically protecting the privacy of consumers' reproductive health data.",
+    contextBlurb: "Michigan has no enacted AI law. Pending bills would ban companion chatbots for minors, create a comprehensive consumer-data privacy regime, carve out special protections for reproductive-health data, and establish a Kids Code Act regulating how platforms serve content to children.",
     legislation: [
       {
         id: "mi-sb0198",
@@ -9641,7 +9641,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "review",
     stanceAI: "review",
-    contextBlurb: "Minnesota is under discussion across both data centers and AI. On data centers: SF5100 (in committee) — Modifies existing rules and requirements that govern how data centers are built and operated in the state. On AI: SF1242 (in committee) — Requires law enforcement in Minnesota to obtain a warrant before using facial recognition technology to identify individuals.",
+    contextBlurb: "Minnesota is debating a licensing system for third-party AI auditors alongside multiple bills that would make it easier and cheaper for data centers to operate, including sales-tax exemptions on electricity and expedited water approvals. A separate bill would require a warrant before police use facial recognition.",
     legislation: [
       {
         id: "mn-hf4153",
@@ -10008,7 +10008,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "none",
     stanceAI: "concerning",
-    contextBlurb: "",
+    contextBlurb: "Mississippi has no significant AI or data-center legislation on the books.",
     legislation: [
       {
         id: "ms-hb534",
@@ -10319,7 +10319,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Missouri is under discussion on data centers and advancing regulation on AI. On data centers: HB3390 (filed) — Establishes new rules governing where and how data centers can be built in the state. On AI: HB2032 (in committee) — Requires age verification for companion chatbot services to prevent minors from accessing them.",
+    contextBlurb: "Missouri has no enacted AI law. Pending bills would require age verification for companion chatbots, create a private right of action for undisclosed AI-generated content, and establish new siting rules for data centers.",
     legislation: [
       {
         id: "mo-hb1810",
@@ -10695,7 +10695,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "review",
     stanceAI: "restrictive",
-    contextBlurb: "Montana is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: HB178 (enacted) — Places limits on how Montana state government agencies can use artificial intelligence systems.",
+    contextBlurb: "Montana enacted one of the most distinctive AI packages in the country this session: a Right to Compute Act, a kill-switch requirement for AI systems running critical infrastructure, new limits on state-agency AI use, and disclosure rules for AI-generated political content. It also cut data-center property taxes.",
     legislation: [
       {
         id: "mt-hb388",
@@ -11010,7 +11010,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Nebraska is under discussion on data centers and advancing regulation on AI. On data centers: LB1010 (enacted) — Establishes new rules for large electricity customers like data centers and crypto miners, addressing how they connect to and impact the power grid. On AI: LB525 (enacted) — Establishes privacy protections for agricultural data and sets safety requirements for conversational AI systems in Nebraska.",
+    contextBlurb: "Nebraska has no enacted AI or data-center law. Pending bills would require data centers to file annual load reports with the state Power Review Board, establish consumer protections and risk-management standards for AI, and create biometric-data consent rules.",
     legislation: [
       {
         id: "ne-lb1111",
@@ -11348,7 +11348,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "review",
     stanceAI: "restrictive",
-    contextBlurb: "Nevada is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: AB406 (enacted) — Bans certain uses of AI in public schools, restricts how AI can be used in mental and behavioral health care, and prohibits AI systems from falsely presenting themselves as qualifi…",
+    contextBlurb: "Nevada enacted a restrictive AI package this session that bans AI from making final calls on emergency-response decisions, restricts AI in mental and behavioral health care, and bars AI systems from posing as licensed providers. It also stood up a state Security Operations Center to handle cybersecurity.",
     legislation: [
       {
         id: "nv-ab226",
@@ -11655,7 +11655,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "New Hampshire is under discussion on data centers and advancing regulation on AI. On data centers: SB439 (in committee) — Addresses how New Hampshire municipalities can regulate the siting and zoning of data centers within their jurisdictions. On AI: HB1460 (in committee) — Bans the sale of personal data belonging to children in New Hampshire.",
+    contextBlurb: "New Hampshire has no enacted AI or data-center law. Pending bills would regulate AI systems performing licensed professional work, address municipal authority over data-center siting, ban the sale of children's personal data, and restrict state agencies from sharing data on autistic residents.",
     legislation: [
       {
         id: "nh-hb1694",
@@ -12011,7 +12011,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "New Jersey is advancing regulation across both data centers and AI. On data centers: S3379 (in committee) — Would require data center owners and operators in New Jersey to report their water and energy usage to the Board of Public Utilities twice a year. On AI: A4163 (in committee) — Imposes civil fines on political campaigns that use AI-generated deepfakes to misrepresent candidates in advertisements.",
+    contextBlurb: "New Jersey has no enacted AI law. Pending bills would require data centers to report water and energy use twice a year to the Board of Public Utilities, fine political campaigns using deceptive deepfakes, and create an AI apprenticeship program with tax credits for participating employers.",
     legislation: [
       {
         id: "nj-s3379",
@@ -12369,7 +12369,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "none",
     stanceAI: "concerning",
-    contextBlurb: "New Mexico is advancing regulation on AI, with no data-center legislation currently tracked. On AI: HB22 (filed) — Prohibits the distribution of intimate deepfake images — realistic AI-generated or manipulated photos or videos of real people in sexual contexts — without their consent.",
+    contextBlurb: "New Mexico has no enacted AI or data-center law. A filed package would establish AI transparency and accountability requirements, criminalize non-consensual intimate deepfakes, set chatbot safety rules, and require oversight of state-agency AI use.",
     legislation: [
       {
         id: "nm-hm6",
@@ -12693,7 +12693,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "New York is advancing regulation across both data centers and AI. On data centers: A10141 (in committee) — Would halt all new data center construction permits in New York while requiring regulators to take action to protect residents, businesses, and industries from higher electricity and gas… On AI: S01962 (in committee) — Would prohibit businesses from using AI algorithms to discriminate against people based on protected characteristics like race, gender, or religion.",
+    contextBlurb: "New York is weighing a moratorium bill that would halt all new data-center construction permits until regulators can protect residents from higher utility bills, alongside separate legislation banning fossil-fuel incentives for data centers and requiring annual energy-use reports. A pending bill would also fund an AI literacy grant program.",
     legislation: [
       {
         id: "ny-a09086",
@@ -13074,7 +13074,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "review",
     stanceAI: "restrictive",
-    contextBlurb: "North Carolina is under discussion on data centers and leaning restrictive on AI. On data centers: H1002 (in committee) — Aims to protect North Carolina utility ratepayers, likely by limiting how costs from large energy consumers like data centers are passed on to regular customers. On AI: H805 (enacted) — Aims to prevent the sexual exploitation of women and minors, likely addressing non-consensual synthetic or digital media used for exploitation.",
+    contextBlurb: "North Carolina has no enacted AI or data-center law. Pending bills would protect ratepayers from the cost of serving hyperscalers, ban deceptive AI-generated ads, stand up a state AI innovation trust fund, and direct schools to study how to teach AI.",
     legislation: [
       {
         id: "nc-s133",
@@ -13426,7 +13426,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "review",
     stanceAI: "restrictive",
-    contextBlurb: "North Dakota is under discussion on data centers and leaning restrictive on AI. On data centers: HB1579 (enacted) — Directs a legislative study to examine how large energy consumers — such as data centers and AI facilities — affect North Dakota's electrical grid. On AI: SB2354 (enacted) — Regulates how students in North Dakota's K-12 and pre-K schools can use personal electronic devices like smartphones during the school day.",
+    contextBlurb: "North Dakota enacted disclosure rules for AI-generated political content, a state K-12 smartphone restriction, and a legislative study of how large energy users affect the grid. Pending bills would give the Public Service Commission authority over data-center siting and create a state technology research center with compute credits.",
     legislation: [
       {
         id: "nd-hb1427",
@@ -13769,7 +13769,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "Ohio is advancing regulation across both data centers and AI. On data centers: HB646 (on the floor) — Creates a commission to study data centers in Ohio and their impacts. On AI: HB807 (filed) — Bans government agencies and private companies from selling sensitive personal data to data brokers or other private entities for profit.",
+    contextBlurb: "Ohio has no enacted AI or data-center law. A filed package would freeze new data-center sales-tax exemptions, license independent AI risk-verification organizations, and ban the sale of sensitive personal data to data brokers. A study commission on data centers is also advancing.",
     legislation: [
       {
         id: "oh-sb374",
@@ -14147,7 +14147,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "review",
     stanceAI: "review",
-    contextBlurb: "Oklahoma is under discussion across both data centers and AI. On data centers: HB2992 (in committee) — Creates consumer protection rules for data centers under Oklahoma's Corporation Commission, likely addressing how data centers interact with the energy grid and utility customers. On AI: SB1734 (in committee) — Requires the development of guidance for how artificial intelligence and other emerging technologies should be used in schools.",
+    contextBlurb: "Oklahoma has no enacted AI law. Pending bills would require data centers to post financial assurance for decommissioning, stand up a state directory of hyperscalers tracked by the Corporation Commission, and develop guidance for AI use in schools.",
     legislation: [
       {
         id: "ok-hb4194",
@@ -14469,7 +14469,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "review",
     stanceAI: "review",
-    contextBlurb: "Oregon is under discussion across both data centers and AI. On data centers: HB4084 (enacted) — Creates a fast-track permitting program for economic development projects while specifically restricting data centers from using the state's enterprise zone tax incentive program. On AI: SB1546 (enacted) — Requires companies that operate AI companion software to clearly disclose to users that they are interacting with AI and not a human, and to have safety protocols in place to detect and p…",
+    contextBlurb: "Oregon quietly cut data centers out of its enterprise-zone tax break this session, one of the only states to roll back incentives for the industry. It also enacted a law requiring AI-companion operators to disclose that users aren't talking to a human and to maintain safety protocols for self-harm content.",
     legislation: [
       {
         id: "or-hb4053",
@@ -14765,7 +14765,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "Pennsylvania is advancing regulation across both data centers and AI. On data centers: HB1834 (in committee) — Requires commercial data centers to meet clean energy standards, file contracts with state regulators, and follow rules on backup generation and grid management. On AI: HB1942 (in committee) — Bans 'surveillance pricing,' where businesses use personal data and algorithms to charge individual customers different prices based on their behavior or characteristics.",
+    contextBlurb: "Pennsylvania has no enacted AI or data-center law. Pending bills pull in opposite directions: one would repeal the state's data-center equipment tax break, while another would create a fast-track regulatory sandbox for self-powered data centers. A separate measure would ban algorithmic surveillance pricing.",
     legislation: [
       {
         id: "pa-hb2198",
@@ -15172,7 +15172,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Rhode Island is under discussion on data centers and advancing regulation on AI. On data centers: S2776 (in committee) — Requires large data centers in Rhode Island to pay for the electrical infrastructure upgrades needed to support their high power demands. On AI: H7364 (in committee) — Requires warehouse employers in Rhode Island to give workers written notice of any performance quotas and the consequences of not meeting them when they are hired.",
+    contextBlurb: "Rhode Island has no enacted AI or data-center law, but pending bills would require large data centers to pay for their own grid upgrades rather than socializing those costs, while competing legislation would offer property and sales-tax exemptions to attract them. A pending measure would also stand up a state AI oversight commission.",
     legislation: [
       {
         id: "ri-s2776",
@@ -15563,7 +15563,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "South Carolina is advancing regulation across both data centers and AI. On data centers: H5484 (in committee) — This South Carolina bill sets new rules for commercial data centers, including requirements to report water usage, file decommissioning plans, and meet specific electric service terms, while also r… On AI: H3431 (enacted) — This South Carolina bill requires social media platforms to use reasonable care with minors' personal data, limits how much personal information can be collected from children, and mandates parenta…",
+    contextBlurb: "South Carolina is weighing one of the more detailed data-center oversight frameworks in the country, requiring siting permits, environmental-impact reviews, water-use reporting, and PSC certificates before new facilities can operate. A separate bill would ban algorithmic discrimination in high-risk AI systems.",
     legislation: [
       {
         id: "sc-s0867",
@@ -15951,7 +15951,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "South Dakota is advancing regulation across both data centers and AI. On data centers: SB135 (enacted) — Aims to protect South Dakota residents from higher utility bills and power shortages that could result from data center electricity demand. On AI: SB168 (in committee) — Sets rules on how chatbots can be used by minors in South Dakota.",
+    contextBlurb: "South Dakota has no enacted AI or data-center law. Pending bills pull hard in opposite directions: one would temporarily ban new data-center construction to protect the grid, while another would exempt data-center equipment from sales and use tax. A separate bill would regulate insurer use of AI in coverage decisions.",
     legislation: [
       {
         id: "sd-sb135",
@@ -16320,7 +16320,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Tennessee is under discussion on data centers and advancing regulation on AI. On data centers: HB2392 (in committee) — Establishes a formal impact review process that data centers must go through before being built, examining effects on local infrastructure, utilities, and communities. On AI: HB2608 (in committee) — Creates rules to protect people's historical location data from police surveillance by limiting how law enforcement can access and use it.",
+    contextBlurb: "Tennessee has no enacted AI or data-center law. Pending bills would require data centers to pay the full cost of their grid hookups, create a formal impact-review process before construction, ban deceptive political deepfakes within 90 days of an election, and limit police access to historical location data.",
     legislation: [
       {
         id: "tn-sb2112",
@@ -16703,7 +16703,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "none",
     stanceAI: "concerning",
-    contextBlurb: "Texas is advancing regulation on AI, with no data-center legislation currently tracked. On AI: SB1343 (enacted) — Updates the rules for how data brokers must notify people about their data collection practices, including what information must be posted on their websites.",
+    contextBlurb: "Texas has no enacted AI or data-center law this session, which is notable given how much hyperscale buildout is happening in the state. Pending bills would create sales-tax exemptions for data-center equipment, exempt their energy infrastructure from property tax, and set modest transparency rules for synthetic media.",
     legislation: [
       {
         id: "tx-sb1343",
@@ -17034,7 +17034,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Utah is under discussion on data centers and advancing regulation on AI. On data centers: HB0076 (enacted) — Requires data centers in Utah to report on their water usage, increasing transparency around how much water these facilities consume. On AI: HB0273 (enacted) — Proposes changes to how technology is used in Utah classrooms, likely setting rules or restrictions around student use of devices and digital tools.",
+    contextBlurb: "Utah enacted a package of water-use reporting for data centers, changes to critical-infrastructure rules, tighter privacy and cybersecurity requirements, and restrictions on student technology use in schools. It is one of the few states to pass binding data-center water disclosure this session.",
     legislation: [
       {
         id: "ut-hb0076",
@@ -17370,7 +17370,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "review",
     stanceAI: "concerning",
-    contextBlurb: "Vermont is under discussion on data centers and advancing regulation on AI. On data centers: S0205 (in committee) — Would temporarily ban the construction of new AI data centers in Vermont while the state studies their impacts. On AI: H0816 (in committee) — Sets rules for how artificial intelligence can be used when providing mental health services to patients.",
+    contextBlurb: "Vermont has no enacted AI or data-center law. Pending bills would impose a moratorium on new AI data-center construction while the state studies impacts, set sustainability standards for facilities that do proceed, regulate AI in mental health services, and establish rights over neurological data.",
     legislation: [
       {
         id: "vt-h0727",
@@ -17754,7 +17754,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "review",
     stanceAI: "review",
-    contextBlurb: "Virginia is under discussion across both data centers and AI. On data centers: HB897 (in committee) — Ties Virginia's existing data center sales tax exemption to new clean energy requirements, including phased bans on carbon-emitting generators and mandates to source energy from clean res… On AI: HB797 (enacted) — Directs a Virginia legislative commission to study whether the state should create a framework for independent organizations that verify AI systems meet safety standards.",
+    contextBlurb: "Virginia enacted a legislative study of whether to create an AI safety verification framework, with recommendations due in November 2026. Pending bills would tie the state's data-center sales-tax exemption to new clean-energy and carbon standards, and require large platforms to support AI and social-graph data portability.",
     legislation: [
       {
         id: "va-sb85",
@@ -18092,7 +18092,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "review",
     stanceDatacenter: "review",
     stanceAI: "review",
-    contextBlurb: "Washington is under discussion across both data centers and AI. On data centers: HB2515 (in committee) — Establishes rules for large energy-consuming facilities, such as data centers, addressing how they connect to and impact the electrical grid. On AI: SB5395 (enacted) — Strengthens transparency and accountability requirements for the prior authorization process used by health insurers to approve or deny medical treatments.",
+    contextBlurb: "Washington has no enacted AI or data-center law. Pending bills would strip several existing data-center tax exemptions, including one for equipment replacement, while a competing measure would offer new sales-tax breaks for a specific eastern county. A separate bill would establish AI consumer protections.",
     legislation: [
       {
         id: "wa-sb6231",
@@ -18439,7 +18439,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "West Virginia is advancing regulation across both data centers and AI. On data centers: HB4948 (in committee) — Requires data centers in West Virginia to be built at least 500 feet away from any home, school, or house of worship. On AI: HB5034 (in committee) — Creates a West Virginia law protecting genetic and biometric data by requiring companies to tell consumers how their genetic information is collected and used, and banning the sale or tra…",
+    contextBlurb: "West Virginia is weighing an unusually hard-line package: banning all state and local subsidies to data centers, requiring a 500-foot setback from homes and schools, and letting regulators restrict data-center water withdrawals when harm is detected. A separate bill would limit AI use in mental-health care.",
     legislation: [
       {
         id: "wv-hb4832",
@@ -18799,7 +18799,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "concerning",
     stanceDatacenter: "concerning",
     stanceAI: "concerning",
-    contextBlurb: "",
+    contextBlurb: "Wisconsin has no significant AI or data-center legislation on the books.",
     legislation: [
       {
         id: "wi-ab722",
@@ -19197,7 +19197,7 @@ const NA_ENTITIES: Entity[] = [
     stance: "restrictive",
     stanceDatacenter: "review",
     stanceAI: "restrictive",
-    contextBlurb: "Wyoming is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: HB0102 (enacted) — Makes it a crime to use AI or synthetic media to create sexual content involving children, promote self-harm, or censor political speech.",
+    contextBlurb: "Wyoming enacted a narrow AI law this session criminalizing the use of AI or synthetic media to create child sexual content, promote self-harm, or censor political speech, while clarifying that AI cannot be invoked as a legal defense for a crime. No data-center legislation is being tracked.",
     legislation: [
       {
         id: "wy-hb0185",

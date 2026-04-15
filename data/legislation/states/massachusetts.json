@@ -6,13 +6,13 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Massachusetts is under discussion on data centers and advancing regulation on AI. On data centers: H495 (in committee) — Aims to reduce the greenhouse gas emissions produced by artificial intelligence systems and data centers in Massachusetts. On AI: H4640 (in committee) — Puts into law the recommendations made by a special commission studying facial recognition technology, likely establishing rules and restrictions on how it can be used.",
+  "contextBlurb": "Massachusetts has no enacted AI or data-center law, but the legislature is considering a broad slate: emissions-reduction rules for AI and data centers, oversight of AI in healthcare decisions, codification of its facial-recognition commission recommendations, and general AI consumer protections.",
   "legislation": [
     {
       "id": "ma-s50",
       "billCode": "S50",
       "title": "Establishing a career-to-education data center",
-      "summary": "This bill proposes creating a data repository that links career and education information within a state technology office. It is not related to AI regulation or data-center infrastructure policy — 'data center' here refers to a data collection system, not a computing facility.",
+      "summary": "This bill proposes creating a data repository that links career and education information within a state technology office. It is not related to AI regulation or data-center infrastructure policy \u2014 'data center' here refers to a data collection system, not a computing facility.",
       "stage": "Committee",
       "stance": "none",
       "impactTags": [

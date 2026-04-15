@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "New Hampshire is under discussion on data centers and advancing regulation on AI. On data centers: SB439 (in committee) — Addresses how New Hampshire municipalities can regulate the siting and zoning of data centers within their jurisdictions. On AI: HB1460 (in committee) — Bans the sale of personal data belonging to children in New Hampshire.",
+  "contextBlurb": "New Hampshire has no enacted AI or data-center law. Pending bills would regulate AI systems performing licensed professional work, address municipal authority over data-center siting, ban the sale of children's personal data, and restrict state agencies from sharing data on autistic residents.",
   "legislation": [
     {
       "id": "nh-hb1694",

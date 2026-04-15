@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "review",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Virginia is under discussion across both data centers and AI. On data centers: HB897 (in committee) — Ties Virginia's existing data center sales tax exemption to new clean energy requirements, including phased bans on carbon-emitting generators and mandates to source energy from clean res… On AI: HB797 (enacted) — Directs a Virginia legislative commission to study whether the state should create a framework for independent organizations that verify AI systems meet safety standards.",
+  "contextBlurb": "Virginia enacted a legislative study of whether to create an AI safety verification framework, with recommendations due in November 2026. Pending bills would tie the state's data-center sales-tax exemption to new clean-energy and carbon standards, and require large platforms to support AI and social-graph data portability.",
   "legislation": [
     {
       "id": "va-sb85",

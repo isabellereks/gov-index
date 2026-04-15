@@ -6,7 +6,7 @@
   "stanceDatacenter": "none",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Texas is advancing regulation on AI, with no data-center legislation currently tracked. On AI: SB1343 (enacted) — Updates the rules for how data brokers must notify people about their data collection practices, including what information must be posted on their websites.",
+  "contextBlurb": "Texas has no enacted AI or data-center law this session, which is notable given how much hyperscale buildout is happening in the state. Pending bills would create sales-tax exemptions for data-center equipment, exempt their energy infrastructure from property tax, and set modest transparency rules for synthetic media.",
   "legislation": [
     {
       "id": "tx-sb1343",
@@ -56,8 +56,8 @@
     {
       "id": "tx-hr1444",
       "billCode": "HR1444",
-      "title": "Commemorating the 10th anniversary of the Día de Los Muertos performances by Round Rock Ballet Folklórico.",
-      "summary": "This bill commemorates the 10th anniversary of Día de Los Muertos performances by a dance group in Round Rock, Texas. It has no relevance to AI or data-center policy.",
+      "title": "Commemorating the 10th anniversary of the D\u00eda de Los Muertos performances by Round Rock Ballet Folkl\u00f3rico.",
+      "summary": "This bill commemorates the 10th anniversary of D\u00eda de Los Muertos performances by a dance group in Round Rock, Texas. It has no relevance to AI or data-center policy.",
       "stage": "Enacted",
       "stance": "none",
       "impactTags": [],
@@ -212,7 +212,7 @@
       "id": "tx-hb2874",
       "billCode": "HB2874",
       "title": "Relating to the inclusion of provenance data on content shared on social media platforms.",
-      "summary": "This bill would require social media platforms to include provenance data — information about the origin and history of content — when material is shared online. The goal is to help users identify the source of digital content, including AI-generated or manipulated media.",
+      "summary": "This bill would require social media platforms to include provenance data \u2014 information about the origin and history of content \u2014 when material is shared online. The goal is to help users identify the source of digital content, including AI-generated or manipulated media.",
       "stage": "Committee",
       "stance": "concerning",
       "dimensionStances": {

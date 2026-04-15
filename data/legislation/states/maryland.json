@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Maryland is advancing regulation across both data centers and AI. On data centers: HB120 (in committee) — Places a statewide ban on new data center construction, preventing both private builders and government bodies from proceeding with new projects. On AI: HB293 (on the floor) — Allows Maryland's student and workforce data system to share data with third-party data centers for multistate reporting, subject to written agreements and compliance requirements.",
+  "contextBlurb": "Maryland is weighing a floor bill that would let the state's student and workforce data system share records with third-party data centers, plus legislation requiring large data-center operators to file disclosures and adopt formal siting rules by 2027. Another bill would expand police facial recognition inside homes.",
   "legislation": [
     {
       "id": "md-hb293",

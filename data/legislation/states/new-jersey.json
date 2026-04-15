@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "New Jersey is advancing regulation across both data centers and AI. On data centers: S3379 (in committee) — Would require data center owners and operators in New Jersey to report their water and energy usage to the Board of Public Utilities twice a year. On AI: A4163 (in committee) — Imposes civil fines on political campaigns that use AI-generated deepfakes to misrepresent candidates in advertisements.",
+  "contextBlurb": "New Jersey has no enacted AI law. Pending bills would require data centers to report water and energy use twice a year to the Board of Public Utilities, fine political campaigns using deceptive deepfakes, and create an AI apprenticeship program with tax credits for participating employers.",
   "legislation": [
     {
       "id": "nj-s3379",

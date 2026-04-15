@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Colorado is under discussion on data centers and advancing regulation on AI. On data centers: SB102 (in committee) — Establishes accountability measures for large-scale data centers in Colorado, likely including requirements around energy use, grid impact, and reporting. On AI: HB1113 (in committee) — Modifies Colorado election laws, likely including rules around the use of AI-generated or synthetic media in political campaigns.",
+  "contextBlurb": "Colorado is pushing a full slate of pending AI bills, including restrictions on AI in psychotherapy, transparency rules for companion chatbots, and limits on police surveillance tech. Separate legislation would require large data centers to meet clean-energy and grid-impact standards.",
   "legislation": [
     {
       "id": "co-sb102",
@@ -42,7 +42,7 @@
       "id": "co-hb1049",
       "billCode": "HB1049",
       "title": "Prohibit Use of Personally Identifying Feature",
-      "summary": "This bill bans the use of someone's personal identifying features — such as their face, voice, or likeness — without their permission. It aims to protect individuals from unauthorized digital reproduction or impersonation of their identity.",
+      "summary": "This bill bans the use of someone's personal identifying features \u2014 such as their face, voice, or likeness \u2014 without their permission. It aims to protect individuals from unauthorized digital reproduction or impersonation of their identity.",
       "stage": "Dead",
       "stance": "restrictive",
       "dimensionStances": {

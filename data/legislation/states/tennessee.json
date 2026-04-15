@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Tennessee is under discussion on data centers and advancing regulation on AI. On data centers: HB2392 (in committee) — Establishes a formal impact review process that data centers must go through before being built, examining effects on local infrastructure, utilities, and communities. On AI: HB2608 (in committee) — Creates rules to protect people's historical location data from police surveillance by limiting how law enforcement can access and use it.",
+  "contextBlurb": "Tennessee has no enacted AI or data-center law. Pending bills would require data centers to pay the full cost of their grid hookups, create a formal impact-review process before construction, ban deceptive political deepfakes within 90 days of an election, and limit police access to historical location data.",
   "legislation": [
     {
       "id": "tn-sb2112",

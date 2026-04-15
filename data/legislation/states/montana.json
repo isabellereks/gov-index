@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Montana is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: HB178 (enacted) — Places limits on how Montana state government agencies can use artificial intelligence systems.",
+  "contextBlurb": "Montana enacted one of the most distinctive AI packages in the country this session: a Right to Compute Act, a kill-switch requirement for AI systems running critical infrastructure, new limits on state-agency AI use, and disclosure rules for AI-generated political content. It also cut data-center property taxes.",
   "legislation": [
     {
       "id": "mt-hb388",
@@ -93,7 +93,7 @@
       "id": "mt-hj46",
       "billCode": "HJ46",
       "title": "Study resolution on data centers",
-      "summary": "This resolution directs a formal study of data centers in Montana, examining issues like their siting, energy use, and economic impact. No restrictions or incentives are enacted yet — it's an exploratory effort to inform future policy.",
+      "summary": "This resolution directs a formal study of data centers in Montana, examining issues like their siting, energy use, and economic impact. No restrictions or incentives are enacted yet \u2014 it's an exploratory effort to inform future policy.",
       "stage": "Dead",
       "stance": "review",
       "dimensionStances": {

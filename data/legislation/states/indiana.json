@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Indiana is advancing regulation on data centers and leaning restrictive on AI. On data centers: HB1333 (in committee) — Sets new rules for data centers in Indiana, requiring them to contribute at least 1% of their tax savings to local governments before receiving sales tax exemptions on equipment purchases. On AI: HB1271 (enacted) — Regulates how hospitals and insurers handle health insurance claims, including a ban on using automated systems to submit claims without human review by the provider.",
+  "contextBlurb": "Indiana is reconsidering the sales-tax exemption it granted data centers and is weighing a bill that would require a state water-consumption permit before any data center can operate. Other pending legislation would force social-media companies to get parental consent for users under 14.",
   "legislation": [
     {
       "id": "in-sb0083",

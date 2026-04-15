@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Nebraska is under discussion on data centers and advancing regulation on AI. On data centers: LB1010 (enacted) — Establishes new rules for large electricity customers like data centers and crypto miners, addressing how they connect to and impact the power grid. On AI: LB525 (enacted) — Establishes privacy protections for agricultural data and sets safety requirements for conversational AI systems in Nebraska.",
+  "contextBlurb": "Nebraska has no enacted AI or data-center law. Pending bills would require data centers to file annual load reports with the state Power Review Board, establish consumer protections and risk-management standards for AI, and create biometric-data consent rules.",
   "legislation": [
     {
       "id": "ne-lb1111",
@@ -62,7 +62,7 @@
       "id": "ne-lb729",
       "billCode": "LB729",
       "title": "Adopt the Biometric Autonomy Liberty Law",
-      "summary": "This Nebraska bill establishes rules protecting people's biometric data — such as fingerprints, face scans, and iris patterns — by requiring consent before collection and limiting how companies can use or share that information. It creates legal rights and remedies for residents whose biometric privacy is violated.",
+      "summary": "This Nebraska bill establishes rules protecting people's biometric data \u2014 such as fingerprints, face scans, and iris patterns \u2014 by requiring consent before collection and limiting how companies can use or share that information. It creates legal rights and remedies for residents whose biometric privacy is violated.",
       "stage": "Dead",
       "stance": "restrictive",
       "dimensionStances": {
@@ -222,7 +222,7 @@
       "id": "ne-lb204",
       "billCode": "LB204",
       "title": "Adopt the Biometric Autonomy Liberty Law",
-      "summary": "This bill establishes rules in Nebraska to protect people's biometric data — such as fingerprints, face scans, and iris patterns — by requiring consent before collection and limiting how companies can use or share it. It gives individuals legal rights over their own biological identifiers and sets penalties for violations.",
+      "summary": "This bill establishes rules in Nebraska to protect people's biometric data \u2014 such as fingerprints, face scans, and iris patterns \u2014 by requiring consent before collection and limiting how companies can use or share it. It gives individuals legal rights over their own biological identifiers and sets penalties for violations.",
       "stage": "Committee",
       "stance": "restrictive",
       "dimensionStances": {

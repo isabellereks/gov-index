@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "South Dakota is advancing regulation across both data centers and AI. On data centers: SB135 (enacted) — Aims to protect South Dakota residents from higher utility bills and power shortages that could result from data center electricity demand. On AI: SB168 (in committee) — Sets rules on how chatbots can be used by minors in South Dakota.",
+  "contextBlurb": "South Dakota has no enacted AI or data-center law. Pending bills pull hard in opposite directions: one would temporarily ban new data-center construction to protect the grid, while another would exempt data-center equipment from sales and use tax. A separate bill would regulate insurer use of AI in coverage decisions.",
   "legislation": [
     {
       "id": "sd-sb135",

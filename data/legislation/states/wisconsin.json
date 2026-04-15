@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "",
+  "contextBlurb": "Wisconsin has no significant AI or data-center legislation on the books.",
   "legislation": [
     {
       "id": "wi-ab722",
@@ -84,7 +84,7 @@
       "id": "wi-sb815",
       "billCode": "SB815",
       "title": "Synthetic digital representations and providing a penalty.",
-      "summary": "This Wisconsin bill creates new legal penalties for the unauthorized creation or use of synthetic digital representations — such as AI-generated likenesses or voice clones — of real people. It amends existing privacy and racketeering statutes to cover these digital replicas and establishes criminal consequences for violations.",
+      "summary": "This Wisconsin bill creates new legal penalties for the unauthorized creation or use of synthetic digital representations \u2014 such as AI-generated likenesses or voice clones \u2014 of real people. It amends existing privacy and racketeering statutes to cover these digital replicas and establishes criminal consequences for violations.",
       "stage": "Dead",
       "stance": "restrictive",
       "dimensionStances": {
@@ -113,7 +113,7 @@
       "id": "wi-ab855",
       "billCode": "AB855",
       "title": "Synthetic digital representations and providing a penalty.",
-      "summary": "This Wisconsin bill creates new rules and penalties around synthetic digital representations — AI-generated or manipulated images, audio, or video of real people. It adds these protections to existing privacy and crime statutes, making unauthorized use of someone's synthetic likeness a punishable offense.",
+      "summary": "This Wisconsin bill creates new rules and penalties around synthetic digital representations \u2014 AI-generated or manipulated images, audio, or video of real people. It adds these protections to existing privacy and crime statutes, making unauthorized use of someone's synthetic likeness a punishable offense.",
       "stage": "Dead",
       "stance": "restrictive",
       "dimensionStances": {

@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "favorable",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Iowa is advancing regulation on data centers and leaning innovation-friendly on AI. On data centers: HF2447 (in committee) — Requires data centers in Iowa to report on their water and energy usage and establishes specific tariff rules related to those resources. On AI: HSB294 (in committee) — Regulates the use of AI to create election-related content, such as deepfakes or synthetic media that could mislead voters.",
+  "contextBlurb": "Iowa is debating bills that would require data centers to report water and energy use and adopt water-efficient cooling, while a parallel measure would adjust investment thresholds for the state's data-center sales-tax break. Pending AI legislation would regulate election-related synthetic media.",
   "legislation": [
     {
       "id": "ia-hf2447",

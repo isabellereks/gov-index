@@ -6,13 +6,13 @@
   "stanceDatacenter": "review",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Nevada is leaning restrictive on AI, with no data-center legislation currently tracked. On AI: AB406 (enacted) — Bans certain uses of AI in public schools, restricts how AI can be used in mental and behavioral health care, and prohibits AI systems from falsely presenting themselves as qualifi…",
+  "contextBlurb": "Nevada enacted a restrictive AI package this session that bans AI from making final calls on emergency-response decisions, restricts AI in mental and behavioral health care, and bars AI systems from posing as licensed providers. It also stood up a state Security Operations Center to handle cybersecurity.",
   "legislation": [
     {
       "id": "nv-ab226",
       "billCode": "AB226",
       "title": "Revises provisions relating to economic development. (BDR 32-690)",
-      "summary": "This bill requires businesses applying for transferable tax credits or tax abatements — which often include data centers — to agree to a community benefits agreement as a condition of approval. It adds a layer of community collaboration requirements to economic development incentives in Nevada.",
+      "summary": "This bill requires businesses applying for transferable tax credits or tax abatements \u2014 which often include data centers \u2014 to agree to a community benefits agreement as a condition of approval. It adds a layer of community collaboration requirements to economic development incentives in Nevada.",
       "stage": "Dead",
       "stance": "concerning",
       "impactTags": [

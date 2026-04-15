@@ -6,7 +6,7 @@
   "stanceDatacenter": "favorable",
   "stanceAI": "restrictive",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Alaska is leaning innovation-friendly on data centers and leaning restrictive on AI. On data centers: SB250 (in committee) — Establishes rules for how data centers connect to and receive utility services, likely streamlining the process for data centers to obtain power. On AI: HB57 (enacted) — Addresses multiple education topics including restricting wireless devices (like smartphones) in public schools.",
+  "contextBlurb": "Alaska banned wireless devices in public schools this session but has no binding AI or data-center law on the books. Pending bills would create a legislative AI task force, set defamation liability for political deepfakes, and streamline utility hookups for data centers.",
   "legislation": [
     {
       "id": "ak-sb250",

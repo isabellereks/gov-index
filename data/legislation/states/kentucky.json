@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Kentucky is advancing regulation across both data centers and AI. On data centers: HB593 (in committee) — Requires data centers to obtain electricity only through special contracts that protect other utility customers from bearing the costs of new infrastructure built to serve data c… On AI: HB676 (on the floor) — Creates a statewide health data system in Kentucky that collects and shares health information from various participants, governed by a board and operated by a consortium of public health…",
+  "contextBlurb": "Kentucky is pushing multiple bills to keep data-center power costs off ordinary ratepayers, including requiring PSC approval for any facility over 100 megawatts and mandating decommissioning bonds for data centers built on farmland. A separate bill would sharply restrict AI use in therapy sessions.",
   "legislation": [
     {
       "id": "ky-hb593",

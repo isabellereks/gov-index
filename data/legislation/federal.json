@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "review",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "The US federal government is advancing regulation on data centers and under discussion on AI. On data centers: HB1736 (on the floor) — Generative AI Terrorism Risk Assessment Act. On AI: HB7270 (in committee) — Creates a coordinated government strategy to combat identity fraud and theft across the financial services industry.",
+  "contextBlurb": "Congress has no enacted AI or data-center law this session. Floor bills are concentrated on narrow agency-assist mandates, directing the SBA, NIST, and small-business development centers to help firms evaluate and adopt AI tools, and requiring DHS to assess terrorism threats from generative AI.",
   "legislation": [
     {
       "id": "us-sb3682",
@@ -435,7 +435,7 @@
     {
       "id": "us-hb5784",
       "billCode": "HB5784",
-      "title": "Artificial Intelligence Wisdom for Innovative Small Enterprises Act AI–WISE Act",
+      "title": "Artificial Intelligence Wisdom for Innovative Small Enterprises Act AI\u2013WISE Act",
       "summary": "To amend the Small Business Act to help small business concerns critically evaluate artificial intelligence tools, and for other purposes.",
       "stage": "Floor",
       "stance": "concerning",

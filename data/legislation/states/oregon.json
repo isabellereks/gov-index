@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "review",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Oregon is under discussion across both data centers and AI. On data centers: HB4084 (enacted) — Creates a fast-track permitting program for economic development projects while specifically restricting data centers from using the state's enterprise zone tax incentive program. On AI: SB1546 (enacted) — Requires companies that operate AI companion software to clearly disclose to users that they are interacting with AI and not a human, and to have safety protocols in place to detect and p…",
+  "contextBlurb": "Oregon quietly cut data centers out of its enterprise-zone tax break this session, one of the only states to roll back incentives for the industry. It also enacted a law requiring AI-companion operators to disclose that users aren't talking to a human and to maintain safety protocols for self-harm content.",
   "legislation": [
     {
       "id": "or-hb4053",

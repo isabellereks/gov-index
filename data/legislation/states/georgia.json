@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Georgia is advancing regulation across both data centers and AI. On data centers: HB1063 (in committee) — Requires Georgia electric utilities to shield residential and retail customers from bearing the costs tied to data center construction and operation. On AI: SR789 (enacted) — This resolution creates a Georgia Senate committee to study the effects and implications of artificial intelligence.",
+  "contextBlurb": "Georgia is advancing a restrictive floor bill that would ban health insurers from using AI alone to deny coverage, and the Senate has already stood up a study committee on AI's broader impact. Multiple pending data-center bills would stop utilities from passing hyperscaler power costs onto residential ratepayers.",
   "legislation": [
     {
       "id": "ga-hb1323",

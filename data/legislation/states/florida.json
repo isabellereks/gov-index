@@ -6,7 +6,7 @@
   "stanceDatacenter": "concerning",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Florida is advancing regulation across both data centers and AI. On data centers: S0484 (on the floor) — Gives local governments control over zoning and land-use rules for large data centers, sets utility service requirements for big power customers, and blocks water-use permits for… On AI: S0480 (in committee) — Reorganizes Florida's state technology operations by moving the Florida Digital Service into a new division called DIGIT within the Governor's office.",
+  "contextBlurb": "Florida is moving aggressively to hand data-center siting back to local governments, with a floor bill that would block water permits for large projects and require grid-impact studies before construction. A separate measure would shield site-selection details from public records.",
   "legislation": [
     {
       "id": "fl-h1007",
@@ -98,7 +98,7 @@
       "id": "fl-s1202",
       "billCode": "S1202",
       "title": "Eyewitness Identification",
-      "summary": "This bill updates eyewitness identification rules for law enforcement, including restrictions on using facial recognition technology — if it's used to identify a suspect, additional conditions must be met before a lineup can proceed. It aims to improve the reliability of identifications and reduce wrongful convictions by regulating how facial recognition fits into the investigation process.",
+      "summary": "This bill updates eyewitness identification rules for law enforcement, including restrictions on using facial recognition technology \u2014 if it's used to identify a suspect, additional conditions must be met before a lineup can proceed. It aims to improve the reliability of identifications and reduce wrongful convictions by regulating how facial recognition fits into the investigation process.",
       "stage": "Dead",
       "stance": "concerning",
       "impactTags": [

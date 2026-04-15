@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "review",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Oklahoma is under discussion across both data centers and AI. On data centers: HB2992 (in committee) — Creates consumer protection rules for data centers under Oklahoma's Corporation Commission, likely addressing how data centers interact with the energy grid and utility customers. On AI: SB1734 (in committee) — Requires the development of guidance for how artificial intelligence and other emerging technologies should be used in schools.",
+  "contextBlurb": "Oklahoma has no enacted AI law. Pending bills would require data centers to post financial assurance for decommissioning, stand up a state directory of hyperscalers tracked by the Corporation Commission, and develop guidance for AI use in schools.",
   "legislation": [
     {
       "id": "ok-hb4194",

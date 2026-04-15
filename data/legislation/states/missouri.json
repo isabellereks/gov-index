@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Missouri is under discussion on data centers and advancing regulation on AI. On data centers: HB3390 (filed) — Establishes new rules governing where and how data centers can be built in the state. On AI: HB2032 (in committee) — Requires age verification for companion chatbot services to prevent minors from accessing them.",
+  "contextBlurb": "Missouri has no enacted AI law. Pending bills would require age verification for companion chatbots, create a private right of action for undisclosed AI-generated content, and establish new siting rules for data centers.",
   "legislation": [
     {
       "id": "mo-hb1810",

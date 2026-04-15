@@ -6,7 +6,7 @@
   "stanceDatacenter": "none",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Connecticut is advancing regulation on AI, with no data-center legislation currently tracked. On AI: SB00092 (in committee) — Establishes additional protections for warehouse workers, likely including rules around automated monitoring and work-quota systems driven by algorithms.",
+  "contextBlurb": "Connecticut is debating a sweeping AI framework that would create a state AI Policy Office, regulate frontier-model developers, and rein in automated hiring tools. A parallel bill would eliminate the state's existing data-center tax incentives outright.",
   "legislation": [
     {
       "id": "ct-sb00092",

@@ -6,7 +6,7 @@
   "stanceDatacenter": "review",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Louisiana is under discussion on data centers and advancing regulation on AI. On data centers: HB1206 (in committee) — Requires data centers to obtain permits and report on how much water they use. On AI: HB119 (in committee) — Makes it illegal to create or share AI-generated images of real people without their consent.",
+  "contextBlurb": "Louisiana enacted a law banning AI-generated deepfakes targeting K-12 students and is weighing bills to require water-use permits for data centers and oversee insurer use of AI in claims decisions. A broader AI consumer-rights bill is also in committee.",
   "legislation": [
     {
       "id": "la-hb1206",

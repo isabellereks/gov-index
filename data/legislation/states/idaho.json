@@ -6,7 +6,7 @@
   "stanceDatacenter": "restrictive",
   "stanceAI": "concerning",
   "lastUpdated": "2026-04-14",
-  "contextBlurb": "Idaho is leaning restrictive on data centers and advancing regulation on AI. On data centers: H0895 (enacted) — Sets limits on how much water data centers in Idaho can use for cooling purposes. On AI: S1297 (enacted) — Establishes safety requirements for conversational AI systems, likely including disclosure and protective standards for users.",
+  "contextBlurb": "Idaho capped how much water data centers can draw for cooling and enacted a Conversational AI Safety Act this session, a surprisingly restrictive combination for a red state. Pending bills would expand data-center tax exemptions and tighten rules on biometric data collection.",
   "legislation": [
     {
       "id": "id-h0609",
@@ -167,7 +167,7 @@
       "id": "id-h0744",
       "billCode": "H0744",
       "title": "Adds to existing law to establish provisions regarding the capture or use of biometric identifiers.",
-      "summary": "This bill creates new rules in Idaho law governing how biometric identifiers — such as fingerprints, facial scans, or iris patterns — can be collected and used. It establishes legal protections and likely requires consent or disclosure before capturing someone's biometric data.",
+      "summary": "This bill creates new rules in Idaho law governing how biometric identifiers \u2014 such as fingerprints, facial scans, or iris patterns \u2014 can be collected and used. It establishes legal protections and likely requires consent or disclosure before capturing someone's biometric data.",
       "stage": "Committee",
       "stance": "concerning",
       "dimensionStances": {
